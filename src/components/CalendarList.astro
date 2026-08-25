@@ -26,6 +26,42 @@ function day(date: string): string {
   const d = new Date(`${date}T12:00:00`);
   return String(d.getDate()).padStart(2, "0");
 }
+
+function sessionLabel(key: string): string {
+  switch (key) {
+    case "firstPractice":
+      return "Práctica Libre 1";
+    case "secondPractice":
+      return "Práctica Libre 2";
+    case "thirdPractice":
+      return "Práctica Libre 3";
+    case "qualifying":
+      return "Clasificación";
+    case "sprintQualifying":
+      return "Clasificación Sprint";
+    case "sprint":
+      return "Sprint";
+    default:
+      return "Carrera";
+  }
+}
+
+function sessionIcon(key: string): string {
+  switch (key) {
+    case "firstPractice":
+    case "secondPractice":
+    case "thirdPractice":
+      return "sports_motorsports";
+    case "qualifying":
+      return "timer";
+    case "sprintQualifying":
+      return "timer_outlined";
+    case "sprint":
+      return "bolt";
+    default:
+      return "flag";
+  }
+}
 ---
 
 {
@@ -34,26 +70,40 @@ function day(date: string): string {
       {
         races.map((race) => (
           <article
+            data-calendar-card
+            { ... (race.status !== "past" ? { "data-next-race": "" } : {}) }
             class:list={[
-              "bg-panel-surface rounded-2xl border border-border-subtle p-4 lg:p-6 hover:bg-surface-container-low transition-colors duration-150 flex flex-col lg:flex-row gap-5 lg:items-center relative overflow-hidden group",
+              "bg-panel-surface rounded-2xl border border-border-subtle p-4 lg:p-6 hover:bg-surface-container-low transition-colors duration-150 relative overflow-hidden group cursor-pointer",
               race.status === "next" ? "border-primary-container/50" : "",
             ]}
           >
+            <div class="flex flex-col lg:flex-row gap-5 lg:items-center">
             <div
               class:list={[
                 "absolute left-0 top-0 bottom-0 w-1",
                 race.status === "past" ? "bg-surface-variant" : "bg-primary-container",
               ]}
             />
-            <div class="w-20 lg:w-24 shrink-0 border-r border-border-subtle pr-4 flex flex-col items-center lg:items-start">
-              <div class:list={[
-                "font-label-caps text-label-caps mb-1",
-                race.status === "past" ? "text-on-surface-variant" : "text-primary-container",
-              ]}>
-                RND {String(race.round).padStart(2, "0")}
+            <div class="w-20 lg:w-24 shrink-0 border-r border-border-subtle pr-4 flex flex-row items-center justify-between gap-1">
+              <div class="flex flex-col items-center lg:items-start">
+                <div class:list={[
+                  "font-label-caps text-label-caps mb-1",
+                  race.status === "past" ? "text-on-surface-variant" : "text-primary-container",
+                ]}>
+                  RND {String(race.round).padStart(2, "0")}
+                </div>
+                <div class="font-headline-md text-headline-md text-on-surface leading-none">{day(race.date)}</div>
+                <div class="font-body-sm text-on-surface-variant mt-1">{monthShort(race.date)}</div>
               </div>
-              <div class="font-headline-md text-headline-md text-on-surface leading-none">{day(race.date)}</div>
-              <div class="font-body-sm text-on-surface-variant mt-1">{monthShort(race.date)}</div>
+              <button
+                type="button"
+                data-chevron-toggle
+                aria-label="Ver horarios de la ronda"
+                aria-expanded="false"
+                class="w-7 h-7 mt-1 flex items-center justify-center rounded-full bg-surface-container border border-border-subtle text-on-surface-variant hover:text-on-surface hover:border-primary-container/60 transition-colors cursor-pointer shrink-0"
+              >
+                <span class="material-symbols-outlined text-[16px]" data-chevron>expand_more</span>
+              </button>
             </div>
 
             <div class="flex-1 min-w-0">
@@ -130,6 +180,33 @@ function day(date: string): string {
                 </div>
               )
             }
+            </div>
+
+            <div
+              data-schedule
+              class="grid transition-[grid-template-rows] duration-300 ease-out"
+              style="grid-template-rows: 0fr"
+            >
+              <div class="overflow-hidden min-h-0">
+                <div class="pt-4 mt-4 border-t border-border-subtle">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="material-symbols-outlined text-[16px] text-primary-container shrink-0">schedule</span>
+                    <h4 class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Horarios de la ronda</h4>
+                  </div>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                    {race.schedule.map((s) => (
+                      <div class="flex items-start gap-3 bg-surface-container-low/60 border border-border-subtle/60 rounded-lg p-3">
+                        <span class="material-symbols-outlined text-[18px] text-primary-container shrink-0 mt-0.5">{sessionIcon(s.key)}</span>
+                        <div class="min-w-0">
+                          <span class="block font-label-caps text-[10px] uppercase tracking-wider text-on-surface-variant">{sessionLabel(s.key)}</span>
+                          <LocalTime iso={`${s.date}T${s.time}`} className="text-sm font-semibold text-on-surface leading-snug" />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
           </article>
         ))
       }
@@ -138,3 +215,29 @@ function day(date: string): string {
     <p class="text-sm text-text-secondary">Calendario no disponible.</p>
   )
 }
+
+<script>
+  const cards = document.querySelectorAll("[data-calendar-card]");
+
+  function toggle(card) {
+    const content = card.querySelector("[data-schedule]");
+    const chevron = card.querySelector("[data-chevron]");
+    const btn = card.querySelector("[data-chevron-toggle]");
+    if (!content) return;
+    const expanded = content.style.gridTemplateRows === "1fr";
+    content.style.gridTemplateRows = expanded ? "0fr" : "1fr";
+    if (chevron) chevron.textContent = expanded ? "expand_more" : "expand_less";
+    if (btn) btn.setAttribute("aria-expanded", String(!expanded));
+  }
+
+  for (const card of cards) {
+    card.addEventListener("click", (e) => {
+      if (e.target.closest("[data-open-circuit]") || e.target.closest("[data-close-circuit]")) return;
+      toggle(card);
+    });
+  }
+
+  // Scroll to next race on load
+  const next = document.querySelector("[data-next-race]");
+  if (next) next.scrollIntoView({ behavior: "smooth", block: "center" });
+</script>

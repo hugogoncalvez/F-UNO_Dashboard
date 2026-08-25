@@ -1,7 +1,9 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { getDriverProfiles } from "../../lib/drivers";
+import { getDriverSeasonResults, getSeasonFastestLaps } from "../../lib/jolpica";
 import { flagEmoji, formatDate, headshotTransform, nationalityEs } from "../../lib/utils";
+import { positionChart, pointsChart, gapToFastestChart, gapToTeammateChart } from "../../lib/charts";
 import type { DriverProfile } from "../../lib/types";
 
 export async function getStaticPaths() {
@@ -17,6 +19,24 @@ const flag = flagEmoji(driver.nationality);
 const colour = `#${driver.teamColour}`;
 const nationality = nationalityEs(driver.nationality);
 const avatar = headshotTransform(driver.headshotUrl, "4col");
+
+const year = new Date().getFullYear();
+const raceResults = await getDriverSeasonResults(year, driver.slug);
+
+const constructorName = raceResults.find((r) => r.constructorName)?.constructorName ?? "";
+
+const profiles = await getDriverProfiles();
+
+function normalizeTeam(s: string): string {
+  return s.toLowerCase().replace(/\s*(f1|formula\s*1|team|racing)\s*/gi, " ").trim();
+}
+
+const teammate = profiles.find((p) =>
+  p.slug !== driver.slug && normalizeTeam(p.team) === normalizeTeam(constructorName)
+);
+const teammateResults = teammate ? await getDriverSeasonResults(year, teammate.slug) : [];
+
+const seasonFastest = await getSeasonFastestLaps(year);
 ---
 
 <Layout
@@ -136,30 +156,58 @@ const avatar = headshotTransform(driver.headshotUrl, "4col");
         </div>
       )}
 
-      <!-- Telemetry Visual Section (Mockup) -->
-      <div class="bg-panel-surface rounded-2xl border border-border-subtle overflow-hidden">
-        <div class="px-6 py-4 border-b border-border-subtle flex justify-between items-center">
-          <h2 class="font-display text-2xl font-bold uppercase tracking-wide text-text-primary">Rendimiento (Simulado)</h2>
-        </div>
-        <div class="p-6 relative h-64 bg-surface-container-lowest">
-          <div class="absolute bottom-6 left-6 right-6 h-48 flex items-end gap-2">
-            <div class="w-full bg-surface-variant h-full relative rounded-sm overflow-hidden">
-              <!-- Grid lines -->
-              <div class="absolute w-full border-b border-border-subtle top-1/4"></div>
-              <div class="absolute w-full border-b border-border-subtle top-2/4"></div>
-              <div class="absolute w-full border-b border-border-subtle top-3/4"></div>
-              <!-- Data Line (SVG) -->
-              <svg class="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
-                <polyline fill="none" points="0,80 10,75 20,40 30,30 40,50 50,20 60,15 70,25 80,10 90,5 100,2" stroke={colour} stroke-width="2"></polyline>
-                <polygon fill={colour} opacity="0.1" points="0,100 0,80 10,75 20,40 30,30 40,50 50,20 60,15 70,25 80,10 90,5 100,2 100,100"></polygon>
-              </svg>
+      <!-- Performance Charts (Real Data) -->
+      {raceResults.length > 0 && (
+        <div class="space-y-6">
+          <!-- Position Chart -->
+          <div class="bg-panel-surface rounded-2xl border border-border-subtle overflow-hidden">
+            <div class="px-6 py-4 border-b border-border-subtle flex items-center justify-between">
+              <h2 class="font-display text-2xl font-bold uppercase tracking-wide text-text-primary">Posiciones de Llegada</h2>
+              <span class="text-xs text-text-secondary font-data-tabular">{raceResults.filter(r => r.position !== null).length} carreras</span>
+            </div>
+            <div class="p-6">
+              <div set:html={positionChart(raceResults, colour)} />
             </div>
           </div>
-          <div class="absolute bottom-0 left-6 right-6 flex justify-between text-text-secondary font-data-tabular text-xs mt-2">
-            <span>R1</span><span>R5</span><span>R10</span><span>R15</span><span>R20</span>
+
+          <!-- Points Chart -->
+          <div class="bg-panel-surface rounded-2xl border border-border-subtle overflow-hidden">
+            <div class="px-6 py-4 border-b border-border-subtle flex items-center justify-between">
+              <h2 class="font-display text-2xl font-bold uppercase tracking-wide text-text-primary">Puntos Acumulados</h2>
+              <span class="text-xs text-text-secondary font-data-tabular">{raceResults.reduce((s, r) => s + r.points, 0)} pts totales</span>
+            </div>
+            <div class="p-6">
+              <div set:html={pointsChart(raceResults, colour)} />
+            </div>
           </div>
+
+          <!-- Gap to Fastest Chart -->
+          {raceResults.some(r => r.fastestLapTime) && seasonFastest.size > 0 && (
+            <div class="bg-panel-surface rounded-2xl border border-border-subtle overflow-hidden">
+              <div class="px-6 py-4 border-b border-border-subtle flex items-center justify-between">
+                <h2 class="font-display text-2xl font-bold uppercase tracking-wide text-text-primary">Brecha al Más Rápido</h2>
+                <span class="text-xs text-text-secondary font-data-tabular">Diferencia vs vuelta más rápida del GP</span>
+              </div>
+              <div class="p-6">
+                <div set:html={gapToFastestChart(raceResults, seasonFastest, colour)} />
+              </div>
+            </div>
+          )}
+
+          <!-- Gap to Teammate Chart -->
+          {teammateResults.length > 0 && (
+            <div class="bg-panel-surface rounded-2xl border border-border-subtle overflow-hidden">
+              <div class="px-6 py-4 border-b border-border-subtle flex items-center justify-between">
+                <h2 class="font-display text-2xl font-bold uppercase tracking-wide text-text-primary">Brecha al Teammate</h2>
+                <span class="text-xs text-text-secondary font-data-tabular">Diferencia vs {teammate?.fullName ?? "teammate"}</span>
+              </div>
+              <div class="p-6">
+                <div set:html={gapToTeammateChart(raceResults, teammateResults, colour)} />
+              </div>
+            </div>
+          )}
         </div>
-      </div>
+      )}
     </div>
 
     <!-- Right Column (Technical Data Sidebar) -->
@@ -169,37 +217,35 @@ const avatar = headshotTransform(driver.headshotUrl, "4col");
           <h2 class="font-display text-2xl font-bold uppercase tracking-wide text-text-primary">Ficha Técnica</h2>
         </div>
         <div class="p-0">
-          <table class="w-full text-left border-collapse text-sm">
+          <table class="w-full text-left border-collapse text-sm overflow-hidden">
             <tbody>
-              <tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors relative">
-                <td class="w-1 absolute left-0 top-0 bottom-0" style={`background-color: ${colour}`}></td>
+              <tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors" style={`border-left: 3px solid ${colour}`}>
                 <td class="py-3 px-6 text-text-secondary w-1/2">Número</td>
                 <td class="py-3 px-6 text-text-primary text-right font-display text-xl font-bold">{driver.driverNumber}</td>
               </tr>
-              <tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors relative">
-                <td class="w-1 absolute left-0 top-0 bottom-0" style={`background-color: ${colour}`}></td>
+              <tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors" style={`border-left: 3px solid ${colour}`}>
                 <td class="py-3 px-6 text-text-secondary">Siglas</td>
                 <td class="py-3 px-6 text-text-primary text-right font-display text-xl font-bold">{driver.code}</td>
               </tr>
-              <tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors">
-                <td class="py-3 px-6 text-text-secondary pl-6">Equipo</td>
+              <tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors" style={`border-left: 3px solid ${colour}`}>
+                <td class="py-3 px-6 text-text-secondary">Equipo</td>
                 <td class="py-3 px-6 text-right" style={`color: ${colour}`}>{driver.team}</td>
               </tr>
-              <tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors">
-                <td class="py-3 px-6 text-text-secondary pl-6">Nacionalidad</td>
+              <tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors" style={`border-left: 3px solid ${colour}`}>
+                <td class="py-3 px-6 text-text-secondary">Nacionalidad</td>
                 <td class="py-3 px-6 text-text-primary text-right flex items-center justify-end gap-2">
                   {nationality} {flag && <span class="text-base">{flag}</span>}
                 </td>
               </tr>
               {driver.dateOfBirth && (
-                <tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors">
-                  <td class="py-3 px-6 text-text-secondary pl-6">Nacimiento</td>
+                <tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors" style={`border-left: 3px solid ${colour}`}>
+                  <td class="py-3 px-6 text-text-secondary">Nacimiento</td>
                   <td class="py-3 px-6 text-text-primary text-right">{formatDate(driver.dateOfBirth)}</td>
                 </tr>
               )}
               {driver.age !== null && (
-                <tr class="hover:bg-surface-container-low transition-colors">
-                  <td class="py-3 px-6 text-text-secondary pl-6">Edad</td>
+                <tr class="hover:bg-surface-container-low transition-colors" style={`border-left: 3px solid ${colour}`}>
+                  <td class="py-3 px-6 text-text-secondary">Edad</td>
                   <td class="py-3 px-6 text-text-primary text-right">{driver.age} años</td>
                 </tr>
               )}

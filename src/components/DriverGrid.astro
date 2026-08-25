@@ -19,7 +19,7 @@ const { drivers } = Astro.props;
             class="bg-panel-surface border border-border-subtle rounded-xl p-5 relative overflow-hidden flex flex-col gap-4 hover:bg-surface-container-low transition-colors duration-150 group min-h-[220px]"
           >
             <div class="absolute left-0 top-0 bottom-0 w-1.5" style={`background:#${driver.teamColour}`} />
-            <span class="absolute -right-2 -bottom-6 font-display text-[120px] leading-none font-bold text-surface-variant opacity-30 pointer-events-none group-hover:scale-110 group-hover:opacity-40 transition-all duration-300 select-none">
+            <span class="absolute right-0 -bottom-6 font-display text-[120px] leading-none font-bold text-surface-variant opacity-30 pointer-events-none group-hover:scale-110 group-hover:opacity-40 transition-all duration-300 select-none">
               {driver.driverNumber}
             </span>
             <div class="flex justify-between items-start relative z-10">

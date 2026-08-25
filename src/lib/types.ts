@@ -95,6 +95,12 @@ export interface CircuitPath {
   h: number;
 }
 
+export interface RaceSession {
+  key: string;
+  date: string;
+  time: string;
+}
+
 export interface Race {
   round: number;
   raceName: string;
@@ -109,6 +115,7 @@ export interface Race {
   status: "past" | "upcoming";
   winnerCode: string | null;
   podium: { code: string }[];
+  schedule: RaceSession[];
 }
 
 export interface NewsItem {

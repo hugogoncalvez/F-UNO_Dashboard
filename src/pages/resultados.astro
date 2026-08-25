@@ -2084,33 +2084,29 @@ import Layout from "../layouts/Layout.astro";
                 );
 
             // --------------------------------------------------
-            // HORA
+            // HORA (convertida a zona horaria del visitante)
             // --------------------------------------------------
 
             const time =
-              p.time ||
+              p.openf1Date
 
-              (
-                p.openf1Date
+                ? new Date(
+                    p.openf1Date
+                  ).toLocaleTimeString(
+                    "es-ES",
+                    {
+                      hour:
+                        "2-digit",
 
-                  ? new Date(
-                      p.openf1Date
-                    ).toLocaleTimeString(
-                      "es-ES",
-                      {
-                        hour:
-                          "2-digit",
+                      minute:
+                        "2-digit",
 
-                        minute:
-                          "2-digit",
+                      second:
+                        "2-digit"
+                    }
+                  )
 
-                        second:
-                          "2-digit"
-                      }
-                    )
-
-                  : "--"
-              );
+                : p.time || "--";
 
             // --------------------------------------------------
             // RC
