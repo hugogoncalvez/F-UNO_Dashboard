@@ -66,7 +66,7 @@ const hasWins = rows.some((r) => r.wins !== undefined);
                   <td class="py-3 px-4 text-right font-bold text-on-surface">{row.points}</td>
                   {showGap && (
                     <td class="py-3 px-4 text-right text-on-surface-variant">
-                      {i === 0 ? "—" : `−${visible[i - 1].points - row.points}`}
+                      {i === 0 ? "—" : (visible[i - 1].points - row.points === 0 ? "—" : `−${visible[i - 1].points - row.points}`)}
                     </td>
                   )}
                 </tr>
