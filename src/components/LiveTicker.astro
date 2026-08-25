@@ -1,0 +1,128 @@
+<div class="bg-surface-container border-b border-border-subtle py-2 overflow-hidden flex items-center">
+  <a href="/gp-actual" class="font-label-caps text-label-caps text-primary-container px-4 border-r border-border-subtle shrink-0 flex items-center gap-2 hover:opacity-80 transition-opacity" title="Ir al GP Actual">
+    <span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse" id="live-dot"></span>
+    LIVE
+  </a>
+  <div class="ticker-wrap flex-1 ml-4" id="live-ticker">
+    <span class="text-sm text-on-surface-variant">Comprobando si hay sesión activa...</span>
+  </div>
+</div>
+
+<script>
+  const tickerEl = document.getElementById("live-ticker")!;
+  const liveDot = document.getElementById("live-dot")!;
+
+  // OpenF1 rate-limit: ~3 req/s. Sequential fetch + backoff on 429.
+  const BASE_DELAY_MS = 15000;
+  const MAX_DELAY_MS = 120000;
+  let delayMs = BASE_DELAY_MS;
+  let timerId: number | undefined;
+
+  async function fetchJson(url: string, retries = 2): Promise<any[]> {
+    for (let attempt = 0; ; attempt++) {
+      const res = await fetch(url);
+      if (res.status !== 429) {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        return Array.isArray(data) ? data : [];
+      }
+      if (attempt >= retries) throw new Error("HTTP 429");
+      const retryAfter = parseFloat(res.headers.get("Retry-After") ?? "");
+      const wait = Number.isFinite(retryAfter) ? retryAfter * 1000 : (attempt + 1) * 2000;
+      await new Promise((r) => setTimeout(r, wait));
+    }
+  }
+
+  async function fetchAllSequentially(urls: string[]): Promise<any[][]> {
+    const out: any[][] = [];
+    for (const u of urls) {
+      out.push(await fetchJson(u));
+      await new Promise((r) => setTimeout(r, 350));
+    }
+    return out;
+  }
+
+  function fmtGap(gap: number | null): string {
+    if (gap === null) return "LÍDER";
+    return (gap < 1 ? gap.toFixed(3) : gap.toFixed(2)) + "s";
+  }
+
+  async function refresh() {
+    try {
+      const [sessions, drivers, positions, intervals] = await fetchAllSequentially([
+        "https://api.openf1.org/v1/sessions?session_key=latest",
+        "https://api.openf1.org/v1/drivers?session_key=latest",
+        "https://api.openf1.org/v1/position?session_key=latest",
+        "https://api.openf1.org/v1/intervals?session_key=latest",
+      ]);
+      const session = sessions[0];
+      if (!session) throw new Error("sin sesión");
+
+      const infoByNumber = new Map<number, { code: string; team: string }>();
+      for (const d of drivers) {
+        infoByNumber.set(d.driver_number, { code: d.name_acronym, team: d.team_name });
+      }
+
+      const now = Date.now();
+      const start = new Date(session.date_start).getTime() - 30 * 60000;
+      const end = new Date(session.date_end).getTime() + 30 * 60000;
+      if (now < start || now > end || !positions.length) {
+        liveDot.className = "w-1.5 h-1.5 rounded-full bg-text-secondary";
+        tickerEl.innerHTML =
+          '<span class="text-sm text-on-surface-variant">Sin sesión en vivo en curso. Explora la telemetría en el <a href="/envivo" class="underline text-primary">Centro de Control en Vivo</a>.</span>';
+        delayMs = 30000;
+        return;
+      }
+
+      const last = new Map<number, { position: number; date: string }>();
+      for (const p of positions) {
+        const prev = last.get(p.driver_number);
+        if (!prev || new Date(p.date) > new Date(prev.date)) last.set(p.driver_number, p);
+      }
+      const gaps = new Map<number, number | null>();
+      for (const i of intervals) {
+        const prev = gaps.get(i.driver_number);
+        if (prev === undefined || new Date(i.date) > new Date(prev.date)) {
+          gaps.set(i.driver_number, i.gap_to_leader);
+        }
+      }
+
+      const rows = [...last.values()].sort((a, b) => a.position - b.position);
+      const parts = rows.map((r) => {
+        const info = infoByNumber.get(r.driver_number);
+        const code = info?.code ?? String(r.driver_number);
+        const team = info?.team ?? "";
+        const gap = gaps.get(r.driver_number);
+        return `<span class="mx-4"><span class="text-primary-container mr-1">P${r.position}</span>${code}${team ? ` (${team})` : ""} <span class="text-text-secondary">${gap === null ? "" : fmtGap(gap)}</span></span>`;
+      });
+      const dup = parts.join("");
+      liveDot.className = "w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse";
+      tickerEl.innerHTML = `<div class="ticker"><span class="text-sm font-data-tabular text-on-surface">${dup}${dup}</span></div>`;
+      delayMs = BASE_DELAY_MS;
+    } catch {
+      // Error/429: backoff exponencial (máx. 2 min) y no pisar contenido existente.
+      if (!tickerEl.querySelector(".ticker")) {
+        tickerEl.innerHTML =
+          '<span class="text-sm text-on-surface-variant">No hay datos en vivo disponibles ahora mismo.</span>';
+      }
+      delayMs = Math.min(delayMs * 2, MAX_DELAY_MS);
+    }
+  }
+
+  function tick() {
+    refresh().finally(() => {
+      timerId = window.setTimeout(tick, delayMs);
+    });
+  }
+
+  // Pausar cuando la pestaña está oculta (ahorro de requests).
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      window.clearTimeout(timerId);
+    } else {
+      tick();
+    }
+  });
+
+  tick();
+</script>

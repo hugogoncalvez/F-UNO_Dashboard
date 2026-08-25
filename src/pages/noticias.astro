@@ -1,0 +1,113 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NewsGrid from "../components/NewsGrid.astro";
+import { getNews } from "../lib/news";
+
+const news = await getNews(30);
+
+const featuredNews = news.length > 0 ? news[0] : null;
+const restNews = news.length > 1 ? news.slice(1) : [];
+
+function timeAgo(date: string | null): string {
+  if (!date) return "";
+  const then = new Date(date).getTime();
+  if (Number.isNaN(then)) return "";
+  const mins = Math.floor((Date.now() - then) / 60000);
+  if (mins < 1) return "Ahora mismo";
+  if (mins < 60) return `Hace ${mins} min`;
+  const hours = Math.floor(mins / 60);
+  if (hours < 24) return `Hace ${hours} h`;
+  const days = Math.floor(hours / 24);
+  return `Hace ${days} d`;
+}
+---
+
+<Layout title="Noticias F1 · F-Uno Center" description="Últimas noticias de Formula 1 agregadas de los feeds.">
+  <div class="mb-8 border-b border-border-subtle pb-4">
+    <h1 class="font-display text-4xl font-bold text-text-primary uppercase tracking-tighter">Últimas Noticias</h1>
+    <p class="text-text-secondary mt-1">
+      Mantente al día con la actualidad de Formula 1.
+    </p>
+  </div>
+
+  {
+    featuredNews ? (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+        <!-- Featured Article (Spans 2 columns on tablet/desktop) -->
+        <article class="md:col-span-2 md:row-span-2 group bg-panel-surface border border-border-subtle rounded-2xl overflow-hidden hover:scale-[1.01] transition-transform duration-300 flex flex-col cursor-pointer relative shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+          <a href={featuredNews.link} target="_blank" rel="noopener noreferrer" class="absolute inset-0 z-30"></a>
+          
+          {
+            featuredNews.imageUrl ? (
+              <img src={featuredNews.imageUrl} alt={featuredNews.title} class="h-64 md:h-full w-full object-cover absolute inset-0 z-0 opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
+            ) : (
+              <div class="h-64 md:h-full w-full bg-surface-container-high absolute inset-0 z-0 opacity-60 group-hover:opacity-80 transition-opacity duration-300 radial-gradient-hero flex items-center justify-center">
+                 <span class="material-symbols-outlined text-border-subtle text-8xl">newspaper</span>
+              </div>
+            )
+          }
+          
+          <div class="absolute inset-0 bg-gradient-to-t from-carbon-bg via-carbon-bg/80 to-transparent z-10"></div>
+          
+          <div class="relative z-20 p-6 flex flex-col gap-3 flex-grow justify-end h-full min-h-[350px]">
+            <div class="flex justify-between items-center text-xs font-bold tracking-widest text-primary-container uppercase mb-2">
+              <span class="flex items-center gap-1 bg-surface-container/80 px-2 py-0.5 rounded backdrop-blur-sm border border-border-subtle">
+                <span class="material-symbols-outlined text-[14px]">bolt</span>
+                {featuredNews.source}
+              </span>
+              {featuredNews.date && <span class="text-text-secondary bg-carbon-bg/60 px-2 py-0.5 rounded backdrop-blur-sm">{timeAgo(featuredNews.date)}</span>}
+            </div>
+            <h3 class="font-display text-3xl sm:text-4xl text-text-primary leading-none uppercase drop-shadow-lg group-hover:text-primary transition-colors">
+              {featuredNews.title}
+            </h3>
+            {featuredNews.description && (
+              <p class="text-sm text-on-surface mt-2 max-w-2xl drop-shadow line-clamp-3">
+                {featuredNews.description}
+              </p>
+            )}
+          </div>
+        </article>
+
+        <!-- Standard Cards from NewsGrid -->
+        <div class="contents">
+          {restNews.slice(0, 2).map((item) => (
+             <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group bg-panel-surface rounded-2xl border border-border-subtle overflow-hidden hover:bg-surface-variant/30 hover:border-text-secondary transition-all duration-150 flex flex-col"
+            >
+              <div class="h-48 w-full relative border-b border-border-subtle group-hover:brightness-110 transition-all flex items-center justify-center bg-surface-container-lowest overflow-hidden">
+                {
+                  item.imageUrl ? (
+                    <img src={item.imageUrl} alt={item.title} class="h-full w-full object-cover" />
+                  ) : (
+                    <div class="w-full h-full flex items-center justify-center radial-gradient-hero">
+                      <span class="material-symbols-outlined text-border-subtle text-6xl">newspaper</span>
+                    </div>
+                  )
+                }
+              </div>
+              <div class="p-4 flex flex-col gap-2 flex-grow">
+                <div class="flex justify-between items-center text-[10px] font-bold tracking-widest text-text-secondary uppercase">
+                  <span class="text-primary">{item.source}</span>
+                  {item.date && <span>{timeAgo(item.date)}</span>}
+                </div>
+                <h3 class="font-display text-xl font-semibold text-text-primary leading-tight uppercase group-hover:text-primary transition-colors line-clamp-3">
+                  {item.title}
+                </h3>
+                {item.description && (
+                  <p class="text-sm text-text-secondary mt-auto line-clamp-3">{item.description}</p>
+                )}
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    ) : null
+  }
+  
+  <div class="mt-6">
+    <NewsGrid items={restNews.slice(2)} cols={3} />
+  </div>
+</Layout>

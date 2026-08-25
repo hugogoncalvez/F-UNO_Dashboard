@@ -1,0 +1,614 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="GP Actual — Resultados del Fin de Semana | F1 2026"
+  description="Resultados en tiempo real del Gran Premio actual. Consulta los tiempos de práctica, clasificación y carrera del fin de semana de Fórmula 1."
+>
+  <!-- Loading overlay -->
+  <div id="loading-overlay" class="fixed inset-0 z-50 flex items-center justify-center bg-background/80 backdrop-blur-sm">
+    <div class="flex flex-col items-center gap-4">
+      <div class="w-10 h-10 rounded-full border-2 border-primary border-t-transparent animate-spin"></div>
+      <span class="text-on-surface-variant text-sm font-medium">Cargando fin de semana...</span>
+    </div>
+  </div>
+
+  <div id="main-content" class="space-y-6 opacity-0 transition-opacity duration-500">
+
+    <!-- Hero Header -->
+    <div class="bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 md:p-8 backdrop-blur-xl shadow-2xl">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div class="flex-1">
+          <div class="flex items-center gap-3 mb-3">
+            <span id="hero-flag" class="text-3xl">🏁</span>
+            <div>
+              <div class="flex items-center gap-2 flex-wrap">
+                <span id="hero-round" class="px-3 py-1 rounded-full bg-primary-container/20 border border-primary-container/40 text-primary text-xs font-bold uppercase tracking-wider">GP Actual</span>
+                <span id="hero-dates" class="text-xs text-on-surface-variant"></span>
+              </div>
+              <h1 id="hero-name" class="text-display-lg font-bold text-on-surface uppercase tracking-tight mt-1">Cargando...</h1>
+              <p id="hero-circuit" class="text-sm text-on-surface-variant mt-0.5"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Selector de Sesión -->
+        <div class="bg-surface-container border border-border-subtle rounded-xl p-4 min-w-[260px] flex flex-col gap-2">
+          <label class="text-[11px] font-label-caps text-on-surface-variant uppercase tracking-wider">Sesión del fin de semana</label>
+          <select id="session-select" class="bg-transparent text-on-surface font-semibold text-sm outline-none cursor-pointer border-none">
+            <option value="">Cargando sesiones...</option>
+          </select>
+          <div id="session-status-badge" class="hidden"></div>
+        </div>
+      </div>
+
+      <!-- Session summary bar -->
+      <div id="summary-bar" class="hidden mt-5 pt-5 border-t border-border-subtle/60 grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="text-center">
+          <p class="text-[10px] font-label-caps text-on-surface-variant uppercase mb-1">Sesión</p>
+          <p id="sum-session" class="font-bold text-on-surface text-sm">--</p>
+        </div>
+        <div class="text-center">
+          <p class="text-[10px] font-label-caps text-on-surface-variant uppercase mb-1">Mejor Vuelta</p>
+          <p id="sum-best" class="font-bold text-primary font-mono text-sm">--</p>
+        </div>
+        <div class="text-center">
+          <p class="text-[10px] font-label-caps text-on-surface-variant uppercase mb-1">Temperatura Pista</p>
+          <p id="sum-track-temp" class="font-bold text-on-surface text-sm">--</p>
+        </div>
+        <div class="text-center">
+          <p class="text-[10px] font-label-caps text-on-surface-variant uppercase mb-1">Estado</p>
+          <p id="sum-flag" class="font-bold text-sm">--</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Session not available state -->
+    <div id="no-data-panel" class="hidden bg-panel-surface/80 border border-border-subtle rounded-2xl p-12 backdrop-blur-xl shadow-2xl text-center">
+      <div class="text-5xl mb-4">⏳</div>
+      <h2 class="text-headline-md font-bold text-on-surface mb-2">Sesión no disponible aún</h2>
+      <p id="no-data-msg" class="text-on-surface-variant">Los resultados se publicarán una vez que la sesión finalice.</p>
+    </div>
+
+    <!-- Results Table -->
+    <div id="results-panel" class="hidden bg-panel-surface/80 border border-border-subtle rounded-2xl backdrop-blur-xl shadow-2xl overflow-hidden">
+      <!-- Table header -->
+      <div class="px-6 py-4 border-b border-border-subtle flex items-center justify-between">
+        <h2 id="table-title" class="font-bold text-on-surface text-headline-sm uppercase tracking-tight">Resultados</h2>
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span class="text-xs text-on-surface-variant font-medium">Datos OpenF1</span>
+        </div>
+      </div>
+
+      <div class="overflow-x-auto hide-scrollbar">
+        <table class="w-full text-left border-collapse min-w-[820px]">
+          <thead>
+            <tr class="border-b border-border-subtle text-[11px] font-label-caps text-on-surface-variant uppercase bg-surface-container-low/50">
+              <th class="py-3 px-3 text-center w-12">Pos</th>
+              <th class="py-3 px-3">Piloto</th>
+              <th class="py-3 px-3">Equipo</th>
+              <th class="py-3 px-3 text-center">Neumático</th>
+              <th class="py-3 px-3 text-center">Mejor Vuelta</th>
+              <th class="py-3 px-3 text-center">S1</th>
+              <th class="py-3 px-3 text-center">S2</th>
+              <th class="py-3 px-3 text-center">S3</th>
+              <th class="py-3 px-3 text-right">Diferencia</th>
+            </tr>
+          </thead>
+          <tbody id="results-tbody" class="divide-y divide-border-subtle/40 text-sm font-data-tabular">
+            <tr>
+              <td colspan="9" class="py-12 text-center text-on-surface-variant">
+                <span class="animate-pulse">Cargando datos de sesión...</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Weather Panel -->
+    <div id="weather-panel" class="hidden bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl shadow-2xl">
+      <h3 class="font-bold text-on-surface text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+        <span>🌡️</span> Condiciones Climáticas
+      </h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4" id="weather-grid">
+      </div>
+    </div>
+
+    <!-- Race Control Messages -->
+    <div id="racecontrol-panel" class="hidden bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl shadow-2xl">
+      <h3 class="font-bold text-on-surface text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+        <span>📻</span> Mensajes de Dirección de Carrera
+      </h3>
+      <div id="racecontrol-list" class="space-y-2 max-h-64 overflow-y-auto hide-scrollbar"></div>
+    </div>
+
+  </div>
+</Layout>
+
+<style>
+  .compound-soft { background: rgba(239,68,68,0.15); color: #f87171; border-color: rgba(239,68,68,0.35); }
+  .compound-medium { background: rgba(234,179,8,0.15); color: #facc15; border-color: rgba(234,179,8,0.35); }
+  .compound-hard { background: rgba(203,213,225,0.15); color: #e2e8f0; border-color: rgba(203,213,225,0.35); }
+  .compound-inter { background: rgba(52,211,153,0.15); color: #34d399; border-color: rgba(52,211,153,0.35); }
+  .compound-wet { background: rgba(59,130,246,0.15); color: #60a5fa; border-color: rgba(59,130,246,0.35); }
+  .sector-best { background: rgba(168,85,247,0.2); color: #c084fc; border-radius: 4px; padding: 1px 4px; }
+  .sector-personal { background: rgba(34,197,94,0.2); color: #4ade80; border-radius: 4px; padding: 1px 4px; }
+</style>
+
+<script>
+  const OPENF1 = "https://api.openf1.org/v1";
+  const SLEEP = (ms: number) => new Promise(r => setTimeout(r, ms));
+
+  let globalBlocked = false; // true when OpenF1 returns 401 (live session in progress)
+
+  // ---- Helpers ----
+  async function fetchSeq(url: string, delayMs = 300): Promise<any[]> {
+    await SLEEP(delayMs);
+    try {
+      const res = await fetch(url);
+      if (res.status === 401) {
+        globalBlocked = true;
+        return [];
+      }
+      if (!res.ok) return [];
+      const d = await res.json();
+      return Array.isArray(d) ? d : [];
+    } catch { return []; }
+  }
+
+  function fmtTime(sec: number | null | undefined): string {
+    if (!sec || sec <= 0) return "--:--.---";
+    const m = Math.floor(sec / 60);
+    const s = (sec % 60).toFixed(3).padStart(6, "0");
+    return m > 0 ? `${m}:${s}` : sec.toFixed(3);
+  }
+
+  function fmtGap(gap: number | null, leaderTime: number | null): string {
+    if (gap === null || leaderTime === null || gap === leaderTime) return "—  LÍDER";
+    const diff = gap - leaderTime;
+    return `+${diff.toFixed(3)}`;
+  }
+
+  function compoundClass(c: string): string {
+    const n = (c ?? "").toUpperCase();
+    if (n.includes("SOFT")) return "compound-soft";
+    if (n.includes("MEDIUM")) return "compound-medium";
+    if (n.includes("HARD")) return "compound-hard";
+    if (n.includes("INTER")) return "compound-inter";
+    if (n.includes("WET")) return "compound-wet";
+    return "compound-hard";
+  }
+
+  function compoundLabel(c: string): string {
+    const n = (c ?? "").toUpperCase();
+    if (n.includes("SOFT")) return "S";
+    if (n.includes("MEDIUM")) return "M";
+    if (n.includes("HARD")) return "H";
+    if (n.includes("INTER")) return "I";
+    if (n.includes("WET")) return "W";
+    return "?";
+  }
+
+  function teamColor(hex: string | undefined): string {
+    return hex ? `#${hex.replace("#", "")}` : "#a1a1aa";
+  }
+
+  function flagColor(flag: string): string {
+    const f = (flag ?? "").toUpperCase();
+    if (f.includes("GREEN")) return "text-emerald-400";
+    if (f.includes("YELLOW") || f.includes("AMARILL")) return "text-yellow-400";
+    if (f.includes("RED") || f.includes("ROJO")) return "text-red-400";
+    if (f.includes("SC") || f.includes("SAFETY")) return "text-yellow-300";
+    if (f.includes("CHEQUERED") || f.includes("CHECK")) return "text-white";
+    return "text-on-surface";
+  }
+
+  function flagEmoji(flag: string): string {
+    const f = (flag ?? "").toUpperCase();
+    if (f.includes("GREEN")) return "🟢";
+    if (f.includes("YELLOW")) return "🟡";
+    if (f.includes("RED")) return "🔴";
+    if (f.includes("SAFETY")) return "🟡 SC";
+    if (f.includes("CHEQUERED") || f.includes("CHECK")) return "🏁";
+    return "⬜";
+  }
+
+  // Country flag emojis based on circuit location
+  const COUNTRY_FLAGS: Record<string, string> = {
+    "Netherlands": "🇳🇱", "Italy": "🇮🇹", "Monaco": "🇲🇨", "Spain": "🇪🇸",
+    "United Kingdom": "🇬🇧", "Belgium": "🇧🇪", "Hungary": "🇭🇺", "Austria": "🇦🇹",
+    "France": "🇫🇷", "Germany": "🇩🇪", "Japan": "🇯🇵", "China": "🇨🇳",
+    "Australia": "🇦🇺", "Bahrain": "🇧🇭", "Saudi Arabia": "🇸🇦", "Azerbaijan": "🇦🇿",
+    "United States": "🇺🇸", "Mexico": "🇲🇽", "Brazil": "🇧🇷", "Qatar": "🇶🇦",
+    "UAE": "🇦🇪", "Canada": "🇨🇦", "Singapore": "🇸🇬", "Miami": "🇺🇸",
+    "Las Vegas": "🇺🇸",
+  };
+
+  function getFlag(country: string): string {
+    for (const [k, v] of Object.entries(COUNTRY_FLAGS)) {
+      if (country?.toLowerCase().includes(k.toLowerCase()) || k.toLowerCase().includes(country?.toLowerCase() ?? "")) return v;
+    }
+    return "🏁";
+  }
+
+  function sessionTypeLabel(type: string, name: string): string {
+    const t = (type ?? "").toLowerCase();
+    const n = (name ?? "").toLowerCase();
+    if (n.includes("sprint qualifying") || n.includes("sprint shootout")) return "⚡ Sprint Qualifying";
+    if (n.includes("sprint")) return "⚡ Sprint";
+    if (t === "practice" && n.includes("1")) return "🔵 Práctica Libre 1";
+    if (t === "practice" && n.includes("2")) return "🔵 Práctica Libre 2";
+    if (t === "practice" && n.includes("3")) return "🔵 Práctica Libre 3";
+    if (t === "qualifying") return "⏱️ Clasificación";
+    if (t === "race") return "🏁 Carrera";
+    return name || type;
+  }
+
+  // ---- DOM refs ----
+  const loadingOverlay = document.getElementById("loading-overlay")!;
+  const mainContent = document.getElementById("main-content")!;
+  const heroFlag = document.getElementById("hero-flag")!;
+  const heroRound = document.getElementById("hero-round")!;
+  const heroDates = document.getElementById("hero-dates")!;
+  const heroName = document.getElementById("hero-name")!;
+  const heroCircuit = document.getElementById("hero-circuit")!;
+  const sessionSelect = document.getElementById("session-select") as HTMLSelectElement;
+  const sessionStatusBadge = document.getElementById("session-status-badge")!;
+  const summaryBar = document.getElementById("summary-bar")!;
+  const sumSession = document.getElementById("sum-session")!;
+  const sumBest = document.getElementById("sum-best")!;
+  const sumTrackTemp = document.getElementById("sum-track-temp")!;
+  const sumFlag = document.getElementById("sum-flag")!;
+  const noDataPanel = document.getElementById("no-data-panel")!;
+  const noDataMsg = document.getElementById("no-data-msg")!;
+  const resultsPanel = document.getElementById("results-panel")!;
+  const tableTitle = document.getElementById("table-title")!;
+  const resultsTbody = document.getElementById("results-tbody")!;
+  const weatherPanel = document.getElementById("weather-panel")!;
+  const weatherGrid = document.getElementById("weather-grid")!;
+  const raceControlPanel = document.getElementById("racecontrol-panel")!;
+  const raceControlList = document.getElementById("racecontrol-list")!;
+
+  function showPanel(name: "none" | "nodata" | "results") {
+    noDataPanel.classList.toggle("hidden", name !== "nodata");
+    resultsPanel.classList.toggle("hidden", name !== "results");
+  }
+
+  // ---- Weather render ----
+  function renderWeather(weatherList: any[]) {
+    if (!weatherList.length) { weatherPanel.classList.add("hidden"); return; }
+    const w = weatherList[weatherList.length - 1];
+    weatherPanel.classList.remove("hidden");
+    weatherGrid.innerHTML = [
+      { label: "Aire", value: `${w.air_temperature?.toFixed(1) ?? "--"}°C`, icon: "🌡️" },
+      { label: "Pista", value: `${w.track_temperature?.toFixed(1) ?? "--"}°C`, icon: "🛣️" },
+      { label: "Humedad", value: `${w.humidity?.toFixed(0) ?? "--"}%`, icon: "💧" },
+      { label: "Presión", value: `${w.pressure?.toFixed(1) ?? "--"} hPa`, icon: "📊" },
+      { label: "Viento", value: `${w.wind_speed?.toFixed(1) ?? "--"} m/s`, icon: "💨" },
+      { label: "Lluvia", value: w.rainfall ? "Sí 🌧️" : "No ☀️", icon: "🌧️" },
+    ].map(c => `
+      <div class="bg-surface-container/60 rounded-xl p-3 text-center border border-border-subtle/50">
+        <p class="text-xs text-on-surface-variant mb-1">${c.label}</p>
+        <p class="font-bold text-on-surface text-sm">${c.value}</p>
+      </div>
+    `).join("");
+
+    // Update summary bar
+    sumTrackTemp.textContent = `${w.track_temperature?.toFixed(1) ?? "--"}°C`;
+  }
+
+  // ---- Race control render ----
+  function renderRaceControl(msgs: any[]) {
+    if (!msgs.length) { raceControlPanel.classList.add("hidden"); return; }
+    raceControlPanel.classList.remove("hidden");
+    const sorted = [...msgs].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 20);
+    const latestFlag = sorted.find(m => m.flag);
+    if (latestFlag) {
+      sumFlag.className = `font-bold text-sm ${flagColor(latestFlag.flag)}`;
+      sumFlag.textContent = `${flagEmoji(latestFlag.flag)} ${latestFlag.flag}`;
+    }
+
+    raceControlList.innerHTML = sorted.map(m => {
+      const time = new Date(m.date).toLocaleTimeString("es-AR", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+      const catColor = m.category === "FLAG" ? "text-yellow-400" : m.category === "STEWARDS" ? "text-red-400" : m.category === "PIT" ? "text-cyan-400" : "text-on-surface-variant";
+      return `
+        <div class="flex items-start gap-3 py-2 px-3 rounded-lg bg-surface-container/40 border border-border-subtle/30">
+          <span class="text-xs text-on-surface-variant font-mono shrink-0 mt-0.5">${time}</span>
+          <span class="text-xs font-bold uppercase ${catColor} shrink-0">${m.category ?? ""}</span>
+          <span class="text-xs text-on-surface">${m.message ?? ""}</span>
+        </div>`;
+    }).join("");
+  }
+
+  // ---- Results render ----
+  function renderResults(drivers: any[], laps: any[], stints: any[]) {
+    if (!drivers.length && !laps.length) {
+      resultsTbody.innerHTML = `<tr><td colspan="9" class="py-12 text-center text-on-surface-variant">No hay datos disponibles para esta sesión todavía.</td></tr>`;
+      return;
+    }
+
+    // Build best lap per driver
+    const bestLapMap = new Map<number, { time: number; s1: number | null; s2: number | null; s3: number | null }>();
+    for (const l of laps) {
+      if (!l.driver_number || !l.lap_duration) continue;
+      const existing = bestLapMap.get(l.driver_number);
+      if (!existing || l.lap_duration < existing.time) {
+        bestLapMap.set(l.driver_number, {
+          time: l.lap_duration,
+          s1: l.duration_sector_1 ?? null,
+          s2: l.duration_sector_2 ?? null,
+          s3: l.duration_sector_3 ?? null,
+        });
+      }
+    }
+
+    // Session best sectors
+    let bestS1 = Infinity, bestS2 = Infinity, bestS3 = Infinity, bestOverall = Infinity;
+    for (const [, v] of bestLapMap) {
+      if (v.time < bestOverall) bestOverall = v.time;
+      if (v.s1 && v.s1 < bestS1) bestS1 = v.s1;
+      if (v.s2 && v.s2 < bestS2) bestS2 = v.s2;
+      if (v.s3 && v.s3 < bestS3) bestS3 = v.s3;
+    }
+
+    // Current compound per driver from stints
+    const compoundMap = new Map<number, string>();
+    for (const s of stints) {
+      const existing = compoundMap.get(s.driver_number);
+      if (!existing) compoundMap.set(s.driver_number, s.compound ?? "UNKNOWN");
+      // prefer latest stint
+    }
+    for (const s of [...stints].sort((a,b) => a.stint_number - b.stint_number)) {
+      if (s.compound) compoundMap.set(s.driver_number, s.compound);
+    }
+
+    // Last known position per driver
+    const posMap = new Map<number, number>();
+    for (const d of drivers) {
+      if (d.driver_number) posMap.set(d.driver_number, d.position ?? 99);
+    }
+
+    // Build rows from drivers list (sorted by best lap time if available, else position)
+    const rows = [...drivers].sort((a, b) => {
+      const aLap = bestLapMap.get(a.driver_number)?.time ?? Infinity;
+      const bLap = bestLapMap.get(b.driver_number)?.time ?? Infinity;
+      if (aLap !== bLap) return aLap - bLap;
+      return (a.position ?? 99) - (b.position ?? 99);
+    });
+
+    // Update summary best lap
+    if (bestOverall !== Infinity) {
+      sumBest.textContent = fmtTime(bestOverall);
+    }
+
+    let leaderBest: number | null = bestOverall !== Infinity ? bestOverall : null;
+
+    resultsTbody.innerHTML = rows.map((d, idx) => {
+      const lap = bestLapMap.get(d.driver_number);
+      const compound = compoundMap.get(d.driver_number) ?? "UNKNOWN";
+      const cCls = compoundClass(compound);
+      const cLabel = compoundLabel(compound);
+      const color = teamColor(d.team_colour);
+      const pos = idx + 1;
+
+      const s1 = lap?.s1 ?? null;
+      const s2 = lap?.s2 ?? null;
+      const s3 = lap?.s3 ?? null;
+
+      const s1Cls = s1 !== null && Math.abs(s1 - bestS1) < 0.001 ? "sector-best" : (s1 !== null ? "sector-personal" : "");
+      const s2Cls = s2 !== null && Math.abs(s2 - bestS2) < 0.001 ? "sector-best" : (s2 !== null ? "sector-personal" : "");
+      const s3Cls = s3 !== null && Math.abs(s3 - bestS3) < 0.001 ? "sector-best" : (s3 !== null ? "sector-personal" : "");
+
+      const gapDisplay = pos === 1 || !lap || !leaderBest
+        ? `<span class="text-primary font-bold">LÍDER</span>`
+        : `<span class="text-on-surface-variant">+${(lap.time - leaderBest).toFixed(3)}</span>`;
+
+      return `
+        <tr class="hover:bg-surface-container-high/40 transition-colors group">
+          <td class="py-3.5 px-3 text-center">
+            <span class="font-bold ${pos <= 3 ? "text-primary-container" : "text-on-surface-variant"} text-base">${pos}</span>
+          </td>
+          <td class="py-3.5 px-3">
+            <div class="flex items-center gap-2.5">
+              <span class="w-1 h-5 rounded-full shrink-0" style="background-color: ${color}"></span>
+              <div>
+                <span class="font-bold text-on-surface uppercase tracking-tight">${d.full_name ?? d.name_acronym ?? `#${d.driver_number}`}</span>
+                <span class="text-xs text-on-surface-variant font-mono ml-2">${d.name_acronym ?? ""}</span>
+              </div>
+            </div>
+          </td>
+          <td class="py-3.5 px-3 font-medium text-on-surface-variant text-xs">${d.team_name ?? "--"}</td>
+          <td class="py-3.5 px-3 text-center">
+            <span class="text-xs font-bold px-2 py-0.5 rounded border ${cCls}">${cLabel}</span>
+          </td>
+          <td class="py-3.5 px-3 text-center font-mono font-bold text-on-surface text-xs">
+            ${lap ? fmtTime(lap.time) : "<span class='text-on-surface-variant/40'>--</span>"}
+          </td>
+          <td class="py-3.5 px-3 text-center font-mono text-xs">
+            <span class="${s1Cls}">${s1 ? s1.toFixed(3) : "<span class='text-on-surface-variant/30'>--</span>"}</span>
+          </td>
+          <td class="py-3.5 px-3 text-center font-mono text-xs">
+            <span class="${s2Cls}">${s2 ? s2.toFixed(3) : "<span class='text-on-surface-variant/30'>--</span>"}</span>
+          </td>
+          <td class="py-3.5 px-3 text-center font-mono text-xs">
+            <span class="${s3Cls}">${s3 ? s3.toFixed(3) : "<span class='text-on-surface-variant/30'>--</span>"}</span>
+          </td>
+          <td class="py-3.5 px-3 text-right font-mono text-xs">${gapDisplay}</td>
+        </tr>`;
+    }).join("");
+  }
+
+  // ---- Load a session's data ----
+  async function loadSession(sessionKey: number) {
+    showPanel("none");
+    resultsTbody.innerHTML = `<tr><td colspan="9" class="py-12 text-center text-on-surface-variant"><span class="animate-pulse">Cargando datos...</span></td></tr>`;
+    weatherPanel.classList.add("hidden");
+    raceControlPanel.classList.add("hidden");
+    summaryBar.classList.add("hidden");
+
+    const [drivers, laps, stints, weather, raceControl] = await Promise.all([
+      fetchSeq(`${OPENF1}/drivers?session_key=${sessionKey}`, 0),
+      fetchSeq(`${OPENF1}/laps?session_key=${sessionKey}`, 350),
+      fetchSeq(`${OPENF1}/stints?session_key=${sessionKey}`, 350),
+      fetchSeq(`${OPENF1}/weather?session_key=${sessionKey}`, 350),
+      fetchSeq(`${OPENF1}/race_control?session_key=${sessionKey}`, 350),
+    ]);
+
+    const hasData = drivers.length > 0 || laps.length > 0;
+
+    if (!hasData) {
+      showPanel("nodata");
+      noDataMsg.textContent = "No hay datos disponibles aún para esta sesión. Volvé a checar después de que finalice.";
+      return;
+    }
+
+    showPanel("results");
+    summaryBar.classList.remove("hidden");
+    renderResults(drivers, laps, stints);
+    renderWeather(weather);
+    renderRaceControl(raceControl);
+  }
+
+  // ---- Init: find current meeting and sessions ----
+  let retryTimer: number | undefined;
+
+  function showBlocked() {
+    loadingOverlay.classList.add("hidden");
+    mainContent.style.opacity = "1";
+    heroName.textContent = "Sesión en curso";
+    heroCircuit.textContent = "El acceso público a OpenF1 está temporalmente restringido mientras hay una sesión activa.";
+    sessionSelect.innerHTML = `<option value="">Disponible tras la sesión activa</option>`;
+    noDataPanel.classList.remove("hidden");
+    resultsPanel.classList.add("hidden");
+
+    const icon = noDataPanel.querySelector(".text-5xl")!;
+    const h2 = noDataPanel.querySelector("h2")!;
+    icon.textContent = "🔒";
+    h2.textContent = "Acceso restringido — Sesión en curso";
+    noDataMsg.innerHTML = `
+      <strong class="text-on-surface">OpenF1 bloquea el acceso público mientras hay una sesión activa.</strong><br>
+      Esto incluye los resultados de sesiones ya finalizadas.<br>
+      Los datos se liberarán automáticamente cuando la sesión termine.<br><br>
+      <span id="retry-countdown" class="text-primary font-mono font-bold text-lg">Reintentando en 60s...</span>
+    `;
+
+    let secs = 60;
+    const countdown = document.getElementById("retry-countdown");
+    retryTimer = window.setInterval(async () => {
+      secs--;
+      if (countdown) countdown.textContent = `Reintentando en ${secs}s...`;
+      if (secs <= 0) {
+        window.clearInterval(retryTimer);
+        if (countdown) countdown.textContent = "Reintentando...";
+        globalBlocked = false;
+        await init();
+      }
+    }, 1000);
+  }
+
+  async function init() {
+    // Get latest meeting sessions
+    const sessions = await fetchSeq(`${OPENF1}/sessions?year=2026`, 0);
+
+    // Handle 401: OpenF1 blocks all access during live sessions
+    if (globalBlocked) {
+      showBlocked();
+      return;
+    }
+
+    if (!sessions.length) {
+      loadingOverlay.classList.add("hidden");
+      mainContent.style.opacity = "1";
+      heroName.textContent = "Sin datos disponibles";
+      heroCircuit.textContent = "No se pudo obtener información del fin de semana actual.";
+      showPanel("nodata");
+      noDataMsg.textContent = "OpenF1 no tiene datos disponibles para el fin de semana actual todavía.";
+      return;
+    }
+
+    const sortedAllSessions = [...sessions].sort((a, b) =>
+      new Date(a.date_start).getTime() - new Date(b.date_start).getTime()
+    );
+
+    // Find the meeting of the last session that has already started (or is about to start)
+    const now = Date.now();
+    const lastStarted = sortedAllSessions.findLast(s => new Date(s.date_start).getTime() <= now + 60 * 60_000);
+    const targetMeetingKey = lastStarted ? lastStarted.meeting_key : sortedAllSessions[0]?.meeting_key;
+
+    // Filter sessions for the target meeting
+    const meetingSessions = sortedAllSessions.filter(s => s.meeting_key === targetMeetingKey);
+
+    const sortedSessions = [...meetingSessions].sort((a, b) =>
+      new Date(a.date_start).getTime() - new Date(b.date_start).getTime()
+    );
+
+    // Hero info from first session of the meeting
+    const first = sortedSessions[0];
+    const last = sortedSessions[sortedSessions.length - 1];
+
+    heroFlag.textContent = getFlag(first.country_name ?? "");
+    heroRound.textContent = `GP Actual · ${first.year ?? 2026}`;
+    heroDates.textContent = `${new Date(first.date_start).toLocaleDateString("es-AR", { day: "numeric", month: "long" })} – ${new Date(last.date_start).toLocaleDateString("es-AR", { day: "numeric", month: "long" })}`;
+    heroName.textContent = (first.meeting_official_name ?? first.location ?? first.circuit_short_name ?? "Gran Premio").toUpperCase();
+    heroCircuit.textContent = `${first.circuit_short_name ?? ""} · ${first.location ?? ""}, ${first.country_name ?? ""}`;
+
+    // Build session options: only show sessions that have already started (past or in progress)
+    const availableSessions = sortedSessions.filter(s => new Date(s.date_start).getTime() <= now + 60 * 60_000);
+
+    // Populate selector
+    if (availableSessions.length === 0) {
+      sessionSelect.innerHTML = `<option value="">Sin sesiones disponibles aún</option>`;
+      showPanel("nodata");
+      noDataMsg.textContent = "Aún no comenzó ninguna sesión del fin de semana. ¡Volvé cuando empiece la acción!";
+    } else {
+      sessionSelect.innerHTML = availableSessions.map(s => {
+        const isFinished = new Date(s.date_end).getTime() < now;
+        const isLive = new Date(s.date_start).getTime() <= now && new Date(s.date_end).getTime() >= now;
+        const label = sessionTypeLabel(s.session_type, s.session_name);
+        const suffix = isLive ? " 🔴 EN VIVO" : isFinished ? " ✓" : "";
+        return `<option value="${s.session_key}">${label}${suffix}</option>`;
+      }).join("");
+    }
+
+    // Default: most recent finished or live session
+    const defaultSession = availableSessions.findLast(s => new Date(s.date_start).getTime() <= now)
+      ?? availableSessions[0];
+
+    if (defaultSession) {
+      sessionSelect.value = String(defaultSession.session_key);
+      sumSession.textContent = sessionTypeLabel(defaultSession.session_type, defaultSession.session_name);
+      tableTitle.textContent = `Resultados — ${sessionTypeLabel(defaultSession.session_type, defaultSession.session_name)}`;
+    }
+
+    // Hide loading
+    loadingOverlay.classList.add("hidden");
+    mainContent.style.opacity = "1";
+
+    // Load default session
+    if (defaultSession) {
+      await loadSession(defaultSession.session_key);
+    }
+
+    // Handle blocked state discovered during session load
+    if (globalBlocked) {
+      showBlocked();
+      return;
+    }
+
+    // Listen for session changes
+    sessionSelect.addEventListener("change", async () => {
+      const key = Number(sessionSelect.value);
+      const sel = availableSessions.find(s => s.session_key === key);
+      if (sel) {
+        sumSession.textContent = sessionTypeLabel(sel.session_type, sel.session_name);
+        tableTitle.textContent = `Resultados — ${sessionTypeLabel(sel.session_type, sel.session_name)}`;
+      }
+      await loadSession(key);
+    });
+  }
+
+  init();
+</script>

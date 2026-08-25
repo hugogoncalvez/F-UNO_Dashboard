@@ -1,0 +1,27 @@
+{
+  "name": "f-uno-center",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "F-Uno Center - dashboard de Formula 1 con OpenF1, Jolpica y noticias RSS",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.0.0",
+    "fast-xml-parser": "^4.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.5.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
+  }
+}

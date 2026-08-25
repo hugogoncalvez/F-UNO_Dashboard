@@ -1,0 +1,140 @@
+---
+import type { Race } from "../lib/types";
+import { countryFlag, headshotTransform } from "../lib/utils";
+import Circuit3D from "./Circuit3D.astro";
+import CircuitDialog from "./CircuitDialog.astro";
+import LocalTime from "./LocalTime.astro";
+
+interface PodiumDriver {
+  name: string;
+  headshot: string | null;
+  teamColour: string;
+}
+
+interface Props {
+  races: Race[];
+  driversByCode?: Record<string, PodiumDriver>;
+}
+
+const { races, driversByCode = {} } = Astro.props;
+
+function monthShort(date: string): string {
+  return new Date(`${date}T12:00:00`).toLocaleDateString("es-ES", { month: "short" }).toUpperCase().replace(".", "");
+}
+
+function day(date: string): string {
+  const d = new Date(`${date}T12:00:00`);
+  return String(d.getDate()).padStart(2, "0");
+}
+---
+
+{
+  races.length ? (
+    <div class="flex flex-col gap-4">
+      {
+        races.map((race) => (
+          <article
+            class:list={[
+              "bg-panel-surface rounded-2xl border border-border-subtle p-4 lg:p-6 hover:bg-surface-container-low transition-colors duration-150 flex flex-col lg:flex-row gap-5 lg:items-center relative overflow-hidden group",
+              race.status === "next" ? "border-primary-container/50" : "",
+            ]}
+          >
+            <div
+              class:list={[
+                "absolute left-0 top-0 bottom-0 w-1",
+                race.status === "past" ? "bg-surface-variant" : "bg-primary-container",
+              ]}
+            />
+            <div class="w-20 lg:w-24 shrink-0 border-r border-border-subtle pr-4 flex flex-col items-center lg:items-start">
+              <div class:list={[
+                "font-label-caps text-label-caps mb-1",
+                race.status === "past" ? "text-on-surface-variant" : "text-primary-container",
+              ]}>
+                RND {String(race.round).padStart(2, "0")}
+              </div>
+              <div class="font-headline-md text-headline-md text-on-surface leading-none">{day(race.date)}</div>
+              <div class="font-body-sm text-on-surface-variant mt-1">{monthShort(race.date)}</div>
+            </div>
+
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-3 mb-1 flex-wrap">
+                {countryFlag(race.country) && <span class="text-2xl shrink-0">{countryFlag(race.country)}</span>}
+                <h3 class="font-headline-sm text-headline-sm text-on-surface truncate">{race.raceName}</h3>
+                {race.status === "past" ? (
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-caps text-[10px] uppercase tracking-wider border border-border-subtle shrink-0">
+                    Finalizado
+                  </span>
+                ) : (
+                  <span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary-container font-label-caps text-[10px] uppercase tracking-wider pulse-red border border-primary-container/50 shrink-0">
+                    Próximo
+                  </span>
+                )}
+                {race.sprint && (
+                  <span class="px-2 py-0.5 rounded bg-tertiary-container/20 text-tertiary font-label-caps text-[10px] uppercase tracking-wider border border-tertiary/30 shrink-0">
+                    Sprint
+                  </span>
+                )}
+              </div>
+              <div class="flex items-center gap-4 text-on-surface-variant font-body-sm flex-wrap">
+                <span class="flex items-center gap-1 min-w-0">
+                  <span class="material-symbols-outlined text-[16px] shrink-0">location_on</span>
+                  <span class="truncate">{race.circuit} · {race.locality}, {race.country}</span>
+                </span>
+                <span class="flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[16px]">schedule</span>
+                  <LocalTime iso={`${race.date}T${race.time}`} />
+                </span>
+              </div>
+            </div>
+
+            {
+              race.track && (
+                <>
+                  <button
+                    type="button"
+                    data-open-circuit={`circuit-dialog-${race.round}`}
+                    aria-label={`Ver detalles del circuito ${race.circuit}`}
+                    title={`${race.circuit} · ${race.locality}, ${race.country}`}
+                    class="group/circ shrink-0 order-last lg:order-none w-full lg:w-36 h-20 lg:h-24 rounded-lg bg-surface-container-low border border-border-subtle p-1.5 cursor-pointer hover:border-primary-container/60 transition-colors relative"
+                  >
+                    <Circuit3D track={race.track} name={race.circuit} soft naturalAspect={false} className="w-full h-full" />
+                    <span class="absolute bottom-1.5 right-1.5 text-[16px] leading-none text-primary opacity-0 group-hover/circ:opacity-100 transition-opacity material-symbols-outlined">
+                      zoom_in
+                    </span>
+                  </button>
+                  <CircuitDialog race={race} />
+                </>
+              )
+            }
+
+            {
+              race.status === "past" && race.podium.length > 0 && (
+                <div class="shrink-0 flex items-center gap-3">
+                  {race.podium.map((p, i) => {
+                    const info = driversByCode[p.code];
+                    return (
+                      <div class="flex flex-col items-center" title={`${i + 1}º · ${p.code}`}>
+                        <div class="w-8 h-8 rounded-full border border-border-subtle overflow-hidden mb-1 relative bg-surface-container-low">
+                          {info?.headshot ? (
+                            <img class="w-full h-full object-cover grayscale opacity-80" src={headshotTransform(info.headshot, "1col")} alt={p.code} loading="lazy" />
+                          ) : (
+                            <div class="w-full h-full flex items-center justify-center font-data-tabular text-[10px] text-on-surface-variant">{p.code}</div>
+                          )}
+                          <div class="absolute bottom-0 w-full h-1" style={`background:#${info?.teamColour ?? "888888"}`}></div>
+                        </div>
+                        <span class="font-data-tabular text-[10px] text-on-surface">{p.code}</span>
+                        <span class="font-data-tabular text-[10px] text-on-surface-variant">{i + 1}º</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )
+            }
+          </article>
+        ))
+      }
+    </div>
+  ) : (
+    <p class="text-sm text-text-secondary">Calendario no disponible.</p>
+  )
+}

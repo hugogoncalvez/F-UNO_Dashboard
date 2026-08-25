@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import DriverGrid from "../components/DriverGrid.astro";
+import { getDriverProfiles } from "../lib/drivers";
+
+const drivers = await getDriverProfiles();
+---
+
+<Layout title="Pilotos F1 · F-Uno Center" description="Lista de pilotos de la temporada actual de Formula 1.">
+  <div class="mb-8">
+    <h1 class="font-display text-4xl font-bold text-text-primary uppercase tracking-tighter">Pilotos F1</h1>
+    <p class="text-text-secondary mt-1">
+      Los {drivers.length} pilotos de la parrilla de la temporada actual con sus
+      equipos. Hacé clic en una tarjeta para ver el perfil completo.
+    </p>
+  </div>
+  <DriverGrid drivers={drivers} />
+</Layout>

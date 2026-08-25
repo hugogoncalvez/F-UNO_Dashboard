@@ -1,0 +1,212 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getDriverProfiles } from "../../lib/drivers";
+import { flagEmoji, formatDate, headshotTransform, nationalityEs } from "../../lib/utils";
+import type { DriverProfile } from "../../lib/types";
+
+export async function getStaticPaths() {
+  const profiles = await getDriverProfiles();
+  return profiles.map((driver) => ({
+    params: { slug: driver.slug },
+    props: { driver },
+  }));
+}
+
+const { driver } = Astro.props as { driver: DriverProfile };
+const flag = flagEmoji(driver.nationality);
+const colour = `#${driver.teamColour}`;
+const nationality = nationalityEs(driver.nationality);
+const avatar = headshotTransform(driver.headshotUrl, "4col");
+---
+
+<Layout
+  title={`${driver.fullName} · F-Uno Center`}
+  description={`Perfil de ${driver.fullName}, piloto de ${driver.team} en la temporada actual de Formula 1.`}
+>
+  <a href="/pilotos" class="text-sm text-text-secondary hover:text-white transition-colors inline-block mb-4">
+    &larr; Volver a pilotos
+  </a>
+
+  <!-- Driver Profile Header Sector -->
+  <section class="relative w-full py-12 px-6 sm:px-12 bg-gradient-to-b from-panel-surface to-carbon-bg border border-border-subtle rounded-2xl overflow-hidden mb-8">
+    <div class="flex flex-col md:flex-row items-center md:items-end gap-8 relative z-10">
+      <!-- Avatar -->
+      <div class="relative w-40 h-40 shrink-0">
+        <div class="absolute inset-0 rounded-full border-4 border-carbon-bg z-10 overflow-hidden bg-surface-container">
+          {
+            driver.headshotUrl ? (
+              <img class="w-full h-full object-cover" src={avatar} alt={driver.fullName} />
+            ) : (
+              <div class="w-full h-full flex items-center justify-center font-display text-5xl font-bold text-text-secondary">
+                {driver.code}
+              </div>
+            )
+          }
+        </div>
+        <!-- Number Badge overlay -->
+        <div class="absolute -bottom-2 -right-2 bg-primary-container text-white w-12 h-12 flex items-center justify-center rounded-full border-4 border-carbon-bg z-20 font-display text-2xl font-bold shadow-lg shadow-primary-container/50">
+          {driver.driverNumber}
+        </div>
+      </div>
+      
+      <!-- Driver Info -->
+      <div class="flex-1 text-center md:text-left space-y-2">
+        <div class="flex items-center justify-center md:justify-start gap-3">
+          <span class="font-display text-xl uppercase tracking-widest text-text-secondary">{driver.code}</span>
+          {flag && (
+            <div class="text-xl leading-none">
+              {flag}
+            </div>
+          )}
+        </div>
+        <h1 class="font-display text-5xl sm:text-6xl uppercase tracking-tighter text-text-primary leading-none font-bold">
+          {driver.fullName}
+        </h1>
+        <div class="flex items-center justify-center md:justify-start gap-2">
+          <div class="w-3 h-3 rounded-full" style={`background-color: ${colour}`}></div>
+          <span class="font-display text-xl uppercase" style={`color: ${colour}`}>{driver.team}</span>
+        </div>
+      </div>
+      
+      <!-- Action / External Link -->
+      {driver.wikiUrl && (
+        <div class="shrink-0 mt-4 md:mt-0">
+          <a class="inline-flex items-center gap-2 px-4 py-2 bg-surface-variant border border-border-subtle rounded-full text-text-secondary hover:text-text-primary hover:border-text-secondary transition-all duration-150 hover:scale-[1.02]" href={driver.wikiUrl} rel="noopener noreferrer" target="_blank">
+            <span class="text-xs font-bold tracking-widest uppercase">Perfil Wikipedia</span>
+            <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+          </a>
+        </div>
+      )}
+    </div>
+    
+    <!-- Abstract Background Graphic -->
+    <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none overflow-hidden">
+      <svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
+        <path d="M0,100 L100,0 L100,100 Z" fill="url(#grad)"></path>
+        <defs>
+          <linearGradient id="grad" x1="0%" x2="100%" y1="0%" y2="100%">
+            <stop offset="0%" style={`stop-color:${colour};stop-opacity:1`}></stop>
+            <stop offset="100%" style="stop-color:transparent;stop-opacity:0"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Main Dashboard Content -->
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+    <!-- Left Column (Command Center Primary Data) -->
+    <div class="col-span-1 md:col-span-8 space-y-6">
+      
+      {driver.championship && (
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <!-- Position -->
+          <div class="bg-panel-surface rounded-2xl p-6 border border-border-subtle flex flex-col justify-between hover:bg-surface-container-low transition-colors duration-150">
+            <div class="text-xs font-bold tracking-widest text-text-secondary uppercase flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px]">emoji_events</span>
+              Posición
+            </div>
+            <div class="mt-4 font-display text-5xl font-bold text-text-primary">
+              {driver.championship.position}º
+            </div>
+          </div>
+          <!-- Points -->
+          <div class="bg-panel-surface rounded-2xl p-6 border border-border-subtle flex flex-col justify-between hover:bg-surface-container-low transition-colors duration-150">
+            <div class="text-xs font-bold tracking-widest text-text-secondary uppercase flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px]">timeline</span>
+              Puntos
+            </div>
+            <div class="mt-4 font-display text-5xl font-bold text-text-primary">
+              {driver.championship.points}
+            </div>
+          </div>
+          <!-- Wins -->
+          <div class="bg-panel-surface rounded-2xl p-6 border border-border-subtle flex flex-col justify-between hover:bg-surface-container-low transition-colors duration-150 relative overflow-hidden">
+            <div class="relative z-10">
+              <div class="text-xs font-bold tracking-widest text-text-secondary uppercase flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px]">flag</span>
+                Victorias
+              </div>
+              <div class="mt-4 font-display text-5xl font-bold text-primary-container drop-shadow-md">
+                {driver.championship.wins}
+              </div>
+            </div>
+            <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-primary-container opacity-20 blur-xl rounded-full"></div>
+          </div>
+        </div>
+      )}
+
+      <!-- Telemetry Visual Section (Mockup) -->
+      <div class="bg-panel-surface rounded-2xl border border-border-subtle overflow-hidden">
+        <div class="px-6 py-4 border-b border-border-subtle flex justify-between items-center">
+          <h2 class="font-display text-2xl font-bold uppercase tracking-wide text-text-primary">Rendimiento (Simulado)</h2>
+        </div>
+        <div class="p-6 relative h-64 bg-surface-container-lowest">
+          <div class="absolute bottom-6 left-6 right-6 h-48 flex items-end gap-2">
+            <div class="w-full bg-surface-variant h-full relative rounded-sm overflow-hidden">
+              <!-- Grid lines -->
+              <div class="absolute w-full border-b border-border-subtle top-1/4"></div>
+              <div class="absolute w-full border-b border-border-subtle top-2/4"></div>
+              <div class="absolute w-full border-b border-border-subtle top-3/4"></div>
+              <!-- Data Line (SVG) -->
+              <svg class="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
+                <polyline fill="none" points="0,80 10,75 20,40 30,30 40,50 50,20 60,15 70,25 80,10 90,5 100,2" stroke={colour} stroke-width="2"></polyline>
+                <polygon fill={colour} opacity="0.1" points="0,100 0,80 10,75 20,40 30,30 40,50 50,20 60,15 70,25 80,10 90,5 100,2 100,100"></polygon>
+              </svg>
+            </div>
+          </div>
+          <div class="absolute bottom-0 left-6 right-6 flex justify-between text-text-secondary font-data-tabular text-xs mt-2">
+            <span>R1</span><span>R5</span><span>R10</span><span>R15</span><span>R20</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column (Technical Data Sidebar) -->
+    <div class="col-span-1 md:col-span-4 space-y-6">
+      <div class="bg-panel-surface rounded-2xl border border-border-subtle overflow-hidden">
+        <div class="px-6 py-4 border-b border-border-subtle">
+          <h2 class="font-display text-2xl font-bold uppercase tracking-wide text-text-primary">Ficha Técnica</h2>
+        </div>
+        <div class="p-0">
+          <table class="w-full text-left border-collapse text-sm">
+            <tbody>
+              <tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors relative">
+                <td class="w-1 absolute left-0 top-0 bottom-0" style={`background-color: ${colour}`}></td>
+                <td class="py-3 px-6 text-text-secondary w-1/2">Número</td>
+                <td class="py-3 px-6 text-text-primary text-right font-display text-xl font-bold">{driver.driverNumber}</td>
+              </tr>
+              <tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors relative">
+                <td class="w-1 absolute left-0 top-0 bottom-0" style={`background-color: ${colour}`}></td>
+                <td class="py-3 px-6 text-text-secondary">Siglas</td>
+                <td class="py-3 px-6 text-text-primary text-right font-display text-xl font-bold">{driver.code}</td>
+              </tr>
+              <tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors">
+                <td class="py-3 px-6 text-text-secondary pl-6">Equipo</td>
+                <td class="py-3 px-6 text-right" style={`color: ${colour}`}>{driver.team}</td>
+              </tr>
+              <tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors">
+                <td class="py-3 px-6 text-text-secondary pl-6">Nacionalidad</td>
+                <td class="py-3 px-6 text-text-primary text-right flex items-center justify-end gap-2">
+                  {nationality} {flag && <span class="text-base">{flag}</span>}
+                </td>
+              </tr>
+              {driver.dateOfBirth && (
+                <tr class="border-b border-border-subtle hover:bg-surface-container-low transition-colors">
+                  <td class="py-3 px-6 text-text-secondary pl-6">Nacimiento</td>
+                  <td class="py-3 px-6 text-text-primary text-right">{formatDate(driver.dateOfBirth)}</td>
+                </tr>
+              )}
+              {driver.age !== null && (
+                <tr class="hover:bg-surface-container-low transition-colors">
+                  <td class="py-3 px-6 text-text-secondary pl-6">Edad</td>
+                  <td class="py-3 px-6 text-text-primary text-right">{driver.age} años</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

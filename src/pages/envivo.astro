@@ -1,0 +1,347 @@
+---
+import Layout from "../layouts/Layout.astro";
+import LiveHeader from "../components/live/LiveHeader.astro";
+import LiveLeaderboard from "../components/live/LiveLeaderboard.astro";
+import LiveStints from "../components/live/LiveStints.astro";
+import LivePitStops from "../components/live/LivePitStops.astro";
+import LiveRaceControl from "../components/live/LiveRaceControl.astro";
+---
+
+<Layout
+  title="F-Uno Center — Telemetría y Datos en Vivo"
+  description="Sigue la actividad de Fórmula 1 en tiempo real: posiciones, deltas, compuesto de neumáticos, paradas en boxes, tiempos por sector y control de carrera."
+>
+  <div class="space-y-8">
+    <!-- Header Hero -->
+    <LiveHeader initialSessionKey="latest" />
+
+    <!-- Main Live Tabs / Grid -->
+    <div class="space-y-8">
+      <!-- 1. Leaderboard Table -->
+      <LiveLeaderboard />
+
+      <!-- 2. Stints & Pit Stops side by side -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <LiveStints />
+        <LivePitStops />
+      </div>
+
+      <!-- 3. Race Control Feed -->
+      <LiveRaceControl />
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import { fetchTelemetryData, fmtTime, fmtSector, fmtGap, getCompoundStyle } from "../lib/live-service";
+
+  const sessionSelector = document.getElementById("session-selector") as HTMLSelectElement | null;
+  const flagBadge = document.getElementById("flag-badge");
+  const flagText = document.getElementById("flag-text");
+  const liveTitle = document.getElementById("live-session-title");
+  const liveSubtitle = document.getElementById("live-session-subtitle");
+  const liveDot = document.getElementById("live-indicator-dot");
+
+  const wxAir = document.getElementById("wx-air");
+  const wxTrack = document.getElementById("wx-track");
+  const wxHumidity = document.getElementById("wx-humidity");
+  const wxRain = document.getElementById("wx-rain");
+
+  const tbodyLeaderboard = document.getElementById("leaderboard-tbody");
+  const leaderboardUpdatedAt = document.getElementById("leaderboard-updated-at");
+
+  const stintsContainer = document.getElementById("stints-container");
+  const pitTbody = document.getElementById("pit-tbody");
+  const fastestPitBadge = document.getElementById("fastest-pit-badge");
+  const fastestPitText = document.getElementById("fastest-pit-text");
+  const raceControlFeed = document.getElementById("race-control-feed");
+
+  let currentSessionKey: string = sessionSelector?.value || "latest";
+  let pollTimer: number | undefined;
+
+  async function updateDashboard() {
+    try {
+      const data = await fetchTelemetryData(currentSessionKey);
+
+      // 1. Session Title & Subtitle
+      if (data.session) {
+        const s = data.session;
+        if (liveTitle) {
+          liveTitle.textContent = `${s.circuit_short_name || s.location || "F1 GP"} — ${s.session_name}`;
+        }
+        if (liveSubtitle) {
+          if (data.isSimulation) {
+            liveSubtitle.textContent = "⚡ Telemetría en Vivo (Simulación telemétrica activa · Política OpenF1 Free en ventana de carrera)";
+          } else if (data.isLiveActive) {
+            liveSubtitle.textContent = `Sesión EN VIVO en curso (${s.country_name || ""}) · OpenF1 Realtime`;
+          } else {
+            liveSubtitle.textContent = `Modo Demostración (OpenF1 Sesión #${s.session_key})`;
+          }
+        }
+      } else if (liveTitle) {
+        liveTitle.textContent = "Centro de Control en Vivo";
+      }
+
+      // Live Dot
+      if (liveDot) {
+        liveDot.className = data.isLiveActive
+          ? "w-3 h-3 rounded-full bg-primary-container animate-pulse"
+          : "w-3 h-3 rounded-full bg-on-surface-variant/40";
+      }
+
+      // 2. Flag Badge
+      if (flagBadge && flagText) {
+        const flag = (data.latestFlag || "GREEN").toUpperCase();
+        flagText.textContent = `BANDERA ${flag}`;
+        if (flag.includes("YELLOW")) {
+          flagBadge.className = "px-3 py-1.5 rounded-xl border text-xs font-bold uppercase tracking-wider flex items-center gap-2 bg-yellow-500/10 text-yellow-400 border-yellow-500/30";
+        } else if (flag.includes("RED")) {
+          flagBadge.className = "px-3 py-1.5 rounded-xl border text-xs font-bold uppercase tracking-wider flex items-center gap-2 bg-red-500/10 text-red-400 border-red-500/30";
+        } else if (flag.includes("CHEQUERED")) {
+          flagBadge.className = "px-3 py-1.5 rounded-xl border text-xs font-bold uppercase tracking-wider flex items-center gap-2 bg-slate-500/10 text-slate-200 border-slate-500/30";
+        } else {
+          flagBadge.className = "px-3 py-1.5 rounded-xl border text-xs font-bold uppercase tracking-wider flex items-center gap-2 bg-emerald-500/10 text-emerald-400 border-emerald-500/30";
+        }
+      }
+
+      // 3. Weather
+      if (data.weather) {
+        if (wxAir) wxAir.textContent = `${data.weather.air_temperature}°C`;
+        if (wxTrack) wxTrack.textContent = `${data.weather.track_temperature}°C`;
+        if (wxHumidity) wxHumidity.textContent = `${data.weather.humidity}%`;
+        if (wxRain) wxRain.textContent = data.weather.rainfall > 0 ? "Mojado 🌧️" : "Seco ☀️";
+      }
+
+      // 4. Leaderboard
+      if (leaderboardUpdatedAt) {
+        leaderboardUpdatedAt.textContent = `Última actualización: ${new Date().toLocaleTimeString("es-ES")}`;
+      }
+
+      if (tbodyLeaderboard) {
+        if (!data.drivers.length) {
+          tbodyLeaderboard.innerHTML = `
+            <tr>
+              <td colspan="11" class="py-12 text-center text-on-surface-variant">
+                Sin datos de posiciones para la sesión elegida.
+              </td>
+            </tr>`;
+        } else {
+          tbodyLeaderboard.innerHTML = data.drivers
+            .map((d) => {
+              const compound = getCompoundStyle(d.current_compound);
+              const s1Class = d.is_s1_best_session
+                ? "bg-purple-500/20 text-purple-300 font-bold px-1.5 py-0.5 rounded"
+                : d.is_s1_best_personal
+                ? "text-emerald-400 font-semibold"
+                : "text-on-surface-variant";
+              const s2Class = d.is_s2_best_session
+                ? "bg-purple-500/20 text-purple-300 font-bold px-1.5 py-0.5 rounded"
+                : d.is_s2_best_personal
+                ? "text-emerald-400 font-semibold"
+                : "text-on-surface-variant";
+              const s3Class = d.is_s3_best_session
+                ? "bg-purple-500/20 text-purple-300 font-bold px-1.5 py-0.5 rounded"
+                : d.is_s3_best_personal
+                ? "text-emerald-400 font-semibold"
+                : "text-on-surface-variant";
+
+              return `
+                <tr class="hover:bg-surface-container-high/40 transition-colors border-b border-border-subtle/30">
+                  <td class="py-3 px-3 text-center font-bold text-primary-container">
+                    P${d.position > 50 ? "--" : d.position}
+                  </td>
+                  <td class="py-3 px-3 flex items-center gap-2.5">
+                    <span class="w-1 h-5 rounded-full shrink-0" style="background-color: ${d.team_colour}"></span>
+                    <div>
+                      <span class="font-bold text-on-surface uppercase tracking-tight">${d.code}</span>
+                      <span class="text-xs text-on-surface-variant hidden sm:inline ml-2">(${d.team})</span>
+                    </div>
+                  </td>
+                  <td class="py-3 px-3 font-semibold text-on-surface">
+                    ${fmtGap(d.gap_to_leader)}
+                  </td>
+                  <td class="py-3 px-3 text-on-surface-variant text-xs">
+                    ${d.interval ? fmtGap(d.interval) : "--"}
+                  </td>
+                  <td class="py-3 px-3 text-center">
+                    <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold border ${compound.bg} ${compound.text} ${compound.border}">
+                      ${compound.label} <span class="text-[10px] opacity-80">(${d.tyre_age}v)</span>
+                    </span>
+                  </td>
+                  <td class="py-3 px-3 text-center text-xs">
+                    <span class="${s1Class}">${fmtSector(d.s1)}</span>
+                  </td>
+                  <td class="py-3 px-3 text-center text-xs">
+                    <span class="${s2Class}">${fmtSector(d.s2)}</span>
+                  </td>
+                  <td class="py-3 px-3 text-center text-xs">
+                    <span class="${s3Class}">${fmtSector(d.s3)}</span>
+                  </td>
+                  <td class="py-3 px-3 text-right text-xs text-on-surface font-semibold">
+                    ${fmtTime(d.last_lap)}
+                  </td>
+                  <td class="py-3 px-3 text-right text-xs font-bold text-primary-container">
+                    ${fmtTime(d.best_lap)}
+                  </td>
+                  <td class="py-3 px-3 text-center text-xs font-medium text-on-surface-variant">
+                    ${d.pit_count}
+                  </td>
+                </tr>
+              `;
+            })
+            .join("");
+        }
+      }
+
+      // 5. Stints
+      if (stintsContainer) {
+        if (!data.drivers.length) {
+          stintsContainer.innerHTML = `<div class="py-6 text-center text-on-surface-variant text-sm">Sin datos de stints.</div>`;
+        } else {
+          stintsContainer.innerHTML = data.drivers
+            .map((d) => {
+              const stints = data.stintsByDriver.get(d.driver_number) ?? [];
+              const stintBars = stints.length
+                ? stints
+                    .map((s) => {
+                      const compound = getCompoundStyle(s.compound);
+                      return `
+                        <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-xs font-bold ${compound.bg} ${compound.text} ${compound.border}" title="Stint ${s.stint_number}: ${s.compound} (${s.tyre_age_at_start} vueltas)">
+                          <span>${compound.label}</span>
+                          <span class="text-[10px] opacity-80">${s.tyre_age_at_start}v</span>
+                        </div>
+                      `;
+                    })
+                    .join("")
+                : `<span class="text-xs text-on-surface-variant">Sin registros</span>`;
+
+              return `
+                <div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low/60 border border-border-subtle/40 hover:border-border-subtle transition-colors">
+                  <div class="flex items-center gap-2 min-w-[120px]">
+                    <span class="w-1 h-4 rounded-full" style="background-color: ${d.team_colour}"></span>
+                    <span class="font-bold text-sm uppercase">${d.code}</span>
+                  </div>
+                  <div class="flex items-center gap-2 overflow-x-auto hide-scrollbar py-0.5">
+                    ${stintBars}
+                  </div>
+                </div>
+              `;
+            })
+            .join("");
+        }
+      }
+
+      // 6. Pit Stops
+      if (pitTbody) {
+        if (!data.pitStops.length) {
+          pitTbody.innerHTML = `<tr><td colspan="5" class="py-8 text-center text-on-surface-variant">No se registraron paradas en boxes en esta sesión.</td></tr>`;
+          if (fastestPitBadge) fastestPitBadge.classList.add("hidden");
+        } else {
+          let fastestStop = Infinity;
+          for (const p of data.pitStops) {
+            if (p.stop_duration && p.stop_duration < fastestStop) fastestStop = p.stop_duration;
+          }
+
+          if (fastestPitBadge && fastestPitText && fastestStop < Infinity) {
+            fastestPitBadge.classList.remove("hidden");
+            fastestPitText.textContent = `Pit más rápido: ${fastestStop.toFixed(2)}s`;
+          }
+
+          const driverInfoMap = new Map(data.drivers.map((d) => [d.driver_number, d]));
+
+          pitTbody.innerHTML = data.pitStops
+            .slice(0, 15)
+            .map((p) => {
+              const d = driverInfoMap.get(p.driver_number);
+              const isFastest = p.stop_duration && Math.abs(p.stop_duration - fastestStop) < 0.01;
+              const dateStr = p.date ? new Date(p.date).toLocaleTimeString("es-ES") : "--:--";
+
+              return `
+                <tr class="hover:bg-surface-container-high/40 transition-colors border-b border-border-subtle/30">
+                  <td class="py-2.5 px-3 text-center font-bold text-on-surface">V${p.lap_number}</td>
+                  <td class="py-2.5 px-3 flex items-center gap-2">
+                    <span class="w-1 h-4 rounded-full" style="background-color: ${d?.team_colour || "#fff"}"></span>
+                    <span class="font-bold text-on-surface">${d?.code || `#${p.driver_number}`}</span>
+                  </td>
+                  <td class="py-2.5 px-3 text-center font-bold ${isFastest ? "text-cyan-400" : "text-on-surface"}">
+                    ${p.stop_duration ? `${p.stop_duration.toFixed(2)}s` : "--"}
+                  </td>
+                  <td class="py-2.5 px-3 text-center text-on-surface-variant text-xs">
+                    ${p.pit_duration ? `${p.pit_duration.toFixed(2)}s` : "--"}
+                  </td>
+                  <td class="py-2.5 px-3 text-right text-xs text-on-surface-variant">${dateStr}</td>
+                </tr>
+              `;
+            })
+            .join("");
+        }
+      }
+
+      // 7. Race Control
+      if (raceControlFeed) {
+        if (!data.raceControl.length) {
+          raceControlFeed.innerHTML = `<div class="py-6 text-center text-on-surface-variant text-sm">Sin avisos de control de carrera.</div>`;
+        } else {
+          raceControlFeed.innerHTML = data.raceControl
+            .slice(0, 20)
+            .map((rc) => {
+              const dateStr = rc.date ? new Date(rc.date).toLocaleTimeString("es-ES") : "";
+              const flag = (rc.flag || "").toUpperCase();
+              let borderClass = "border-border-subtle/60";
+              let icon = "info";
+              let iconColor = "text-on-surface-variant";
+
+              if (flag.includes("YELLOW")) {
+                borderClass = "border-yellow-500/40 bg-yellow-500/5";
+                icon = "warning";
+                iconColor = "text-yellow-400";
+              } else if (flag.includes("RED")) {
+                borderClass = "border-red-500/40 bg-red-500/5";
+                icon = "dangerous";
+                iconColor = "text-red-400";
+              } else if (flag.includes("GREEN")) {
+                borderClass = "border-emerald-500/40 bg-emerald-500/5";
+                icon = "check_circle";
+                iconColor = "text-emerald-400";
+              }
+
+              return `
+                <div class="p-3 rounded-xl bg-surface-container-low/80 border ${borderClass} flex items-start gap-3 text-xs">
+                  <span class="material-symbols-outlined text-base ${iconColor} shrink-0 mt-0.5">${icon}</span>
+                  <div class="flex-1 space-y-0.5">
+                    <div class="flex items-center justify-between text-on-surface-variant text-[11px]">
+                      <span class="font-bold uppercase tracking-wider">${rc.category || "CONTROL"}</span>
+                      <span>${dateStr}</span>
+                    </div>
+                    <p class="text-on-surface font-medium">${rc.message}</p>
+                  </div>
+                </div>
+              `;
+            })
+            .join("");
+        }
+      }
+    } catch (e) {
+      console.error("Error actualizando telemetría:", e);
+    }
+  }
+
+  // Listener para cambiar de sesión
+  sessionSelector?.addEventListener("change", (e) => {
+    currentSessionKey = (e.target as HTMLSelectElement).value;
+    updateDashboard();
+  });
+
+  // Polling automático (10 segs)
+  updateDashboard();
+  pollTimer = window.setInterval(updateDashboard, 10000);
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      window.clearInterval(pollTimer);
+    } else {
+      updateDashboard();
+      pollTimer = window.setInterval(updateDashboard, 10000);
+    }
+  });
+</script>

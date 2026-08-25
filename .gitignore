@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+.DS_Store
+
+# Excluir carpeta design system
+stitch_f_uno_center_design_system/
+
+# Excluir PNGs en raíz
+/*.png

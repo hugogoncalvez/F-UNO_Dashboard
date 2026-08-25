@@ -1,0 +1,119 @@
+---
+import type { CircuitPath } from "../lib/types";
+
+interface DrsZone {
+  /** Posición a lo largo del trazado en unidades de viewBox (desde la meta). */
+  offset: number;
+  /** Largo de la zona en unidades de viewBox. */
+  length: number;
+}
+
+interface Props {
+  track: CircuitPath;
+  /** Nombre del circuito (accesibilidad y título). */
+  name?: string;
+  /** Habilita la inclinación 3D al pasar el mouse. Default true. */
+  tilt?: boolean;
+  /** Variante de inclinación suave (miniaturas). */
+  soft?: boolean;
+  /** Muestra la etiqueta flotante de Start/Finish. Default true. */
+  showStartLabel?: boolean;
+  /** Zonas DRS opcionales sobre el trazado. Default []. */
+  drsZones?: DrsZone[];
+  /** Mantiene el ratio de aspecto natural del trazado. Default true.
+   *  Con false, el contenedor decide el alto (el trazado se centra). */
+  naturalAspect?: boolean;
+  /** Render liviano: solo trazado con degradado + meta (sin extrusión/neón).
+   *  Útil para modales donde se repite el path. Default true. */
+  layers?: boolean;
+  className?: string;
+}
+
+const {
+  track,
+  name,
+  tilt = true,
+  soft = false,
+  showStartLabel = true,
+  drsZones = [],
+  naturalAspect = true,
+  layers = true,
+  className = "",
+} = Astro.props;
+
+const strokeW = Math.max(track.w, track.h) * 0.02;
+const startDash = Math.max(track.w, track.h) * 0.04;
+const dashGap = Math.max(track.length * 1.2, track.length + startDash * 2);
+const gid = `tg-${Math.random().toString(36).slice(2, 8)}`;
+const labelLeft = Math.min(94, Math.max(6, (track.startX / track.w) * 100));
+const labelTop = Math.min(94, Math.max(6, (track.startY / track.h) * 100));
+---
+
+<div
+  class:list={[
+    "circuit-3d relative",
+    tilt && "circuit-3d-tilt",
+    tilt && soft && "circuit-3d-soft",
+    className,
+  ]}
+  style={naturalAspect ? `aspect-ratio: ${track.w.toFixed(2)} / ${track.h.toFixed(2)}` : undefined}
+  aria-hidden={name ? undefined : "true"}
+  role={name ? "img" : undefined}
+  aria-label={name ? `Mapa del trazado de ${name}` : undefined}
+>
+  <div class="circuit-3d-scene relative w-full h-full">
+    <svg
+      viewBox={`0 0 ${track.w.toFixed(2)} ${track.h.toFixed(2)}`}
+      class="w-full h-full block"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <defs>
+        <linearGradient id={gid} x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#ff5347" />
+          <stop offset="45%" stop-color="#e10600" />
+          <stop offset="100%" stop-color="#5e0000" />
+        </linearGradient>
+      </defs>
+      {name && <title>{name}</title>}
+      {layers && (
+        <>
+          <path d={track.d} class="circuit-3d-shadow" stroke="#000" stroke-width={strokeW * 0.9} />
+          <path
+            d={track.wallD}
+            fill="#6d0f0f"
+            stroke="#6d0f0f"
+            stroke-width={strokeW * 0.08}
+            class="circuit-3d-wall"
+          />
+          <path d={track.d} class="circuit-3d-neon" stroke="#e10600" stroke-width={strokeW * 0.7} />
+        </>
+      )}
+      <path d={track.d} stroke={`url(#${gid})`} stroke-width={strokeW} class="circuit-3d-track" />
+      {drsZones.map((z) => (
+        <path
+          d={track.d}
+          stroke="#22c55e"
+          stroke-width={strokeW * 0.7}
+          stroke-dasharray={`${z.length.toFixed(1)} ${dashGap.toFixed(1)}`}
+          stroke-dashoffset={`-${z.offset.toFixed(1)}`}
+          class="circuit-3d-drs"
+        />
+      ))}
+      <path
+        d={track.d}
+        stroke="#ffffff"
+        stroke-width={strokeW * 1.5}
+        stroke-dasharray={`${startDash.toFixed(1)} ${dashGap.toFixed(1)}`}
+        class="circuit-3d-finish"
+      />
+    </svg>
+
+    {showStartLabel && (
+      <div class="circuit-3d-label" style={`left:${labelLeft}%;top:${labelTop}%`}>
+        Start / Finish
+      </div>
+    )}
+  </div>
+</div>

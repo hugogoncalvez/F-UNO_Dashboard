@@ -1,0 +1,39 @@
+---
+---
+
+<div class="bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl shadow-2xl space-y-5">
+  <div class="flex items-center justify-between border-b border-border-subtle/60 pb-4">
+    <div>
+      <h2 class="text-headline-md font-bold text-on-surface uppercase tracking-tight flex items-center gap-2">
+        <span class="material-symbols-outlined text-cyan-400">build</span>
+        Paradas en Boxes (Pit Stops)
+      </h2>
+      <p class="text-xs text-on-surface-variant">Tiempos de parada de coche parado (Stop) y tiempo total en Pit Lane.</p>
+    </div>
+    <div id="fastest-pit-badge" class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold uppercase">
+      <span class="material-symbols-outlined text-sm">bolt</span>
+      <span id="fastest-pit-text">Pit más rápido: --s</span>
+    </div>
+  </div>
+
+  <div class="overflow-x-auto hide-scrollbar">
+    <table class="w-full text-left border-collapse min-w-[500px]">
+      <thead>
+        <tr class="border-b border-border-subtle text-[11px] font-label-caps text-on-surface-variant uppercase bg-surface-container-low/50">
+          <th class="py-2.5 px-3 text-center">Vuelta</th>
+          <th class="py-2.5 px-3">Piloto / Equipo</th>
+          <th class="py-2.5 px-3 text-center">Parada (Stop)</th>
+          <th class="py-2.5 px-3 text-center">Pit Lane Total</th>
+          <th class="py-2.5 px-3 text-right">Hora</th>
+        </tr>
+      </thead>
+      <tbody id="pit-tbody" class="divide-y divide-border-subtle/50 text-sm font-data-tabular">
+        <tr>
+          <td colspan="5" class="py-8 text-center text-on-surface-variant text-sm">
+            Cargando paradas en boxes...
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

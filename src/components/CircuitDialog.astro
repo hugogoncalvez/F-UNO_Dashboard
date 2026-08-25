@@ -1,0 +1,95 @@
+---
+import Circuit3D from "./Circuit3D.astro";
+import { countryFlag } from "../lib/utils";
+import type { Race } from "../lib/types";
+
+interface Props {
+  race: Race;
+}
+
+const { race } = Astro.props;
+const id = `circuit-dialog-${race.round}`;
+const meta = race.meta;
+const flag = countryFlag(race.country);
+---
+
+<dialog
+  id={id}
+  data-circuit-dialog
+  aria-label={`Detalles del circuito ${race.circuit}`}
+  class="circuit-dialog bg-panel-surface border border-border-subtle rounded-2xl p-6 relative shadow-2xl"
+>
+  <button
+    type="button"
+    data-close-circuit
+    aria-label="Cerrar"
+    class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-surface-container border border-border-subtle text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors"
+  >
+    <span class="material-symbols-outlined text-[18px]">close</span>
+  </button>
+
+  <p class="font-label-caps text-label-caps text-primary-container uppercase mb-1">Ronda {race.round}</p>
+  <h3 class="font-headline-md text-headline-md text-on-surface leading-tight">{race.raceName}</h3>
+  <p class="text-sm text-on-surface-variant mb-4">
+    {flag && <span class="mr-1">{flag}</span>}
+    {race.circuit} · {race.locality}, {race.country}
+  </p>
+
+  <div class="rounded-xl bg-surface-container-low border border-border-subtle p-3 mb-4 overflow-hidden">
+    {race.track && (
+      <Circuit3D
+        track={race.track}
+        name={race.circuit}
+        layers
+        naturalAspect={false}
+        showStartLabel={false}
+        className="w-full h-56"
+      />
+    )}
+  </div>
+
+  <div class="grid grid-cols-2 gap-3">
+    <div class="bg-surface-container-low rounded-lg border border-border-subtle p-3">
+      <p class="font-label-caps text-label-caps text-on-surface-variant mb-1">Longitud</p>
+      <p class="font-data-tabular text-lg text-on-surface">
+        {meta?.lengthMeters ? `${(meta.lengthMeters / 1000).toFixed(3)} km` : "—"}
+      </p>
+    </div>
+    <div class="bg-surface-container-low rounded-lg border border-border-subtle p-3">
+      <p class="font-label-caps text-label-caps text-on-surface-variant mb-1">Primera carrera</p>
+      <p class="font-data-tabular text-lg text-on-surface">{meta?.firstGP ?? "—"}</p>
+    </div>
+    <div class="bg-surface-container-low rounded-lg border border-border-subtle p-3">
+      <p class="font-label-caps text-label-caps text-on-surface-variant mb-1">Inauguración</p>
+      <p class="font-data-tabular text-lg text-on-surface">{meta?.opened ?? "—"}</p>
+    </div>
+    <div class="bg-surface-container-low rounded-lg border border-border-subtle p-3">
+      <p class="font-label-caps text-label-caps text-on-surface-variant mb-1">Altitud</p>
+      <p class="font-data-tabular text-lg text-on-surface">
+        {meta?.altitude != null ? `${meta.altitude} m` : "—"}
+      </p>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const OPEN_ATTR = "data-open-circuit";
+
+  document.addEventListener("click", (e) => {
+    const trigger = (e.target as HTMLElement).closest<HTMLElement>(`[${OPEN_ATTR}]`);
+    if (!trigger) return;
+    document.getElementById(trigger.getAttribute(OPEN_ATTR) ?? "")?.showModal();
+  });
+
+  document.querySelectorAll<HTMLDialogElement>("dialog[data-circuit-dialog]").forEach((dialog) => {
+    dialog.addEventListener("click", (e) => {
+      if (e.target === dialog) dialog.close();
+    });
+  });
+
+  document.querySelectorAll("[data-close-circuit]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      (btn.closest("dialog") as HTMLDialogElement | null)?.close();
+    });
+  });
+</script>

@@ -1,0 +1,88 @@
+---
+interface Props {
+  initialSessionKey?: string | number;
+}
+const { initialSessionKey = "latest" } = Astro.props;
+---
+
+<div class="bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl shadow-2xl space-y-6">
+  <!-- Top Bar: Title & Mode Selector -->
+  <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-border-subtle/60 pb-5">
+    <div class="flex items-center gap-3">
+      <div class="w-3 h-3 rounded-full bg-primary-container animate-pulse" id="live-indicator-dot"></div>
+      <div>
+        <h1 class="text-headline-lg font-bold text-on-surface uppercase tracking-tight flex items-center gap-3" id="live-session-title">
+          Centro de Control en Vivo
+        </h1>
+        <p class="text-sm text-on-surface-variant font-body" id="live-session-subtitle">
+          Cargando telemetría de la sesión en curso de OpenF1...
+        </p>
+      </div>
+    </div>
+
+    <!-- Controls: Session Picker & Status -->
+    <div class="flex flex-wrap items-center gap-3">
+      <div class="flex items-center gap-2 bg-surface-container border border-border-subtle rounded-xl px-3 py-1.5 text-xs font-medium text-on-surface">
+        <span class="material-symbols-outlined text-[16px] text-primary-container">tune</span>
+        <span>Modo Sesión:</span>
+        <select id="session-selector" class="bg-transparent font-semibold text-primary outline-none cursor-pointer">
+          <option value="latest" selected={initialSessionKey === "latest"}>⚡ Sesión en Vivo (OpenF1 Latest)</option>
+          <option value="9660">🏎️ GP Gran Bretaña 2024 - Carrera (Demo)</option>
+          <option value="9567">🏎️ GP España 2024 - Clasificación (Demo)</option>
+          <option value="9558">🏎️ GP Mónaco 2024 - Carrera (Demo)</option>
+        </select>
+      </div>
+      <div id="flag-badge" class="px-3 py-1.5 rounded-xl border text-xs font-bold uppercase tracking-wider flex items-center gap-2 bg-emerald-500/10 text-emerald-400 border-emerald-500/30">
+        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+        <span id="flag-text">BANDERA VERDE</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar: Weather & Track Conditions -->
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+    <!-- Air Temp -->
+    <div class="bg-surface-container-low/80 border border-border-subtle rounded-xl p-3.5 flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+        <span class="material-symbols-outlined">thermostat</span>
+      </div>
+      <div>
+        <span class="block text-[11px] font-label-caps text-on-surface-variant uppercase">Temp. Aire</span>
+        <span class="text-headline-sm font-semibold font-data-tabular text-on-surface" id="wx-air">-- °C</span>
+      </div>
+    </div>
+
+    <!-- Track Temp -->
+    <div class="bg-surface-container-low/80 border border-border-subtle rounded-xl p-3.5 flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-amber-400">
+        <span class="material-symbols-outlined">wb_sunny</span>
+      </div>
+      <div>
+        <span class="block text-[11px] font-label-caps text-on-surface-variant uppercase">Temp. Pista</span>
+        <span class="text-headline-sm font-semibold font-data-tabular text-on-surface" id="wx-track">-- °C</span>
+      </div>
+    </div>
+
+    <!-- Humidity -->
+    <div class="bg-surface-container-low/80 border border-border-subtle rounded-xl p-3.5 flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-cyan-400">
+        <span class="material-symbols-outlined">humidity_percentage</span>
+      </div>
+      <div>
+        <span class="block text-[11px] font-label-caps text-on-surface-variant uppercase">Humedad</span>
+        <span class="text-headline-sm font-semibold font-data-tabular text-on-surface" id="wx-humidity">-- %</span>
+      </div>
+    </div>
+
+    <!-- Track Condition / Rain -->
+    <div class="bg-surface-container-low/80 border border-border-subtle rounded-xl p-3.5 flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-blue-400" id="wx-rain-icon">
+        <span class="material-symbols-outlined">water_drop</span>
+      </div>
+      <div>
+        <span class="block text-[11px] font-label-caps text-on-surface-variant uppercase">Estado Pista</span>
+        <span class="text-headline-sm font-semibold font-data-tabular text-on-surface" id="wx-rain">Seco</span>
+      </div>
+    </div>
+  </div>
+</div>

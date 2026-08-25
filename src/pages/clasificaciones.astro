@@ -1,0 +1,141 @@
+---
+import Layout from "../layouts/Layout.astro";
+import StandingsTable from "../components/StandingsTable.astro";
+import { getStandings } from "../lib/standings";
+import { teamColor } from "../lib/utils";
+
+const standings = await getStandings();
+---
+
+<Layout title="Clasificaciones F1 · F-Uno Center" description="Campeonato de pilotos y constructores de Formula 1.">
+  <style>
+    /* CSS para tabs puros */
+    #tab-pilotos:checked ~ #content-pilotos { display: block; }
+    #tab-constructores:checked ~ #content-constructores { display: block; }
+    #content-pilotos, #content-constructores { display: none; }
+    
+    #tab-pilotos:checked ~ .tab-header .label-pilotos {
+      background-color: var(--color-panel-surface);
+      color: var(--color-primary-container);
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    }
+    #tab-pilotos:not(:checked) ~ .tab-header .label-pilotos {
+      color: var(--color-text-secondary);
+    }
+    
+    #tab-constructores:checked ~ .tab-header .label-constructores {
+      background-color: var(--color-panel-surface);
+      color: var(--color-primary-container);
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    }
+    #tab-constructores:not(:checked) ~ .tab-header .label-constructores {
+      color: var(--color-text-secondary);
+    }
+  </style>
+
+  <input type="radio" name="tab-standings" id="tab-pilotos" class="hidden" checked />
+  <input type="radio" name="tab-standings" id="tab-constructores" class="hidden" />
+
+  <!-- Header & Tabs -->
+  <div class="tab-header flex flex-col space-y-6 md:flex-row md:items-end md:justify-between md:space-y-0 mb-8">
+    <div>
+      <h1 class="font-display text-4xl font-bold text-text-primary uppercase tracking-tighter">Clasificaciones Mundiales</h1>
+      <p class="text-text-secondary mt-1">Temporada 2024 - Resultados oficiales</p>
+    </div>
+    <div class="flex bg-surface-container-lowest border border-border-subtle rounded-lg p-1">
+      <label for="tab-pilotos" class="label-pilotos cursor-pointer px-6 py-2 rounded-md text-xs font-bold tracking-widest uppercase transition-colors hover:text-on-surface">
+        Pilotos
+      </label>
+      <label for="tab-constructores" class="label-constructores cursor-pointer px-6 py-2 rounded-md text-xs font-bold tracking-widest uppercase transition-colors hover:text-on-surface">
+        Constructores
+      </label>
+    </div>
+  </div>
+
+  <!-- Content Pilotos -->
+  <div id="content-pilotos" class="animate-fade-in">
+    <div class="grid grid-cols-1 xl:grid-cols-3 gap-6">
+      <div class="xl:col-span-2">
+        <StandingsTable title="Campeonato de Pilotos" rows={standings.driverRows} full={true} accent="e10600" />
+      </div>
+      <div class="space-y-6">
+        <!-- Top Constructores (Mini) -->
+        <div class="bg-panel-surface border border-border-subtle rounded-2xl overflow-hidden">
+          <div class="px-4 py-3 border-b border-border-subtle">
+            <h3 class="font-display text-xl font-semibold text-text-primary uppercase">Top Constructores</h3>
+          </div>
+          <div class="p-4 space-y-4">
+            {standings.constructorRows.slice(0, 3).map((team, index) => (
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                  <span class="text-sm font-semibold text-text-secondary w-4">{index + 1}</span>
+                  <div class="w-2 h-8 rounded-full" style={`background-color: #${team.color ?? teamColor(team.name)}`}></div>
+                  <span class="text-sm font-semibold text-on-surface">{team.name}</span>
+                </div>
+                <span class="text-sm font-bold text-on-surface">{team.points}</span>
+              </div>
+            ))}
+          </div>
+          <div class="px-4 py-3 border-t border-border-subtle bg-surface-container-lowest/30 flex justify-end">
+             <label for="tab-constructores" class="cursor-pointer text-primary hover:text-primary-container text-xs font-bold tracking-widest uppercase flex items-center space-x-1 transition-colors">
+              <span>Ver tabla completa</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </label>
+          </div>
+        </div>
+        
+        <!-- Siguiente Carrera Promo -->
+        <div class="relative rounded-2xl overflow-hidden border border-border-subtle h-48 flex flex-col justify-end p-4 group cursor-pointer">
+          <div class="absolute inset-0 z-0">
+            <!-- You can use a generic F1 image here or pass from CMS later -->
+            <div class="w-full h-full bg-surface-container-high opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-carbon-bg via-carbon-bg/80 to-transparent"></div>
+          </div>
+          <div class="relative z-10">
+            <span class="inline-block px-2 py-1 bg-primary-container/20 border border-primary-container/30 text-primary text-[10px] font-bold tracking-widest uppercase rounded mb-2 backdrop-blur-sm">Siguiente Carrera</span>
+            <h3 class="font-display text-xl font-semibold text-white mb-1 group-hover:text-primary transition-colors">GP de Monza</h3>
+            <p class="text-sm text-text-secondary flex items-center">
+              <span class="material-symbols-outlined text-sm mr-1">schedule</span>
+              Próximamente
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Constructores -->
+  <div id="content-constructores" class="animate-fade-in">
+    <div class="grid grid-cols-1 xl:grid-cols-3 gap-6">
+      <div class="xl:col-span-2">
+        <StandingsTable title="Campeonato de Constructores" rows={standings.constructorRows} full={true} accent="ff8000" />
+      </div>
+      <div class="space-y-6">
+        <!-- Top Pilotos (Mini) -->
+        <div class="bg-panel-surface border border-border-subtle rounded-2xl overflow-hidden">
+          <div class="px-4 py-3 border-b border-border-subtle">
+            <h3 class="font-display text-xl font-semibold text-text-primary uppercase">Top Pilotos</h3>
+          </div>
+          <div class="p-4 space-y-4">
+             {standings.driverRows.slice(0, 3).map((driver, index) => (
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                  <span class="text-sm font-semibold text-text-secondary w-4">{index + 1}</span>
+                  <div class="w-2 h-8 rounded-full" style={`background-color: #${driver.color ?? teamColor(driver.team)}`}></div>
+                  <span class="text-sm font-semibold text-on-surface">{driver.name}</span>
+                </div>
+                <span class="text-sm font-bold text-on-surface">{driver.points}</span>
+              </div>
+            ))}
+          </div>
+          <div class="px-4 py-3 border-t border-border-subtle bg-surface-container-lowest/30 flex justify-end">
+            <label for="tab-pilotos" class="cursor-pointer text-primary hover:text-primary-container text-xs font-bold tracking-widest uppercase flex items-center space-x-1 transition-colors">
+              <span>Ver tabla completa</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

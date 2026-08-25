@@ -1,0 +1,94 @@
+---
+import type { NewsItem } from "../lib/types";
+
+interface Props {
+  items: NewsItem[];
+  compact?: boolean;
+  cols?: number;
+}
+
+const { items, compact = false, cols = 3 } = Astro.props;
+
+function timeAgo(date: string | null): string {
+  if (!date) return "";
+  const then = new Date(date).getTime();
+  if (Number.isNaN(then)) return "";
+  const mins = Math.floor((Date.now() - then) / 60000);
+  if (mins < 1) return "Ahora mismo";
+  if (mins < 60) return `Hace ${mins} min`;
+  const hours = Math.floor(mins / 60);
+  if (hours < 24) return `Hace ${hours} h`;
+  const days = Math.floor(hours / 24);
+  return `Hace ${days} d`;
+}
+---
+
+{
+  items.length ? compact ? (
+    <div class="flex flex-col gap-4">
+      {
+        items.map((item) => (
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group flex flex-col gap-1.5 pb-4 border-b border-border-subtle/60 last:border-b-0 last:pb-0 hover:border-primary-container transition-colors"
+          >
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded bg-primary-container/15 text-primary-container font-label-caps text-[10px] uppercase tracking-wider shrink-0">
+                {item.source}
+              </span>
+              {item.date && <span class="font-data-tabular text-[12px] text-text-secondary">{timeAgo(item.date)}</span>}
+            </div>
+            <h4 class="font-headline-sm text-headline-sm text-on-surface leading-tight group-hover:text-primary transition-colors">
+              {item.title}
+            </h4>
+          </a>
+        ))
+      }
+    </div>
+  ) : (
+    <div class:list={[
+      "grid gap-gutter",
+      cols === 3 && "sm:grid-cols-2 lg:grid-cols-3",
+      cols === 2 && "sm:grid-cols-2",
+    ]}>
+      {
+        items.map((item) => (
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group bg-panel-surface rounded-xl border border-border-subtle overflow-hidden hover:border-primary-container transition-colors duration-150 flex flex-col"
+          >
+            <div class="h-32 w-full relative border-b border-border-subtle overflow-hidden flex items-center justify-center bg-surface-container-lowest">
+              {
+                item.imageUrl ? (
+                  <img src={item.imageUrl} alt={item.title} class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                ) : (
+                  <div class="w-full h-full flex items-center justify-center radial-gradient-hero">
+                    <span class="material-symbols-outlined text-on-surface-variant opacity-60">newspaper</span>
+                  </div>
+                )
+              }
+              <span class="absolute top-2 left-2 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-label-caps text-on-surface border border-border-subtle z-10">
+                {item.source}
+              </span>
+            </div>
+            <div class="p-4 flex flex-col gap-2 flex-grow">
+              {item.date && <span class="font-data-tabular text-[12px] text-on-surface-variant">{timeAgo(item.date)}</span>}
+              <h4 class="font-headline-sm text-headline-sm text-on-surface leading-tight group-hover:text-primary transition-colors">
+                {item.title}
+              </h4>
+              {item.description && (
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">{item.description}</p>
+              )}
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  ) : (
+    <p class="text-sm text-text-secondary">Noticias no disponibles en este momento.</p>
+  )
+}

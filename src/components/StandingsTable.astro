@@ -1,0 +1,93 @@
+---
+import { teamColor } from "../lib/utils";
+
+interface Row {
+  position: number;
+  name: string;
+  code: string;
+  team: string;
+  points: number;
+  wins?: number;
+  color?: string;
+}
+
+interface Props {
+  title: string;
+  rows: Row[];
+  limit?: number;
+  full?: boolean;
+  accent?: string;
+}
+
+const { title, rows, limit, full = false, accent } = Astro.props;
+const visible = limit ? rows.slice(0, limit) : rows;
+const hasWins = rows.some((r) => r.wins !== undefined);
+---
+
+<div class="bg-panel-surface rounded-2xl border border-border-subtle overflow-hidden">
+  <div class="px-4 sm:px-6 py-4 border-b border-border-subtle flex justify-between items-center gap-4">
+    <h3 class="font-headline-sm text-headline-sm text-on-surface" style={accent ? `color: #${accent}` : ""}>
+      {title}
+    </h3>
+    {limit && rows.length > limit && (
+      <a class="font-label-caps text-label-caps text-primary-container hover:underline shrink-0" href="/clasificaciones">
+        Ver todas
+      </a>
+    )}
+  </div>
+
+  {
+    visible.length ? full ? (
+      <div class="overflow-auto max-h-[560px]">
+        <table class="w-full text-left font-data-tabular text-data-tabular min-w-[560px]">
+          <thead class="text-text-secondary sticky top-0 bg-panel-surface border-b border-border-subtle">
+            <tr>
+              <th class="py-3 px-4 font-normal w-16">Pos</th>
+              <th class="py-3 px-4 font-normal">Piloto / Equipo</th>
+              {hasWins && <th class="py-3 px-4 font-normal text-center hidden sm:table-cell">Victorias</th>}
+              <th class="py-3 px-4 font-normal text-right">Puntos</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              visible.map((row) => (
+                <tr class="hover:bg-surface-container-low transition-colors border-b border-border-subtle/60">
+                  <td class="py-3 px-4 text-on-surface-variant">{row.position}</td>
+                  <td class="py-3 px-4 border-l-4 border-transparent" style={`border-left-color: #${row.color ?? teamColor(row.team)}`}>
+                    <span class="font-semibold text-on-surface">{row.code}</span>
+                    <span class="text-text-secondary ml-2 font-body-sm">{row.name}</span>
+                    <span class="text-text-secondary ml-2 hidden md:inline font-body-sm text-xs">{row.team}</span>
+                  </td>
+                  {hasWins && (
+                    <td class="py-3 px-4 text-center text-on-surface-variant hidden sm:table-cell">{row.wins}</td>
+                  )}
+                  <td class="py-3 px-4 text-right font-bold text-on-surface">{row.points}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    ) : (
+      <div class="flex flex-col">
+        {
+          visible.map((row, i) => (
+            <div
+              class:list={[
+                "flex items-center px-4 sm:px-6 py-3 hover:bg-surface-container-low transition-colors border-l-4 border-transparent",
+                i % 2 === 1 && "bg-surface-container/30",
+              ]}
+              style={`border-left-color: #${row.color ?? teamColor(row.team)}`}
+            >
+              <span class="font-data-tabular text-data-tabular text-on-surface-variant w-6">{row.position}</span>
+              <span class="font-body-sm text-body-sm text-on-surface font-semibold flex-1 truncate">{row.name}</span>
+              <span class="font-data-tabular text-data-tabular text-on-surface">{row.points}</span>
+            </div>
+          ))
+        }
+      </div>
+    ) : (
+      <p class="text-sm text-text-secondary p-6">Datos no disponibles.</p>
+    )
+  }
+</div>

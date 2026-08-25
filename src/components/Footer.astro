@@ -1,0 +1,23 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-border-subtle bg-carbon-bg mt-auto">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 flex flex-col items-center gap-4">
+    <div class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-wide">F-Uno Center</div>
+    <div class="flex flex-wrap justify-center gap-6">
+      <a class="font-label-caps text-label-caps text-text-secondary hover:text-primary-container transition-colors" href="https://openf1.org" target="_blank" rel="noopener noreferrer">API Source · OpenF1</a>
+      <a class="font-label-caps text-label-caps text-text-secondary hover:text-primary-container transition-colors" href="https://jolpi.ca" target="_blank" rel="noopener noreferrer">API Source · Jolpica</a>
+      <a class="font-label-caps text-label-caps text-text-secondary hover:text-primary-container transition-colors" href="/noticias">Noticias</a>
+    </div>
+    <p class="font-body-sm text-body-sm text-text-secondary text-center max-w-3xl">
+      Este sitio web es no oficial y no está asociado de ninguna manera con el
+      grupo de compañías de la Formula 1. F1, FORMULA ONE, FORMULA 1, FIA FORMULA
+      ONE WORLD CHAMPIONSHIP, GRAND PRIX y marcas relacionadas son marcas
+      registradas de Formula One Licensing B.V.
+    </p>
+    <p class="font-body-sm text-body-sm text-text-secondary text-center">
+      © {year} F-Uno Center — hecho con Astro. Todos los datos pueden variar.
+    </p>
+  </div>
+</footer>

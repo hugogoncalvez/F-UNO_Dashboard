@@ -1,0 +1,74 @@
+---
+import type { DriverProfile } from "../lib/types";
+import { flagEmoji, headshotTransform, nationalityEs } from "../lib/utils";
+
+interface Props {
+  drivers: DriverProfile[];
+}
+
+const { drivers } = Astro.props;
+---
+
+{
+  drivers.length ? (
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter">
+      {
+        drivers.map((driver) => (
+          <a
+            href={`/pilotos/${driver.slug}`}
+            class="bg-panel-surface border border-border-subtle rounded-xl p-5 relative overflow-hidden flex flex-col gap-4 hover:bg-surface-container-low transition-colors duration-150 group min-h-[220px]"
+          >
+            <div class="absolute left-0 top-0 bottom-0 w-1.5" style={`background:#${driver.teamColour}`} />
+            <span class="absolute -right-2 -bottom-6 font-display text-[120px] leading-none font-bold text-surface-variant opacity-30 pointer-events-none group-hover:scale-110 group-hover:opacity-40 transition-all duration-300 select-none">
+              {driver.driverNumber}
+            </span>
+            <div class="flex justify-between items-start relative z-10">
+              <div class="flex gap-3 items-center">
+                <div class="w-14 h-14 rounded-full border-2 border-border-subtle overflow-hidden shrink-0 bg-carbon-bg">
+                  {
+                    driver.headshotUrl ? (
+                      <img class="w-full h-full object-cover" src={headshotTransform(driver.headshotUrl, "2col")} alt={driver.fullName} loading="lazy" />
+                    ) : (
+                      <div class="w-full h-full flex items-center justify-center font-display font-bold text-text-secondary">{driver.code}</div>
+                    )
+                  }
+                </div>
+                <div class="flex flex-col min-w-0">
+                  <div class="flex items-center gap-2">
+                    <span class="font-label-caps text-label-caps text-text-secondary">{driver.code}</span>
+                    {flagEmoji(driver.nationality) && <span class="text-[10px]">{flagEmoji(driver.nationality)}</span>}
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase leading-tight mt-0.5 truncate">{driver.fullName}</h3>
+                </div>
+              </div>
+              <div class="bg-surface-container border border-border-subtle px-2 py-0.5 rounded flex items-center justify-center shrink-0">
+                <span class="font-data-tabular text-data-tabular text-on-surface">
+                  {driver.championship ? `P${driver.championship.position}` : "—"}
+                </span>
+              </div>
+            </div>
+            <p class="font-body-sm text-body-sm text-text-secondary uppercase tracking-wider text-[11px] font-semibold relative z-10 truncate" style={`color:#${driver.teamColour}`}>
+              {driver.team}
+            </p>
+            <div class="grid grid-cols-3 gap-2 mt-auto pt-3 border-t border-border-subtle relative z-10">
+              <div class="flex flex-col">
+                <span class="font-label-caps text-[10px] text-text-secondary uppercase">Puntos</span>
+                <span class="font-data-tabular text-data-tabular text-on-surface text-lg">{driver.championship?.points ?? 0}</span>
+              </div>
+              <div class="flex flex-col border-l border-border-subtle pl-3">
+                <span class="font-label-caps text-[10px] text-text-secondary uppercase">Edad</span>
+                <span class="font-data-tabular text-data-tabular text-on-surface">{driver.age ?? "—"}</span>
+              </div>
+              <div class="flex flex-col border-l border-border-subtle pl-3">
+                <span class="font-label-caps text-[10px] text-text-secondary uppercase">Victorias</span>
+                <span class="font-data-tabular text-data-tabular text-on-surface">{driver.championship?.wins ?? 0}</span>
+              </div>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  ) : (
+    <p class="text-sm text-text-secondary">Pilotos no disponibles.</p>
+  )
+}

@@ -1,0 +1,76 @@
+---
+const links = [
+  { label: "Inicio", href: "/" },
+  { label: "Resultados", href: "/resultados" },
+  { label: "En Vivo", href: "/envivo", isLive: true },
+  { label: "Calendario", href: "/calendario" },
+  { label: "Clasificaciones", href: "/clasificaciones" },
+  { label: "Pilotos", href: "/pilotos" },
+  { label: "Noticias", href: "/noticias" },
+];
+---
+
+<header class="sticky top-0 z-30 border-b border-border-subtle bg-panel-surface/80 backdrop-blur-xl flex items-center justify-between w-full h-16 px-margin-mobile md:px-margin-desktop">
+  <div class="flex items-center gap-4">
+    <button id="menu-btn" type="button" aria-label="Abrir menú" class="md:hidden text-on-surface-variant hover:text-primary transition-colors">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+    <a href="/" class="md:hidden font-display font-bold text-headline-md text-on-surface uppercase tracking-wide">
+      F-Uno Center
+    </a>
+  </div>
+  <div class="flex items-center gap-6 ml-auto">
+    <a
+      href="/pilotos"
+      class="relative hidden sm:flex items-center text-text-secondary hover:text-on-surface transition-colors"
+      title="Buscar piloto"
+    >
+      <span class="material-symbols-outlined absolute left-3 text-[18px]">search</span>
+      <span class="bg-surface-container border border-border-subtle rounded-full py-1.5 pl-9 pr-4 text-sm text-on-surface font-body-sm w-44 lg:w-56 cursor-pointer transition-all hover:border-primary-container">
+        Buscar piloto...
+      </span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-1">
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              "px-3 py-1.5 rounded-lg text-sm font-medium capitalize transition-colors flex items-center gap-1.5",
+              Astro.url.pathname === link.href
+                ? "text-white bg-white/10"
+                : "text-text-secondary hover:text-on-surface hover:bg-surface-container-high",
+            ]}
+          >
+            {link.isLive && (
+              <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+            )}
+            {link.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById("menu-btn");
+  const sidebar = document.getElementById("sidebar");
+  const backdrop = document.getElementById("sidebar-backdrop");
+
+  function closeSidebar() {
+    sidebar?.classList.add("-translate-x-full");
+    backdrop?.classList.add("hidden");
+    document.body.style.overflow = "";
+  }
+
+  btn?.addEventListener("click", () => {
+    const open = sidebar?.classList.contains("-translate-x-full") ?? true;
+    sidebar?.classList.toggle("-translate-x-full");
+    backdrop?.classList.toggle("hidden");
+    document.body.style.overflow = open ? "hidden" : "";
+  });
+
+  backdrop?.addEventListener("click", closeSidebar);
+  sidebar?.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeSidebar));
+</script>

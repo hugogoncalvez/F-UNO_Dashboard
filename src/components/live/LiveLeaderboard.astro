@@ -1,0 +1,44 @@
+---
+---
+
+<div class="bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl shadow-2xl space-y-4">
+  <div class="flex items-center justify-between">
+    <h2 class="text-headline-md font-bold text-on-surface uppercase tracking-tight flex items-center gap-2">
+      <span class="material-symbols-outlined text-primary-container">format_list_numbered</span>
+      Clasificación Telemétrica en Vivo
+    </h2>
+    <span class="text-xs text-on-surface-variant font-label-caps" id="leaderboard-updated-at">
+      Última actualización: --:--:--
+    </span>
+  </div>
+
+  <div class="overflow-x-auto hide-scrollbar">
+    <table class="w-full text-left border-collapse min-w-[900px]">
+      <thead>
+        <tr class="border-b border-border-subtle text-[11px] font-label-caps text-on-surface-variant uppercase bg-surface-container-low/50">
+          <th class="py-3 px-3 text-center">Pos</th>
+          <th class="py-3 px-3">Piloto</th>
+          <th class="py-3 px-3">Gap a Líder</th>
+          <th class="py-3 px-3">Intervalo</th>
+          <th class="py-3 px-3 text-center">Compuesto</th>
+          <th class="py-3 px-3 text-center">S1</th>
+          <th class="py-3 px-3 text-center">S2</th>
+          <th class="py-3 px-3 text-center">S3</th>
+          <th class="py-3 px-3 text-right">Última Vuelta</th>
+          <th class="py-3 px-3 text-right">Mejor Vuelta</th>
+          <th class="py-3 px-3 text-center">Pits</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboard-tbody" class="divide-y divide-border-subtle/50 text-sm font-data-tabular">
+        <tr>
+          <td colspan="11" class="py-12 text-center text-on-surface-variant">
+            <div class="flex flex-col items-center justify-center gap-2">
+              <span class="material-symbols-outlined text-3xl animate-spin text-primary">sync</span>
+              <span>Cargando posiciones de telemetría...</span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

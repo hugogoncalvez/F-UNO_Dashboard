@@ -1,0 +1,132 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Countdown from "../components/Countdown.astro";
+import StandingsTable from "../components/StandingsTable.astro";
+import NewsGrid from "../components/NewsGrid.astro";
+import Circuit3D from "../components/Circuit3D.astro";
+import CircuitDialog from "../components/CircuitDialog.astro";
+import LocalTime from "../components/LocalTime.astro";
+import { getSeasonCalendar } from "../lib/jolpica";
+import { getStandings } from "../lib/standings";
+import { getNews } from "../lib/news";
+
+const year = new Date().getFullYear();
+
+const [calendar, standings, news] = await Promise.all([
+  getSeasonCalendar(year),
+  getStandings(),
+  getNews(6),
+]);
+
+const now = Date.now();
+const nextRace = calendar
+  .filter((r) => new Date(`${r.date}T${r.time}`).getTime() + 3 * 3600_000 > now)
+  .sort((a, b) => a.round - b.round)[0];
+const nextRaceStart = nextRace ? `${nextRace.date}T${nextRace.time}` : null;
+---
+
+<Layout title="F-Uno Center · Todo el universo F1 en un solo lugar">
+  <section class="relative overflow-hidden rounded-2xl border border-border-subtle mb-8 min-h-[260px] flex items-end">
+    <!-- Carbon fiber base texture -->
+    <div
+      class="absolute inset-0 z-0 opacity-40"
+      style="background-image: url('/carbon-fiber.png'); background-repeat: repeat; background-size: 256px 256px;"
+    />
+    <!-- Background image (right side) -->
+    <img
+      src="/fondoTitulo.png"
+      alt=""
+      aria-hidden="true"
+      class="absolute inset-0 w-full h-full object-scale-down object-right z-10"
+    />
+    <!-- Dark gradient overlay so text stays legible -->
+    <div class="absolute inset-0 z-20 bg-gradient-to-r from-carbon-bg/95 via-carbon-bg/70 to-transparent" />
+    <!-- Optional red radial accent -->
+    <div
+      class="absolute inset-0 z-30 opacity-30"
+      style="background: radial-gradient(600px 200px at 80% 0%, #e10600 0%, transparent 60%);"
+    />
+    <div class="relative z-40 px-6 py-10">
+      <p class="text-f1-red font-bold uppercase tracking-widest text-sm mb-2">Temporada {year}</p>
+      <h1 class="font-display text-4xl sm:text-6xl font-bold text-white leading-none">
+        Todo el universo F1 <span class="text-f1-red">en un solo lugar</span>
+      </h1>
+      <p class="mt-4 max-w-2xl text-zinc-400">
+        Calendario, clasificaciones, resultados, pilotos, telemetría en vivo y noticias
+        de los principales medios.
+      </p>
+    </div>
+  </section>
+
+  {
+    nextRaceStart && (
+      <section class="mb-8">
+        <div class="card grid lg:grid-cols-[1fr_auto] gap-6 items-center">
+          <div>
+            <p class="text-xs uppercase tracking-widest text-zinc-500 mb-1">Próxima carrera · Ronda {nextRace!.round}</p>
+            <h2 class="font-display text-3xl font-bold text-white mb-1">{nextRace!.raceName}</h2>
+            <p class="text-sm text-zinc-400 mb-4">
+              {nextRace!.circuit} · {nextRace!.locality}, {nextRace!.country} ·{" "}
+              <LocalTime iso={nextRaceStart} separator=" " />
+            </p>
+            <Countdown target={nextRaceStart} />
+          </div>
+          {nextRace!.track && (
+            <>
+              <button
+                type="button"
+                data-open-circuit={`circuit-dialog-${nextRace!.round}`}
+                aria-label={`Ver detalles del circuito ${nextRace!.circuit}`}
+                class="group/circ shrink-0 w-full lg:w-72 rounded-xl bg-surface-container-low border border-border-subtle p-3 overflow-hidden cursor-pointer hover:border-primary-container/60 transition-colors relative"
+              >
+                <Circuit3D track={nextRace!.track} name={nextRace!.circuit} />
+                <span class="absolute bottom-4 right-4 text-[20px] leading-none text-primary opacity-0 group-hover/circ:opacity-100 transition-opacity material-symbols-outlined">
+                  zoom_in
+                </span>
+              </button>
+              <CircuitDialog race={nextRace!} />
+            </>
+          )}
+        </div>
+      </section>
+    )
+  }
+
+  <section class="my-8">
+    <div class="bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+      <div class="space-y-1">
+        <span class="px-3 py-1 rounded-full bg-primary-container/20 border border-primary-container/40 text-primary text-xs font-bold uppercase tracking-wider">
+          Análisis de Carrera
+        </span>
+        <h2 class="text-headline-md font-bold text-on-surface uppercase tracking-tight">
+          Resultados de Carrera y Tiempos de Clasificación
+        </h2>
+        <p class="text-sm text-on-surface-variant max-w-xl">
+          Consulta la clasificación oficial, tiempos de Q1/Q2/Q3, paradas en boxes y ganancia de posiciones de cada Gran Premio de la temporada.
+        </p>
+      </div>
+      <a
+        href="/resultados"
+        class="shrink-0 px-6 py-3.5 rounded-xl bg-primary-container hover:bg-primary text-on-primary-container font-bold text-sm uppercase tracking-wider transition-all shadow-lg hover:shadow-primary-container/25 flex items-center gap-2"
+      >
+        <span>Ver Resultados de Carrera</span>
+        <span class="material-symbols-outlined text-base">arrow_forward</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="grid lg:grid-cols-2 gap-6 my-8">
+    <StandingsTable title="Campeonato de Pilotos" rows={standings.driverRows} limit={5} accent="e10600" />
+    <StandingsTable title="Campeonato de Constructores" rows={standings.constructorRows} limit={5} accent="ff8000" />
+  </section>
+
+  <section>
+    <div class="flex items-baseline justify-between mb-4">
+      <h2 class="text-3xl font-bold text-white">Últimas noticias</h2>
+      <a href="/noticias" class="text-xs font-semibold text-zinc-400 hover:text-f1-red uppercase tracking-wider">
+        Ver todas
+      </a>
+    </div>
+    <NewsGrid items={news} limit={3} cols={3} />
+  </section>
+</Layout>

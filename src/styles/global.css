@@ -1,0 +1,333 @@
+@import "tailwindcss";
+
+@theme {
+  --color-f1-red: #e10600;
+
+  --color-carbon: #0a0a0b;
+  --color-panel: #161617;
+  --color-line: #262626;
+
+  --color-carbon-bg: var(--color-carbon);
+  --color-panel-surface: var(--color-panel);
+  --color-border-subtle: var(--color-line);
+
+  --color-surface-container-lowest: #0e0e0f;
+  --color-surface-container-low: #1c1b1c;
+  --color-surface-container: #201f20;
+  --color-surface-container-high: #2a2a2b;
+  --color-surface-container-highest: #353436;
+  --color-surface-variant: #353436;
+
+  --color-on-surface: #e5e2e3;
+  --color-on-surface-variant: #a8a29e;
+  --color-text-primary: #f9fafb;
+  --color-text-secondary: #a1a1aa;
+
+  --color-primary-container: #e10600;
+  --color-primary: #ff5347;
+  --color-on-primary-container: #fff2f0;
+  --color-surface-tint: var(--color-primary);
+
+  --color-tertiary: #b4c5ff;
+  --color-tertiary-container: #0163ff;
+
+  --color-mclaren: #ff8000;
+  --color-ferrari: #ef1a2d;
+  --color-mercedes: #27f4d2;
+  --color-redbull: #3671c6;
+  --color-aston-martin: #229971;
+  --color-alpine: #0093cc;
+  --color-williams: #64c4ff;
+  --color-vcarb: #6692ff;
+  --color-haas: #b6babd;
+  --color-sauber: #52e252;
+
+  --font-display: "Barlow Condensed", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-data-tabular: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline-sm: var(--font-display);
+  --font-label-caps: var(--font-display);
+  --font-body-sm: var(--font-body);
+  --font-data-tabular--font-feature-settings: "tnum";
+
+  --text-body-sm: 14px;
+  --text-body-sm--line-height: 20px;
+
+  --text-display-lg: 48px;
+  --text-display-lg--line-height: 56px;
+  --text-display-lg--letter-spacing: -0.02em;
+  --text-display-lg--font-weight: 700;
+
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 40px;
+  --text-headline-lg--letter-spacing: 0.02em;
+  --text-headline-lg--font-weight: 700;
+
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--letter-spacing: 0.02em;
+  --text-headline-md--font-weight: 600;
+
+  --text-headline-sm: 20px;
+  --text-headline-sm--line-height: 28px;
+  --text-headline-sm--letter-spacing: 0.01em;
+  --text-headline-sm--font-weight: 600;
+
+  --text-label-caps: 12px;
+  --text-label-caps--line-height: 16px;
+  --text-label-caps--letter-spacing: 0.1em;
+  --text-label-caps--font-weight: 700;
+
+  --text-data-tabular: 14px;
+  --text-data-tabular--line-height: 16px;
+  --text-data-tabular--letter-spacing: -0.01em;
+  --text-data-tabular--font-weight: 600;
+
+  --spacing-gutter: 16px;
+  --spacing-margin-desktop: 32px;
+  --spacing-margin-mobile: 16px;
+  --spacing-container-max: 1440px;
+}
+
+@layer base {
+  body {
+    @apply bg-carbon-bg text-on-surface font-body;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+}
+
+@utility hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+  .radial-gradient-hero {
+    background:
+      radial-gradient(
+        circle at 50% 40%,
+        color-mix(in srgb, var(--color-f1-red) 16%, transparent) 0%,
+        color-mix(in srgb, var(--color-f1-red) 5%, transparent) 40%,
+        var(--color-carbon-bg) 75%
+      );
+  }
+
+  .ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+
+  .ticker {
+    display: inline-block;
+    animation: ticker 40s linear infinite;
+    will-change: transform;
+  }
+
+  .ticker:hover,
+  .ticker-wrap:hover .ticker {
+    animation-play-state: paused;
+  }
+
+  .pulse-red {
+    animation: pulse-red 2s ease-in-out infinite;
+  }
+
+  /* Circuito 3D (ver src/components/Circuit3D.astro) */
+  .circuit-3d {
+    perspective: 1200px;
+  }
+
+  .circuit-3d-scene {
+    transform-style: preserve-3d;
+  }
+
+  .circuit-3d-shadow,
+  .circuit-3d-wall,
+  .circuit-3d-neon,
+  .circuit-3d-track,
+  .circuit-3d-finish,
+  .circuit-3d-drs {
+    will-change: transform;
+  }
+
+  .circuit-3d-shadow {
+    opacity: 0.55;
+    filter: blur(5px);
+    transform: translate(3px, 5px);
+  }
+
+  .circuit-3d-wall {
+    opacity: 0;
+  }
+
+  .circuit-3d-neon {
+    opacity: 0;
+    filter: blur(3px);
+  }
+
+  .circuit-3d-track {
+    filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.5));
+  }
+
+  .circuit-3d-label {
+    position: absolute;
+    z-index: 10;
+    transform: translate(-50%, -120%);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 2px 6px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.5s ease 0.15s;
+    pointer-events: none;
+  }
+
+  .circuit-3d-drs {
+    opacity: 0;
+    transition: opacity 0.5s ease 0.2s;
+  }
+
+  .circuit-dialog {
+    margin: auto;
+    width: calc(100vw - 2rem);
+    max-width: 30rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+
+  .circuit-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .circuit-3d-tilt .circuit-3d-scene {
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .circuit-3d-tilt .circuit-3d-shadow {
+    transition:
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      filter 0.7s ease,
+      opacity 0.7s ease;
+  }
+
+  .circuit-3d-tilt .circuit-3d-wall {
+    transition:
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 0.7s ease;
+  }
+
+  .circuit-3d-tilt .circuit-3d-track,
+  .circuit-3d-tilt .circuit-3d-neon,
+  .circuit-3d-tilt .circuit-3d-finish,
+  .circuit-3d-tilt .circuit-3d-drs {
+    transition:
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      filter 0.7s ease;
+  }
+
+  .circuit-3d-tilt:hover .circuit-3d-scene {
+    transform: rotateX(53deg) rotateY(-12deg) rotateZ(12deg) translateY(-8px);
+  }
+
+  .circuit-3d-tilt:hover .circuit-3d-shadow {
+    transform: translate3d(50px, 75px, -30px);
+    opacity: 0.35;
+    filter: blur(10px);
+  }
+
+  .circuit-3d-tilt:hover .circuit-3d-wall {
+    transform: translate3d(-20px, -40px, 28px);
+    opacity: 1;
+  }
+
+  .circuit-3d-tilt:hover .circuit-3d-track,
+  .circuit-3d-tilt:hover .circuit-3d-neon,
+  .circuit-3d-tilt:hover .circuit-3d-finish,
+  .circuit-3d-tilt:hover .circuit-3d-drs {
+    transform: translate3d(-20px, -40px, 28px);
+  }
+
+  .circuit-3d-tilt:hover .circuit-3d-neon {
+    opacity: 0.45;
+  }
+
+  .circuit-3d-tilt:hover .circuit-3d-track {
+    filter: drop-shadow(0 0 16px rgba(225, 6, 0, 0.55))
+      drop-shadow(0 12px 18px rgba(0, 0, 0, 0.6));
+  }
+
+  .circuit-3d-tilt:hover .circuit-3d-label {
+    opacity: 1;
+    transform: translate(-50%, -120%) translate3d(-20px, -50px, 70px) scale(1.1);
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #020617;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+  }
+
+  .circuit-3d-tilt:hover .circuit-3d-drs {
+    opacity: 1;
+  }
+
+  .circuit-3d-soft:hover .circuit-3d-scene {
+    transform: rotateX(30deg) rotateY(-8deg) rotateZ(8deg) translateY(-3px);
+  }
+
+  .circuit-3d-soft:hover .circuit-3d-shadow {
+    transform: translate3d(24px, 36px, -15px);
+    opacity: 0.35;
+    filter: blur(8px);
+  }
+
+  .circuit-3d-soft:hover .circuit-3d-wall {
+    transform: translate3d(-12px, -24px, 14px);
+    opacity: 1;
+  }
+
+  .circuit-3d-soft:hover .circuit-3d-track,
+  .circuit-3d-soft:hover .circuit-3d-neon,
+  .circuit-3d-soft:hover .circuit-3d-finish,
+  .circuit-3d-soft:hover .circuit-3d-drs {
+    transform: translate3d(-12px, -24px, 14px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker,
+  .pulse-red {
+    animation: none;
+  }
+}
+
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes pulse-red {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-f1-red) 35%, transparent); }
+  50% { box-shadow: 0 0 0 6px transparent; }
+}

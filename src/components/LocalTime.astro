@@ -1,0 +1,31 @@
+---
+interface Props {
+  /** Fecha/hora en formato ISO (ej. "2026-08-23T13:00:00Z"). */
+  iso: string;
+  /** Separador entre fecha y hora. Default " · ". */
+  separator?: string;
+  className?: string;
+}
+
+const { iso, separator = " · ", className = "" } = Astro.props;
+const start = new Date(iso);
+const utcDate = start.toLocaleDateString("es-ES", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+const utcTime = start.toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit", timeZone: "UTC" });
+const fallback = [utcDate, `${utcTime} Hs.`].filter(Boolean).join(separator);
+---
+
+<time datetime={iso} data-local-time data-separator={separator} class:list={[className]}>
+  {fallback} (UTC)
+</time>
+
+<script>
+  const els = document.querySelectorAll("time[data-local-time]");
+  for (const el of els) {
+    const d = new Date(el.getAttribute("datetime") ?? "");
+    if (Number.isNaN(d.getTime())) continue;
+    const separator = el.dataset.separator ?? " · ";
+    const date = d.toLocaleDateString("es-ES", { day: "numeric", month: "short", year: "numeric" });
+    const time = d.toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" });
+    el.textContent = `${date}${separator}${time} Hs.`;
+  }
+</script>
