@@ -46,8 +46,8 @@ const hasWins = rows.some((r) => r.wins !== undefined);
               <th class="py-3 px-4 font-normal w-16">Pos</th>
               <th class="py-3 px-4 font-normal">Piloto / Equipo</th>
               {hasWins && <th class="py-3 px-4 font-normal text-center hidden sm:table-cell">Victorias</th>}
-              {showGap && <th class="py-3 px-4 font-normal text-right">Gap</th>}
               <th class="py-3 px-4 font-normal text-right">Puntos</th>
+              {showGap && <th class="py-3 px-4 font-normal text-right">Gap</th>}
             </tr>
           </thead>
           <tbody>
@@ -63,12 +63,12 @@ const hasWins = rows.some((r) => r.wins !== undefined);
                   {hasWins && (
                     <td class="py-3 px-4 text-center text-on-surface-variant hidden sm:table-cell">{row.wins}</td>
                   )}
+                  <td class="py-3 px-4 text-right font-bold text-on-surface">{row.points}</td>
                   {showGap && (
                     <td class="py-3 px-4 text-right text-on-surface-variant">
                       {i === 0 ? "—" : `−${visible[i - 1].points - row.points}`}
                     </td>
                   )}
-                  <td class="py-3 px-4 text-right font-bold text-on-surface">{row.points}</td>
                 </tr>
               ))
             }
