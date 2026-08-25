@@ -17,9 +17,10 @@ interface Props {
   limit?: number;
   full?: boolean;
   accent?: string;
+  showGap?: boolean;
 }
 
-const { title, rows, limit, full = false, accent } = Astro.props;
+const { title, rows, limit, full = false, accent, showGap = false } = Astro.props;
 const visible = limit ? rows.slice(0, limit) : rows;
 const hasWins = rows.some((r) => r.wins !== undefined);
 ---
@@ -45,12 +46,13 @@ const hasWins = rows.some((r) => r.wins !== undefined);
               <th class="py-3 px-4 font-normal w-16">Pos</th>
               <th class="py-3 px-4 font-normal">Piloto / Equipo</th>
               {hasWins && <th class="py-3 px-4 font-normal text-center hidden sm:table-cell">Victorias</th>}
+              {showGap && <th class="py-3 px-4 font-normal text-right">Gap</th>}
               <th class="py-3 px-4 font-normal text-right">Puntos</th>
             </tr>
           </thead>
           <tbody>
             {
-              visible.map((row) => (
+              visible.map((row, i) => (
                 <tr class="hover:bg-surface-container-low transition-colors border-b border-border-subtle/60">
                   <td class="py-3 px-4 text-on-surface-variant">{row.position}</td>
                   <td class="py-3 px-4 border-l-4 border-transparent" style={`border-left-color: #${row.color ?? teamColor(row.team)}`}>
@@ -60,6 +62,11 @@ const hasWins = rows.some((r) => r.wins !== undefined);
                   </td>
                   {hasWins && (
                     <td class="py-3 px-4 text-center text-on-surface-variant hidden sm:table-cell">{row.wins}</td>
+                  )}
+                  {showGap && (
+                    <td class="py-3 px-4 text-right text-on-surface-variant">
+                      {i === 0 ? "—" : `−${visible[i - 1].points - row.points}`}
+                    </td>
                   )}
                   <td class="py-3 px-4 text-right font-bold text-on-surface">{row.points}</td>
                 </tr>
