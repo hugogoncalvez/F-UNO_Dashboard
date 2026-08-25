@@ -5,6 +5,7 @@ import { getStandings } from "../lib/standings";
 import { teamColor } from "../lib/utils";
 
 const standings = await getStandings();
+const year = new Date().getFullYear();
 ---
 
 <Layout title="Clasificaciones F1 · F-Uno Center" description="Campeonato de pilotos y constructores de Formula 1.">
@@ -40,7 +41,7 @@ const standings = await getStandings();
   <div class="tab-header flex flex-col space-y-6 md:flex-row md:items-end md:justify-between md:space-y-0 mb-8">
     <div>
       <h1 class="font-display text-4xl font-bold text-text-primary uppercase tracking-tighter">Clasificaciones Mundiales</h1>
-      <p class="text-text-secondary mt-1">Temporada 2024 - Resultados oficiales</p>
+      <p class="text-text-secondary mt-1">Temporada {year} - Resultados oficiales</p>
     </div>
     <div class="flex bg-surface-container-lowest border border-border-subtle rounded-lg p-1">
       <label for="tab-pilotos" class="label-pilotos cursor-pointer px-6 py-2 rounded-md text-xs font-bold tracking-widest uppercase transition-colors hover:text-on-surface">
@@ -83,23 +84,7 @@ const standings = await getStandings();
             </label>
           </div>
         </div>
-        
-        <!-- Siguiente Carrera Promo -->
-        <div class="relative rounded-2xl overflow-hidden border border-border-subtle h-48 flex flex-col justify-end p-4 group cursor-pointer">
-          <div class="absolute inset-0 z-0">
-            <!-- You can use a generic F1 image here or pass from CMS later -->
-            <div class="w-full h-full bg-surface-container-high opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
-            <div class="absolute inset-0 bg-gradient-to-t from-carbon-bg via-carbon-bg/80 to-transparent"></div>
-          </div>
-          <div class="relative z-10">
-            <span class="inline-block px-2 py-1 bg-primary-container/20 border border-primary-container/30 text-primary text-[10px] font-bold tracking-widest uppercase rounded mb-2 backdrop-blur-sm">Siguiente Carrera</span>
-            <h3 class="font-display text-xl font-semibold text-white mb-1 group-hover:text-primary transition-colors">GP de Monza</h3>
-            <p class="text-sm text-text-secondary flex items-center">
-              <span class="material-symbols-outlined text-sm mr-1">schedule</span>
-              Próximamente
-            </p>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
