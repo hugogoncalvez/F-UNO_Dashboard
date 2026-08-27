@@ -21,6 +21,20 @@ function timeAgo(date: string | null): string {
   const days = Math.floor(hours / 24);
   return `Hace ${days} d`;
 }
+
+const TEAM_COLORS: Record<string, string> = {
+  ferrari: "#E8002D",
+  mclaren: "#FF8000",
+  redbull: "#3671C6",
+  mercedes: "#27F4D2",
+  "aston-martin": "#229971",
+  alpine: "#0093CC",
+  williams: "#64C4FF",
+  haas: "#B6BABD",
+  rb: "#6692FF",
+  sauber: "#52E252",
+  cadillac: "#1e1e1e",
+};
 ---
 
 {
@@ -30,8 +44,8 @@ function timeAgo(date: string | null): string {
         items.map((item) => (
           <a
             href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
+            target={item.link.startsWith("/noticias") ? "_self" : "_blank"}
+            rel={item.link.startsWith("/noticias") ? "" : "noopener noreferrer"}
             class="group flex flex-col gap-1.5 pb-4 border-b border-border-subtle/60 last:border-b-0 last:pb-0 hover:border-primary-container transition-colors"
           >
             <div class="flex items-center gap-2">
@@ -57,8 +71,8 @@ function timeAgo(date: string | null): string {
         items.map((item) => (
           <a
             href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
+            target={item.link.startsWith("/noticias") ? "_self" : "_blank"}
+            rel={item.link.startsWith("/noticias") ? "" : "noopener noreferrer"}
             class="group bg-panel-surface rounded-xl border border-border-subtle overflow-hidden hover:border-primary-container transition-colors duration-150 flex flex-col"
           >
             <div class="h-32 w-full relative border-b border-border-subtle overflow-hidden flex items-center justify-center bg-surface-container-lowest">

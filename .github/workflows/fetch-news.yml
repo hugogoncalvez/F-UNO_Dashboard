@@ -1,0 +1,59 @@
+# .github/workflows/fetch-news.yml
+#
+# Runs every 3 hours to fetch F1 news, process them with Groq AI,
+# and commit the results back to the repo. Vercel auto-deploys on push.
+#
+# Required secret: GROQ_API_KEY (from https://console.groq.com)
+
+name: Fetch & Process F1 News
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"  # Every 3 hours
+  workflow_dispatch:        # Manual trigger button
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run news ingestion script
+        run: node scripts/fetch-news.mjs
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet src/data/noticias.json src/data/processed-ids.json && echo "changed=false" >> "$GITHUB_OUTPUT" || echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/noticias.json src/data/processed-ids.json
+          git commit -m "chore: update F1 news [skip ci]"
+          git push

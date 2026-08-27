@@ -127,6 +127,21 @@ export interface NewsItem {
   imageUrl?: string | null;
 }
 
+export interface ProcessedNewsItem {
+  slug: string;
+  title: string;
+  summary: string;
+  content: string;
+  category: string;
+  keyPoints: string[];
+  team: string;
+  teamImage: string | null;
+  teamColor: string;
+  source: string;
+  originalLink: string;
+  date: string;
+}
+
 export interface LivePosition {
   driver_number: number;
   position: number;
