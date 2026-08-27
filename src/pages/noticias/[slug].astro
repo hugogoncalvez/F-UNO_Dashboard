@@ -36,22 +36,10 @@ const accentColor = categoryColors[item.category] ?? item.teamColor;
 ---
 
 <Layout title={`${item.title} · F-Uno Center`} description={item.summary}>
-  <!-- Hero image -->
-  <div class="relative w-full h-56 sm:h-72 md:h-80 rounded-2xl overflow-hidden mb-8 border border-border-subtle">
-    {
-      item.teamImage ? (
-        <img
-          src={item.teamImage}
-          alt={item.title}
-          class="absolute inset-0 w-full h-full object-cover"
-        />
-      ) : (
-        <div
-          class="absolute inset-0 w-full h-full"
-          style={`background: linear-gradient(135deg, ${item.teamColor}44 0%, ${item.teamColor}11 100%);`}
-        />
-      )
-    }
+  <!-- Hero -->
+  <div class="relative w-full h-56 sm:h-72 md:h-80 rounded-2xl overflow-hidden mb-8 border border-border-subtle"
+    style={`background: linear-gradient(135deg, ${item.teamColor}66 0%, ${item.teamColor}22 50%, ${item.teamColor}0a 100%);`}
+  >
     <div class="absolute inset-0 bg-gradient-to-t from-carbon-bg via-carbon-bg/60 to-transparent" />
     <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
       <div class="flex items-center gap-3 mb-3">

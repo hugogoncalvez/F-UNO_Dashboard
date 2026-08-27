@@ -34,6 +34,7 @@ const TEAM_COLORS: Record<string, string> = {
   rb: "#6692FF",
   sauber: "#52E252",
   cadillac: "#1e1e1e",
+  pilotos: "#e10600",
 };
 ---
 
@@ -68,38 +69,41 @@ const TEAM_COLORS: Record<string, string> = {
       cols === 2 && "sm:grid-cols-2",
     ]}>
       {
-        items.map((item) => (
-          <a
-            href={item.link}
-            target={item.link.startsWith("/noticias") ? "_self" : "_blank"}
-            rel={item.link.startsWith("/noticias") ? "" : "noopener noreferrer"}
-            class="group bg-panel-surface rounded-xl border border-border-subtle overflow-hidden hover:border-primary-container transition-colors duration-150 flex flex-col"
-          >
-            <div class="h-32 w-full relative border-b border-border-subtle overflow-hidden flex items-center justify-center bg-surface-container-lowest">
-              {
-                item.imageUrl ? (
-                  <img src={item.imageUrl} alt={item.title} class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" />
-                ) : (
-                  <div class="w-full h-full flex items-center justify-center radial-gradient-hero">
-                    <span class="material-symbols-outlined text-on-surface-variant opacity-60">newspaper</span>
-                  </div>
-                )
-              }
-              <span class="absolute top-2 left-2 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-label-caps text-on-surface border border-border-subtle z-10">
-                {item.source}
-              </span>
-            </div>
-            <div class="p-4 flex flex-col gap-2 flex-grow">
-              {item.date && <span class="font-data-tabular text-[12px] text-on-surface-variant">{timeAgo(item.date)}</span>}
-              <h4 class="font-headline-sm text-headline-sm text-on-surface leading-tight group-hover:text-primary transition-colors">
-                {item.title}
-              </h4>
-              {item.description && (
-                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">{item.description}</p>
-              )}
-            </div>
-          </a>
-        ))
+        items.map((item) => {
+          const tc = TEAM_COLORS[item.team] ?? "#e10600";
+          return (
+            <a
+              href={item.link}
+              target={item.link.startsWith("/noticias") ? "_self" : "_blank"}
+              rel={item.link.startsWith("/noticias") ? "" : "noopener noreferrer"}
+              class="group bg-panel-surface rounded-xl border border-border-subtle overflow-hidden hover:border-primary-container transition-colors duration-150 flex flex-col"
+            >
+              <div
+                class="h-24 w-full relative border-b border-border-subtle overflow-hidden flex items-center justify-center"
+                style={`background: linear-gradient(135deg, ${tc}66 0%, ${tc}22 50%, ${tc}0a 100%);`}
+              >
+                <span
+                  class="text-2xl font-display font-black opacity-15 select-none tracking-widest"
+                  style={`color: ${tc};`}
+                >
+                  F-UNO
+                </span>
+                <span class="absolute top-2 left-2 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-label-caps text-on-surface border border-border-subtle z-10">
+                  {item.source}
+                </span>
+              </div>
+              <div class="p-4 flex flex-col gap-2 flex-grow">
+                {item.date && <span class="font-data-tabular text-[12px] text-on-surface-variant">{timeAgo(item.date)}</span>}
+                <h4 class="font-headline-sm text-headline-sm text-on-surface leading-tight group-hover:text-primary transition-colors">
+                  {item.title}
+                </h4>
+                {item.description && (
+                  <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">{item.description}</p>
+                )}
+              </div>
+            </a>
+          );
+        })
       }
     </div>
   ) : (

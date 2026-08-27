@@ -15,7 +15,7 @@ const year = new Date().getFullYear();
 const [calendar, standings, news] = await Promise.all([
   getSeasonCalendar(year),
   getStandings(),
-  getNews(6),
+  getNews(3),
 ]);
 
 const now = Date.now();
@@ -127,6 +127,6 @@ const nextRaceStart = nextRace ? `${nextRace.date}T${nextRace.time}` : null;
         Ver todas
       </a>
     </div>
-    <NewsGrid items={news} limit={3} cols={3} />
+    <NewsGrid items={news} cols={3} />
   </section>
 </Layout>

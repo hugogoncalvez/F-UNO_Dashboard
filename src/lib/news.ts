@@ -116,7 +116,8 @@ export async function getNews(limit = 30): Promise<NewsItem[]> {
       source: p.source,
       date: p.date,
       description: p.summary,
-      imageUrl: p.teamImage,
+      team: p.team,
+      teamColor: p.teamColor,
     }));
   }
   return fetchLiveNews(limit);

@@ -124,7 +124,8 @@ export interface NewsItem {
   source: string;
   date: string | null;
   description: string;
-  imageUrl?: string | null;
+  team?: string;
+  teamColor?: string;
 }
 
 export interface ProcessedNewsItem {
@@ -135,7 +136,6 @@ export interface ProcessedNewsItem {
   category: string;
   keyPoints: string[];
   team: string;
-  teamImage: string | null;
   teamColor: string;
   source: string;
   originalLink: string;
