@@ -4,6 +4,7 @@ dist/
 .env
 .env.*
 .DS_Store
+gmail
 
 # Excluir carpeta design system
 stitch_f_uno_center_design_system/
