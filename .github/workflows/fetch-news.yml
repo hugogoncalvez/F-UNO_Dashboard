@@ -9,7 +9,7 @@ name: Fetch & Process F1 News
 
 on:
   schedule:
-    - cron: "0 11,15,18 * * *"  # 8am, 12pm, 3pm ART (UTC-3)
+    - cron: "48 11,15,18 * * *"  # 8am, 12pm, 3pm ART (UTC-3)
   workflow_dispatch:        # Manual trigger button
 
 permissions:
