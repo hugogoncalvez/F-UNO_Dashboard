@@ -7,9 +7,16 @@ import Footer from "../components/Footer.astro";
 interface Props {
   title: string;
   description?: string;
+  image?: string;
+  canonical?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, image, canonical } = Astro.props;
+const siteUrl = "https://f-uno-center.vercel.app";
+const pageTitle = title ?? "F-Uno Center";
+const pageDescription = description ?? "Dashboard de Formula 1: calendario, clasificaciones, resultados, pilotos y noticias.";
+const pageImage = image ?? "/og-default.svg";
+const canonicalUrl = canonical ?? `${siteUrl}${Astro.url.pathname}`;
 const favicon =
   "data:image/svg+xml," +
   encodeURIComponent(
@@ -22,8 +29,9 @@ const favicon =
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content={description ?? "Dashboard de Formula 1: calendario, clasificaciones, resultados, pilotos y noticias."} />
+    <meta name="description" content={pageDescription} />
     <link rel="icon" href={favicon} />
+    <link rel="canonical" href={canonicalUrl} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,7 +42,22 @@ const favicon =
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
       rel="stylesheet"
     />
-    <title>{title}</title>
+    <title>{pageTitle}</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:image" content={`${siteUrl}${pageImage}`} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content="F-Uno Center" />
+    <meta property="og:locale" content="es_AR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content={`${siteUrl}${pageImage}`} />
   </head>
   <body class="min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container">
     <Sidebar />
