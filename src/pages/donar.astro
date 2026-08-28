@@ -18,20 +18,27 @@ import Layout from "../layouts/Layout.astro";
           Cualquier monto suma.
         </p>
       </div>
-      <a
-        href="https://link.mercadopago.com.ar/aereo.ajeno.baila.mp"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#009ee3] text-white font-bold uppercase tracking-wider text-sm hover:opacity-90 transition-opacity"
-      >
-        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
-        </svg>
-        Donar con Mercado Pago
-      </a>
-      <p class="text-text-secondary text-xs">
-        Alias: <span class="text-text-primary font-mono">aereo.ajeno.baila.mp</span>
-      </p>
+      <div class="space-y-3">
+        <p class="text-text-secondary text-xs">Enviá tu donación a través de Mercado Pago con este alias:</p>
+        <div class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-surface-container-low border border-border-subtle">
+          <span id="alias-text" class="text-text-primary font-mono text-sm">aereo.ajeno.baila.mp</span>
+          <button id="copy-alias-btn" type="button" class="text-on-surface-variant hover:text-primary-container transition-colors" title="Copiar alias">
+            <span class="material-symbols-outlined text-[18px]">content_copy</span>
+          </button>
+        </div>
+        <p id="copy-alias-msg" class="text-primary-container text-xs hidden">¡Copiado!</p>
+      </div>
     </div>
   </div>
+
+  <script>
+    document.getElementById("copy-alias-btn")?.addEventListener("click", async () => {
+      const alias = document.getElementById("alias-text")?.textContent?.trim();
+      if (!alias) return;
+      await navigator.clipboard.writeText(alias);
+      const msg = document.getElementById("copy-alias-msg");
+      msg?.classList.remove("hidden");
+      setTimeout(() => msg?.classList.add("hidden"), 2000);
+    });
+  </script>
 </Layout>
