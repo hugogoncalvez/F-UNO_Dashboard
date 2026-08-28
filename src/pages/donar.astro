@@ -2,43 +2,76 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Donar · F-Uno Center" description="Ayudanos a mantener F-Uno Center con una donación.">
+<Layout
+  title="Donar · F-Uno Center"
+  description="Ayudanos a mantener F-Uno Center con una donación."
+>
   <div class="max-w-2xl mx-auto">
     <div class="mb-8 border-b border-border-subtle pb-4">
-      <h1 class="font-display text-4xl font-bold text-text-primary uppercase tracking-tighter">Donar</h1>
-      <p class="text-text-secondary mt-1">Ayudanos a mantener el sitio funcionando.</p>
+      <h1
+        class="font-display text-4xl font-bold text-text-primary uppercase tracking-tighter"
+      >
+        Donar
+      </h1>
+      <p class="text-text-secondary mt-1">
+        Ayudanos a mantener el sitio funcionando.
+      </p>
     </div>
 
-    <div class="bg-panel-surface border border-border-subtle rounded-2xl p-8 text-center space-y-6">
-      <span class="material-symbols-outlined text-6xl text-primary-container">favorite</span>
+    <div
+      class="bg-panel-surface border border-border-subtle rounded-2xl p-8 text-center space-y-6"
+    >
+      <span class="material-symbols-outlined text-6xl text-primary-container"
+        >favorite</span
+      >
       <div class="space-y-2">
-        <h2 class="font-display text-xl text-text-primary">¿Te gusta F-Uno Center?</h2>
+        <h2 class="font-display text-xl text-text-primary">
+          ¿Te gusta F-Uno Center?
+        </h2>
         <p class="text-text-secondary text-sm max-w-md mx-auto">
-          Tu donación nos ayuda a cubrir los costos de hosting, dominio y API.
-          Cualquier monto suma.
+          Tu donación nos ayuda a seguir creciendo. Cualquier monto suma.
         </p>
       </div>
       <div class="space-y-3">
-        <p class="text-text-secondary text-xs">Enviá tu donación a través de Mercado Pago con este alias:</p>
-        <div class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-surface-container-low border border-border-subtle">
-          <span id="alias-text" class="text-text-primary font-mono text-sm">aereo.ajeno.baila.mp</span>
-          <button id="copy-alias-btn" type="button" class="text-on-surface-variant hover:text-primary-container transition-colors" title="Copiar alias">
-            <span class="material-symbols-outlined text-[18px]">content_copy</span>
+        <p class="text-text-secondary text-xs">
+          Enviá tu donación a través de Mercado Pago con este alias:
+        </p>
+        <div
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-surface-container-low border border-border-subtle"
+        >
+          <span id="alias-text" class="text-text-primary font-mono text-sm"
+            >aereo.ajeno.baila.mp</span
+          >
+          <button
+            id="copy-alias-btn"
+            type="button"
+            class="text-on-surface-variant hover:text-primary-container transition-colors"
+            title="Copiar alias"
+          >
+            <span class="material-symbols-outlined text-[18px]"
+              >content_copy</span
+            >
           </button>
         </div>
-        <p id="copy-alias-msg" class="text-primary-container text-xs hidden">¡Copiado!</p>
+        <p id="copy-alias-msg" class="text-primary-container text-xs hidden">
+          ¡Copiado!
+        </p>
       </div>
     </div>
   </div>
 
   <script>
-    document.getElementById("copy-alias-btn")?.addEventListener("click", async () => {
-      const alias = document.getElementById("alias-text")?.textContent?.trim();
-      if (!alias) return;
-      await navigator.clipboard.writeText(alias);
-      const msg = document.getElementById("copy-alias-msg");
-      msg?.classList.remove("hidden");
-      setTimeout(() => msg?.classList.add("hidden"), 2000);
-    });
+    document
+      .getElementById("copy-alias-btn")
+      ?.addEventListener("click", async () => {
+        const alias = document
+          .getElementById("alias-text")
+          ?.textContent?.trim();
+        if (!alias) return;
+        await navigator.clipboard.writeText(alias);
+        const msg = document.getElementById("copy-alias-msg");
+        msg?.classList.remove("hidden");
+        setTimeout(() => msg?.classList.add("hidden"), 2000);
+      });
   </script>
 </Layout>
