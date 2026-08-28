@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
+    "@astrojs/sitemap": "^3.7.3",
     "astro": "^5.0.0",
     "fast-xml-parser": "^4.5.0"
   },
