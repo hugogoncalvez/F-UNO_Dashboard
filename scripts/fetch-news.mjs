@@ -23,6 +23,7 @@ const PROCESSED_FILE = join(DATA_DIR, "processed-ids.json");
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
 const GROQ_MODEL = "qwen/qwen3.8-27b";
 const MAX_NEWS_PER_RUN = 5;
+const MAX_ARTICLES = 20;
 const DELAY_MS = 7000;
 
 if (!GROQ_API_KEY) {
@@ -226,7 +227,7 @@ async function processWithAI(title, articleBody, fallbackDesc, source) {
 async function main() {
   console.log("🏎️  F-Uno Center — Ingestión con Scraping\n");
 
-  const existingNews = await loadJson(NEWS_FILE, []);
+  let existingNews = await loadJson(NEWS_FILE, []);
   const processedIds = new Set(await loadJson(PROCESSED_FILE, []));
   console.log(`  Existing: ${existingNews.length} | Processed IDs: ${processedIds.size}`);
 
@@ -294,6 +295,11 @@ async function main() {
   }
 
   existingNews.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+  if (existingNews.length > MAX_ARTICLES) {
+    existingNews = existingNews.slice(0, MAX_ARTICLES);
+    console.log(`  Trimmed to ${MAX_ARTICLES} articles`);
+  }
 
   await saveJson(NEWS_FILE, existingNews);
   await saveJson(PROCESSED_FILE, [...processedIds]);
