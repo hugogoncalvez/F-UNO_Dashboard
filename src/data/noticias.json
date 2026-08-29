@@ -1,5 +1,22 @@
 [
   {
+    "slug": "horarios-del-gp-de-italia-2026-en-monza-fp1-a-las-1230h-y-carrera-a-las-1500h",
+    "title": "Horarios del GP de Italia 2026 en Monza: FP1 a las 12:30h y carrera a las 15:00h",
+    "summary": "La F1 regresa a su formato tradicional en Monza del 4 al 6 de septiembre. La clasificación será el sábado a las 16:00h y la carrera el domingo a las 15:00h (hora española).",
+    "content": "<p>El Gran Premio de Italia de Fórmula 1 se disputará en el Autódromo de Monza entre el 4 y el 6 de septiembre de 2026. Tras el sprint en Zandvoort, el evento vuelve al formato estándar con tres sesiones de libres, una clasificación y la carrera. Los horarios en España son: Viernes 4 de septiembre, FP1 a las 12:30h y FP2 a las 16:00h; Sábado 5 de septiembre, FP3 a las 12:30h y Clasificación a las 16:00h; Domingo 6 de septiembre, Carrera a las 15:00h.</p><p>Monza, inaugurado el 3 de septiembre de 1922, acumula 75 ediciones de F1, tres más que Mónaco, cifra que aumentará a cuatro tras esta carrera. El circuito mide 307,029 km y cuenta con 11 curvas (5 a la izquierda y 6 a la derecha). La transmisión en España estará disponible exclusivamente a través de DAZN F1.</p>",
+    "category": "Carrera",
+    "keyPoints": [
+      "Fechas: 4 al 6 de septiembre de 2026 en Monza.",
+      "Horarios clave: Clasificación sábado 16:00h, Carrera domingo 15:00h (hora española).",
+      "Monza suma 75 GPs de F1, superando a Mónaco por tres ediciones."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/horarios-previa-italia-monza-formula1-2026/10850415/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-08-29T17:02:36.000Z"
+  },
+  {
     "slug": "stella-norris-rinde-a-nivel-de-campeon-y-mejora-tras-clic-en-2025",
     "title": "Stella: Norris rinde a nivel de campeón y mejora tras 'clic' en 2025",
     "summary": "Andrea Stella afirma que Lando Norris supera las prestaciones del MCL40 tras ganar en Hungría y Zandvoort. El director de McLaren destaca la mejora continua del británico y su nuevo enfoque de trabajo.",
@@ -326,22 +343,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/motogp/news/marc-marquez-desvela-consejo-hadjar-perderte-una-carrera-no-cambia-vida/10849853/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-08-27T17:56:02.000Z"
-  },
-  {
-    "slug": "piastri-lleva-un-ano-sin-ganar-el-analisis-de-su-estancamiento-frente-a-norris",
-    "title": "Piastri lleva un año sin ganar: el análisis de su estancamiento frente a Norris",
-    "summary": "Oscar Piastri no gana desde el GP de Países Bajos 2024, donde lideraba el campeonato con 34 puntos de ventaja. En 2025, incidentes iniciales y condiciones adversas han impedido que el australiano recupere el ritmo de su compañero Lando Norris.",
-    "content": "<p>El 31 de agosto se cumple un año desde la última victoria de Oscar Piastri en el GP de Países Bajos. En esa carrera, el australiano amplió su ventaja sobre Lando Norris a 34 puntos, mientras Max Verstappen se encontraba a 104 puntos del liderato. Desde entonces, la dinámica ha cambiado drásticamente, marcada por la polémica de las 'reglas papaya' en Italia, donde Piastri cedió la posición a Norris tras una orden de los comisarios.</p><p>La temporada 2025 comenzó con dificultades para McLaren: un accidente de Piastri en la vuelta de reconocimiento en Melbourne y un doble DNS en Shanghái. Aunque el piloto recuperó el nivel en Japón con un segundo puesto, posteriormente sufrió en Bakú, Austin (bajo agarre) y Ciudad de México (altitud). A pesar de los cambios reglamentarios de 2026 que teóricamente igualan la parrilla, Piastri aún no ha logrado igualar el rendimiento de Norris en la actual campaña.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Última victoria de Piastri: GP de Países Bajos 2024 (hace 1 año).",
-      "Ventaja de Piastri sobre Norris en 2024: 34 puntos.",
-      "Incidentes 2025: Accidente en Melbourne, doble DNS en Shanghái, problemas en Bakú, Austin y CDMX."
-    ],
-    "team": "mclaren",
-    "teamColor": "#FF8000",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/por-que-piastri-sufriendo-igualar-norris-explicacion-mclaren/10849914/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-08-27T17:37:34.000Z"
   }
 ]
