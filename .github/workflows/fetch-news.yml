@@ -1,7 +1,7 @@
 # .github/workflows/fetch-news.yml
 #
-# Runs every 3 hours to fetch F1 news, process them with Groq AI,
-# and commit the results back to the repo. Vercel auto-deploys on push.
+# Fetches F1 news, processes with Groq AI, and commits back to the repo.
+# Vercel auto-deploys on push.
 #
 # Required secret: GROQ_API_KEY (from https://console.groq.com)
 
@@ -25,6 +25,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -37,7 +38,7 @@ jobs:
           version: 10
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Run news ingestion script
         run: node scripts/fetch-news.mjs
@@ -47,7 +48,11 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet src/data/noticias.json src/data/processed-ids.json && echo "changed=false" >> "$GITHUB_OUTPUT" || echo "changed=true" >> "$GITHUB_OUTPUT"
+          if git diff --quiet src/data/noticias.json src/data/processed-ids.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Commit and push
         if: steps.changes.outputs.changed == 'true'
@@ -56,4 +61,4 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add src/data/noticias.json src/data/processed-ids.json
           git commit -m "chore: update F1 news [skip ci]"
-          git push
+          git push origin main
