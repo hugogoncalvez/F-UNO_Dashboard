@@ -61,7 +61,7 @@ const nextRaceStart = nextRace ? `${nextRace.date}T${nextRace.time}` : null;
   {
     nextRaceStart && (
       <section class="mb-8">
-        <div class="bg-panel-surface/80 border border-border-subtle rounded-2xl backdrop-blur-xl grid lg:grid-cols-[75%_25%] gap-6 items-stretch">
+        <div class="bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl grid lg:grid-cols-[75%_25%] gap-6 items-stretch">
           <div>
             <p class="text-xs uppercase tracking-widest text-zinc-500 mb-1">Próxima carrera · Ronda {nextRace!.round}</p>
             <h2 class="font-display text-3xl font-bold text-white mb-1">{nextRace!.raceName}</h2>
@@ -77,7 +77,7 @@ const nextRaceStart = nextRace ? `${nextRace.date}T${nextRace.time}` : null;
                 type="button"
                 data-open-circuit={`circuit-dialog-${nextRace!.round}`}
                 aria-label={`Ver detalles del circuito ${nextRace!.circuit}`}
-                class="group/circ w-full h-full min-h-[140px] rounded-xl bg-surface-container-low border border-border-subtle p-3 overflow-hidden cursor-pointer hover:border-primary-container/60 transition-colors relative flex items-center justify-center"
+                class="group/circ w-full h-full min-h-[140px] rounded-xl bg-surface-container-low border border-border-subtle p-3 overflow-hidden cursor-pointer hover:border-primary-container/60 transition-colors relative flex items-center justify-center -mr-6 -mt-6 -mb-6 rounded-r-none"
               >
                 <Circuit3D track={nextRace!.track} name={nextRace!.circuit} />
                 <span class="absolute bottom-4 right-4 text-[20px] leading-none text-primary opacity-0 group-hover/circ:opacity-100 transition-opacity material-symbols-outlined">
