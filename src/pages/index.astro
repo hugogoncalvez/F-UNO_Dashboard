@@ -77,7 +77,7 @@ const nextRaceStart = nextRace ? `${nextRace.date}T${nextRace.time}` : null;
                 type="button"
                 data-open-circuit={`circuit-dialog-${nextRace!.round}`}
                 aria-label={`Ver detalles del circuito ${nextRace!.circuit}`}
-                class="group/circ shrink-0 w-full h-full rounded-xl bg-surface-container-low border border-border-subtle p-3 overflow-hidden cursor-pointer hover:border-primary-container/60 transition-colors relative flex items-center justify-center"
+                class="group/circ w-full h-full min-h-[140px] rounded-xl bg-surface-container-low border border-border-subtle p-3 overflow-hidden cursor-pointer hover:border-primary-container/60 transition-colors relative flex items-center justify-center"
               >
                 <Circuit3D track={nextRace!.track} name={nextRace!.circuit} />
                 <span class="absolute bottom-4 right-4 text-[20px] leading-none text-primary opacity-0 group-hover/circ:opacity-100 transition-opacity material-symbols-outlined">
