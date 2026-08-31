@@ -9,14 +9,44 @@ interface Props {
   description?: string;
   image?: string;
   canonical?: string;
+  schema?: Record<string, any>;
 }
 
-const { title, description, image, canonical } = Astro.props;
+const { title, description, image, canonical, schema } = Astro.props;
 const siteUrl = "https://f-uno-center.vercel.app";
 const pageTitle = title ?? "F-Uno Center";
 const pageDescription = description ?? "Dashboard de Formula 1: calendario, clasificaciones, resultados, pilotos y noticias.";
 const pageImage = image ?? "/og-default.svg";
 const canonicalUrl = canonical ?? `${siteUrl}${Astro.url.pathname}`;
+
+const pathSegments = Astro.url.pathname.replace(/\/$/, "").split("/").filter(Boolean);
+const breadcrumbItems = [
+  { "@type": "ListItem", position: 1, name: "Inicio", item: siteUrl }
+];
+const pageNames: Record<string, string> = {
+  "noticias": "Noticias",
+  "pilotos": "Pilotos",
+  "calendario": "Calendario",
+  "resultados": "Resultados",
+  "clasificaciones": "Clasificaciones",
+  "gp-actual": "GP Actual",
+  "contacto": "Contacto",
+  "donar": "Donar",
+};
+pathSegments.forEach((seg, i) => {
+  const name = pageNames[seg] ?? seg.charAt(0).toUpperCase() + seg.slice(1);
+  breadcrumbItems.push({
+    "@type": "ListItem",
+    position: i + 2,
+    name,
+    ...(i < pathSegments.length - 1 ? { item: `${siteUrl}/${seg}` } : {})
+  });
+});
+const autoBreadcrumbSchema = breadcrumbItems.length > 1 ? {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": breadcrumbItems
+} : null;
 const favicon =
   "data:image/svg+xml," +
   encodeURIComponent(
@@ -58,6 +88,30 @@ const favicon =
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={pageDescription} />
     <meta name="twitter:image" content={`${siteUrl}${pageImage}`} />
+
+    <!-- Schema.org WebSite -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "F-Uno Center",
+      "url": siteUrl,
+      "description": "Dashboard de Formula 1: calendario, clasificaciones, resultados, pilotos y noticias.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": `${siteUrl}/noticias?q={search_term_string}`,
+        "query-input": "required name=search_term_string"
+      }
+    })} />
+
+    <!-- Page-specific schema -->
+    {schema && (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    )}
+
+    <!-- Auto BreadcrumbList -->
+    {autoBreadcrumbSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(autoBreadcrumbSchema)} />
+    )}
   </head>
   <body class="min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container">
     <Sidebar />

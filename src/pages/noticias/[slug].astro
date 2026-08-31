@@ -33,9 +33,35 @@ const categoryColors: Record<string, string> = {
 };
 
 const accentColor = categoryColors[item.category] ?? item.teamColor;
+
+const newsSchema = {
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": item.title,
+  "description": item.summary,
+  "datePublished": item.date,
+  "author": {
+    "@type": "Organization",
+    "name": "F-Uno Center"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "F-Uno Center",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://f-uno-center.vercel.app/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://f-uno-center.vercel.app/noticias/${item.slug}`
+  },
+  "articleSection": item.category,
+  "keywords": [item.team, item.category, "F1", "Formula 1"].filter(Boolean).join(", ")
+};
 ---
 
-<Layout title={`${item.title} · F-Uno Center`} description={item.summary}>
+<Layout title={`${item.title} · F-Uno Center`} description={item.summary} schema={newsSchema}>
   <!-- Hero -->
   <div class="relative w-full h-56 sm:h-72 md:h-80 rounded-2xl overflow-hidden mb-8 border border-border-subtle"
     style={`background: linear-gradient(135deg, ${item.teamColor}66 0%, ${item.teamColor}22 50%, ${item.teamColor}0a 100%);`}
