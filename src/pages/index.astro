@@ -27,17 +27,17 @@ const nextRaceStart = nextRace ? `${nextRace.date}T${nextRace.time}` : null;
 
 <Layout title="F-Uno Center · Todo el universo F1 en un solo lugar" description="Dashboard de Formula 1: calendario 2026, clasificaciones, resultados, pilotos y últimas noticias de F1. Todo en un solo lugar.">
   <section class="relative overflow-hidden rounded-2xl border border-border-subtle mb-8 min-h-[260px] flex items-end">
-    <!-- Carbon fiber base texture -->
+    <!-- Carbon fiber base texture (65%) -->
     <div
-      class="absolute inset-0 z-0 opacity-40"
+      class="absolute inset-0 z-0 opacity-40 w-[65%]"
       style="background-image: url('/carbon-fiber.webp'); background-repeat: repeat; background-size: 256px 256px;"
     />
-    <!-- Background image (right side) -->
+    <!-- Background image right side (35%) -->
     <img
       src="/fondoTitulo.webp"
       alt=""
       aria-hidden="true"
-      class="absolute inset-0 w-full h-full object-scale-down object-right z-10"
+      class="absolute top-0 right-0 h-full w-[35%] object-cover z-10"
     />
     <!-- Dark gradient overlay so text stays legible -->
     <div class="absolute inset-0 z-20 bg-gradient-to-r from-carbon-bg/95 via-carbon-bg/70 to-transparent" />
