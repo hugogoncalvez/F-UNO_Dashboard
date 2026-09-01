@@ -25,35 +25,49 @@ const nextRace = calendar
 const nextRaceStart = nextRace ? `${nextRace.date}T${nextRace.time}` : null;
 ---
 
-<Layout title="F-Uno Center · Todo el universo F1 en un solo lugar" description="Dashboard de Formula 1: calendario 2026, clasificaciones, resultados, pilotos y últimas noticias de F1. Todo en un solo lugar.">
-  <section class="relative overflow-hidden rounded-2xl border border-border-subtle mb-8 min-h-[260px] flex items-end">
+<Layout
+  title="F-Uno Center · Todo el universo F1 en un solo lugar"
+  description="Dashboard de Formula 1: calendario 2026, clasificaciones, resultados, pilotos y últimas noticias de F1. Todo en un solo lugar."
+>
+  <section
+    class="relative overflow-hidden rounded-2xl border border-border-subtle mb-8 min-h-[260px] flex items-end"
+  >
     <!-- Carbon fiber base texture (65%) -->
     <div
       class="absolute inset-0 z-0 opacity-40 w-[75%]"
       style="background-image: url('/carbon-fiber.webp'); background-repeat: repeat; background-size: 256px 256px;"
-    />
+    >
+    </div>
     <!-- Background image right side (35%) -->
     <img
       src="/fondoTitulo.webp"
       alt=""
       aria-hidden="true"
-      class="absolute top-0 right-0 h-full w-[25%] object-cover z-10"
+      class="absolute top-0 right-0 h-full hidden md:block md:w-[25%] object-cover z-10"
     />
     <!-- Dark gradient overlay so text stays legible -->
-    <div class="absolute inset-0 z-20 bg-gradient-to-r from-carbon-bg/95 via-carbon-bg/70 to-transparent" />
+    <div
+      class="absolute inset-0 z-20 bg-gradient-to-r from-carbon-bg/95 via-carbon-bg/70 to-transparent"
+    >
+    </div>
     <!-- Optional red radial accent -->
     <div
       class="absolute inset-0 z-30 opacity-30"
       style="background: radial-gradient(600px 200px at 80% 0%, #e10600 0%, transparent 60%);"
-    />
+    >
+    </div>
     <div class="relative z-40 px-6 py-10">
-      <p class="text-f1-red font-bold uppercase tracking-widest text-sm mb-2">Temporada {year}</p>
-      <h1 class="font-display text-4xl sm:text-6xl font-bold text-white leading-none">
+      <p class="text-f1-red font-bold uppercase tracking-widest text-sm mb-2">
+        Temporada {year}
+      </p>
+      <h1
+        class="font-display text-4xl sm:text-6xl font-bold text-white leading-none"
+      >
         Todo el universo F1 <span class="text-f1-red">en un solo lugar</span>
       </h1>
       <p class="mt-4 max-w-2xl text-zinc-400">
-        Calendario, clasificaciones, resultados, pilotos, telemetría en vivo y noticias
-        de los principales medios.
+        Calendario, clasificaciones, resultados, pilotos, telemetría en vivo y
+        noticias de los principales medios.
       </p>
     </div>
   </section>
@@ -63,8 +77,12 @@ const nextRaceStart = nextRace ? `${nextRace.date}T${nextRace.time}` : null;
       <section class="mb-8">
         <div class="bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl grid lg:grid-cols-[75%_25%] gap-6 items-stretch">
           <div>
-            <p class="text-xs uppercase tracking-widest text-zinc-500 mb-1">Próxima carrera · Ronda {nextRace!.round}</p>
-            <h2 class="font-display text-3xl font-bold text-white mb-1">{nextRace!.raceName}</h2>
+            <p class="text-xs uppercase tracking-widest text-zinc-500 mb-1">
+              Próxima carrera · Ronda {nextRace!.round}
+            </p>
+            <h2 class="font-display text-3xl font-bold text-white mb-1">
+              {nextRace!.raceName}
+            </h2>
             <p class="text-sm text-zinc-400 mb-4">
               {nextRace!.circuit} · {nextRace!.locality}, {nextRace!.country} ·{" "}
               <LocalTime iso={nextRaceStart} separator=" " />
@@ -77,7 +95,7 @@ const nextRaceStart = nextRace ? `${nextRace.date}T${nextRace.time}` : null;
                 type="button"
                 data-open-circuit={`circuit-dialog-${nextRace!.round}`}
                 aria-label={`Ver detalles del circuito ${nextRace!.circuit}`}
-                class="group/circ w-full h-full min-h-[140px] rounded-xl bg-surface-container-low border border-border-subtle p-3 overflow-hidden cursor-pointer hover:border-primary-container/60 transition-colors relative flex items-center justify-center -mr-6 -mt-6 -mb-6 rounded-r-none"
+                class="group/circ w-full h-full min-h-[140px] rounded-xl bg-surface-container-low border border-border-subtle p-3 overflow-hidden cursor-pointer hover:border-primary-container/60 transition-colors relative flex items-center justify-center -mr-6 -mb-6 rounded-r-none"
               >
                 <Circuit3D track={nextRace!.track} name={nextRace!.circuit} />
                 <span class="absolute bottom-4 right-4 text-[20px] leading-none text-primary opacity-0 group-hover/circ:opacity-100 transition-opacity material-symbols-outlined">
@@ -93,16 +111,23 @@ const nextRaceStart = nextRace ? `${nextRace.date}T${nextRace.time}` : null;
   }
 
   <section class="my-8">
-    <div class="bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+    <div
+      class="bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl"
+    >
       <div class="space-y-1">
-        <span class="px-3 py-1 rounded-full bg-primary-container/20 border border-primary-container/40 text-primary text-xs font-bold uppercase tracking-wider">
+        <span
+          class="px-3 py-1 rounded-full bg-primary-container/20 border border-primary-container/40 text-primary text-xs font-bold uppercase tracking-wider"
+        >
           Análisis de Carrera
         </span>
-        <h2 class="text-headline-md font-bold text-on-surface uppercase tracking-tight">
+        <h2
+          class="text-headline-md font-bold text-on-surface uppercase tracking-tight"
+        >
           Resultados de Carrera
         </h2>
         <p class="text-sm text-on-surface-variant max-w-xl">
-          Consulta la clasificación oficial, paradas en boxes y ganancia de posiciones de cada Gran Premio de la temporada.
+          Consulta la clasificación oficial, paradas en boxes y ganancia de
+          posiciones de cada Gran Premio de la temporada.
         </p>
       </div>
       <a
@@ -116,14 +141,27 @@ const nextRaceStart = nextRace ? `${nextRace.date}T${nextRace.time}` : null;
   </section>
 
   <section class="grid lg:grid-cols-2 gap-6 my-8">
-    <StandingsTable title="Campeonato de Pilotos" rows={standings.driverRows} limit={5} accent="e10600" />
-    <StandingsTable title="Campeonato de Constructores" rows={standings.constructorRows} limit={5} accent="ff8000" />
+    <StandingsTable
+      title="Campeonato de Pilotos"
+      rows={standings.driverRows}
+      limit={5}
+      accent="e10600"
+    />
+    <StandingsTable
+      title="Campeonato de Constructores"
+      rows={standings.constructorRows}
+      limit={5}
+      accent="ff8000"
+    />
   </section>
 
   <section>
     <div class="flex items-baseline justify-between mb-4">
       <h2 class="text-3xl font-bold text-white">Últimas noticias</h2>
-      <a href="/noticias" class="text-xs font-semibold text-zinc-400 hover:text-f1-red uppercase tracking-wider">
+      <a
+        href="/noticias"
+        class="text-xs font-semibold text-zinc-400 hover:text-f1-red uppercase tracking-wider"
+      >
         Ver todas
       </a>
     </div>

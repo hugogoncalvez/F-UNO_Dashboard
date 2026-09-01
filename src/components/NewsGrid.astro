@@ -53,7 +53,7 @@ const TEAM_COLORS: Record<string, string> = {
               <span class="px-2 py-0.5 rounded bg-primary-container/15 text-primary-container font-label-caps text-[10px] uppercase tracking-wider shrink-0">
                 {item.source}
               </span>
-              {item.date && <span class="font-data-tabular text-[12px] text-text-secondary">{timeAgo(item.date)}</span>}
+              {item.date && <span class="font-data-tabular text-[12px] text-text-secondary" data-time={item.date}>{timeAgo(item.date)}</span>}
             </div>
             <h4 class="font-headline-sm text-headline-sm text-on-surface leading-tight group-hover:text-primary transition-colors">
               {item.title}
@@ -93,7 +93,7 @@ const TEAM_COLORS: Record<string, string> = {
                 </span>
               </div>
               <div class="p-4 flex flex-col gap-2 flex-grow">
-                {item.date && <span class="font-data-tabular text-[12px] text-on-surface-variant">{timeAgo(item.date)}</span>}
+                {item.date && <span class="font-data-tabular text-[12px] text-on-surface-variant" data-time={item.date}>{timeAgo(item.date)}</span>}
                 <h4 class="font-headline-sm text-headline-sm text-on-surface leading-tight group-hover:text-primary transition-colors">
                   {item.title}
                 </h4>
@@ -110,3 +110,26 @@ const TEAM_COLORS: Record<string, string> = {
     <p class="text-sm text-text-secondary">Noticias no disponibles en este momento.</p>
   )
 }
+<script>
+  function timeAgo(iso: string): string {
+    const then = new Date(iso).getTime();
+    if (Number.isNaN(then)) return "";
+    const mins = Math.floor((Date.now() - then) / 60000);
+    if (mins < 1) return "Ahora mismo";
+    if (mins < 60) return `Hace ${mins} min`;
+    const hours = Math.floor(mins / 60);
+    if (hours < 24) return `Hace ${hours} h`;
+    const days = Math.floor(hours / 24);
+    return `Hace ${days} d`;
+  }
+
+  function updateTimes() {
+    document.querySelectorAll<HTMLElement>("[data-time]").forEach((el) => {
+      const iso = el.getAttribute("data-time");
+      if (iso) el.textContent = timeAgo(iso);
+    });
+  }
+
+  updateTimes();
+  setInterval(updateTimes, 60000);
+</script>
