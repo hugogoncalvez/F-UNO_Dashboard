@@ -110,8 +110,8 @@ const TEAM_COLORS: Record<string, string> = {
     <p class="text-sm text-text-secondary">Noticias no disponibles en este momento.</p>
   )
 }
-<script>
-  function timeAgo(iso: string): string {
+<script is:inline>
+  function timeAgo(iso) {
     const then = new Date(iso).getTime();
     if (Number.isNaN(then)) return "";
     const mins = Math.floor((Date.now() - then) / 60000);
@@ -124,12 +124,12 @@ const TEAM_COLORS: Record<string, string> = {
   }
 
   function updateTimes() {
-    document.querySelectorAll<HTMLElement>("[data-time]").forEach((el) => {
-      const iso = el.getAttribute("data-time");
+    document.querySelectorAll("[data-time]").forEach(function(el) {
+      var iso = el.getAttribute("data-time");
       if (iso) el.textContent = timeAgo(iso);
     });
   }
 
   updateTimes();
-  setInterval(updateTimes, 60000);
+  setInterval(updateTimes, 900000);
 </script>
