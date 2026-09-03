@@ -1,5 +1,91 @@
 [
   {
+    "slug": "piastri-mclaren-sera-mas-rapido-en-hungria-que-en-monza-por-falta-de-energia",
+    "title": "Piastri: McLaren será más rápido en Hungría que en Monza por falta de energía",
+    "summary": "Oscar Piastri reveló que las simulaciones de McLaren muestran velocidades punta inferiores en Monza que en Hungría. La causa es la limitación de 4 MJ por vuelta para la recuperación de energía, que impide aprovechar el 50% de potencia eléctrica disponible.",
+    "content": "<p>Oscar Piastri, piloto de McLaren, advirtió que su equipo alcanzará velocidades punta más bajas en el GP de Italia que en Hungría, un circuito mucho más lento y revirado. Esta anomalía se debe a la estructura de la nueva normativa de Fórmula 1, donde casi el 50% de la potencia total proviene del sistema eléctrico.</p><p>El factor limitante es la proporción de rectas en Monza, donde los pilotos aceleran a fondo durante el 80% de la vuelta. Para evitar prácticas como el 'superclipping' o el 'lift-and-coast', la FIA ha limitado la recuperación de energía a 4 megajulios por vuelta. Esta restricción reduce la energía disponible para gastar en las rectas, resultando en velocidades máximas inferiores a las esperadas para el 'Templo de la Velocidad'. Piastri señaló que, aunque el límite de recuperación impide perder 30 o 40 km/h por recta mediante el 'superclipping', la consecuencia directa es una falta de energía para alcanzar altas velocidades punta.</p>",
+    "category": "Técnica",
+    "keyPoints": [
+      "McClaren usa el alerón 'H-wing' de baja carga en Monza.",
+      "La FIA limitó la recuperación de energía a 4 MJ por vuelta.",
+      "El 50% de la potencia del coche proviene del sistema eléctrico.",
+      "Las simulaciones de McLaren muestran mayor velocidad punta en Hungría que en Monza."
+    ],
+    "team": "mclaren",
+    "teamColor": "#FF8000",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/piastri-avisa-mclaren-mas-rapido-recta-hungria-monza/10851937/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-03T16:45:33.000Z"
+  },
+  {
+    "slug": "pilotos-de-f1-temen-falta-de-potencia-en-monza-por-nuevo-reglamento-2026",
+    "title": "Pilotos de F1 temen falta de potencia en Monza por nuevo reglamento 2026",
+    "summary": "Los pilotos anticipan una pérdida de 20-30 km/h en las curvas de Monza debido a la gestión de energía. La FIA ha reducido el límite de recuperación a 4 MJ por vuelta para mitigar los riesgos.",
+    "content": "<p>El trazado de 5,5 km de Monza enfrenta desafíos con el nuevo reglamento de motores de 2026, caracterizado por una menor disponibilidad de energía. Lewis Hamilton advirtió que los coches llegarán entre 20 y 30 km/h más lentos al entrar en las curvas en comparación con años anteriores, lo que obligará a los pilotos a adaptar su estilo de conducción y eliminará el sonido característico del motor al final de las rectas.</p><p>A diferencia de circuitos como Silverstone o Spa, Monza posee menos curvas de alta velocidad críticas y zonas de frenada más amplias, lo que reduce el impacto visual de la gestión de batería. La FIA ha establecido un límite de recuperación de 4 MJ por vuelta, el más bajo del calendario, para evitar el 'superclipping' y las diferencias de velocidad peligrosas, resultando en coches más lentos en las rectas pero con una conducción más predecible.</p>",
+    "category": "Reglamento",
+    "keyPoints": [
+      "Pérdida estimada de 20-30 km/h en la entrada a las curvas según Lewis Hamilton",
+      "Límite de recuperación de energía reducido a 4 MJ por vuelta por la FIA",
+      "Monza tiene menos curvas de alta velocidad críticas que Silverstone o Spa"
+    ],
+    "team": "pilotos",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/que-esperan-pilotos-formula1-poca-bateria-monza/10851885/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-03T16:32:57.000Z"
+  },
+  {
+    "slug": "alonso-lucira-casco-especial-en-monza-en-homenaje-a-adrian-campos",
+    "title": "Alonso lucirá casco especial en Monza en homenaje a Adrián Campos",
+    "summary": "Fernando Alonso presentará un casco con la réplica del diseño de Adrián Campos durante el GP de Italia. El piloto de Aston Martin rinde tributo a su mentor, quien le dio sus primeras oportunidades en el automovilismo.",
+    "content": "<p>Fernando Alonso utilizará un casco especial en el Gran Premio de Italia de Fórmula 1 2026, celebrado en Monza, para honrar la memoria de Adrián Campos. El diseño es una réplica del casco que lucía el expiloto valenciano durante su etapa activa en la competición.</p><p>Alonso, de 45 años y actualmente en Aston Martin, definió a Campos como su mentor y descubridor. Campos, fallecido en 2021 a los 60 años, fue quien identificó el talento de Alonso en el karting y le impulsó hacia la Fórmula 1, además de crear la estructura Campos Racing, activa hoy en F2 y F3. El piloto asturiano compartió en redes sociales: \"Adrián me vio en una carrera de karts y me dijo que tenía que probar los monoplazas... Siempre agradecido por todo lo que hizo por mí y por nuestro deporte\". Campos Racing también respaldó la iniciativa, recordando que Alonso fue uno de los pilotos en quienes Campos creyó desde el inicio.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Alonso usará un casco réplica del de Adrián Campos en Monza (GP de Italia 2026).",
+      "Adrián Campos falleció en 2021 a los 60 años; fue mentor de Alonso y creador de Campos Racing.",
+      "Alonso destaca que Campos le dio su primera oportunidad tras verlo en el karting."
+    ],
+    "team": "aston-martin",
+    "teamColor": "#229971",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/fernando-alonso-casco-especial-monza-adrian-campos/10851921/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-03T16:15:17.000Z"
+  },
+  {
+    "slug": "leclerc-estoy-listo-para-asumir-el-riesgo-de-ganar-en-monza",
+    "title": "Leclerc: 'Estoy listo para asumir el riesgo de ganar en Monza'",
+    "summary": "Charles Leclerc recuerda su victoria de 2019 y destaca la exigencia física de la semana de Monza. Acepta llegar fatigado al GP de Madrid si eso le permite ganar en el Templo de la Velocidad.",
+    "content": "<p>Charles Leclerc rememora su victoria en Monza 2019, destacando la euforia de la afición en las últimas vueltas y la intensa batalla con Lewis Hamilton. El monegasco admite que la fatiga posterior fue tal que aún la notaba en la carrera siguiente, subrayando la importancia de no acumular cansancio en temporadas largas.</p><p>Sobre la preparación actual, Leclerc explica que aunque el protocolo técnico es idéntico al de otros circuitos, la semana de Monza exige un desconexión mental activa para gestionar la alta carga de actividades. Ante la posibilidad de llegar agotado al próximo Gran Premio de Madrid, el piloto de Ferrari afirma estar dispuesto a asumir ese riesgo si el resultado es una victoria en Monza.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Leclerc recuerda la batalla con Hamilton y la reacción del público en Monza 2019",
+      "El piloto admite que la fatiga de 2019 afectó su rendimiento en la carrera siguiente",
+      "Leclerc prioriza la victoria en Monza sobre la recuperación física para el GP de Madrid"
+    ],
+    "team": "ferrari",
+    "teamColor": "#E8002D",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/leclerc-entrevista-exclusiva-confianza-vasseur-que-significa-monza/10851911/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-03T15:58:35.000Z"
+  },
+  {
+    "slug": "verstappen-anticipa-un-monza-doloroso-por-la-gestion-energetica-de-2026",
+    "title": "Verstappen anticipa un Monza 'doloroso' por la gestión energética de 2026",
+    "summary": "Max Verstappen advierte que el nuevo reglamento de unidades de potencia hará que la carrera en Monza sea ineficiente. El neerlandés señala que será necesario conducir con cautela para gestionar la energía, limitando la velocidad punta.",
+    "content": "<p>Max Verstappen calificó el Gran Premio de Monza como 'bastante doloroso' e 'ineficiente' energéticamente debido a las nuevas unidades de potencia de la temporada 2026. El piloto de Red Bull explicó que el trazado, caracterizado por sus largas rectas y la escasa oportunidad de recargar baterías, obliga a una conducción conservadora.</p><p>Verstappen comparó la necesidad de tratar el acelerador con delicadeza a 'llevar las riendas de un caballo al trote'. El neerlandés reconoció que la normativa penaliza el ataque directo y favorece la gestión fría de la energía, un problema que se agudiza en circuitos como Monza y Spa, donde el 'yo-yo racing' limita el mérito deportivo.</p>",
+    "category": "Reglamento",
+    "keyPoints": [
+      "Verstappen describe el fin de semana en Monza como 'bastante doloroso' e ineficiente energéticamente.",
+      "El piloto compara la conducción necesaria con 'llevar las riendas de un caballo al trote' para gestionar la batería.",
+      "El reglamento de 2026 favorece la gestión de energía sobre el ataque, exacerbando el 'yo-yo racing' en circuitos de alta velocidad."
+    ],
+    "team": "redbull",
+    "teamColor": "#3671C6",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/verstappen-avisa-monza-muy-doloroso-suave-gas-como-riendas-caballo/10851908/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-03T15:26:20.000Z"
+  },
+  {
     "slug": "russell-mercedes-no-es-favorito-en-monza-antonelli-saldra-desde-atras-por-cambio",
     "title": "Russell: Mercedes no es favorito en Monza; Antonelli saldrá desde atrás por cambio de motor",
     "summary": "George Russell descarta que Mercedes sea el gran favorito en Monza, anticipando una lucha entre cuatro equipos. Su compañero, Andrea Kimi Antonelli, saldrá desde el fondo de la parrilla por exceder el límite de componentes de la unidad de potencia.",
@@ -260,91 +346,5 @@
     "source": "Motorsport.com LAT",
     "originalLink": "https://lat.motorsport.com/f1/news/cinco-cosas-a-tener-en-cuenta-en-el-gp-de-italia2026/10851626/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=lat",
     "date": "2026-09-02T16:02:54.000Z"
-  },
-  {
-    "slug": "mercedes-retrasa-motor-aduo-a-octubre-antonelli-usa-unidad-nueva-en-monza",
-    "title": "Mercedes retrasa motor ADUO a octubre; Antonelli usa unidad nueva en Monza",
-    "summary": "Kimi Antonelli saldrá desde el fondo en Monza al agotar su límite de motores. Mercedes pospone el debut de la mejora ADUO hasta la gira americana de octubre.",
-    "content": "<p>Mercedes ha decidido no instalar la mejora ADUO en el Gran Premio de Italia. La actualización del motor llegará en octubre, durante la gira americana, específicamente en Austin o Ciudad de México. Kimi Antonelli utilizará en Monza su quinta unidad de potencia, una decisión que le obligará a salir desde el fondo de la parrilla por exceder el límite reglamentario de cuatro motores de combustión (ICE).</p><p>La elección de Monza responde a la necesidad de gestionar el 'pool' de componentes tras roturas previas irreparables. Al ser un circuito favorable para recuperar posiciones, Mercedes minimiza el impacto de la penalización antes de las próximas citas urbanas en Bakú, Madrid y Singapur. Antonelli y George Russell completarán el Mundial utilizando un total de seis motores cada uno.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Antonelli usa su 5ª unidad de potencia en Monza y sale desde el fondo.",
-      "La mejora ADUO debutará en octubre en Austin o Ciudad de México.",
-      "Los pilotos de Mercedes usarán 6 motores en total para la temporada."
-    ],
-    "team": "mercedes",
-    "teamColor": "#27F4D2",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/mercedes-no-usara-mejora-aduo-monza-nuevo-motor-octubre/10851624/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-02T15:26:50.000Z"
-  },
-  {
-    "slug": "mercedes-confirma-que-antonelli-usara-motor-nuevo-sin-mejoras-en-monza",
-    "title": "Mercedes confirma que Antonelli usará motor nuevo sin mejoras en Monza",
-    "summary": "Kimi Antonelli arrancará desde el fondo de la parrilla en el GP de Italia al superar su asignación de unidades de potencia. Mercedes descarta estrenar el motor actualizado bajo el esquema ADUO hasta la etapa americana de octubre.",
-    "content": "<p>Mercedes confirmó que Kimi Antonelli no competirá con la unidad de potencia actualizada permitida por el esquema de Oportunidades Adicionales de Desarrollo y Mejora (ADUO) en el Gran Premio de Italia. El piloto italiano utilizará su quinta unidad de potencia, lo que le obligará a salir desde el fondo de la parrilla en Monza, un circuito elegido por Mercedes por facilitar la recuperación de posiciones.</p><p>La decisión responde a problemas de fiabilidad y fallos previos que redujeron el 'pool' de motores disponibles para Antonelli. El debut del motor mejorado está programado para octubre, en Austin o Ciudad de México. Tanto Antonelli como George Russell utilizarán seis unidades de potencia en total durante la temporada 2026, lo que implicará más penalizaciones en parrilla en las 11 rondas restantes del calendario.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Antonelli usará su 5ª unidad de potencia en Monza, saliendo desde el fondo de la parrilla.",
-      "El motor actualizado bajo el esquema ADUO debutará en octubre (Austin o CDMX).",
-      "Mercedes planea que ambos pilotos usen 6 unidades de potencia en total en 2026."
-    ],
-    "team": "mercedes",
-    "teamColor": "#27F4D2",
-    "source": "Motorsport.com LAT",
-    "originalLink": "https://lat.motorsport.com/f1/news/mercedes-descarta-estrenar-motor-en-monza/10851617/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=lat",
-    "date": "2026-09-02T14:57:26.000Z"
-  },
-  {
-    "slug": "hadjar-se-pierde-monza-por-lesion-lawson-y-tsunoda-repiten-en-red-bull-y-racing-",
-    "title": "Hadjar se pierde Monza por lesión; Lawson y Tsunoda repiten en Red Bull y Racing Bulls",
-    "summary": "Isack Hadjar no correrá en el GP de Italia por una fractura de muñeca. Liam Lawson y Yuki Tsunoda mantienen sus sustituciones en Red Bull y Racing Bulls respectivamente.",
-    "content": "<p>Isack Hadjar se perderá el Gran Premio de Italia en Monza mientras se recupera de una fractura de muñeca sufrida durante un entrenamiento de boxeo en el parón veraniego. La lesión ya le impidió competir en el GP de Países Bajos, donde fue sustituido por Liam Lawson en el Red Bull RB22, mientras que Yuki Tsunoda pilotó el VCARB 03 de Racing Bulls junto a Arvid Lindblad.</p><p>Red Bull ha confirmado que mantendrá las alineaciones de Zandvoort para no arriesgar la recuperación del piloto de 21 años. En su debut como sustituto, Lawson logró la séptima posición desde la octava salida, mientras que Tsunoda terminó en undécima posición, quedándose fuera de los puntos pero a una vuelta de su compañero.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Hadjar sufre fractura de muñeca en entrenamiento de boxeo",
-      "Lawson sustituye a Hadjar en Red Bull; Tsunoda en Racing Bulls",
-      "Lawson terminó 7º y Tsunoda 11º en el GP de Países Bajos"
-    ],
-    "team": "pilotos",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/oficial-hadjar-perdera-monza-italia-tsunoda-volvera-racing-bulls/10851598/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-02T14:08:23.000Z"
-  },
-  {
-    "slug": "hadjar-se-pierde-monza-por-lesion-lawson-y-tsunoda-repiten-en-red-bull-y-racing-",
-    "title": "Hadjar se pierde Monza por lesión; Lawson y Tsunoda repiten en Red Bull y Racing Bulls",
-    "summary": "Isack Hadjar no correrá en el GP de Italia por una fractura de muñeca. Liam Lawson y Yuki Tsunoda repetirán como sustitutos en Red Bull y Racing Bulls respectivamente.",
-    "content": "<p>Isack Hadjar se perderá el Gran Premio de Italia en Monza mientras se recupera de una fractura de muñeca sufrida durante una sesión de boxeo en el parón de verano. La lesión ya le impidió competir en el GP de Países Bajos, donde observó la carrera desde el garaje. Red Bull decidió no asumir riesgos innecesarios con el piloto de 22 años, confirmando que su rehabilitación sigue en curso.</p><p>Como consecuencia, Liam Lawson volverá a pilotar el Red Bull RB22 junto a Max Verstappen, mientras que Yuki Tsunoda ocupará el asiento de Racing Bulls como compañero de Arvid Lindblad. En su última aparición como sustituto en Zandvoort, Lawson terminó séptimo y Tsunoda undécimo. Además, el piloto reserva Ayumu Iwasa conducirá el coche de Verstappen en la primera sesión de entrenamientos libres para cumplir con las obligaciones de piloto novato.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Hadjar sufre fractura de muñeca por boxeo y se pierde Monza",
-      "Liam Lawson sustituye a Hadjar en Red Bull junto a Verstappen",
-      "Yuki Tsunoda repite en Racing Bulls como compañero de Lindblad",
-      "Ayumu Iwasa correrá en FP1 con el coche de Verstappen"
-    ],
-    "team": "pilotos",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com LAT",
-    "originalLink": "https://lat.motorsport.com/f1/news/hadjar-se-perdera-carrera-italia-tsunoda-en-racing-bulls/10851596/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=lat",
-    "date": "2026-09-02T14:03:02.000Z"
-  },
-  {
-    "slug": "ferrari-estrena-nueva-unidad-de-potencia-con-15-bhp-en-el-gp-de-italia",
-    "title": "Ferrari estrena nueva unidad de potencia con +15 bhp en el GP de Italia",
-    "summary": "Ferrari introducirá una segunda mejora en su motor en Monza, permitida por el sistema ADUO, que añadirá 15 bhp. La Scuderia busca reducir su déficit frente a Mercedes y celebrar los 30 años del debut de Schumacher.",
-    "content": "<p>Ferrari confirmará la introducción de una segunda especificación mejorada de su unidad de potencia en el Gran Premio de Italia, utilizando el sistema de Oportunidades Adicionales de Desarrollo y Mejora (ADUO). Esta mejora, que se estima añade 15 bhp al motor, busca reducir a la mitad el déficit de potencia actual frente a Mercedes, considerado el paquete más fuerte de la parrilla. La Scuderia, que aventaja a Ferrari por 87 puntos en el campeonato, ha sido el principal rival técnico de la marca italiana esta temporada.</p><p>Además del motor, el equipo llevará actualizaciones en el alerón trasero adaptadas a la baja carga aerodinámica de Monza. Fred Vasseur, jefe del equipo, destacó la importancia de ejecutar un fin de semana perfecto ante su público local. Como parte de la celebración por los 30 años del debut de Michael Schumacher con Ferrari, el equipo correrá con una decoración especial inspirada en el siete veces campeón mundial.</p>",
-    "category": "Técnica",
-    "keyPoints": [
-      "La nueva unidad de potencia añadirá 15 bhp al motor Ferrari.",
-      "La mejora es posible gracias al sistema ADUO, que otorga tokens a equipos rezagados.",
-      "Ferrari llevará una decoración especial por los 30 años del debut de Schumacher."
-    ],
-    "team": "ferrari",
-    "teamColor": "#E8002D",
-    "source": "Motorsport.com LAT",
-    "originalLink": "https://lat.motorsport.com/f1/news/ferrari-confirma-nuevo-motor-italia/10851571/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=lat",
-    "date": "2026-09-02T13:09:35.000Z"
   }
 ]
