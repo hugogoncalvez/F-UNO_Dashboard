@@ -63,21 +63,21 @@ const newsSchema = {
 
 <Layout title={`${item.title} · F-Uno Center`} description={item.summary} schema={newsSchema}>
   <!-- Hero -->
-  <div class="relative w-full h-56 sm:h-72 md:h-80 rounded-2xl overflow-hidden mb-8 border border-border-subtle"
+  <div class="relative w-full h-56 sm:h-72 md:h-[224px] rounded-2xl overflow-hidden mb-8 border border-border-subtle"
     style={`background: linear-gradient(135deg, ${item.teamColor}66 0%, ${item.teamColor}22 50%, ${item.teamColor}0a 100%);`}
   >
     <div class="absolute inset-0 bg-gradient-to-t from-carbon-bg via-carbon-bg/60 to-transparent" />
-    <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-      <div class="flex items-center gap-3 mb-3">
+    <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-8">
+      <div class="flex flex-wrap items-center gap-2 sm:gap-3 mb-3">
         <span
-          class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider border"
+          class="px-3 py-1 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider border"
           style={`background: ${accentColor}22; color: ${accentColor}; border-color: ${accentColor}44;`}
         >
           {item.category}
         </span>
-        <span class="text-xs text-zinc-400">{item.source}</span>
-        <span class="text-xs text-zinc-500">·</span>
-        <time class="text-xs text-zinc-400">{formatDate(item.date)}</time>
+        <span class="text-[11px] sm:text-xs text-zinc-400">{item.source}</span>
+        <span class="text-[11px] sm:text-xs text-zinc-500">·</span>
+        <time class="text-[11px] sm:text-xs text-zinc-400">{formatDate(item.date)}</time>
       </div>
       <h1 class="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight">
         {item.title}
