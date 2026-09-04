@@ -14,8 +14,12 @@ usando APIs abiertas gratuitas. Sitio no oficial, en español (es-ES).
 - **Tailwind CSS v4** (plugin `@tailwindcss/vite`)
 - **pnpm** como gestor (NO usar npm; `package-lock.json` fue eliminado)
 - Fuentes de datos (todas REST, sin key):
-  - **OpenF1** (`https://api.openf1.org/v1`) — pilotos actuales, posiciones en vivo
-  - **Jolpica-F1** (`https://api.jolpi.ca/ergast/f1`) — calendario, clasificaciones, pilotos, constructores
+  - **OpenF1** (`https://api.openf1.org/v1`) — pilotos, sesiones del fin de semana,
+    vueltas y sectores (`/laps`), stints (`/stints`), pits (`/pit`),
+    clima (`/weather`), race control (`/race_control`), posiciones en vivo
+  - **Jolpica-F1** (`https://api.jolpi.ca/ergast/f1`) — calendario, clasificaciones,
+    pilotos, constructores, resultados de carrera, clasificación (Q1/Q2/Q3),
+    sprint y pit stops por ronda
   - **Feeds RSS Motorsport.com ES/LAT** — noticias en español
   - **Wikipedia API** — imágenes de pilotos (solo fallback)
 
@@ -24,7 +28,7 @@ usando APIs abiertas gratuitas. Sitio no oficial, en español (es-ES).
 ```bash
 pnpm install      # instalar (pnpm approve-builds si es necesario)
 pnpm run dev      # dev server → http://localhost:4321
-pnpm run build    # genera dist/ estático (27 páginas aprox)
+pnpm run build    # genera dist/ estático (53 páginas aprox)
 pnpm run preview  # sirve dist/
 ```
 
@@ -38,9 +42,20 @@ src/
 │   ├── clasificaciones.astro # pilotos + constructores
 │   ├── pilotos.astro         # grid de pilotos (clic → perfil)
 │   ├── pilotos/[slug].astro  # perfil dinámico (getStaticPaths por driverId)
-│   └── noticias.astro        # noticias agregadas
-├── components/               # Navbar, Footer, DriverGrid, StandingsTable,
-│                              # CalendarList, Countdown, LiveTicker, NewsGrid
+│   ├── noticias.astro        # noticias agregadas
+│   ├── noticias/[slug].astro # detalle de noticia
+│   ├── resultados.astro      # FIN DE SEMANA COMPLETO por GP: Carrera, Clasificación
+│   │                         # (Q1/Q2/Q3 Jolpica), Sprint + Sprint Quali (Jolpica/OpenF1),
+│   │                         # FP1/FP2/FP3 (OpenF1 mejor vuelta) y Boxes con estado RC
+│   │                         # (cruce Jolpica+OpenF1). Todo client-side, selector por ronda (?round=)
+│   ├── resultadosD.astro     # duplicado legacy de resultados (pendiente eliminar o redirigir)
+│   ├── gp-actual.astro       # GP actual (OpenF1): selector de sesión del meeting,
+│   │                         # tabla de mejores vueltas + clima + race control
+│   ├── envivo.astro          # vivo: leaderboard, stints, pits, race control
+│   ├── donar.astro / contacto.astro
+├── components/               # Navbar, Footer, Sidebar, DriverGrid, StandingsTable,
+│                              # CalendarList, Countdown, LiveTicker, NewsGrid,
+│                              # Circuit3D, CircuitDialog, LocalTime, live/*
 ├── layouts/Layout.astro      # shell HTML + navbar + footer
 └── lib/                      # lógica (ver abajo)
 ```
@@ -49,17 +64,34 @@ src/
 
 | Archivo | Rol |
 |---|---|
-| `openf1.ts` | Cliente OpenF1: drivers, championship_drivers, position, intervals, sessions |
-| `jolpica.ts` | Cliente Jolpica: driver/constructor standings, calendar, season drivers, constructors |
+| `openf1.ts` | Cliente OpenF1: sessions, drivers, championship, position, intervals, stints, pit, weather, laps, race_control |
+| `jolpica.ts` | Cliente Jolpica: standings, calendar (con horarios FP/Quali/Sprint y flag `sprint`), season drivers/constructors, race/qualifying/pitstops/sprint detail por ronda, resultados por piloto, fastest laps |
 | `standings.ts` | Fusiona Jolpica (fallback OpenF1 championship) + colores de OpenF1 → `StandingRow[]` |
 | `drivers.ts` | **`getDriverProfiles()`**: fusiona OpenF1 + Jolpica + constructores + standings → `DriverProfile[]`. Resuelve headshots con fallback a Wikipedia si F1 Media tiene placeholder (detección por tamaño <10KB). Caché en memoria de módulo (placeholderCache, wikiImageCache) |
 | `news.ts` | Fetch de 2 feeds RSS en español, dedupe por título, orden por fecha |
 | `utils.ts` | `teamColor`, `formatDate/Time`, `pad`, `flagEmoji`, `nationalityEs`, `headshotTransform` (cambia `.transform/1col/` → 2col/4col para mayor resolución) |
 | `types.ts` | Interfaces compartidas (`DriverProfile`, `Race`, `StandingRow`, etc.) |
+| `fetch.ts` | `cachedGetJson` con TTL (usado por `openf1.ts` y `jolpica.ts`) |
+| `circuits.ts` / `circuit-data.ts` | Metadatos y trazados SVG de circuitos |
+| `live-service.ts` / `charts.ts` | Lógica de la página en vivo y gráficos |
 
 **Filosofía**: cada fuente tiene fallback — si una API cae, la página muestra
-"no disponible" en vez de romper el build. Todas las llamadas se hacen en el
-build (datos embebidos en HTML). Lo único client-side es el ticker en vivo.
+"no disponible" en vez de romper el build. Las páginas de contenido
+(index, calendario, clasificaciones, pilotos, noticias) resuelven datos en el
+build (embebidos en HTML). Las páginas de fin de semana (`resultados`,
+`gp-actual`, `envivo`) consultan Jolpica/OpenF1 **client-side** en el navegador:
+no rompen el build pero dependen de CORS + rate-limit de las APIs. Lo único
+client-side permanente además de eso es el ticker en vivo.
+
+**Página `resultados` (fin de semana completo)**: dos `<script>` independientes.
+El 1º (existente) maneja Carrera (Jolpica) + Boxes (cruce Jolpica `pitstops` con
+OpenF1 `pit` + intervalos SC/VSC/RED construidos desde `race_control` por vuelta).
+El 2º (agregado después, envuelto en IIFE para no redeclarar `const` globales)
+maneja Clasificación (Jolpica `qualifying.json`), Sprint (Jolpica `sprint.json`)
+y SQ/FP1/FP2/FP3 (OpenF1 `sessions` del mismo `meeting_key` + `drivers`/`laps`,
+ordenados por mejor vuelta). Los tabs Sprint/SQ se ocultan si `races.json` no
+trae `Sprint`; en fines Sprint no hay FP2/FP3 (solo FP1). Carga perezosa con
+delay ~300ms entre llamadas y caché por `session_key`.
 
 ## Detalles clave / bugs ya resueltos
 
@@ -89,22 +121,28 @@ build (datos embebidos en HTML). Lo único client-side es el ticker en vivo.
 
 ## Estado del proyecto
 
-Completo y funcionando: 27 páginas, build OK, todo en español. Falta:
+Completo y funcionando: 53 páginas, build OK, todo en español. Repo git en
+`github.com/hugogoncalvez/F-UNO_Dashboard`, rama `main`. Falta:
 
-1. **Subir a GitHub + deploy en Vercel** (free tier, Astro detecta automático).
-   No hay repo git todavía (`git init` pendiente).
+1. **Deploy en Vercel** (free tier, Astro detecta automático).
 2. (Opcional) Renombrar la carpeta `f1-dashboard` → `f-uno-center`.
-3. **Features futuras posibles** (datos ya disponibles en OpenF1, sin costo
-   histórico): vueltas y sectores (`/laps`), neumáticos y stints (`/stints`),
-   pit stops (`/pit`), clima (`/weather`), telemetría (`/car_data`).
+3. (Opcional) Eliminar o redirigir `resultadosD.astro` (duplicado legacy de `resultados`).
 4. **Nota OpenF1 2026**: el tier free ahora es solo datos históricos; el en vivo
    durante sesiones requiere sponsor (€9.90/mes). El `LiveTicker` usa
-   `session_key=latest` y solo funciona en ventanas de GP.
+   `session_key=latest` y solo funciona en ventanas de GP. Las páginas
+   `gp-actual`/`envivo`/`resultados` muestran estado "restringido / sin datos"
+   cuando OpenF1 devuelve 401 en sesión activa.
+5. **Límites conocidos Jolpica**: los endpoints `/ergast` clásicos NO tienen
+   tiempos de FP ni Sprint Quali (solo horarios en `races.json`); por eso
+   FP/SQ salen de OpenF1. Nombres de sesión OpenF1 varían por año
+   (`Sprint Qualifying` vs `Sprint Shootout`, `Practice 1/2/3`).
 
 ## APIs externas usadas (resumen rápido)
 
 - `https://api.openf1.org/v1/drivers?session_key=latest` → 22 pilotos actuales
 - `https://api.jolpi.ca/ergast/f1/current/{driverstandings,constructorstandings,drivers,constructors}.json`
-- `https://api.jolpi.ca/ergast/f1/{año}/races.json` → calendario
+- `https://api.jolpi.ca/ergast/f1/{año}/races.json` → calendario (incluye horarios FP/Quali/Sprint y flag de finde Sprint)
+- `https://api.jolpi.ca/ergast/f1/{año}/{round}/{results,qualifying,sprint,pitstops}.json` → fin de semana por ronda
+- `https://api.openf1.org/v1/{sessions,laps,drivers,stints,pit,weather,race_control,position,intervals}?session_key=` → sesiones y detalle
 - `https://es.motorsport.com/rss/f1/news/` y `https://lat.motorsport.com/rss/f1/news/`
 - `https://{es,en}.wikipedia.org/w/api.php?...&prop=pageimages` → headshots fallback

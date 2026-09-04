@@ -3231,13 +3231,16 @@ import Layout from "../layouts/Layout.astro";
   }
   function norm(v) { return String(v ?? "").trim().toLowerCase(); }
 
+  let blocked401 = false;
   async function fetchJson2(url) {
     try {
       const res = await fetch(url);
+      if (res.status === 401) { blocked401 = true; return null; }
       if (!res.ok) return null;
       return await res.json();
     } catch { return null; }
   }
+  const BLOCKED_MSG = "🔒 OpenF1 restringe el acceso (incluso históricos) mientras hay una sesión en vivo. Se libera al terminar — reintentá más tarde.";
 
   function fmtLap(sec) {
     if (sec == null || !Number.isFinite(sec) || sec <= 0) return "--";
@@ -3388,7 +3391,7 @@ import Layout from "../layouts/Layout.astro";
     const dList = Array.isArray(drivers) ? drivers : [];
     const lList = Array.isArray(laps) ? laps : [];
     if (!dList.length && !lList.length) {
-      emptyRow(tbodyId, 6, "Sin datos en OpenF1 (sesión no disputada, en curso con acceso restringido, o sin históricos).");
+      emptyRow(tbodyId, 6, blocked401 ? BLOCKED_MSG : "Sin datos en OpenF1 (sesión no disputada o sin históricos).");
       sessionCache.set(key, []);
       return;
     }
@@ -3416,10 +3419,12 @@ import Layout from "../layouts/Layout.astro";
   }
 
   let lastRound = null;
+  let lastExtrasStart = 0;
   async function loadExtras(round) {
     if (!round || Number.isNaN(Number(round))) return;
     round = String(round);
     lastRound = round;
+    lastExtrasStart = Date.now();
     loadingRow("quali-tbody", 6, "Cargando clasificación...");
     loadingRow("sprint-tbody", 7, "Cargando sprint...");
     for (const id of ["sq-tbody", "fp1-tbody", "fp2-tbody", "fp3-tbody"]) loadingRow(id, 6, "Cargando datos OpenF1...");
@@ -3446,7 +3451,7 @@ import Layout from "../layouts/Layout.astro";
     if (lastRound !== round) return;
     if (!sessions.length || !meta) {
       for (const id of ["sq-tbody", "fp1-tbody", "fp2-tbody", "fp3-tbody"])
-        emptyRow(id, 6, "Sin datos en OpenF1 (sesión no disputada o sin históricos).");
+        emptyRow(id, 6, blocked401 ? BLOCKED_MSG : "Sin datos en OpenF1 (sesión no disputada o sin históricos).");
       return;
     }
     const raceS = findRaceSession(sessions, meta);
@@ -3486,5 +3491,12 @@ import Layout from "../layouts/Layout.astro";
     }
   }, 700);
   setTimeout(() => clearInterval(boot), 20000);
+  setInterval(() => {
+    const r = currentRound();
+    if (r && blocked401 && Date.now() - lastExtrasStart > 55000) {
+      blocked401 = false;
+      loadExtras(r);
+    }
+  }, 15000);
 })();
 </script>
