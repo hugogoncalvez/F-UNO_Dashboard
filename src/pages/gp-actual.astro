@@ -78,7 +78,7 @@ import Layout from "../layouts/Layout.astro";
         <h2 id="table-title" class="font-bold text-on-surface text-headline-sm uppercase tracking-tight">Resultados</h2>
         <div class="flex items-center gap-2">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span class="text-xs text-on-surface-variant font-medium">Datos OpenF1</span>
+          <span class="text-xs text-on-surface-variant font-medium" id="data-source-label">Datos OpenF1</span>
         </div>
       </div>
 
@@ -140,9 +140,14 @@ import Layout from "../layouts/Layout.astro";
 
 <script>
   const OPENF1 = "https://api.openf1.org/v1";
+  const ALPHA = "https://api.jolpi.ca/f1/alpha";
   const SLEEP = (ms: number) => new Promise(r => setTimeout(r, ms));
 
   let globalBlocked = false; // true when OpenF1 returns 401 (live session in progress)
+  let mode: "openf1" | "alpha" = "openf1";
+
+  type AlphaEntry = { code: string; label: string; results_url: string; ts: number };
+  let alphaEntries: AlphaEntry[] = [];
 
   // ---- Helpers ----
   async function fetchSeq(url: string, delayMs = 300): Promise<any[]> {
@@ -271,6 +276,7 @@ import Layout from "../layouts/Layout.astro";
   const weatherGrid = document.getElementById("weather-grid")!;
   const raceControlPanel = document.getElementById("racecontrol-panel")!;
   const raceControlList = document.getElementById("racecontrol-list")!;
+  const dataSourceLabel = document.getElementById("data-source-label")!;
 
   function showPanel(name: "none" | "nodata" | "results") {
     noDataPanel.classList.toggle("hidden", name !== "nodata");
@@ -444,6 +450,7 @@ import Layout from "../layouts/Layout.astro";
   // ---- Load a session's data ----
   async function loadSession(sessionKey: number) {
     showPanel("none");
+    dataSourceLabel.textContent = "Datos OpenF1";
     resultsTbody.innerHTML = `<tr><td colspan="9" class="py-12 text-center text-on-surface-variant"><span class="animate-pulse">Cargando datos...</span></td></tr>`;
     weatherPanel.classList.add("hidden");
     raceControlPanel.classList.add("hidden");
@@ -470,6 +477,190 @@ import Layout from "../layouts/Layout.astro";
     renderResults(drivers, laps, stints);
     renderWeather(weather);
     renderRaceControl(raceControl);
+  }
+
+  // ---- Jolpica Alpha fallback (no se bloquea durante sesiones en vivo) ----
+  async function fetchAlpha(url: string): Promise<any | null> {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) return null;
+      return await res.json();
+    } catch { return null; }
+  }
+
+  function parseAlphaTime(str: string | null | undefined): number | null {
+    if (!str) return null;
+    const m = String(str).trim().match(/^(?:(\d+):)?(\d+(?:\.\d+)?)$/);
+    if (!m) return null;
+    return (m[1] ? Number(m[1]) : 0) * 60 + Number(m[2]);
+  }
+
+  function alphaCodeLabel(code: string): string {
+    switch ((code ?? "").toUpperCase()) {
+      case "FP1": return "🔵 Práctica Libre 1";
+      case "FP2": return "🔵 Práctica Libre 2";
+      case "FP3": return "🔵 Práctica Libre 3";
+      case "SQ": return "⚡ Sprint Qualifying";
+      case "SR": return "⚡ Sprint";
+      case "Q": return "⏱️ Clasificación";
+      case "R": return "🏁 Carrera";
+      default: return code;
+    }
+  }
+
+  // Adapta resultados Alpha al formato que espera renderResults (drivers/laps)
+  function adaptAlpha(list: any[]): { drivers: any[]; laps: any[] } {
+    const drivers = list.map((r: any) => ({
+      driver_number: r.car_number ?? r.driver?.permanent_car_number ?? 0,
+      full_name: `${r.driver?.given_name ?? ""} ${r.driver?.family_name ?? ""}`.trim(),
+      name_acronym: r.driver?.abbreviation ?? "",
+      team_name: r.team?.name ?? "--",
+      team_colour: (r.team?.primary_color ?? "#a1a1aa").replace("#", ""),
+    }));
+    const laps = list.map((r: any) => ({
+      driver_number: r.car_number ?? r.driver?.permanent_car_number ?? 0,
+      lap_duration: parseAlphaTime(r.time),
+      duration_sector_1: null,
+      duration_sector_2: null,
+      duration_sector_3: null,
+    })).filter((l: any) => l.driver_number && l.lap_duration);
+    return { drivers, laps };
+  }
+
+  async function loadAlphaSession(entry: AlphaEntry, allowFallback = true): Promise<boolean> {
+    showPanel("none");
+    resultsTbody.innerHTML = `<tr><td colspan="9" class="py-12 text-center text-on-surface-variant"><span class="animate-pulse">Cargando datos...</span></td></tr>`;
+    weatherPanel.classList.add("hidden");
+    raceControlPanel.classList.add("hidden");
+    summaryBar.classList.add("hidden");
+    dataSourceLabel.textContent = "Datos Jolpica Alpha";
+
+    const j = await fetchAlpha(entry.results_url);
+    const list = j?.data?.results ?? [];
+
+    if (!list.length && allowFallback) {
+      // La última sesión iniciada puede no tener datos aún → probar anteriores
+      const idx = alphaEntries.findIndex(e => e.code === entry.code);
+      for (let i = idx - 1; i >= 0; i--) {
+        const prev = await fetchAlpha(alphaEntries[i].results_url);
+        if ((prev?.data?.results ?? []).length) {
+          sessionSelect.value = alphaEntries[i].code;
+          return loadAlphaSession(alphaEntries[i], false);
+        }
+      }
+    }
+
+    if (!list.length) {
+      showPanel("nodata");
+      noDataMsg.textContent = "Aún no hay resultados publicados para esta sesión. Volvé en unos minutos.";
+      return false;
+    }
+
+    showPanel("results");
+    summaryBar.classList.remove("hidden");
+    sumSession.textContent = entry.label;
+    tableTitle.textContent = `Resultados — ${entry.label}`;
+    const { drivers, laps } = adaptAlpha(list);
+    renderResults(drivers, laps, []);
+    return true;
+  }
+
+  async function initFromAlpha(): Promise<boolean> {
+    const sched = await fetchAlpha(`${ALPHA}/schedules/2026/`);
+    const events = sched?.data?.events ?? [];
+    if (!events.length) return false;
+    const now = Date.now();
+    const tsOf = (e: any, code: string) => {
+      const s = (e.schedule ?? []).find((x: any) => x.code === code);
+      return s?.timestamp ? new Date(s.timestamp).getTime() : null;
+    };
+    // Meeting actual: FP1 ya empezó y la carrera no terminó hace más de 6h
+    let current = events.find((e: any) => {
+      const fp1 = tsOf(e, "FP1");
+      const r = tsOf(e, "R");
+      return fp1 != null && fp1 <= now + 60 * 60_000 && (r == null || r + 6 * 3600_000 >= now);
+    });
+    if (!current) {
+      const started = events.filter((e: any) => {
+        const fp1 = tsOf(e, "FP1");
+        return fp1 != null && fp1 <= now;
+      });
+      current = started.sort((a: any, b: any) => tsOf(b, "FP1") - tsOf(a, "FP1"))[0];
+    }
+    if (!current) return false;
+
+    const entries = (current.schedule ?? [])
+      .map((s: any) => ({
+        code: s.code,
+        label: alphaCodeLabel(s.code),
+        results_url: s.results_url,
+        ts: s.timestamp ? new Date(s.timestamp).getTime() : 0,
+      }))
+      .filter((e: AlphaEntry) => e.results_url && e.ts && e.ts <= now + 60 * 60_000)
+      .sort((a: AlphaEntry, b: AlphaEntry) => a.ts - b.ts);
+    if (!entries.length) return false;
+
+    mode = "alpha";
+    alphaEntries = entries;
+    const r = current.round ?? {};
+    const c = current.circuit ?? {};
+    heroFlag.textContent = getFlag(c.country ?? "");
+    heroRound.textContent = `GP Actual · 2026${r.number ? ` · R${r.number}` : ""}`;
+    heroDates.textContent = `${new Date(entries[0].ts).toLocaleDateString("es-AR", { day: "numeric", month: "long" })} – ${new Date(entries[entries.length - 1].ts).toLocaleDateString("es-AR", { day: "numeric", month: "long" })}`;
+    heroName.textContent = String(r.name ?? "Gran Premio").toUpperCase();
+    heroCircuit.textContent = `${c.name ?? ""} · ${c.locality ?? ""}, ${c.country ?? ""}`;
+
+    sessionSelect.innerHTML = entries.map(e =>
+      `<option value="${e.code}" class="bg-panel-surface text-on-surface">${e.label}${e.ts <= now ? " ✓" : ""}</option>`
+    ).join("");
+
+    loadingOverlay.classList.add("hidden");
+    mainContent.style.opacity = "1";
+    ensureSelectListener();
+
+    const latest = [...entries].reverse().find(e => e.ts <= now) ?? entries[0];
+    sessionSelect.value = latest.code;
+    await loadAlphaSession(latest, true);
+
+    // Reintentar OpenF1 en segundo plano para recuperar el modo completo
+    if (alphaRecoveryTimer) window.clearInterval(alphaRecoveryTimer);
+    alphaRecoveryTimer = window.setInterval(async () => {
+      globalBlocked = false;
+      const probe = await fetchSeq(`${OPENF1}/sessions?year=2026`, 0);
+      if (!globalBlocked && probe.length) {
+        window.clearInterval(alphaRecoveryTimer);
+        await init();
+      }
+    }, 60000);
+    return true;
+  }
+
+  let openf1Available: any[] = [];
+  let selectListenerOn = false;
+  let alphaRecoveryTimer: number | undefined;
+
+  // Listener único (una sola vez) que sirve a ambos modos
+  function ensureSelectListener() {
+    if (selectListenerOn) return;
+    selectListenerOn = true;
+    sessionSelect.addEventListener("change", async () => {
+      if (mode === "alpha") {
+        const entry = alphaEntries.find(e => e.code === sessionSelect.value);
+        if (entry) {
+          sumSession.textContent = entry.label;
+          tableTitle.textContent = `Resultados — ${entry.label}`;
+          await loadAlphaSession(entry, false);
+        }
+        return;
+      }
+      const key = Number(sessionSelect.value);
+      const sel = openf1Available.find(s => s.session_key === key);
+      if (sel) {
+        sumSession.textContent = sessionTypeLabel(sel.session_type, sel.session_name);
+        tableTitle.textContent = `Resultados — ${sessionTypeLabel(sel.session_type, sel.session_name)}`;
+      }
+      await loadSession(key);
+    });
   }
 
   // ---- Init: find current meeting and sessions ----
@@ -513,13 +704,13 @@ import Layout from "../layouts/Layout.astro";
     // Get latest meeting sessions
     const sessions = await fetchSeq(`${OPENF1}/sessions?year=2026`, 0);
 
-    // Handle 401: OpenF1 blocks all access during live sessions
-    if (globalBlocked) {
-      showBlocked();
-      return;
-    }
-
-    if (!sessions.length) {
+    // OpenF1 bloqueado (401 en vivo) o sin sesiones → fallback Jolpica Alpha
+    if (globalBlocked || !sessions.length) {
+      if (await initFromAlpha()) return;
+      if (globalBlocked) {
+        showBlocked();
+        return;
+      }
       loadingOverlay.classList.add("hidden");
       mainContent.style.opacity = "1";
       heroName.textContent = "Sin datos disponibles";
@@ -598,16 +789,10 @@ import Layout from "../layouts/Layout.astro";
       return;
     }
 
-    // Listen for session changes
-    sessionSelect.addEventListener("change", async () => {
-      const key = Number(sessionSelect.value);
-      const sel = availableSessions.find(s => s.session_key === key);
-      if (sel) {
-        sumSession.textContent = sessionTypeLabel(sel.session_type, sel.session_name);
-        tableTitle.textContent = `Resultados — ${sessionTypeLabel(sel.session_type, sel.session_name)}`;
-      }
-      await loadSession(key);
-    });
+    // Selector: una sola vez, sirve a ambos modos
+    mode = "openf1";
+    openf1Available = availableSessions;
+    ensureSelectListener();
   }
 
   init();

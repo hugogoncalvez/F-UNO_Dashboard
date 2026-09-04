@@ -15,6 +15,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
         <h1            id="hero-title"            class="text-display-lg font-bold text-on-surface uppercase tracking-tight"          >            Resultados de Carrera          </h1>
         <p            id="hero-subtitle"            class="text-base text-on-surface-variant font-body mt-1"          >            Cargando datos...          </p>
+        <p            id="weekend-format"            class="text-xs text-on-surface-variant/80 font-medium mt-1.5"          >          </p>
       </div>
       <!-- Selector -->
       <div          class="bg-surface-container border border-border-subtle rounded-xl p-3.5 flex flex-col gap-1 min-w-[240px]"        >
@@ -3039,6 +3040,8 @@ import Layout from "../layouts/Layout.astro";
 
     const pastRounds = [];
 
+    const liveRounds = [];
+
     if (
       races.length > 0
     ) {
@@ -3058,11 +3061,35 @@ import Layout from "../layouts/Layout.astro";
                 3 * 3600_000 <
                 now;
 
+              // Fin de semana en curso: ya empezó la FP1 pero la carrera no terminó.
+              const fp1Utc =
+                r.FirstPractice?.date
+                  ? new Date(
+                      `${r.FirstPractice.date}T${r.FirstPractice.time ?? "00:00:00"}`
+                    ).getTime()
+                  : NaN;
+
+              const isLive =
+                !isPast &&
+                Number.isFinite(fp1Utc) &&
+                fp1Utc <= now;
+
               if (
                 isPast
               ) {
 
                 pastRounds.push(
+                  Number(
+                    r.round
+                  )
+                );
+              }
+
+              if (
+                isLive
+              ) {
+
+                liveRounds.push(
                   Number(
                     r.round
                   )
@@ -3081,7 +3108,11 @@ import Layout from "../layouts/Layout.astro";
                   ${
                     isPast
                       ? " ✓"
-                      : " (Próxima)"
+                      : (
+                        isLive
+                          ? " 🔴 En curso"
+                          : " (Próxima)"
+                      )
                   }
 
                 </option>
@@ -3106,6 +3137,11 @@ import Layout from "../layouts/Layout.astro";
         "round"
       );
 
+    // Default: ronda en curso si hay fin de semana en marcha,
+    // si no la última pasada. ?round= siempre tiene prioridad.
+    const doneRounds =
+      pastRounds.concat(liveRounds);
+
     const selectedRound =
       urlRound
 
@@ -3115,10 +3151,10 @@ import Layout from "../layouts/Layout.astro";
 
         : (
 
-          pastRounds.length > 0
+          doneRounds.length > 0
 
-            ? pastRounds[
-                pastRounds.length - 1
+            ? doneRounds[
+                doneRounds.length - 1
               ]
 
             : 1
@@ -3502,6 +3538,8 @@ import Layout from "../layouts/Layout.astro";
     round = String(round);
     lastRound = round;
     lastExtrasStart = Date.now();
+    const fmtEl = $("weekend-format");
+    if (fmtEl) fmtEl.textContent = "Detectando formato del fin de semana...";
     loadingRow("quali-tbody", 6, "Cargando clasificación...");
     loadingRow("sprint-tbody", 7, "Cargando sprint...");
     for (const id of ["sq-tbody", "fp1-tbody", "fp2-tbody", "fp3-tbody"]) loadingRow(id, 6, "Cargando datos OpenF1...");
@@ -3519,6 +3557,9 @@ import Layout from "../layouts/Layout.astro";
     if (lastRound !== round) return;
     const meta = races.find((r) => String(r.round) === String(round));
     const hasSprint = Boolean(meta?.Sprint) || sprintList.length > 0;
+    if (fmtEl) fmtEl.textContent = hasSprint
+      ? "⚡ Fin de semana Sprint: FP1 → Sprint Quali → Sprint → Clasificación → Carrera (sin FP2 ni FP3)."
+      : "Formato clásico: FP1 → FP2 → FP3 → Clasificación → Carrera.";
     const btnSprint = $("tab-btn-sprint");
     const btnSQ = $("tab-btn-sq");
     if (btnSprint) btnSprint.style.display = hasSprint ? "" : "none";
