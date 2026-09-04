@@ -66,6 +66,12 @@ import Layout from "../layouts/Layout.astro";
     <div        class="flex items-center gap-2 border-b border-border-subtle overflow-x-auto hide-scrollbar pb-2"      >
       <button          id="tab-btn-results"          class="px-5 py-2.5 rounded-xl font-bold text-sm transition-all bg-primary-container text-on-primary-container shadow-md"        >          🏁 Resultados de Carrera        </button>
       <button          id="tab-btn-pits"          class="px-5 py-2.5 rounded-xl font-medium text-sm transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container"        >          🛠️ Paradas en Boxes        </button>
+      <button          id="tab-btn-quali"          class="px-5 py-2.5 rounded-xl font-medium text-sm transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container"        >          ⏱️ Clasificación        </button>
+      <button          id="tab-btn-sprint"          class="px-5 py-2.5 rounded-xl font-medium text-sm transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container"        >          ⚡ Sprint        </button>
+      <button          id="tab-btn-sq"          class="px-5 py-2.5 rounded-xl font-medium text-sm transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container"        >          ⚡ Sprint Quali        </button>
+      <button          id="tab-btn-fp1"          class="px-5 py-2.5 rounded-xl font-medium text-sm transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container"        >          🔵 FP1        </button>
+      <button          id="tab-btn-fp2"          class="px-5 py-2.5 rounded-xl font-medium text-sm transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container"        >          🔵 FP2        </button>
+      <button          id="tab-btn-fp3"          class="px-5 py-2.5 rounded-xl font-medium text-sm transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container"        >          🔵 FP3        </button>
     </div>
     <!-- ========================================================           RESULTADOS      ========================================================= -->
     <div        id="tab-content-results"        class="bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl shadow-2xl space-y-4"      >
@@ -117,6 +123,154 @@ import Layout from "../layouts/Layout.astro";
         </table>
       </div>
       <p          id="pits-note"          class="text-xs text-on-surface-variant italic hidden"        >          * Duración afectada por interrupción de carrera.        </p>
+    </div>
+    <!-- ========================================================           CLASIFICACIÓN (Jolpica Q1/Q2/Q3)      ========================================================= -->
+    <div        id="tab-content-quali"        class="hidden bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl shadow-2xl space-y-4"      >
+      <div class="overflow-x-auto hide-scrollbar">
+        <table            class="w-full text-left border-collapse min-w-[750px]"          >
+          <thead>
+            <tr                class="border-b border-border-subtle text-[11px] font-label-caps text-on-surface-variant uppercase bg-surface-container-low/50"              >
+              <th class="py-3 px-3 text-center">Pos</th>
+              <th class="py-3 px-3">Piloto</th>
+              <th class="py-3 px-3">Equipo</th>
+              <th class="py-3 px-3 text-center">Q1</th>
+              <th class="py-3 px-3 text-center">Q2</th>
+              <th class="py-3 px-3 text-center">Q3</th>
+            </tr>
+          </thead>
+          <tbody              id="quali-tbody"              class="divide-y divide-border-subtle/50 text-sm font-data-tabular"            >
+            <tr>
+              <td                  colspan="6"                  class="py-12 text-center text-on-surface-variant"                >
+                <span class="inline-block animate-pulse">Cargando clasificación...</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-on-surface-variant italic">Fuente oficial Jolpica (Q1/Q2/Q3). Sin datos = sesión aún no disputada.</p>
+    </div>
+    <!-- ========================================================           SPRINT (Jolpica)      ========================================================= -->
+    <div        id="tab-content-sprint"        class="hidden bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl shadow-2xl space-y-4"      >
+      <div class="overflow-x-auto hide-scrollbar">
+        <table            class="w-full text-left border-collapse min-w-[750px]"          >
+          <thead>
+            <tr                class="border-b border-border-subtle text-[11px] font-label-caps text-on-surface-variant uppercase bg-surface-container-low/50"              >
+              <th class="py-3 px-3 text-center">Pos</th>
+              <th class="py-3 px-3">Piloto</th>
+              <th class="py-3 px-3">Equipo</th>
+              <th class="py-3 px-3 text-center">Salida</th>
+              <th class="py-3 px-3 text-center">Vueltas</th>
+              <th class="py-3 px-3">Tiempo / Estado</th>
+              <th class="py-3 px-3 text-center">Puntos</th>
+            </tr>
+          </thead>
+          <tbody              id="sprint-tbody"              class="divide-y divide-border-subtle/50 text-sm font-data-tabular"            >
+            <tr>
+              <td                  colspan="7"                  class="py-12 text-center text-on-surface-variant"                >
+                <span class="inline-block animate-pulse">Cargando sprint...</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-on-surface-variant italic">Solo aparece si el GP tiene Sprint. Fuente Jolpica.</p>
+    </div>
+    <!-- ========================================================           SPRINT QUALI + LIBRES (OpenF1)      ========================================================= -->
+    <div        id="tab-content-sq"        class="hidden bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl shadow-2xl space-y-4"      >
+      <div class="overflow-x-auto hide-scrollbar">
+        <table            class="w-full text-left border-collapse min-w-[700px]"          >
+          <thead>
+            <tr                class="border-b border-border-subtle text-[11px] font-label-caps text-on-surface-variant uppercase bg-surface-container-low/50"              >
+              <th class="py-3 px-3 text-center">Pos</th>
+              <th class="py-3 px-3">Piloto</th>
+              <th class="py-3 px-3">Equipo</th>
+              <th class="py-3 px-3 text-center">Vueltas</th>
+              <th class="py-3 px-3 text-center">Mejor vuelta</th>
+              <th class="py-3 px-3 text-right">Gap</th>
+            </tr>
+          </thead>
+          <tbody              id="sq-tbody"              class="divide-y divide-border-subtle/50 text-sm font-data-tabular"            >
+            <tr>
+              <td                  colspan="6"                  class="py-12 text-center text-on-surface-variant"                >
+                <span class="inline-block animate-pulse">Cargando sprint quali...</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-on-surface-variant italic">Ordenado por mejor vuelta. Fuente OpenF1 (datos históricos).</p>
+    </div>
+    <div        id="tab-content-fp1"        class="hidden bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl shadow-2xl space-y-4"      >
+      <div class="overflow-x-auto hide-scrollbar">
+        <table            class="w-full text-left border-collapse min-w-[700px]"          >
+          <thead>
+            <tr                class="border-b border-border-subtle text-[11px] font-label-caps text-on-surface-variant uppercase bg-surface-container-low/50"              >
+              <th class="py-3 px-3 text-center">Pos</th>
+              <th class="py-3 px-3">Piloto</th>
+              <th class="py-3 px-3">Equipo</th>
+              <th class="py-3 px-3 text-center">Vueltas</th>
+              <th class="py-3 px-3 text-center">Mejor vuelta</th>
+              <th class="py-3 px-3 text-right">Gap</th>
+            </tr>
+          </thead>
+          <tbody              id="fp1-tbody"              class="divide-y divide-border-subtle/50 text-sm font-data-tabular"            >
+            <tr>
+              <td                  colspan="6"                  class="py-12 text-center text-on-surface-variant"                >
+                <span class="inline-block animate-pulse">Cargando FP1...</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-on-surface-variant italic">Ordenado por mejor vuelta. Fuente OpenF1 (datos históricos).</p>
+    </div>
+    <div        id="tab-content-fp2"        class="hidden bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl shadow-2xl space-y-4"      >
+      <div class="overflow-x-auto hide-scrollbar">
+        <table            class="w-full text-left border-collapse min-w-[700px]"          >
+          <thead>
+            <tr                class="border-b border-border-subtle text-[11px] font-label-caps text-on-surface-variant uppercase bg-surface-container-low/50"              >
+              <th class="py-3 px-3 text-center">Pos</th>
+              <th class="py-3 px-3">Piloto</th>
+              <th class="py-3 px-3">Equipo</th>
+              <th class="py-3 px-3 text-center">Vueltas</th>
+              <th class="py-3 px-3 text-center">Mejor vuelta</th>
+              <th class="py-3 px-3 text-right">Gap</th>
+            </tr>
+          </thead>
+          <tbody              id="fp2-tbody"              class="divide-y divide-border-subtle/50 text-sm font-data-tabular"            >
+            <tr>
+              <td                  colspan="6"                  class="py-12 text-center text-on-surface-variant"                >
+                <span class="inline-block animate-pulse">Cargando FP2...</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-on-surface-variant italic">En fines de semana Sprint no hay FP2. Fuente OpenF1.</p>
+    </div>
+    <div        id="tab-content-fp3"        class="hidden bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl shadow-2xl space-y-4"      >
+      <div class="overflow-x-auto hide-scrollbar">
+        <table            class="w-full text-left border-collapse min-w-[700px]"          >
+          <thead>
+            <tr                class="border-b border-border-subtle text-[11px] font-label-caps text-on-surface-variant uppercase bg-surface-container-low/50"              >
+              <th class="py-3 px-3 text-center">Pos</th>
+              <th class="py-3 px-3">Piloto</th>
+              <th class="py-3 px-3">Equipo</th>
+              <th class="py-3 px-3 text-center">Vueltas</th>
+              <th class="py-3 px-3 text-center">Mejor vuelta</th>
+              <th class="py-3 px-3 text-right">Gap</th>
+            </tr>
+          </thead>
+          <tbody              id="fp3-tbody"              class="divide-y divide-border-subtle/50 text-sm font-data-tabular"            >
+            <tr>
+              <td                  colspan="6"                  class="py-12 text-center text-on-surface-variant"                >
+                <span class="inline-block animate-pulse">Cargando FP3...</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-on-surface-variant italic">En fines de semana Sprint no hay FP3. Fuente OpenF1.</p>
     </div>
   </div>
 </div>
@@ -3024,4 +3178,313 @@ import Layout from "../layouts/Layout.astro";
 
   init();
 
+</script>
+
+<script>
+(() => {
+  const BASE2 = "https://api.jolpi.ca/ergast/f1";
+  const OPENF1_2 = "https://api.openf1.org/v1";
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+  const $ = (id) => document.getElementById(id);
+  const ACTIVE =
+    "px-5 py-2.5 rounded-xl font-bold text-sm transition-all bg-primary-container text-on-primary-container shadow-md";
+  const INACTIVE =
+    "px-5 py-2.5 rounded-xl font-medium text-sm transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container";
+
+  const TABS = [
+    ["tab-btn-results", "tab-content-results"],
+    ["tab-btn-quali", "tab-content-quali"],
+    ["tab-btn-sprint", "tab-content-sprint"],
+    ["tab-btn-sq", "tab-content-sq"],
+    ["tab-btn-fp1", "tab-content-fp1"],
+    ["tab-btn-fp2", "tab-content-fp2"],
+    ["tab-btn-fp3", "tab-content-fp3"],
+    ["tab-btn-pits", "tab-content-pits"],
+  ];
+
+  function selectTab(btnId) {
+    for (const [b, c] of TABS) {
+      const btn = $(b);
+      const panel = $(c);
+      if (btn) btn.className = b === btnId ? ACTIVE : INACTIVE;
+      if (panel) panel.classList.toggle("hidden", c !== TABS.find((t) => t[0] === btnId)?.[1]);
+    }
+  }
+  for (const [b] of TABS) {
+    const btn = $(b);
+    if (btn) btn.addEventListener("click", () => selectTab(b));
+  }
+
+  const COLORS = {
+    "red bull": "#3671c6", mclaren: "#ff8000", ferrari: "#ef1a2d",
+    mercedes: "#27f4d2", "aston martin": "#229971", alpine: "#0093cc",
+    williams: "#64c4ff", haas: "#b6babd", "racing bulls": "#6692ff",
+    sauber: "#52e252", audi: "#bb0000", cadillac: "#e8e8e8",
+  };
+  function teamColor2(name) {
+    const n = String(name || "").toLowerCase();
+    for (const [k, v] of Object.entries(COLORS)) {
+      if (n.includes(k) || k.includes(n)) return v;
+    }
+    return "#a1a1aa";
+  }
+  function norm(v) { return String(v ?? "").trim().toLowerCase(); }
+
+  async function fetchJson2(url) {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) return null;
+      return await res.json();
+    } catch { return null; }
+  }
+
+  function fmtLap(sec) {
+    if (sec == null || !Number.isFinite(sec) || sec <= 0) return "--";
+    const m = Math.floor(sec / 60);
+    const s = (sec % 60).toFixed(3).padStart(6, "0");
+    return m > 0 ? `${m}:${s}` : sec.toFixed(3);
+  }
+
+  function emptyRow(tbodyId, cols, msg) {
+    const tb = $(tbodyId);
+    if (tb) tb.innerHTML = `<tr><td colspan="${cols}" class="py-12 text-center text-on-surface-variant">${msg}</td></tr>`;
+  }
+  function loadingRow(tbodyId, cols, msg) {
+    const tb = $(tbodyId);
+    if (tb) tb.innerHTML = `<tr><td colspan="${cols}" class="py-12 text-center text-on-surface-variant"><span class="inline-block animate-pulse">${msg}</span></td></tr>`;
+  }
+
+  // ---------- Quali (Jolpica) ----------
+  function renderQuali(list) {
+    if (!list || !list.length) {
+      emptyRow("quali-tbody", 6, "No hay datos de clasificación (sesión aún no disputada).");
+      return;
+    }
+    $("quali-tbody").innerHTML = list.map((r) => {
+      const color = teamColor2(r.Constructor?.name);
+      const name = `${r.Driver?.givenName ?? ""} ${r.Driver?.familyName ?? ""}`.trim();
+      const cell = (v) => v
+        ? `<span class="font-mono text-on-surface">${v}</span>`
+        : `<span class="text-on-surface-variant/40">--</span>`;
+      return `<tr class="hover:bg-surface-container-high/40 transition-colors border-b border-border-subtle/30">
+        <td class="py-3.5 px-3 text-center font-bold text-primary-container">P${r.position ?? "--"}</td>
+        <td class="py-3.5 px-3"><div class="flex items-center gap-2.5"><span class="w-1 h-5 rounded-full shrink-0" style="background-color: ${color}"></span><span class="font-bold text-on-surface uppercase tracking-tight">${name}</span><span class="text-xs text-on-surface-variant ml-2 font-mono">#${r.number ?? ""}</span></div></td>
+        <td class="py-3.5 px-3 font-medium text-on-surface-variant text-xs">${r.Constructor?.name ?? "--"}</td>
+        <td class="py-3.5 px-3 text-center text-xs">${cell(r.Q1)}</td>
+        <td class="py-3.5 px-3 text-center text-xs">${cell(r.Q2)}</td>
+        <td class="py-3.5 px-3 text-center text-xs">${cell(r.Q3)}</td>
+      </tr>`;
+    }).join("");
+  }
+
+  // ---------- Sprint (Jolpica) ----------
+  function renderSprint(list) {
+    if (!list || !list.length) {
+      emptyRow("sprint-tbody", 7, "Este GP no tiene Sprint o aún no se disputó.");
+      return;
+    }
+    $("sprint-tbody").innerHTML = list.map((r) => {
+      const color = teamColor2(r.Constructor?.name);
+      const name = `${r.Driver?.givenName ?? ""} ${r.Driver?.familyName ?? ""}`.trim();
+      const isWin = Number(r.position) === 1;
+      const time = isWin
+        ? `<span class="text-amber-400 font-bold">${r.Time?.time ?? "Ganador"}</span>`
+        : (r.Time?.time ?? r.status ?? "--");
+      const pts = r.points && r.points !== "0"
+        ? `<span class="text-primary-container">+${r.points}</span>` : "0";
+      return `<tr class="hover:bg-surface-container-high/40 transition-colors border-b border-border-subtle/30">
+        <td class="py-3.5 px-3 text-center font-bold text-primary-container">P${r.position ?? "--"}</td>
+        <td class="py-3.5 px-3"><div class="flex items-center gap-2.5"><span class="w-1 h-5 rounded-full shrink-0" style="background-color: ${color}"></span><span class="font-bold text-on-surface uppercase tracking-tight">${name}</span><span class="text-xs text-on-surface-variant ml-2 font-mono">#${r.number ?? ""}</span></div></td>
+        <td class="py-3.5 px-3 font-medium text-on-surface-variant text-xs">${r.Constructor?.name ?? "--"}</td>
+        <td class="py-3.5 px-3 text-center text-xs">P${r.grid ?? "--"}</td>
+        <td class="py-3.5 px-3 text-center text-xs text-on-surface-variant">${r.laps ?? "--"}</td>
+        <td class="py-3.5 px-3 font-semibold text-on-surface text-xs">${time}</td>
+        <td class="py-3.5 px-3 text-center font-bold text-on-surface">${pts}</td>
+      </tr>`;
+    }).join("");
+  }
+
+  // ---------- Sesiones OpenF1 (FP / SQ) ----------
+  let allSessions = null;
+  let calendar = [];
+  const sessionCache = new Map();
+
+  async function getCalendar() {
+    if (calendar.length) return calendar;
+    const j = await fetchJson2(`${BASE2}/2026/races.json`);
+    calendar = j?.MRData?.RaceTable?.Races ?? [];
+    return calendar;
+  }
+  async function getSessions() {
+    if (allSessions) return allSessions;
+    const d = await fetchJson2(`${OPENF1_2}/sessions?year=2026`);
+    allSessions = Array.isArray(d) ? d : [];
+    return allSessions;
+  }
+
+  function findRaceSession(sessions, race) {
+    if (!race) return null;
+    const raceDate = String(race.date || "");
+    const country = norm(race?.Circuit?.Location?.country);
+    const races = sessions.filter((s) => norm(s.session_type) === "race" || norm(s.session_name) === "race");
+    return races.find((s) => String(s.date_start || "").slice(0, 10) === raceDate && norm(s.country_name) === country)
+      || races.find((s) => String(s.date_start || "").slice(0, 10) === raceDate)
+      || null;
+  }
+  function pickMeetingSession(meeting, pred) {
+    return meeting.find(pred) || null;
+  }
+  function isPractice(s, n) {
+    return norm(s.session_type) === "practice" && norm(s.session_name).includes(`practice ${n}`);
+  }
+  function isSQ(s) {
+    const t = norm(s.session_type), nm = norm(s.session_name);
+    return t.includes("sprint quali") || t.includes("sprint shootout")
+      || nm.includes("sprint quali") || nm.includes("sprint shootout");
+  }
+
+  function renderOpenF1Session(tbodyId, rows) {
+    if (!rows || !rows.length) {
+      emptyRow(tbodyId, 6, "Sin datos en OpenF1 (sesión no disputada o sin históricos).");
+      return;
+    }
+    const best = rows[0].best;
+    $(tbodyId).innerHTML = rows.map((r, i) => {
+      const pos = i + 1;
+      const gap = pos === 1 || r.best == null || best == null
+        ? `<span class="text-primary font-bold">LÍDER</span>`
+        : `<span class="text-on-surface-variant">+${(r.best - best).toFixed(3)}</span>`;
+      return `<tr class="hover:bg-surface-container-high/40 transition-colors border-b border-border-subtle/30">
+        <td class="py-3.5 px-3 text-center font-bold ${pos <= 3 ? "text-primary-container" : "text-on-surface-variant"}">${pos}</td>
+        <td class="py-3.5 px-3"><div class="flex items-center gap-2.5"><span class="w-1 h-5 rounded-full shrink-0" style="background-color: ${r.color}"></span><span class="font-bold text-on-surface uppercase tracking-tight">${r.name}</span><span class="text-xs text-on-surface-variant ml-2 font-mono">${r.acro}</span></div></td>
+        <td class="py-3.5 px-3 font-medium text-on-surface-variant text-xs">${r.team}</td>
+        <td class="py-3.5 px-3 text-center text-xs text-on-surface-variant">${r.laps}</td>
+        <td class="py-3.5 px-3 text-center font-mono font-bold text-on-surface text-xs">${r.best != null ? fmtLap(r.best) : "<span class='text-on-surface-variant/40'>--</span>"}</td>
+        <td class="py-3.5 px-3 text-right font-mono text-xs">${gap}</td>
+      </tr>`;
+    }).join("");
+  }
+
+  async function loadOpenF1Session(session, tbodyId) {
+    if (!session) {
+      const isFP23 = tbodyId === "fp2-tbody" || tbodyId === "fp3-tbody";
+      emptyRow(tbodyId, 6, isFP23
+        ? "No hay FP2/FP3 en fines de semana Sprint (solo FP1)."
+        : "Sin datos en OpenF1 (sesión no disputada o sin históricos).");
+      return;
+    }
+    const key = `fp-${session.session_key}`;
+    if (sessionCache.has(key)) {
+      renderOpenF1Session(tbodyId, sessionCache.get(key));
+      return;
+    }
+    loadingRow(tbodyId, 6, "Cargando datos OpenF1...");
+    await sleep(300);
+    const [drivers, laps] = await Promise.all([
+      fetchJson2(`${OPENF1_2}/drivers?session_key=${session.session_key}`),
+      fetchJson2(`${OPENF1_2}/laps?session_key=${session.session_key}`).then((d) => (sleep(300).then(() => d))),
+    ]);
+    const dList = Array.isArray(drivers) ? drivers : [];
+    const lList = Array.isArray(laps) ? laps : [];
+    if (!dList.length && !lList.length) {
+      emptyRow(tbodyId, 6, "Sin datos en OpenF1 (sesión no disputada, en curso con acceso restringido, o sin históricos).");
+      sessionCache.set(key, []);
+      return;
+    }
+    const bestMap = new Map();
+    const countMap = new Map();
+    for (const l of lList) {
+      if (!l.driver_number) continue;
+      countMap.set(l.driver_number, (countMap.get(l.driver_number) || 0) + 1);
+      if (l.lap_duration && l.lap_duration > 0) {
+        const prev = bestMap.get(l.driver_number);
+        if (prev == null || l.lap_duration < prev) bestMap.set(l.driver_number, l.lap_duration);
+      }
+    }
+    const rows = dList.map((d) => ({
+      num: d.driver_number,
+      name: (d.full_name || d.name_acronym || `#${d.driver_number}`).toUpperCase(),
+      acro: d.name_acronym || "",
+      team: d.team_name || "--",
+      color: d.team_colour ? `#${String(d.team_colour).replace("#", "")}` : "#a1a1aa",
+      best: bestMap.get(d.driver_number) ?? null,
+      laps: countMap.get(d.driver_number) || 0,
+    })).sort((a, b) => (a.best ?? Infinity) - (b.best ?? Infinity));
+    sessionCache.set(key, rows);
+    renderOpenF1Session(tbodyId, rows);
+  }
+
+  let lastRound = null;
+  async function loadExtras(round) {
+    if (!round || Number.isNaN(Number(round))) return;
+    round = String(round);
+    lastRound = round;
+    loadingRow("quali-tbody", 6, "Cargando clasificación...");
+    loadingRow("sprint-tbody", 7, "Cargando sprint...");
+    for (const id of ["sq-tbody", "fp1-tbody", "fp2-tbody", "fp3-tbody"]) loadingRow(id, 6, "Cargando datos OpenF1...");
+
+    const [qualiJ, sprintJ] = await Promise.all([
+      fetchJson2(`${BASE2}/2026/${round}/qualifying.json`),
+      fetchJson2(`${BASE2}/2026/${round}/sprint.json?limit=100`),
+    ]);
+    if (lastRound !== round) return;
+    renderQuali(qualiJ?.MRData?.RaceTable?.Races?.[0]?.QualifyingResults ?? []);
+    const sprintList = sprintJ?.MRData?.RaceTable?.Races?.[0]?.SprintResults ?? [];
+    renderSprint(sprintList);
+
+    const races = await getCalendar();
+    if (lastRound !== round) return;
+    const meta = races.find((r) => String(r.round) === String(round));
+    const hasSprint = Boolean(meta?.Sprint) || sprintList.length > 0;
+    const btnSprint = $("tab-btn-sprint");
+    const btnSQ = $("tab-btn-sq");
+    if (btnSprint) btnSprint.style.display = hasSprint ? "" : "none";
+    if (btnSQ) btnSQ.style.display = hasSprint ? "" : "none";
+
+    const sessions = await getSessions();
+    if (lastRound !== round) return;
+    if (!sessions.length || !meta) {
+      for (const id of ["sq-tbody", "fp1-tbody", "fp2-tbody", "fp3-tbody"])
+        emptyRow(id, 6, "Sin datos en OpenF1 (sesión no disputada o sin históricos).");
+      return;
+    }
+    const raceS = findRaceSession(sessions, meta);
+    if (!raceS) {
+      for (const id of ["sq-tbody", "fp1-tbody", "fp2-tbody", "fp3-tbody"])
+        emptyRow(id, 6, "Sin sesión asociada en OpenF1 para este GP.");
+      return;
+    }
+    const meeting = sessions.filter((s) => s.meeting_key === raceS.meeting_key);
+    const fp1 = pickMeetingSession(meeting, (s) => isPractice(s, 1));
+    const fp2 = pickMeetingSession(meeting, (s) => isPractice(s, 2));
+    const fp3 = pickMeetingSession(meeting, (s) => isPractice(s, 3));
+    const sq = pickMeetingSession(meeting, isSQ);
+    if (!hasSprint && $("sq-tbody")) emptyRow("sq-tbody", 6, "Este GP no tiene Sprint Quali (solo fines de semana Sprint).");
+    else await loadOpenF1Session(sq, "sq-tbody");
+    if (lastRound !== round) return;
+    await loadOpenF1Session(fp1, "fp1-tbody");
+    if (lastRound !== round) return;
+    await loadOpenF1Session(fp2, "fp2-tbody");
+    if (lastRound !== round) return;
+    await loadOpenF1Session(fp3, "fp3-tbody");
+  }
+
+  function currentRound() {
+    const sel = $("round-select");
+    if (sel && sel.value) return sel.value;
+    const p = new URLSearchParams(window.location.search).get("round");
+    return p || null;
+  }
+  const sel = $("round-select");
+  if (sel) sel.addEventListener("change", () => loadExtras(sel.value));
+  const boot = setInterval(() => {
+    const r = currentRound();
+    if (r && r !== lastRound && sel && sel.options.length > 0) {
+      clearInterval(boot);
+      loadExtras(r);
+    }
+  }, 700);
+  setTimeout(() => clearInterval(boot), 20000);
+})();
 </script>
