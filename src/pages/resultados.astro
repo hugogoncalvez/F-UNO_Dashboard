@@ -198,7 +198,7 @@ import Layout from "../layouts/Layout.astro";
           </tbody>
         </table>
       </div>
-      <p class="text-xs text-on-surface-variant italic">Ordenado por mejor vuelta. Fuente OpenF1 (datos históricos).</p>
+      <p class="text-xs text-on-surface-variant italic">Fuente Jolpica Alpha (fallback OpenF1).</p>
     </div>
     <div        id="tab-content-fp1"        class="hidden bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl shadow-2xl space-y-4"      >
       <div class="overflow-x-auto hide-scrollbar">
@@ -222,7 +222,7 @@ import Layout from "../layouts/Layout.astro";
           </tbody>
         </table>
       </div>
-      <p class="text-xs text-on-surface-variant italic">Ordenado por mejor vuelta. Fuente OpenF1 (datos históricos).</p>
+      <p class="text-xs text-on-surface-variant italic">Fuente Jolpica Alpha (fallback OpenF1).</p>
     </div>
     <div        id="tab-content-fp2"        class="hidden bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl shadow-2xl space-y-4"      >
       <div class="overflow-x-auto hide-scrollbar">
@@ -246,7 +246,7 @@ import Layout from "../layouts/Layout.astro";
           </tbody>
         </table>
       </div>
-      <p class="text-xs text-on-surface-variant italic">En fines de semana Sprint no hay FP2. Fuente OpenF1.</p>
+      <p class="text-xs text-on-surface-variant italic">En fines de semana Sprint no hay FP2. Fuente Jolpica Alpha (fallback OpenF1).</p>
     </div>
     <div        id="tab-content-fp3"        class="hidden bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl shadow-2xl space-y-4"      >
       <div class="overflow-x-auto hide-scrollbar">
@@ -270,7 +270,7 @@ import Layout from "../layouts/Layout.astro";
           </tbody>
         </table>
       </div>
-      <p class="text-xs text-on-surface-variant italic">En fines de semana Sprint no hay FP3. Fuente OpenF1.</p>
+      <p class="text-xs text-on-surface-variant italic">En fines de semana Sprint no hay FP3. Fuente Jolpica Alpha (fallback OpenF1).</p>
     </div>
   </div>
 </div>
@@ -3418,6 +3418,83 @@ import Layout from "../layouts/Layout.astro";
     renderOpenF1Session(tbodyId, rows);
   }
 
+  // ---------- Jolpica ALPHA (FP / SQ como fuente primaria, no se bloquea en vivo) ----------
+  const ALPHA = "https://api.jolpi.ca/f1/alpha";
+  let alphaSchedule = null;
+  async function getAlphaSchedule() {
+    if (alphaSchedule) return alphaSchedule;
+    const j = await fetchJson2(`${ALPHA}/schedules/2026/`);
+    alphaSchedule = j?.data?.events ?? [];
+    return alphaSchedule;
+  }
+  function parseAlphaTime(str) {
+    if (str == null || str === "") return null;
+    const m = String(str).trim().match(/^(?:(\d+):)?(\d+(?:\.\d+)?)$/);
+    if (!m) return null;
+    const mins = m[1] ? Number(m[1]) : 0;
+    const secs = Number(m[2]);
+    if (!Number.isFinite(mins) || !Number.isFinite(secs)) return null;
+    return mins * 60 + secs;
+  }
+  function renderAlphaSession(tbodyId, list) {
+    const rows = [...list]
+      .map((r) => ({
+        name: `${r.driver?.given_name ?? ""} ${r.driver?.family_name ?? ""}`.trim().toUpperCase() || `#${r.car_number ?? "--"}`,
+        acro: r.driver?.abbreviation || "",
+        team: r.team?.name || "--",
+        color: r.team?.primary_color || "#a1a1aa",
+        bestStr: r.time || null,
+        best: parseAlphaTime(r.time),
+        laps: r.laps ?? "--",
+        pos: Number(r.position) || 99,
+      }))
+      .sort((a, b) => (a.best ?? Infinity) - (b.best ?? Infinity) || a.pos - b.pos);
+    const best = rows.find((x) => x.best != null)?.best ?? null;
+    $(tbodyId).innerHTML = rows.map((r, i) => {
+      const pos = i + 1;
+      const gap = best == null
+        ? `<span class="text-on-surface-variant">—</span>`
+        : (pos === 1 || r.best == null
+          ? `<span class="text-primary font-bold">LÍDER</span>`
+          : `<span class="text-on-surface-variant">+${(r.best - best).toFixed(3)}</span>`);
+      return `<tr class="hover:bg-surface-container-high/40 transition-colors border-b border-border-subtle/30">
+        <td class="py-3.5 px-3 text-center font-bold ${pos <= 3 ? "text-primary-container" : "text-on-surface-variant"}">${pos}</td>
+        <td class="py-3.5 px-3"><div class="flex items-center gap-2.5"><span class="w-1 h-5 rounded-full shrink-0" style="background-color: ${r.color}"></span><span class="font-bold text-on-surface uppercase tracking-tight">${r.name}</span><span class="text-xs text-on-surface-variant ml-2 font-mono">${r.acro}</span></div></td>
+        <td class="py-3.5 px-3 font-medium text-on-surface-variant text-xs">${r.team}</td>
+        <td class="py-3.5 px-3 text-center text-xs text-on-surface-variant">${r.laps}</td>
+        <td class="py-3.5 px-3 text-center font-mono font-bold text-on-surface text-xs">${r.bestStr != null ? r.bestStr : "<span class='text-on-surface-variant/40'>--</span>"}</td>
+        <td class="py-3.5 px-3 text-right font-mono text-xs">${gap}</td>
+      </tr>`;
+    }).join("");
+  }
+  async function loadAlphaSession(url, tbodyId) {
+    if (!url) return false;
+    const j = await fetchJson2(url);
+    const list = j?.data?.results ?? [];
+    if (!list.length) return false;
+    renderAlphaSession(tbodyId, list);
+    return true;
+  }
+
+  const meetingCache = new Map();
+  async function getMeetingFallback(meta) {
+    const key = `mtg-${meta.round}`;
+    if (meetingCache.has(key)) return meetingCache.get(key);
+    const sessions = await getSessions();
+    if (!sessions.length) { meetingCache.set(key, null); return null; }
+    const raceS = findRaceSession(sessions, meta);
+    if (!raceS) { meetingCache.set(key, null); return null; }
+    const meeting = sessions.filter((s) => s.meeting_key === raceS.meeting_key);
+    const out = {
+      fp1: pickMeetingSession(meeting, (s) => isPractice(s, 1)),
+      fp2: pickMeetingSession(meeting, (s) => isPractice(s, 2)),
+      fp3: pickMeetingSession(meeting, (s) => isPractice(s, 3)),
+      sq: pickMeetingSession(meeting, isSQ),
+    };
+    meetingCache.set(key, out);
+    return out;
+  }
+
   let lastRound = null;
   let lastExtrasStart = 0;
   async function loadExtras(round) {
@@ -3447,32 +3524,49 @@ import Layout from "../layouts/Layout.astro";
     if (btnSprint) btnSprint.style.display = hasSprint ? "" : "none";
     if (btnSQ) btnSQ.style.display = hasSprint ? "" : "none";
 
-    const sessions = await getSessions();
+    const alphaEvents = await getAlphaSchedule();
     if (lastRound !== round) return;
-    if (!sessions.length || !meta) {
-      for (const id of ["sq-tbody", "fp1-tbody", "fp2-tbody", "fp3-tbody"])
-        emptyRow(id, 6, blocked401 ? BLOCKED_MSG : "Sin datos en OpenF1 (sesión no disputada o sin históricos).");
-      return;
+    const alphaEvent = alphaEvents.find((e) => Number(e?.round?.number) === Number(round)) || null;
+    const urlMap = {};
+    if (alphaEvent) {
+      for (const s of alphaEvent.schedule || []) {
+        if (s?.code && s?.results_url) urlMap[s.code] = s.results_url;
+      }
     }
-    const raceS = findRaceSession(sessions, meta);
-    if (!raceS) {
-      for (const id of ["sq-tbody", "fp1-tbody", "fp2-tbody", "fp3-tbody"])
-        emptyRow(id, 6, "Sin sesión asociada en OpenF1 para este GP.");
-      return;
+
+    const jobs = [
+      ["SQ", "sq-tbody"],
+      ["FP1", "fp1-tbody"],
+      ["FP2", "fp2-tbody"],
+      ["FP3", "fp3-tbody"],
+    ];
+    const failed = [];
+    for (const [code, tbody] of jobs) {
+      if (lastRound !== round) return;
+      if (code === "SQ" && !hasSprint) {
+        emptyRow(tbody, 6, "Este GP no tiene Sprint Quali (solo fines de semana Sprint).");
+        continue;
+      }
+      if ((code === "FP2" || code === "FP3") && !urlMap[code] && hasSprint) {
+        emptyRow(tbody, 6, "No hay FP2/FP3 en fines de semana Sprint (solo FP1).");
+        continue;
+      }
+      loadingRow(tbody, 6, "Cargando datos...");
+      const ok = await loadAlphaSession(urlMap[code], tbody);
+      if (!ok) failed.push([code, tbody]);
     }
-    const meeting = sessions.filter((s) => s.meeting_key === raceS.meeting_key);
-    const fp1 = pickMeetingSession(meeting, (s) => isPractice(s, 1));
-    const fp2 = pickMeetingSession(meeting, (s) => isPractice(s, 2));
-    const fp3 = pickMeetingSession(meeting, (s) => isPractice(s, 3));
-    const sq = pickMeetingSession(meeting, isSQ);
-    if (!hasSprint && $("sq-tbody")) emptyRow("sq-tbody", 6, "Este GP no tiene Sprint Quali (solo fines de semana Sprint).");
-    else await loadOpenF1Session(sq, "sq-tbody");
-    if (lastRound !== round) return;
-    await loadOpenF1Session(fp1, "fp1-tbody");
-    if (lastRound !== round) return;
-    await loadOpenF1Session(fp2, "fp2-tbody");
-    if (lastRound !== round) return;
-    await loadOpenF1Session(fp3, "fp3-tbody");
+    if (failed.length) {
+      const fb = meta ? await getMeetingFallback(meta) : null;
+      const keyOf = { SQ: "sq", FP1: "fp1", FP2: "fp2", FP3: "fp3" };
+      for (const [code, tbody] of failed) {
+        if (lastRound !== round) return;
+        if (!fb) {
+          emptyRow(tbody, 6, blocked401 ? BLOCKED_MSG : "Sin datos (ni Jolpica Alpha ni OpenF1 tienen esta sesión).");
+        } else {
+          await loadOpenF1Session(fb[keyOf[code]], tbody);
+        }
+      }
+    }
   }
 
   function currentRound() {
