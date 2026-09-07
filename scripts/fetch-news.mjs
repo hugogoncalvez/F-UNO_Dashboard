@@ -23,7 +23,7 @@ const PROCESSED_FILE = join(DATA_DIR, "processed-ids.json");
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
 const GROQ_MODEL = "qwen/qwen3.8-27b";
 const MAX_NEWS_PER_RUN = 5;
-const MAX_ARTICLES = 20;
+const MAX_ARTICLES = 100;
 const DELAY_MS = 7000;
 
 if (!GROQ_API_KEY) {

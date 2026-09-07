@@ -17,7 +17,12 @@ const siteUrl = "https://f-uno-center.vercel.app";
 const pageTitle = title ?? "F-Uno Center";
 const pageDescription = description ?? "Dashboard de Formula 1: calendario, clasificaciones, resultados, pilotos y noticias.";
 const pageImage = image ?? "/og-default.svg";
-const canonicalUrl = canonical ?? `${siteUrl}${Astro.url.pathname}`;
+// Canonical normalizado: sin trailing slash (excepto raíz) para que
+// sitemap, enlaces internos y canonical coincidan y Google no reporte
+// "Página alternativa con etiqueta canónica adecuada".
+const normalizeCanonical = (url: string) =>
+  url.length > siteUrl.length + 1 ? url.replace(/\/$/, "") : url;
+const canonicalUrl = normalizeCanonical(canonical ?? `${siteUrl}${Astro.url.pathname}`);
 
 const pathSegments = Astro.url.pathname.replace(/\/$/, "").split("/").filter(Boolean);
 const breadcrumbItems = [
