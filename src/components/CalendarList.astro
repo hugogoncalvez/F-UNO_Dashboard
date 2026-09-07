@@ -71,6 +71,7 @@ function sessionIcon(key: string): string {
         races.map((race) => (
           <article
             data-calendar-card
+            data-start={new Date(`${race.date}T${race.time}`).getTime()}
             { ... (race.status !== "past" ? { "data-next-race": "" } : {}) }
             class:list={[
               "bg-panel-surface rounded-2xl border border-border-subtle p-4 lg:p-6 hover:bg-surface-container-low transition-colors duration-150 relative overflow-hidden group cursor-pointer",
@@ -79,6 +80,7 @@ function sessionIcon(key: string): string {
           >
             <div class="flex flex-col lg:flex-row gap-5 lg:items-center">
             <div
+              data-status-stripe
               class:list={[
                 "absolute left-0 top-0 bottom-0 w-1",
                 race.status === "past" ? "bg-surface-variant" : "bg-primary-container",
@@ -111,11 +113,11 @@ function sessionIcon(key: string): string {
                 {countryFlag(race.country) && <span class="text-2xl shrink-0">{countryFlag(race.country)}</span>}
                 <h3 class="font-headline-sm text-headline-sm text-on-surface truncate">{race.raceName}</h3>
                 {race.status === "past" ? (
-                  <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-caps text-[10px] uppercase tracking-wider border border-border-subtle shrink-0">
+                  <span data-status-badge class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-caps text-[10px] uppercase tracking-wider border border-border-subtle shrink-0">
                     Finalizado
                   </span>
                 ) : (
-                  <span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary-container font-label-caps text-[10px] uppercase tracking-wider pulse-red border border-primary-container/50 shrink-0">
+                  <span data-status-badge class="px-2 py-0.5 rounded bg-primary-container/20 text-primary-container font-label-caps text-[10px] uppercase tracking-wider pulse-red border border-primary-container/50 shrink-0">
                     Próximo
                   </span>
                 )}
@@ -217,7 +219,33 @@ function sessionIcon(key: string): string {
 }
 
 <script>
-  const cards = document.querySelectorAll("[data-calendar-card]");
+  // El HTML es estático (status calculado en el build): recalcular en cliente
+  // para que una carrera ya disputada pase a "Finalizado" aunque el deploy
+  // sea anterior, y el scroll apunte a la verdadera próxima carrera.
+  const RACE_MS = 3 * 3600_000;
+  const PAST_BADGE =
+    "px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-caps text-[10px] uppercase tracking-wider border border-border-subtle shrink-0";
+  const NEXT_BADGE =
+    "px-2 py-0.5 rounded bg-primary-container/20 text-primary-container font-label-caps text-[10px] uppercase tracking-wider pulse-red border border-primary-container/50 shrink-0";
+  const PAST_STRIPE = "absolute left-0 top-0 bottom-0 w-1 bg-surface-variant";
+  const NEXT_STRIPE = "absolute left-0 top-0 bottom-0 w-1 bg-primary-container";
+
+  const cards = [...document.querySelectorAll("[data-calendar-card]")];
+  const isPast = (card) => Number(card.dataset.start || 0) + RACE_MS < Date.now();
+
+  for (const card of cards) {
+    const past = isPast(card);
+    card.removeAttribute("data-next-race");
+    const badge = card.querySelector("[data-status-badge]");
+    if (badge) {
+      badge.className = past ? PAST_BADGE : NEXT_BADGE;
+      badge.textContent = past ? "Finalizado" : "Próximo";
+    }
+    const stripe = card.querySelector("[data-status-stripe]");
+    if (stripe) stripe.className = past ? PAST_STRIPE : NEXT_STRIPE;
+  }
+  const nextCard = cards.find((c) => !isPast(c));
+  if (nextCard) nextCard.setAttribute("data-next-race", "");
 
   function toggle(card) {
     const content = card.querySelector("[data-schedule]");

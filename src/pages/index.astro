@@ -23,6 +23,17 @@ const nextRace = calendar
   .filter((r) => new Date(`${r.date}T${r.time}`).getTime() + 3 * 3600_000 > now)
   .sort((a, b) => a.round - b.round)[0];
 const nextRaceStart = nextRace ? `${nextRace.date}T${nextRace.time}` : null;
+// Calendario mínimo embebido para que el cliente pueda corregir la "próxima
+// carrera" si el build estático quedó viejo (ej. deploy previo a la carrera).
+const clientCalendar = calendar.map((r) => ({
+  round: r.round,
+  raceName: r.raceName,
+  date: r.date,
+  time: r.time,
+  circuit: r.circuit,
+  locality: r.locality,
+  country: r.country,
+}));
 ---
 
 <Layout
@@ -74,17 +85,17 @@ const nextRaceStart = nextRace ? `${nextRace.date}T${nextRace.time}` : null;
 
   {
     nextRaceStart && (
-      <section class="mb-8">
-        <div class="bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl grid lg:grid-cols-[75%_25%] gap-6 items-stretch">
+      <section class="mb-8" id="next-race-hero" data-server-round={nextRace!.round}>
+        <div id="next-race-grid" class="bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl grid lg:grid-cols-[75%_25%] gap-6 items-stretch">
           <div>
-            <p class="text-xs uppercase tracking-widest text-zinc-500 mb-1">
+            <p class="text-xs uppercase tracking-widest text-zinc-500 mb-1" id="next-race-round">
               Próxima carrera · Ronda {nextRace!.round}
             </p>
-            <h2 class="font-display text-3xl font-bold text-white mb-1">
+            <h2 class="font-display text-3xl font-bold text-white mb-1" id="next-race-name">
               {nextRace!.raceName}
             </h2>
             <p class="text-sm text-zinc-400 mb-4">
-              {nextRace!.circuit} · {nextRace!.locality}, {nextRace!.country} ·{" "}
+              <span id="next-race-circuit">{nextRace!.circuit} · {nextRace!.locality}, {nextRace!.country}</span>{" · "}
               <LocalTime iso={nextRaceStart} separator=" " />
             </p>
             <Countdown target={nextRaceStart} />
@@ -93,6 +104,7 @@ const nextRaceStart = nextRace ? `${nextRace.date}T${nextRace.time}` : null;
             <>
               <button
                 type="button"
+                id="next-race-track-btn"
                 data-open-circuit={`circuit-dialog-${nextRace!.round}`}
                 aria-label={`Ver detalles del circuito ${nextRace!.circuit}`}
                 class="group/circ w-full h-full min-h-[140px] rounded-xl bg-surface-container-low border border-border-subtle p-3 overflow-hidden cursor-pointer hover:border-primary-container/60 transition-colors relative flex items-center justify-center -mr-6 -mb-6 rounded-r-none"
@@ -167,4 +179,59 @@ const nextRaceStart = nextRace ? `${nextRace.date}T${nextRace.time}` : null;
     </div>
     <NewsGrid items={news} cols={3} />
   </section>
+
+  <script define:vars={{ calendar: clientCalendar }}>
+    // Corrige la "próxima carrera" si el HTML estático se generó antes de la
+    // última carrera disputada (el sitio es estático: Date.now() del build
+    // queda congelado hasta el próximo deploy).
+    const hero = document.getElementById("next-race-hero");
+    if (hero) {
+      const RACE_MS = 3 * 3600_000;
+      const list = [...(calendar ?? [])].sort((a, b) => a.round - b.round);
+      const upcoming = list.find(
+        (r) => new Date(`${r.date}T${r.time}`).getTime() + RACE_MS > Date.now(),
+      );
+      const serverRound = Number(hero.dataset.serverRound);
+      if (!upcoming) {
+        // Temporada terminada y build viejo: ocultar el hero desactualizado.
+        hero.classList.add("hidden");
+      } else if (upcoming.round !== serverRound) {
+        const iso = `${upcoming.date}T${upcoming.time}`;
+        const roundEl = document.getElementById("next-race-round");
+        const nameEl = document.getElementById("next-race-name");
+        const circuitEl = document.getElementById("next-race-circuit");
+        if (roundEl) roundEl.textContent = `Próxima carrera · Ronda ${upcoming.round}`;
+        if (nameEl) nameEl.textContent = upcoming.raceName;
+        if (circuitEl)
+          circuitEl.textContent = `${upcoming.circuit} · ${upcoming.locality}, ${upcoming.country}`;
+        const timeEl = hero.querySelector("time[datetime]");
+        if (timeEl) {
+          timeEl.setAttribute("datetime", iso);
+          const d = new Date(iso);
+          timeEl.textContent = `${d.toLocaleDateString("es-ES", { day: "numeric", month: "short", year: "numeric" })} ${d.toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" })} Hs.`;
+        }
+        // Reapuntar el countdown y refrescarlo de inmediato (el tick lo
+        // relee desde data-target cada segundo).
+        const cd = document.getElementById("countdown");
+        if (cd) {
+          cd.dataset.target = iso;
+          const diff = Math.max(0, new Date(iso).getTime() - Date.now());
+          const set = (u, v) => {
+            const n = cd.querySelector(`[data-unit="${u}"]`);
+            if (n) n.textContent = v;
+          };
+          set("d", String(Math.floor(diff / 86400000)));
+          set("h", String(Math.floor((diff % 86400000) / 3600000)).padStart(2, "0"));
+          set("m", String(Math.floor((diff % 3600000) / 60000)).padStart(2, "0"));
+          set("s", String(Math.floor((diff % 60000) / 1000)).padStart(2, "0"));
+        }
+        // El preview 3D es del GP viejo: ocultarlo (vuelve con el próximo deploy).
+        document.getElementById("next-race-track-btn")?.classList.add("hidden");
+        document.getElementById(`circuit-dialog-${serverRound}`)?.remove();
+        document
+          .getElementById("next-race-grid")
+          ?.classList.remove("lg:grid-cols-[75%_25%]");
+      }
+    }
+  </script>
 </Layout>

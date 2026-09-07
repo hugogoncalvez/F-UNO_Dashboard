@@ -27,13 +27,16 @@ const { target } = Astro.props;
 
 <script>
   const el = document.getElementById("countdown")!;
-  const target = new Date(el.dataset.target ?? "").getTime();
   const days = el.querySelector('[data-unit="d"]')!;
   const hours = el.querySelector('[data-unit="h"]')!;
   const mins = el.querySelector('[data-unit="m"]')!;
   const secs = el.querySelector('[data-unit="s"]')!;
 
   function tick() {
+    // El target se lee en cada tick (no se captura una sola vez) para que
+    // un script externo pueda corregirlo si la página estática quedó vieja
+    // (ej. la "próxima carrera" del build ya se corrió).
+    const target = new Date(el.dataset.target ?? "").getTime();
     let diff = Math.max(0, target - Date.now());
     const d = Math.floor(diff / 86400000);
     diff -= d * 86400000;
