@@ -84,7 +84,7 @@ import Layout from "../layouts/Layout.astro";
 
       <div class="overflow-x-auto hide-scrollbar">
         <table class="w-full text-left border-collapse min-w-[820px]">
-          <thead>
+          <thead id="results-thead">
             <tr class="border-b border-border-subtle text-[11px] font-label-caps text-on-surface-variant uppercase bg-surface-container-low/50">
               <th class="py-3 px-3 text-center w-12">Pos</th>
               <th class="py-3 px-3">Piloto</th>
@@ -252,6 +252,69 @@ import Layout from "../layouts/Layout.astro";
     return name || type;
   }
 
+  // ---- Clasificación oficial vs mejor vuelta ----
+  // Carrera y Carrera Sprint se ordenan por posición oficial (como Resultados).
+  // Todo lo demás (FP1/2/3, Quali, Sprint Qualifying) por mejor vuelta.
+  const ERGAST = "https://api.jolpi.ca/ergast/f1";
+  let currentOfficialRound: number | null = null;
+
+  type SessionKind = "race" | "sprint" | "bestlap";
+  function getSessionKind(type: string, name: string): SessionKind {
+    const n = (name ?? "").toLowerCase();
+    if (n.includes("sprint qualifying") || n.includes("sprint shootout")) return "bestlap";
+    if (n.includes("sprint")) return "sprint";
+    const t = (type ?? "").toLowerCase();
+    if (t === "race") return "race";
+    return "bestlap";
+  }
+  function isAlphaRaceCode(code: string): boolean {
+    const c = (code ?? "").toUpperCase();
+    return c === "R" || c === "SR";
+  }
+
+  const TEAM_COLORS_BY_NAME: Record<string, string> = {
+    "red bull": "#3671c6", "mclaren": "#ff8000", "ferrari": "#ef1a2d",
+    "mercedes": "#27f4d2", "aston martin": "#229971", "alpine": "#0093cc",
+    "williams": "#64c4ff", "haas": "#b6babd", "racing bulls": "#6692ff",
+    "rb": "#6692ff", "sauber": "#52e252", "kick sauber": "#52e252",
+    "audi": "#bb0000", "cadillac": "#e8e8e8",
+  };
+  function teamColorByName(name: string | undefined): string {
+    const n = (name ?? "").toLowerCase();
+    for (const [k, v] of Object.entries(TEAM_COLORS_BY_NAME)) {
+      if (n.includes(k) || k.includes(n)) return v;
+    }
+    return "#a1a1aa";
+  }
+
+  const PRACTICE_HEAD = `
+            <tr class="border-b border-border-subtle text-[11px] font-label-caps text-on-surface-variant uppercase bg-surface-container-low/50">
+              <th class="py-3 px-3 text-center w-12">Pos</th>
+              <th class="py-3 px-3">Piloto</th>
+              <th class="py-3 px-3">Equipo</th>
+              <th class="py-3 px-3 text-center">Neumático</th>
+              <th class="py-3 px-3 text-center">Mejor Vuelta</th>
+              <th class="py-3 px-3 text-center">S1</th>
+              <th class="py-3 px-3 text-center">S2</th>
+              <th class="py-3 px-3 text-center">S3</th>
+              <th class="py-3 px-3 text-right">Diferencia</th>
+            </tr>`;
+  const RACE_HEAD = `
+            <tr class="border-b border-border-subtle text-[11px] font-label-caps text-on-surface-variant uppercase bg-surface-container-low/50">
+              <th class="py-3 px-3 text-center">Pos</th>
+              <th class="py-3 px-3">Piloto</th>
+              <th class="py-3 px-3">Equipo</th>
+              <th class="py-3 px-3 text-center">Salida</th>
+              <th class="py-3 px-3 text-center">Vueltas</th>
+              <th class="py-3 px-3">Tiempo / Estado</th>
+              <th class="py-3 px-3 text-center">Puntos</th>
+              <th class="py-3 px-3 text-right">Vuelta Rápida</th>
+            </tr>`;
+  function setTableMode(kind: "practice" | "race") {
+    const thead = document.getElementById("results-thead");
+    if (thead) thead.innerHTML = kind === "race" ? RACE_HEAD : PRACTICE_HEAD;
+  }
+
   // ---- DOM refs ----
   const loadingOverlay = document.getElementById("loading-overlay")!;
   const mainContent = document.getElementById("main-content")!;
@@ -329,8 +392,133 @@ import Layout from "../layouts/Layout.astro";
     }).join("");
   }
 
+  // ---- Official race render (same source as Resultados) ----
+  function renderOfficialRace(results: any[], isSprint: boolean) {
+    setTableMode("race");
+    if (!results?.length) {
+      resultsTbody.innerHTML = `<tr><td colspan="8" class="py-12 text-center text-on-surface-variant">No hay datos oficiales todavía para esta sesión.</td></tr>`;
+      return;
+    }
+    const sorted = [...results].sort((a, b) => (Number(a.position) || 99) - (Number(b.position) || 99));
+    resultsTbody.innerHTML = sorted.map((r: any) => {
+      const color = teamColorByName(r.Constructor?.name);
+      const finalPos = Number(r.position);
+      const gridPos = Number(r.grid);
+      const diff = gridPos > 0 && Number.isFinite(finalPos) ? gridPos - finalPos : 0;
+      const arrow = diff > 0
+        ? `<span class="text-emerald-400 font-bold ml-1">▲${diff}</span>`
+        : diff < 0 ? `<span class="text-red-400 font-bold ml-1">▼${Math.abs(diff)}</span>` : "";
+      const isWinner = finalPos === 1;
+      const timeCell = isWinner
+        ? `<span class="text-amber-400 font-bold">${r.Time?.time ?? "Ganador"}</span>`
+        : (r.Time?.time ?? r.status ?? "--");
+      const fl = r.FastestLap
+        ? `<span class="font-mono ${r.FastestLap.rank === "1" ? "bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded font-bold" : "text-on-surface-variant"}>${r.FastestLap.Time.time}${r.FastestLap.rank === "1" ? " 🟣" : ""}</span>`
+        : `<span class="text-on-surface-variant/40">--</span>`;
+      const pts = r.points && r.points !== "0" ? `<span class="text-primary-container">+${r.points}</span>` : "0";
+      const name = `${r.Driver?.givenName ?? ""} ${r.Driver?.familyName ?? ""}`.trim() || `#${r.number ?? ""}`;
+      return `
+        <tr class="hover:bg-surface-container-high/40 transition-colors border-b border-border-subtle/30">
+          <td class="py-3.5 px-3 text-center font-bold text-primary-container">P${r.position ?? "--"}</td>
+          <td class="py-3.5 px-3"><div class="flex items-center gap-2.5"><span class="w-1 h-5 rounded-full shrink-0" style="background-color: ${color}"></span><span class="font-bold text-on-surface uppercase tracking-tight">${name}</span><span class="text-xs text-on-surface-variant ml-2 font-mono">#${r.number ?? ""}</span></div></td>
+          <td class="py-3.5 px-3 font-medium text-on-surface-variant text-xs">${r.Constructor?.name ?? "--"}</td>
+          <td class="py-3.5 px-3 text-center text-xs">P${r.grid ?? "--"}${arrow}</td>
+          <td class="py-3.5 px-3 text-center text-xs text-on-surface-variant">${r.laps ?? "--"}</td>
+          <td class="py-3.5 px-3 font-semibold text-on-surface text-xs">${timeCell}</td>
+          <td class="py-3.5 px-3 text-center font-bold text-on-surface">${pts}</td>
+          <td class="py-3.5 px-3 text-right text-xs">${fl}</td>
+        </tr>`;
+    }).join("");
+    sumBest.textContent = "--";
+  }
+
+  function renderAlphaOfficialRace(list: any[]) {
+    setTableMode("race");
+    if (!list?.length) {
+      resultsTbody.innerHTML = `<tr><td colspan="8" class="py-12 text-center text-on-surface-variant">No hay datos oficiales todavía para esta sesión.</td></tr>`;
+      return;
+    }
+    const sorted = [...list].sort((a, b) => (Number(a.position) || 99) - (Number(b.position) || 99));
+    resultsTbody.innerHTML = sorted.map((r: any) => {
+      const color = r.team?.primary_color || "#a1a1aa";
+      const name = `${r.driver?.given_name ?? ""} ${r.driver?.family_name ?? ""}`.trim().toUpperCase() || `#${r.car_number ?? "--"}`;
+      const finalPos = Number(r.position);
+      const isWinner = finalPos === 1;
+      const totalTime: string | null = r.time ?? null;
+      // Winner shows total time, rest show total too if available, else status/gap
+      const timeCell = isWinner
+        ? `<span class="text-amber-400 font-bold">${totalTime ?? "Ganador"}</span>`
+        : (totalTime ?? r.status ?? "--");
+      const flap = r.components?.FLAP?.time
+        ? `<span class="font-mono text-on-surface-variant">${r.components.FLAP.time}</span>`
+        : `<span class="text-on-surface-variant/40">--</span>`;
+      const pts = r.points != null && Number(r.points) !== 0 ? `<span class="text-primary-container">+${r.points}</span>` : "0";
+      const grid = r.components?.GRID?.position != null ? `P${r.components.GRID.position}` : `P${r.grid ?? "--"}`;
+      return `
+        <tr class="hover:bg-surface-container-high/40 transition-colors border-b border-border-subtle/30">
+          <td class="py-3.5 px-3 text-center font-bold text-primary-container">P${r.position ?? "--"}</td>
+          <td class="py-3.5 px-3"><div class="flex items-center gap-2.5"><span class="w-1 h-5 rounded-full shrink-0" style="background-color: ${color}"></span><span class="font-bold text-on-surface uppercase tracking-tight">${name}</span><span class="text-xs text-on-surface-variant ml-2 font-mono">${r.driver?.abbreviation ?? ""}</span></div></td>
+          <td class="py-3.5 px-3 font-medium text-on-surface-variant text-xs">${r.team?.name ?? "--"}</td>
+          <td class="py-3.5 px-3 text-center text-xs">${grid}</td>
+          <td class="py-3.5 px-3 text-center text-xs text-on-surface-variant">${r.laps ?? "--"}</td>
+          <td class="py-3.5 px-3 font-semibold text-on-surface text-xs">${timeCell}</td>
+          <td class="py-3.5 px-3 text-center font-bold text-on-surface">${pts}</td>
+          <td class="py-3.5 px-3 text-right text-xs">${flap}</td>
+        </tr>`;
+    }).join("");
+    sumBest.textContent = "--";
+  }
+
+  // Provisional fallback en vivo: orden por última posición OpenF1 (no por mejor vuelta)
+  function renderProvisionalByPosition(drivers: any[], laps: any[], stints: any[], positions: any[]) {
+    const lastPos = new Map<number, number>();
+    const byDate = [...positions].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+    for (const p of byDate) {
+      if (p.driver_number != null && Number.isFinite(Number(p.position))) lastPos.set(Number(p.driver_number), Number(p.position));
+    }
+    if (!lastPos.size) {
+      renderResults(drivers, laps, stints);
+      return;
+    }
+    // Reuse best-lap data but sorted by official position
+    setTableMode("practice");
+    const bestLapMap = new Map<number, { time: number; s1: number | null; s2: number | null; s3: number | null }>();
+    for (const l of laps) {
+      if (!l.driver_number || !l.lap_duration) continue;
+      const ex = bestLapMap.get(l.driver_number);
+      if (!ex || l.lap_duration < ex.time) bestLapMap.set(l.driver_number, { time: l.lap_duration, s1: l.duration_sector_1 ?? null, s2: l.duration_sector_2 ?? null, s3: l.duration_sector_3 ?? null });
+    }
+    let bestOverall = Infinity;
+    for (const [, v] of bestLapMap) if (v.time < bestOverall) bestOverall = v.time;
+    if (bestOverall !== Infinity) sumBest.textContent = fmtTime(bestOverall);
+    const rows = [...drivers].sort((a, b) => (lastPos.get(a.driver_number) ?? 99) - (lastPos.get(b.driver_number) ?? 99));
+    const leaderBest: number | null = bestOverall !== Infinity ? bestOverall : null;
+    resultsTbody.innerHTML = rows.map((d) => {
+      const officialPos = lastPos.get(d.driver_number) ?? "--";
+      const lap = bestLapMap.get(d.driver_number);
+      const color = teamColor(d.team_colour);
+      const gapDisplay = !lap || !leaderBest
+        ? `<span class="text-primary font-bold">LÍDER</span>`
+        : (Number(officialPos) === 1 ? `<span class="text-primary font-bold">LÍDER</span>` : `<span class="text-on-surface-variant">+${(lap.time - leaderBest).toFixed(3)}</span>`);
+      return `
+        <tr class="hover:bg-surface-container-high/40 transition-colors group">
+          <td class="py-3.5 px-3 text-center"><span class="font-bold ${Number(officialPos) <= 3 ? "text-primary-container" : "text-on-surface-variant"} text-base">${officialPos}</span></td>
+          <td class="py-3.5 px-3"><div class="flex items-center gap-2.5"><span class="w-1 h-5 rounded-full shrink-0" style="background-color: ${color}"></span><div><span class="font-bold text-on-surface uppercase tracking-tight">${d.full_name ?? d.name_acronym ?? `#${d.driver_number}`}</span><span class="text-xs text-on-surface-variant font-mono ml-2">${d.name_acronym ?? ""}</span></div></div></td>
+          <td class="py-3.5 px-3 font-medium text-on-surface-variant text-xs">${d.team_name ?? "--"}</td>
+          <td class="py-3.5 px-3 text-center"><span class="text-xs font-bold px-2 py-0.5 rounded border ${compoundClass((stints.find((s: any) => s.driver_number === d.driver_number)?.compound) ?? "UNKNOWN")}">${compoundLabel((stints.find((s: any) => s.driver_number === d.driver_number)?.compound) ?? "UNKNOWN")}</span></td>
+          <td class="py-3.5 px-3 text-center font-mono font-bold text-on-surface text-xs">${lap ? fmtTime(lap.time) : "<span class='text-on-surface-variant/40'>--</span>"}</td>
+          <td class="py-3.5 px-3 text-center font-mono text-xs">${lap?.s1 ? lap.s1.toFixed(3) : "<span class='text-on-surface-variant/30'>--</span>"}</td>
+          <td class="py-3.5 px-3 text-center font-mono text-xs">${lap?.s2 ? lap.s2.toFixed(3) : "<span class='text-on-surface-variant/30'>--</span>"}</td>
+          <td class="py-3.5 px-3 text-center font-mono text-xs">${lap?.s3 ? lap.s3.toFixed(3) : "<span class='text-on-surface-variant/30'>--</span>"}</td>
+          <td class="py-3.5 px-3 text-right font-mono text-xs">${gapDisplay} <span class="text-amber-400/80 text-[10px]">provisional</span></td>
+        </tr>`;
+    }).join("");
+  }
+
   // ---- Results render ----
+  // Solo para sesiones por mejor vuelta (FP/Quali/SQ). Carrera/Sprint usan render oficial.
   function renderResults(drivers: any[], laps: any[], stints: any[]) {
+    setTableMode("practice");
     if (!drivers.length && !laps.length) {
       resultsTbody.innerHTML = `<tr><td colspan="9" class="py-12 text-center text-on-surface-variant">No hay datos disponibles para esta sesión todavía.</td></tr>`;
       return;
@@ -447,6 +635,21 @@ import Layout from "../layouts/Layout.astro";
     }).join("");
   }
 
+  async function resolveOfficialRoundForMeeting(meetingSessions: any[]): Promise<number | null> {
+    try {
+      const raceSess = meetingSessions.find(s => getSessionKind(s.session_type, s.session_name) === "race")
+        ?? meetingSessions.find(s => (s.session_type ?? "").toLowerCase() === "race");
+      if (!raceSess?.date_start) return null;
+      const raceDate = String(raceSess.date_start).slice(0, 10);
+      const cal = await fetchAlpha(`${ERGAST}/2026/races.json`);
+      const races = cal?.MRData?.RaceTable?.Races ?? [];
+      // Fecha es única por GP (evita confundir Barcelona con Madrid que comparten país Spain)
+      const hit = races.find((r: any) => String(r.date) === raceDate)
+        ?? races.find((r: any) => String(r.date) === raceDate && (r.Circuit?.Location?.country ?? "").toLowerCase().includes("spain"));
+      return hit ? Number(hit.round) : null;
+    } catch { return null; }
+  }
+
   // ---- Load a session's data ----
   async function loadSession(sessionKey: number) {
     showPanel("none");
@@ -455,6 +658,72 @@ import Layout from "../layouts/Layout.astro";
     weatherPanel.classList.add("hidden");
     raceControlPanel.classList.add("hidden");
     summaryBar.classList.add("hidden");
+
+    // Detectar tipo de sesión para elegir orden: oficial (carrera/sprint) vs mejor vuelta (resto)
+    let sessInfo: any = openf1Available.find(s => s.session_key === sessionKey);
+    if (!sessInfo) {
+      const info = await fetchSeq(`${OPENF1}/sessions?session_key=${sessionKey}`, 0);
+      sessInfo = info?.[0] ?? null;
+    }
+    const kind: SessionKind = sessInfo ? getSessionKind(sessInfo.session_type, sessInfo.session_name) : "bestlap";
+    const isOfficialKind = kind === "race" || kind === "sprint";
+
+    if (isOfficialKind) {
+      // Carrera / Sprint: fuente oficial como en Resultados (no ordenar por mejor vuelta)
+      let round = currentOfficialRound;
+      if (!round && sessInfo) {
+        const pool = openf1Available.length ? openf1Available : [sessInfo];
+        round = await resolveOfficialRoundForMeeting(pool);
+        if (round) currentOfficialRound = round;
+      }
+      if (round) {
+        const url = kind === "sprint"
+          ? `${ERGAST}/2026/${round}/sprint.json?limit=100`
+          : `${ERGAST}/2026/${round}/results.json`;
+        const [official, weather, raceControl] = await Promise.all([
+          fetchAlpha(url),
+          fetchSeq(`${OPENF1}/weather?session_key=${sessionKey}`, 350),
+          fetchSeq(`${OPENF1}/race_control?session_key=${sessionKey}`, 350),
+        ]);
+        const list = kind === "sprint"
+          ? (official?.MRData?.RaceTable?.Races?.[0]?.SprintResults ?? [])
+          : (official?.MRData?.RaceTable?.Races?.[0]?.Results ?? []);
+        if (list.length) {
+          showPanel("results");
+          summaryBar.classList.remove("hidden");
+          dataSourceLabel.textContent = "Datos oficiales (Jolpica Ergast)";
+          if (sessInfo) {
+            sumSession.textContent = sessionTypeLabel(sessInfo.session_type, sessInfo.session_name);
+            tableTitle.textContent = `Resultados — ${sessionTypeLabel(sessInfo.session_type, sessInfo.session_name)}`;
+          }
+          renderOfficialRace(list, kind === "sprint");
+          renderWeather(weather);
+          renderRaceControl(raceControl);
+          return;
+        }
+      }
+      // Fallback en vivo (oficial aún no publicado): orden provisional por posición OpenF1
+      const [drivers, laps, stints, weather, raceControl, positions] = await Promise.all([
+        fetchSeq(`${OPENF1}/drivers?session_key=${sessionKey}`, 0),
+        fetchSeq(`${OPENF1}/laps?session_key=${sessionKey}`, 350),
+        fetchSeq(`${OPENF1}/stints?session_key=${sessionKey}`, 350),
+        fetchSeq(`${OPENF1}/weather?session_key=${sessionKey}`, 350),
+        fetchSeq(`${OPENF1}/race_control?session_key=${sessionKey}`, 350),
+        fetchSeq(`${OPENF1}/position?session_key=${sessionKey}`, 350),
+      ]);
+      if (!drivers.length && !laps.length) {
+        showPanel("nodata");
+        noDataMsg.textContent = "No hay datos disponibles aún para esta sesión. Volvé a checar después de que finalice.";
+        return;
+      }
+      showPanel("results");
+      summaryBar.classList.remove("hidden");
+      dataSourceLabel.textContent = positions.length ? "Datos OpenF1 (provisional)" : "Datos OpenF1";
+      renderProvisionalByPosition(drivers, laps, stints, positions);
+      renderWeather(weather);
+      renderRaceControl(raceControl);
+      return;
+    }
 
     const [drivers, laps, stints, weather, raceControl] = await Promise.all([
       fetchSeq(`${OPENF1}/drivers?session_key=${sessionKey}`, 0),
@@ -508,8 +777,10 @@ import Layout from "../layouts/Layout.astro";
     }
   }
 
-  // Adapta resultados Alpha al formato que espera renderResults (drivers/laps)
-  function adaptAlpha(list: any[]): { drivers: any[]; laps: any[] } {
+  // Adapta resultados Alpha al formato que espera renderResults (solo sesiones por mejor vuelta)
+  // Para R/SR no se usa: tienen tiempo total + FLAP, y se ordenan por posición oficial.
+  function adaptAlpha(list: any[], code?: string): { drivers: any[]; laps: any[] } {
+    const isRace = code ? isAlphaRaceCode(code) : false;
     const drivers = list.map((r: any) => ({
       driver_number: r.car_number ?? r.driver?.permanent_car_number ?? 0,
       full_name: `${r.driver?.given_name ?? ""} ${r.driver?.family_name ?? ""}`.trim(),
@@ -517,13 +788,16 @@ import Layout from "../layouts/Layout.astro";
       team_name: r.team?.name ?? "--",
       team_colour: (r.team?.primary_color ?? "#a1a1aa").replace("#", ""),
     }));
-    const laps = list.map((r: any) => ({
-      driver_number: r.car_number ?? r.driver?.permanent_car_number ?? 0,
-      lap_duration: parseAlphaTime(r.time),
-      duration_sector_1: null,
-      duration_sector_2: null,
-      duration_sector_3: null,
-    })).filter((l: any) => l.driver_number && l.lap_duration);
+    const laps = list.map((r: any) => {
+      const bestStr = isRace ? (r.components?.FLAP?.time ?? null) : r.time;
+      return {
+        driver_number: r.car_number ?? r.driver?.permanent_car_number ?? 0,
+        lap_duration: parseAlphaTime(bestStr),
+        duration_sector_1: null,
+        duration_sector_2: null,
+        duration_sector_3: null,
+      };
+    }).filter((l: any) => l.driver_number && l.lap_duration);
     return { drivers, laps };
   }
 
@@ -560,8 +834,13 @@ import Layout from "../layouts/Layout.astro";
     summaryBar.classList.remove("hidden");
     sumSession.textContent = entry.label;
     tableTitle.textContent = `Resultados — ${entry.label}`;
-    const { drivers, laps } = adaptAlpha(list);
-    renderResults(drivers, laps, []);
+    if (isAlphaRaceCode(entry.code)) {
+      // Carrera / Sprint: orden oficial por posición, como en Resultados
+      renderAlphaOfficialRace(list);
+    } else {
+      const { drivers, laps } = adaptAlpha(list, entry.code);
+      renderResults(drivers, laps, []);
+    }
     return true;
   }
 
@@ -604,6 +883,7 @@ import Layout from "../layouts/Layout.astro";
     alphaEntries = entries;
     const r = current.round ?? {};
     const c = current.circuit ?? {};
+    if (r.number) currentOfficialRound = Number(r.number);
     heroFlag.textContent = getFlag(c.country ?? "");
     heroRound.textContent = `GP Actual · 2026${r.number ? ` · R${r.number}` : ""}`;
     heroDates.textContent = `${new Date(entries[0].ts).toLocaleDateString("es-AR", { day: "numeric", month: "long" })} – ${new Date(entries[entries.length - 1].ts).toLocaleDateString("es-AR", { day: "numeric", month: "long" })}`;
@@ -764,6 +1044,14 @@ import Layout from "../layouts/Layout.astro";
       }).join("");
     }
 
+    // Round oficial para Carrera/Sprint (misma fuente que Resultados)
+    currentOfficialRound = await resolveOfficialRoundForMeeting(sortedSessions);
+
+    // Selector: setear antes de cargar para que loadSession pueda detectar el tipo
+    mode = "openf1";
+    openf1Available = availableSessions;
+    ensureSelectListener();
+
     // Default: most recent finished or live session
     const defaultSession = availableSessions.findLast(s => new Date(s.date_start).getTime() <= now)
       ?? availableSessions[0];
@@ -788,11 +1076,6 @@ import Layout from "../layouts/Layout.astro";
       showBlocked();
       return;
     }
-
-    // Selector: una sola vez, sirve a ambos modos
-    mode = "openf1";
-    openf1Available = availableSessions;
-    ensureSelectListener();
   }
 
   init();
