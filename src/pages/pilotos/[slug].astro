@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { getDriverProfiles } from "../../lib/drivers";
-import { getDriverSeasonResults, getSeasonFastestLaps } from "../../lib/jolpica";
+import { getDriverSeasonResults, getSeasonCalendar, getSeasonFastestLaps } from "../../lib/jolpica";
 import { flagEmoji, formatDate, headshotTransform, nationalityEs } from "../../lib/utils";
 import { positionChart, pointsChart, gapToFastestChart, gapToTeammateChart } from "../../lib/charts";
 import type { DriverProfile } from "../../lib/types";
@@ -37,6 +37,13 @@ const teammate = profiles.find((p) =>
 const teammateResults = teammate ? await getDriverSeasonResults(year, teammate.slug) : [];
 
 const seasonFastest = await getSeasonFastestLaps(year);
+
+// Rondas con fecha para la vista de análisis por sesión (cliente resuelve el meeting en OpenF1)
+const seasonCal = await getSeasonCalendar(year);
+const dateByRound = new Map(seasonCal.map((r) => [r.round, r.date]));
+const sessRounds = raceResults
+  .filter((r) => dateByRound.has(r.round))
+  .map((r) => ({ round: r.round, name: r.raceName, date: dateByRound.get(r.round) }));
 ---
 
 <Layout
@@ -255,4 +262,285 @@ const seasonFastest = await getSeasonFastestLaps(year);
       </div>
     </div>
   </div>
+
+  <!-- Análisis por sesión: evolución de vueltas, sectores y neumáticos (OpenF1) -->
+  <section class="bg-panel-surface rounded-2xl border border-border-subtle overflow-hidden mt-6" id="sess-analysis" data-driver-number={driver.driverNumber} data-colour={colour}>
+    <div class="px-6 py-4 border-b border-border-subtle flex flex-col sm:flex-row sm:items-center gap-3 justify-between">
+      <div>
+        <h2 class="font-display text-2xl font-bold uppercase tracking-wide text-text-primary">Análisis por sesión</h2>
+        <p class="text-xs text-text-secondary">Vuelta por vuelta, sectores y stints · Fuente OpenF1</p>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <select id="sess-round" class="bg-surface-container border border-border-subtle rounded-lg px-3 py-2 text-sm text-text-primary outline-none cursor-pointer" aria-label="Gran Premio">
+          {sessRounds.map((r) => <option value={r.round} data-date={r.date}>R{r.round} · {r.name}</option>)}
+        </select>
+        <select id="sess-kind" class="bg-surface-container border border-border-subtle rounded-lg px-3 py-2 text-sm text-text-primary outline-none cursor-pointer" aria-label="Sesión"></select>
+      </div>
+    </div>
+    <div class="p-6 space-y-6">
+      <p id="sess-status" class="text-sm text-text-secondary">Cargando sesiones…</p>
+      <div id="sess-chart" class="w-full overflow-x-auto"></div>
+      <div id="sess-stints" class="flex flex-wrap gap-2"></div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse text-sm min-w-[640px]">
+          <thead>
+            <tr class="border-b border-border-subtle text-[11px] uppercase tracking-wider text-text-secondary">
+              <th class="py-2 px-3 text-center">Vuelta</th>
+              <th class="py-2 px-3 text-center">Tiempo</th>
+              <th class="py-2 px-3 text-center">S1</th>
+              <th class="py-2 px-3 text-center">S2</th>
+              <th class="py-2 px-3 text-center">S3</th>
+              <th class="py-2 px-3 text-center">Neu.</th>
+              <th class="py-2 px-3 text-right">Gap</th>
+            </tr>
+          </thead>
+          <tbody id="sess-tbody" class="divide-y divide-border-subtle/50 font-data-tabular"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 </Layout>
+
+<script>
+(function () {
+  var root = document.getElementById('sess-analysis');
+  if (!root) return;
+  var DRIVER_NUM = Number(root.getAttribute('data-driver-number')) || 0;
+  var COLOUR = root.getAttribute('data-colour') || '#e10600';
+  var roundSel = document.getElementById('sess-round');
+  var kindSel = document.getElementById('sess-kind');
+  var statusEl = document.getElementById('sess-status');
+  var chartEl = document.getElementById('sess-chart');
+  var stintsEl = document.getElementById('sess-stints');
+  var tbody = document.getElementById('sess-tbody');
+  var OPENF1 = 'https://api.openf1.org/v1';
+  var YEAR = new Date().getFullYear();
+  var sessionsCache = null;
+  var dataCache = {};
+  var blocked = false;
+
+  function sleep(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
+  function status(msg) { if (statusEl) statusEl.textContent = msg; }
+  function fmtT(sec) {
+    if (sec == null || !(sec > 0)) return '--';
+    var m = Math.floor(sec / 60);
+    var s = (sec % 60).toFixed(3).padStart(6, '0');
+    return m > 0 ? m + ':' + s : s;
+  }
+  function fmtS(sec) {
+    if (sec == null || !(sec > 0)) return '--';
+    return sec.toFixed(3);
+  }
+  function compoundInfo(c) {
+    var n = String(c || '').toUpperCase();
+    if (n.indexOf('SOFT') !== -1) return { label: 'S', color: '#f87171' };
+    if (n.indexOf('MEDIUM') !== -1) return { label: 'M', color: '#facc15' };
+    if (n.indexOf('HARD') !== -1) return { label: 'H', color: '#e2e8f0' };
+    if (n.indexOf('INTER') !== -1) return { label: 'I', color: '#34d399' };
+    if (n.indexOf('WET') !== -1) return { label: 'W', color: '#60a5fa' };
+    return { label: '?', color: '#a1a1aa' };
+  }
+  function sessKind(s) {
+    var t = String(s.session_type || '').toLowerCase();
+    var n = String(s.session_name || '').toLowerCase();
+    if (n.indexOf('sprint qualifying') !== -1 || n.indexOf('sprint shootout') !== -1) return { code: 'SQ', label: 'Sprint Quali' };
+    if (n.indexOf('sprint') !== -1) return { code: 'S', label: 'Sprint' };
+    if (t === 'race') return { code: 'R', label: 'Carrera' };
+    if (t === 'practice') {
+      if (n.indexOf('1') !== -1) return { code: 'FP1', label: 'FP1' };
+      if (n.indexOf('2') !== -1) return { code: 'FP2', label: 'FP2' };
+      if (n.indexOf('3') !== -1) return { code: 'FP3', label: 'FP3' };
+      return { code: 'FP', label: 'Práctica' };
+    }
+    if (t === 'qualifying' || n === 'qualifying') return { code: 'Q', label: 'Clasificación' };
+    return null;
+  }
+  function fetchJson(url) {
+    return fetch(url).then(function (res) {
+      if (res.status === 401) { blocked = true; throw new Error('blocked'); }
+      if (!res.ok) throw new Error('http ' + res.status);
+      return res.json();
+    });
+  }
+  function getSessions(cb) {
+    if (sessionsCache) { cb(sessionsCache); return; }
+    status('Cargando calendario de sesiones…');
+    fetchJson(OPENF1 + '/sessions?year=' + YEAR).then(function (d) {
+      sessionsCache = Array.isArray(d) ? d : [];
+      cb(sessionsCache);
+    }).catch(function () { cb([]); });
+  }
+  function meetingSessions(all, roundDate) {
+    var i, s, k, race = null;
+    for (i = 0; i < all.length; i++) {
+      s = all[i]; k = sessKind(s);
+      if (k && k.code === 'R' && String(s.date_start || '').slice(0, 10) === roundDate) { race = s; break; }
+    }
+    var mk = race ? race.meeting_key : null;
+    if (mk == null) {
+      var best = null, bestDiff = Infinity;
+      var target = new Date(roundDate + 'T12:00:00').getTime();
+      for (i = 0; i < all.length; i++) {
+        var dd = Math.abs(new Date(all[i].date_start).getTime() - target);
+        if (dd < bestDiff) { bestDiff = dd; best = all[i]; }
+      }
+      if (best && bestDiff < 4 * 86400000) mk = best.meeting_key;
+    }
+    if (mk == null) return [];
+    return all.filter(function (x) { return x.meeting_key === mk; }).sort(function (a, b) {
+      return new Date(a.date_start).getTime() - new Date(b.date_start).getTime();
+    });
+  }
+  function compoundForLap(stints, lap) {
+    var i, st;
+    for (i = 0; i < stints.length; i++) {
+      st = stints[i];
+      if (st.lap_start != null && st.lap_end != null && lap >= st.lap_start && lap <= st.lap_end) return st.compound;
+    }
+    return null;
+  }
+  function renderChart(laps, best) {
+    var W = 680, H = 240, PL = 56, PR = 14, PT = 16, PB = 28;
+    var times = laps.map(function (l) { return l.lap_duration; });
+    var lo = Math.min.apply(null, times), hi = Math.max.apply(null, times);
+    var pad = (hi - lo) * 0.15 || 0.25;
+    lo -= pad; hi += pad;
+    function X(i) { return laps.length === 1 ? W / 2 : PL + i * (W - PL - PR) / (laps.length - 1); }
+    function Y(t) { return PT + (1 - (t - lo) / (hi - lo)) * (H - PT - PB); }
+    var pts = laps.map(function (l, i) { return X(i).toFixed(1) + ',' + Y(l.lap_duration).toFixed(1); }).join(' ');
+    var grid = [hi, (hi + lo) / 2, lo].map(function (v) {
+      var y = Y(v).toFixed(1);
+      return '<line x1="' + PL + '" y1="' + y + '" x2="' + (W - PR) + '" y2="' + y + '" stroke="#262626" stroke-width="1"/>' +
+        '<text x="' + (PL - 6) + '" y="' + (+y + 4) + '" text-anchor="end" font-size="10" fill="#a1a1aa">' + fmtT(v) + '</text>';
+    }).join('');
+    var dots = laps.map(function (l, i) {
+      var isB = Math.abs(l.lap_duration - best) < 0.0005;
+      return '<circle cx="' + X(i).toFixed(1) + '" cy="' + Y(l.lap_duration).toFixed(1) + '" r="' + (isB ? '4.5' : '2.5') + '" fill="' + (isB ? COLOUR : '#71717a') + '"><title>V' + l.lap_number + ': ' + fmtT(l.lap_duration) + '</title></circle>';
+    }).join('');
+    var x0 = '<text x="' + PL + '" y="' + (H - 8) + '" font-size="10" fill="#a1a1aa">V' + laps[0].lap_number + '</text>';
+    var x1 = '<text x="' + (W - PR) + '" y="' + (H - 8) + '" text-anchor="end" font-size="10" fill="#a1a1aa">V' + laps[laps.length - 1].lap_number + '</text>';
+    chartEl.innerHTML = '<svg viewBox="0 0 ' + W + ' ' + H + '" class="w-full h-auto" role="img">' + grid +
+      '<polyline points="' + pts + '" fill="none" stroke="' + COLOUR + '" stroke-width="2"/>' + dots + x0 + x1 + '</svg>';
+  }
+  function renderAll(laps, stints) {
+    var best = Infinity, i, l;
+    for (i = 0; i < laps.length; i++) { if (laps[i].lap_duration < best) best = laps[i].lap_duration; }
+    renderChart(laps, best);
+    var ordered = stints.slice().sort(function (a, b) { return a.stint_number - b.stint_number; });
+    var chips = ordered.map(function (st) {
+      var ci = compoundInfo(st.compound);
+      var range = (st.lap_start != null && st.lap_end != null) ? (' V' + st.lap_start + '–' + st.lap_end) : '';
+      return '<span class="text-xs px-2.5 py-1 rounded-full border border-border-subtle text-text-secondary">' +
+        '<span style="color:' + ci.color + ';font-weight:700">' + ci.label + '</span>' + range + '</span>';
+    }).join('');
+    stintsEl.innerHTML = chips || '<span class="text-xs text-text-secondary">Sin datos de stints.</span>';
+    var rows = laps.map(function (x) {
+      var isB = Math.abs(x.lap_duration - best) < 0.0005;
+      var ci = compoundInfo(compoundForLap(stints, x.lap_number));
+      var badge = '<span class="text-xs font-bold px-2 py-0.5 rounded border" style="color:' + ci.color + ';border-color:' + ci.color + '55;background:' + ci.color + '22">' + ci.label + '</span>';
+      var gap = isB ? '<span class="text-primary font-bold">MEJOR</span>' : '<span class="text-text-secondary">+' + (x.lap_duration - best).toFixed(3) + '</span>';
+      var rowCls = isB ? 'border-b border-border-subtle/30 bg-primary-container/10' : 'border-b border-border-subtle/30 hover:bg-surface-container-low transition-colors';
+      return '<tr class="' + rowCls + '">' +
+        '<td class="py-2.5 px-3 text-center font-bold ' + (isB ? 'text-primary-container' : 'text-text-secondary') + '">V' + x.lap_number + '</td>' +
+        '<td class="py-2.5 px-3 text-center font-mono font-bold text-text-primary">' + fmtT(x.lap_duration) + '</td>' +
+        '<td class="py-2.5 px-3 text-center font-mono text-xs text-text-secondary">' + fmtS(x.duration_sector_1) + '</td>' +
+        '<td class="py-2.5 px-3 text-center font-mono text-xs text-text-secondary">' + fmtS(x.duration_sector_2) + '</td>' +
+        '<td class="py-2.5 px-3 text-center font-mono text-xs text-text-secondary">' + fmtS(x.duration_sector_3) + '</td>' +
+        '<td class="py-2.5 px-3 text-center">' + badge + '</td>' +
+        '<td class="py-2.5 px-3 text-right font-mono text-xs">' + gap + '</td></tr>';
+    }).join('');
+    tbody.innerHTML = rows;
+    var bestLap = laps.filter(function (x) { return Math.abs(x.lap_duration - best) < 0.0005; })[0];
+    status('Mejor: ' + fmtT(best) + ' (V' + bestLap.lap_number + ') · ' + laps.length + ' vueltas registradas.');
+  }
+  function currentKey() {
+    var parts = String(kindSel.value || '').split('::');
+    return parts[0] || '';
+  }
+  function refreshKinds() {
+    var roundDate = roundSel.options[roundSel.selectedIndex].getAttribute('data-date');
+    getSessions(function (all) {
+      if (!all.length) { status('Sin datos de sesiones (OpenF1 no disponible).'); kindSel.innerHTML = ''; return; }
+      var meeting = meetingSessions(all, roundDate);
+      var kinds = [];
+      var seen = {};
+      var i;
+      for (i = 0; i < meeting.length; i++) {
+        var k = sessKind(meeting[i]);
+        if (k && !seen[k.code]) { seen[k.code] = true; kinds.push({ code: k.code, label: k.label, key: meeting[i].session_key }); }
+      }
+      if (!kinds.length) { kindSel.innerHTML = ''; status('Sin sesiones disponibles para este GP.'); return; }
+      var prev = kindSel.value;
+      kindSel.innerHTML = kinds.map(function (k) {
+        return '<option value="' + k.key + '::' + k.code + '">' + k.label + '</option>';
+      }).join('');
+      var keep = null, pref = null, j;
+      for (j = 0; j < kinds.length; j++) {
+        if ((kinds[j].key + '::' + kinds[j].code) === prev) keep = kinds[j];
+        if (kinds[j].code === 'R') pref = kinds[j];
+        else if (!pref && kinds[j].code === 'Q') pref = kinds[j];
+      }
+      var chosen = keep || pref || kinds[0];
+      kindSel.value = chosen.key + '::' + chosen.code;
+      loadData();
+    });
+  }
+  function currentKey() {
+    var parts = String(kindSel.value || '').split('::');
+    return parts[0] || '';
+  }
+  kindSel.addEventListener('change', loadData);
+  roundSel.addEventListener('change', refreshKinds);
+  if (!roundSel.options.length) {
+    status('Sin datos de temporada para este piloto.');
+    return;
+  }
+  roundSel.selectedIndex = roundSel.options.length - 1;
+  // kindSel guarda "sessionKey::CODE"; loadData usa solo la key
+  function loadData() {
+    var k = currentKey();
+    var roundDate = roundSel.options[roundSel.selectedIndex].getAttribute('data-date');
+    chartEl.innerHTML = '';
+    stintsEl.innerHTML = '';
+    tbody.innerHTML = '';
+    if (!roundDate || !k) { status('Sin sesiones disponibles para este GP.'); return; }
+    var cacheKey = k + ':' + DRIVER_NUM;
+    if (dataCache[cacheKey]) {
+      var hit = dataCache[cacheKey];
+      if (!hit.laps.length) { status(hit.msg); return; }
+      status('');
+      renderAll(hit.laps, hit.stints);
+      return;
+    }
+    status('Cargando vueltas…');
+    fetchJson(OPENF1 + '/laps?session_key=' + k + '&driver_number=' + DRIVER_NUM).then(function (laps) {
+      return sleep(350).then(function () { return laps; });
+    }).then(function (laps) {
+      return fetchJson(OPENF1 + '/stints?session_key=' + k + '&driver_number=' + DRIVER_NUM).then(function (stints) {
+        return { laps: laps, stints: stints };
+      });
+    }).then(function (res) {
+      var laps = (Array.isArray(res.laps) ? res.laps : []).filter(function (l) {
+        return l && l.lap_duration > 0 && !l.is_pit_out_lap;
+      }).sort(function (a, b) { return a.lap_number - b.lap_number; });
+      var stints = Array.isArray(res.stints) ? res.stints : [];
+      if (!laps.length) {
+        var msg = blocked
+          ? 'OpenF1 restringe el acceso durante sesiones en vivo. Reintentá más tarde.'
+          : 'Sin datos de vueltas para esta sesión.';
+        dataCache[cacheKey] = { laps: [], stints: [], msg: msg };
+        status(msg);
+        return;
+      }
+      dataCache[cacheKey] = { laps: laps, stints: stints };
+      status('');
+      renderAll(laps, stints);
+    }).catch(function () {
+      status(blocked
+        ? 'OpenF1 restringe el acceso durante sesiones en vivo. Reintentá más tarde.'
+        : 'No se pudieron cargar los datos de la sesión.');
+    });
+  };
+  kindSel.addEventListener('change', loadData);
+  refreshKinds();
+})();</script>
