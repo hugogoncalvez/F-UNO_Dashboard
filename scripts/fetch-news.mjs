@@ -34,6 +34,10 @@ if (!GROQ_API_KEY) {
 const FEEDS = [
   { name: "Motorsport.com ES", url: "https://es.motorsport.com/rss/f1/news/" },
   { name: "Motorsport.com LAT", url: "https://lat.motorsport.com/rss/f1/news/" },
+  // Cobertura Colapinto (medios AR, links directos): filtro por palabra + cupo chico
+  // para no desplazar la F1 general del cupo por corrida.
+  { name: "Olé", url: "https://www.ole.com.ar/rss/autos/", filter: ["colapinto"], maxItems: 2 },
+  { name: "Clarín Deportes", url: "https://www.clarin.com/rss/deportes/", filter: ["colapinto"], maxItems: 2 },
 ];
 
 const TEAMS = [
@@ -237,7 +241,15 @@ async function main() {
       const res = await fetch(feed.url, { headers: { accept: "application/rss+xml, text/xml" } });
       if (!res.ok) continue;
       const xml = await res.text();
-      const items = parseRssItems(xml);
+      let items = parseRssItems(xml);
+      if (Array.isArray(feed.filter) && feed.filter.length > 0) {
+        const kws = feed.filter.map((k) => String(k).toLowerCase());
+        items = items.filter((item) => {
+          const hay = ((item.title || "") + " " + (item.description || "")).toLowerCase();
+          return kws.some((kw) => hay.includes(kw));
+        });
+      }
+      if (feed.maxItems > 0) items = items.slice(0, feed.maxItems);
       console.log(`  ${feed.name}: ${items.length} items`);
       allItems.push(...items.map((item) => ({ ...item, source: feed.name })));
     } catch (err) {
