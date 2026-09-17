@@ -97,6 +97,10 @@ function detectTeam(text) {
   return { team: teamSlug, color: teamData?.color ?? "#e10600" };
 }
 
+function isColapinto(text) {
+  return /colapinto/i.test(text || "");
+}
+
 function makeSlug(title) {
   return title
     .toLowerCase()
@@ -265,8 +269,13 @@ async function main() {
     return;
   }
 
-  const toProcess = newItems.slice(0, MAX_NEWS_PER_RUN);
+  // Prioridad a Colapinto frescas (máx 2) y el resto a F1 general, sin pasar el cupo.
+  const freshCola = newItems.filter((t) => isColapinto(t.title + " " + t.description)).slice(0, 2);
+  const freshRest = newItems.filter((t) => !isColapinto(t.title + " " + t.description));
+  const toProcess = [...freshCola, ...freshRest].slice(0, MAX_NEWS_PER_RUN);
   let successCount = 0;
+  let addedCola = 0;
+  const justAdded = new Set();
 
   for (let i = 0; i < toProcess.length; i++) {
     const item = toProcess[i];
@@ -280,8 +289,10 @@ async function main() {
       const { team, color } = detectTeam(item.title);
       const pub = item.pubDate ? new Date(item.pubDate) : null;
 
+      const slug = makeSlug(ai.title);
+
       existingNews.push({
-        slug: makeSlug(ai.title),
+        slug,
         title: ai.title,
         summary: ai.summary,
         content: ai.content,
@@ -296,6 +307,8 @@ async function main() {
 
       processedIds.add(item.link);
       successCount++;
+      justAdded.add(slug);
+      if (isColapinto(item.title)) addedCola++;
       console.log(`    ✓ ${ai.title.slice(0, 50)} [${team}]`);
     } catch (err) {
       console.log(`    ✗ Error: ${err.message}`);
@@ -307,6 +320,26 @@ async function main() {
   }
 
   existingNews.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+  // Mínimo 2 de Colapinto visibles: si entraron menos de 2 nuevas,
+  // se republican (bump de fecha) las más recientes ya guardadas.
+  const needCola = 2 - addedCola;
+  if (needCola > 0) {
+    const nowTs = Date.now();
+    const candidates = existingNews
+      .filter((n) => !justAdded.has(n.slug) && isColapinto(n.title + " " + (n.summary || "")))
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      .slice(0, needCola);
+    candidates.forEach((n, i) => {
+      n.date = new Date(nowTs - i * 1000).toISOString();
+    });
+    if (candidates.length > 0) {
+      existingNews.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+      console.log("  Republished " + candidates.length + " Colapinto to keep the minimum");
+    } else {
+      console.log("  No Colapinto history yet to republish");
+    }
+  }
 
   if (existingNews.length > MAX_ARTICLES) {
     existingNews = existingNews.slice(0, MAX_ARTICLES);
