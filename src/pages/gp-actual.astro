@@ -58,7 +58,7 @@ import Layout from "../layouts/Layout.astro";
           <p id="sum-track-temp" class="font-bold text-on-surface text-sm">--</p>
         </div>
         <div class="text-center">
-          <p class="text-[10px] font-label-caps text-on-surface-variant uppercase mb-1">Estado</p>
+          <p class="text-[10px] font-label-caps text-on-surface-variant uppercase mb-1">Incidentes</p>
           <p id="sum-flag" class="font-bold text-sm">--</p>
         </div>
       </div>
@@ -369,16 +369,70 @@ import Layout from "../layouts/Layout.astro";
     sumTrackTemp.textContent = `${w.track_temperature?.toFixed(1) ?? "--"}°C`;
   }
 
+  // ---- Incident summary (períodos, no mensajes sueltos por sector) ----
+  function rcFlagText(m: any): string {
+    return ((m?.category ?? "") + " " + (m?.flag ?? "") + " " + (m?.message ?? "")).toLowerCase();
+  }
+  function isVscStart(m: any): boolean {
+    const t = rcFlagText(m);
+    return t.includes("virtual safety car deployed") || t.includes("vsc deployed") || t.includes("vsc deployment");
+  }
+  function isScStart(m: any): boolean {
+    const t = rcFlagText(m);
+    if (t.includes("safety car lights on")) return false;
+    return t.includes("safety car deployed") || t.includes("safety car deployment");
+  }
+  function countPeriods(msgs: any[], pred: (m: any) => boolean, gapSec = 180): number {
+    const times = msgs
+      .filter(pred)
+      .map(m => new Date(m.date).getTime())
+      .filter(t => Number.isFinite(t))
+      .sort((a, b) => a - b);
+    let n = 0;
+    let prev = -Infinity;
+    for (const t of times) {
+      if (t - prev > gapSec * 1000) n++;
+      prev = t;
+    }
+    return n;
+  }
+  function summarizeFlags(msgs: any[]) {
+    const isYellow = (m: any) => {
+      const f = (m?.flag ?? "").toUpperCase();
+      return f === "YELLOW" || f === "DOUBLE YELLOW";
+    };
+    const isRed = (m: any) => (m?.flag ?? "").toUpperCase() === "RED";
+    const y = countPeriods(msgs, isYellow);
+    const r = countPeriods(msgs, isRed);
+    const sc = msgs.filter(isScStart).length;
+    const vsc = msgs.filter(isVscStart).length;
+    const parts: string[] = [];
+    if (y > 0) parts.push("🟡 " + y);
+    if (r > 0) parts.push("🔴 " + r);
+    if (sc > 0) parts.push("🚨 SC " + sc);
+    if (vsc > 0) parts.push("🟠 VSC " + vsc);
+    if (!parts.length) {
+      sumFlag.className = "font-bold text-sm text-emerald-400";
+      sumFlag.textContent = "⬜ Sesión limpia";
+    } else {
+      sumFlag.className = "font-bold text-sm " + (r > 0 ? "text-red-400" : "text-yellow-400");
+      sumFlag.textContent = parts.join(" · ");
+    }
+    sumFlag.title = "Amarillas: " + y + " · Rojas: " + r + " · Safety Car: " + sc + " · VSC: " + vsc;
+  }
+
   // ---- Race control render ----
   function renderRaceControl(msgs: any[]) {
-    if (!msgs.length) { raceControlPanel.classList.add("hidden"); return; }
-    raceControlPanel.classList.remove("hidden");
-    const sorted = [...msgs].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 20);
-    const latestFlag = sorted.find(m => m.flag);
-    if (latestFlag) {
-      sumFlag.className = `font-bold text-sm ${flagColor(latestFlag.flag)}`;
-      sumFlag.textContent = `${flagEmoji(latestFlag.flag)} ${latestFlag.flag}`;
+    if (!msgs.length) {
+      raceControlPanel.classList.add("hidden");
+      sumFlag.className = "font-bold text-sm text-on-surface-variant";
+      sumFlag.textContent = "—";
+      sumFlag.title = "Sin datos de dirección de carrera";
+      return;
     }
+    raceControlPanel.classList.remove("hidden");
+    summarizeFlags(msgs);
+    const sorted = [...msgs].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 20);
 
     raceControlList.innerHTML = sorted.map(m => {
       const time = new Date(m.date).toLocaleTimeString("es-AR", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
@@ -835,6 +889,9 @@ import Layout from "../layouts/Layout.astro";
     showPanel("results");
     summaryBar.classList.remove("hidden");
     sumSession.textContent = entry.label;
+    sumFlag.className = "font-bold text-sm text-on-surface-variant";
+    sumFlag.textContent = "—";
+    sumFlag.title = "Sin datos de dirección de carrera en modo Alpha";
     tableTitle.textContent = `Resultados — ${entry.label}`;
     if (isAlphaRaceCode(entry.code)) {
       // Carrera / Sprint: orden oficial por posición, como en Resultados
