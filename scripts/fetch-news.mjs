@@ -22,7 +22,7 @@ const PROCESSED_FILE = join(DATA_DIR, "processed-ids.json");
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
 const GROQ_MODEL = "qwen/qwen3.8-27b";
-const MAX_NEWS_PER_RUN = 5;
+const MAX_NEWS_PER_RUN = 7;
 const MAX_ARTICLES = 100;
 const DELAY_MS = 7000;
 
@@ -32,12 +32,13 @@ if (!GROQ_API_KEY) {
 }
 
 const FEEDS = [
-  { name: "Motorsport.com ES", url: "https://es.motorsport.com/rss/f1/news/" },
-  { name: "Motorsport.com LAT", url: "https://lat.motorsport.com/rss/f1/news/" },
-  // Cobertura Colapinto (medios AR, links directos): filtro por palabra + cupo chico
-  // para no desplazar la F1 general del cupo por corrida.
+  // Cobertura Colapinto (medios AR, links directos): van primero para tener
+  // prioridad en el cupo de Colapinto. El filtro garantiza que solo aportan
+  // Colapinto, así que la F1 general no se ve afectada por el orden.
   { name: "Olé", url: "https://www.ole.com.ar/rss/autos/", filter: ["colapinto"], maxItems: 2 },
   { name: "Clarín Deportes", url: "https://www.clarin.com/rss/deportes/", filter: ["colapinto"], maxItems: 2 },
+  { name: "Motorsport.com ES", url: "https://es.motorsport.com/rss/f1/news/" },
+  { name: "Motorsport.com LAT", url: "https://lat.motorsport.com/rss/f1/news/" },
 ];
 
 const TEAMS = [
@@ -269,7 +270,7 @@ async function main() {
     return;
   }
 
-  // Prioridad a Colapinto frescas (máx 2) y el resto a F1 general, sin pasar el cupo.
+  // Prioridad a Colapinto frescas (máx 2) y el resto a F1 general, sin pasar el cupo (7 = 2 + 5).
   const freshCola = newItems.filter((t) => isColapinto(t.title + " " + t.description)).slice(0, 2);
   const freshRest = newItems.filter((t) => !isColapinto(t.title + " " + t.description));
   const toProcess = [...freshCola, ...freshRest].slice(0, MAX_NEWS_PER_RUN);
