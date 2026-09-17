@@ -412,9 +412,11 @@ import Layout from "../layouts/Layout.astro";
       const timeCell = isWinner
         ? `<span class="text-amber-400 font-bold">${r.Time?.time ?? "Ganador"}</span>`
         : (r.Time?.time ?? r.status ?? "--");
+      const flTop = r.FastestLap != null && r.FastestLap.rank === "1";
+      const flTime = r.FastestLap != null && r.FastestLap.Time != null ? r.FastestLap.Time.time : null;
       const fl = r.FastestLap
-        ? `<span class="font-mono ${r.FastestLap.rank === "1" ? "bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded font-bold" : "text-on-surface-variant"}>${r.FastestLap.Time.time}${r.FastestLap.rank === "1" ? " 🟣" : ""}</span>`
-        : `<span class="text-on-surface-variant/40">--</span>`;
+        ? '<span class="font-mono ' + (flTop ? 'bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded font-bold' : 'text-on-surface-variant') + '">' + flTime + (flTop ? ' 🟣' : '') + '</span>'
+        : '<span class="text-on-surface-variant/40">--</span>';
       const pts = r.points && r.points !== "0" ? `<span class="text-primary-container">+${r.points}</span>` : "0";
       const name = `${r.Driver?.givenName ?? ""} ${r.Driver?.familyName ?? ""}`.trim() || `#${r.number ?? ""}`;
       return `
