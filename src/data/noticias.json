@@ -14,7 +14,7 @@
     "teamColor": "#0093CC",
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/colapinto-revela-leccion-aprendio-gasly-brillar-madring/10855860/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-18T15:14:01.996Z"
+    "date": "2026-09-18T18:14:08.269Z"
   },
   {
     "slug": "colapinto-alcanza-las-40-carreras-en-f1-y-se-ubica-tercero-entre-los-argentinos",
@@ -31,7 +31,24 @@
     "teamColor": "#0093CC",
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/franco-colapinto-40-carreras-formula1_0_JZxMRwl5Oy.html",
-    "date": "2026-09-18T15:14:00.996Z"
+    "date": "2026-09-18T18:14:07.269Z"
+  },
+  {
+    "slug": "tsunoda-admite-que-copiar-el-setup-de-verstappen-fue-su-mayor-error-en-red-bull",
+    "title": "Tsunoda admite que copiar el setup de Verstappen fue su mayor error en Red Bull",
+    "summary": "Yuki Tsunoda identifica en el podcast 'Beyond the Grid' que intentar replicar los reglajes de Max Verstappen en el RB21 fue su principal fallo en 2025. El japonés reconoce que, aunque pudo pilotar el coche, no logró extraer su máximo potencial al forzar una configuración ajena a su estilo.",
+    "content": "<p>Yuki Tsunoda ha realizado una autocrítica sobre su temporada 2025 con Red Bull, señalando que su \"mayor error\" fue intentar replicar el setup que utilizaba Max Verstappen en el RB21. En el podcast oficial de la Fórmula 1, 'Beyond the Grid', el piloto japonés explicó que, tras llegar al equipo en el Gran Premio de Japón de 2025, adoptó las configuraciones de su compañero, lo cual le permitió pilotar razonablemente bien, pero le impidió extraer todo el potencial del monoplaza.</p><p>Tsunoda destaca la diferencia entre poder conducir un coche y poder sacarle el máximo rendimiento. Aunque reconoce que aprende mucho del estilo de Verstappen, el japonés afirma tener un \"ego lo suficientemente grande\" como para no cambiar su propio estilo de pilotaje. Esta confesión llega más de un año después de su paso por el equipo, donde inicialmente sorprendió por su adaptación a los reglajes extremos de Verstappen en Suzuka y en el simulador.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Tsunoda identifica la copia del setup de Verstappen como su mayor error en 2025.",
+      "El piloto japonés llegó a Red Bull en el GP de Japón 2025 tras dos carreras de Liam Lawson.",
+      "Tsunoda afirma que no cambiará su estilo de pilotaje por el de otro, aunque sea Verstappen."
+    ],
+    "team": "pilotos",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/tsunoda-sabe-cual-fue-mayor-error-en-red-bull-copiar-verstappen/10856333/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-18T17:34:00.000Z"
   },
   {
     "slug": "mercedes-uso-un-codigo-secreto-para-que-antonelli-frenara-antes-que-verstappen-e",
@@ -49,6 +66,23 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/codigo-secreto-victoria-madrid/10856869/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-09-18T13:38:39.000Z"
+  },
+  {
+    "slug": "russell-aplaza-su-sancion-por-motor-hasta-la-actualizacion-de-mercedes-en-octubr",
+    "title": "Russell aplaza su sanción por motor hasta la actualización de Mercedes en octubre",
+    "summary": "George Russell retrasará su penalización por exceder el cupo de motores hasta que Mercedes instale su nueva unidad de potencia, prevista para Austin o Ciudad de México. Esta decisión evita cumplir la sanción dos veces y se alinea con el uso del sistema ADUO.",
+    "content": "<p>George Russell confirmó que asumirá la penalización por cambio de motor cuando Mercedes introduzca su unidad de potencia mejorada, un evento esperado para finales de octubre en Austin o Ciudad de México. El británico explicó que cumplir la sanción ahora, en Bakú, sería contraproducente, ya que tendría que repetir la penalización al instalar el nuevo motor, por lo que decidió esperar para aplicar ambas acciones simultáneamente.</p><p>La situación surge porque ambos pilotos de Mercedes han superado o superarán su asignación de componentes para la temporada 2026. Andrea Kimi Antonelli ya cumplió una sanción en Monza, remontando desde la 19ª posición para ganar. Mercedes puede actualizar su motor gracias al sistema de Oportunidades Extra de Desarrollo y Actualización (ADUO), basado en el rendimiento del motor de combustión interna, mientras que Red Bull, clasificado como el mejor motor, no puede realizar estas actualizaciones. Antonelli también recibirá una sanción de cinco puestos por cada nuevo componente al introducir la nueva unidad, en lugar de diez, debido a su asignación ya agotada.</p>",
+    "category": "Reglamento",
+    "keyPoints": [
+      "Russell aplaza su sanción hasta la instalación del nuevo motor en Austin o Ciudad de México (finales de octubre).",
+      "Mercedes utiliza el sistema ADUO para actualizar su unidad de potencia, a diferencia de Red Bull que no puede hacerlo.",
+      "Kimi Antonelli cumplió una sanción en Monza y recibirá penalizaciones de 5 puestos por cada nuevo componente futuro."
+    ],
+    "team": "mercedes",
+    "teamColor": "#27F4D2",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/russell-revela-cuando-sancion-cambio-motor/10854544/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-18T13:17:27.000Z"
   },
   {
     "slug": "toto-wolff-el-estilo-arriesgado-de-antonelli-le-esta-haciendo-salir-canas-en-mer",
@@ -135,6 +169,40 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/revelan-por-que-rompio-acuerdo-red-bull-porsche/10854509/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-09-17T18:09:09.000Z"
+  },
+  {
+    "slug": "de-la-rosa-la-clave-de-newey-no-es-el-lapiz-sino-escuchar-a-los-pilotos",
+    "title": "De la Rosa: La clave de Newey no es el lápiz, sino escuchar a los pilotos",
+    "summary": "Pedro de la Rosa desmitifica la figura de Adrian Newey en el podcast oficial de F1. Según el español, su mayor cualidad es escuchar a los pilotos para identificar problemas técnicos que los datos no revelan.",
+    "content": "<p>Pedro de la Rosa, ex piloto de McLaren y Aston Martin, ha asegurado en el podcast oficial de la Fórmula 1, 'Beyond The Grid', que la obsesión mediática por el uso del lápiz por parte de Adrian Newey es una \"pérdida de tiempo\". De la Rosa, quien coincidió con el ingeniero británico en ambas escuderías, sostiene que la verdadera diferencia de Newey radica en su capacidad para escuchar a la gente, especialmente a los pilotos.</p><p>Para ilustrarlo, De la Rosa relató una anécdota de Australia 2005, cuando era tercer piloto de McLaren y conducía el MP4-20. Durante una reunión técnica, Newey le preguntó por qué no podía ir más rápido en la curva 1. Al explicar que perdía agarre en el neumático delantero, Newey dedujo que el piloto usaba unos seis grados de volante. El ingeniero reveló que el túnel de viento no podía probar el coche con más de seis grados de ángulo de dirección, lo que explicaba el comportamiento desconocido del vehículo en esas condiciones.</p>",
+    "category": "Técnica",
+    "keyPoints": [
+      "Pedro de la Rosa afirma que la cualidad principal de Newey es escuchar a los pilotos.",
+      "En 2005, Newey detectó un problema en el túnel de viento de McLaren al preguntar por el ángulo de volante en la curva 1.",
+      "El túnel de viento no podía simular el coche con más de seis grados de ángulo de dirección."
+    ],
+    "team": "aston-martin",
+    "teamColor": "#229971",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/aston-martin-revela-que-especial-newey/10856322/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-17T17:56:24.000Z"
+  },
+  {
+    "slug": "audi-estudia-vender-mas-acciones-de-su-equipo-de-f1-sin-perder-el-control",
+    "title": "Audi estudia vender más acciones de su equipo de F1 sin perder el control",
+    "summary": "Gernot Dollner confirma consultas de inversores para el equipo de Audi en F1, aunque sin urgencia. La marca alemana mantendrá el control mayoritario y apunta al podio en 2028 y al título en 2030.",
+    "content": "<p>Gernot Dollner, CEO de Audi, declaró a Auto Motor und Sport que la estructura accionarial actual, con Audi como mayoritario y Qatar como socio, permite la entrada de nuevos inversores. Aunque el interés de posibles compradores es alto, Dollner subrayó que no hay urgencia para actuar y que cualquier venta se realizaría mediante un proceso estructurado y con plazos claros.</p><p>El directivo fue tajante en que Audi conservará el control de la gestión deportiva, argumentando que la F1 requiere un liderazgo único y no un modelo de decisiones compartidas. En cuanto a objetivos, Audi busca subir al podio a partir de 2028 y convertirse en aspirante al Campeonato del Mundo en 2030, manteniendo una hoja de ruta que pasa por ser primero retador, luego competidor y finalmente candidato al título.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Audi mantiene la mayoría accionaria junto a Qatar, pero permite entrada de nuevos socios.",
+      "No hay urgencia para vender acciones; cualquier proceso será estructurado.",
+      "Objetivo deportivo: podio en 2028 y aspiración al título mundial en 2030."
+    ],
+    "team": "sauber",
+    "teamColor": "#52E252",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/audi-abre-puerta-vender-acciones-matiz/10856136/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-17T17:33:17.000Z"
   },
   {
     "slug": "hamilton-desmiente-presionar-a-ferrari-para-sustituir-a-miembros-clave-del-equip",
@@ -1663,56 +1731,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/consecuencias-briatore-acusacion-fia/10852430/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-09-05T08:10:41.000Z"
-  },
-  {
-    "slug": "piero-ferrari-el-legado-de-schumacher-transformo-la-cultura-de-datos-en-maranell",
-    "title": "Piero Ferrari: El legado de Schumacher transformó la cultura de datos en Maranello",
-    "summary": "Piero Ferrari afirma que Michael Schumacher cambió radicalmente la forma de trabajar en el equipo al analizar telemetría en profundidad. Este enfoque metódico sigue vigente en Ferrari, aunque el contexto de pruebas ha cambiado drásticamente en 30 años.",
-    "content": "<p>Treinta años después de la primera victoria de Michael Schumacher con Ferrari en Monza, Piero Ferrari, hijo de Enzo, confirmó que el piloto alemán transformó la cultura de trabajo en Maranello. Schumacher se distinguía por llevarse los datos de telemetría a casa para examinar cada detalle de su conducción, buscando entender en qué puntos del circuito podía marcar la diferencia.</p><p>Según Piero Ferrari, este enfoque basado en datos y la preparación esmerada fuera del circuito son legados que persisten en los procedimientos actuales del equipo. Aunque la F1 moderna limita las pruebas comparada con la era de Schumacher, el principio de analizar cada detalle sigue siendo fundamental. El éxito posterior, con el título de pilotos de Kimi Räikkönen en 2007 y los mundiales de constructores de 2007 y 2008, demuestra que el equipo quedó en una posición superior tras la era Schumacher.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Piero Ferrari afirma que Schumacher cambió radicalmente la forma de trabajar en Ferrari.",
-      "Schumacher analizaba telemetría en profundidad en casa para mejorar su conducción.",
-      "Ferrari ganó el mundial de constructores en 2007 y 2008, consolidando el legado post-Schumacher."
-    ],
-    "team": "ferrari",
-    "teamColor": "#E8002D",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/influencia-michael-schumacher-ferrari-vigente/10852032/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-05T07:42:44.000Z"
-  },
-  {
-    "slug": "ferrari-y-mercedes-empatados-en-ritmo-de-carrera-en-monza-tras-fp2",
-    "title": "Ferrari y Mercedes empatados en ritmo de carrera en Monza tras FP2",
-    "summary": "Leclerc y Hamilton igualaron el ritmo en tandas largas (+0,00s). Mercedes domina los sectores 1 y 2, mientras Ferrari recupera en el último sector.",
-    "content": "<p>En el Gran Premio de Italia, Mercedes y Ferrari muestran un rendimiento prácticamente idéntico en las tandas largas de la FP2. Tras corregir los tiempos por longitud del stint y compuesto, Charles Leclerc y Lewis Hamilton registraron exactamente el mismo ritmo (+0,00s). George Russell cedió apenas 0,02s por vuelta y Andrea Kimi Antonelli, 0,04s.</p><p>La gestión de energía difiere entre ambos equipos: Mercedes es más rápido al inicio, con Russell logrando el segundo mejor S1 (27.044s) y dominando el S2 (27.784s). Ferrari, que cedió hasta 0,2s en los sectores iniciales, recupera en el S3, donde Leclerc marcó 27.546s frente a los 27.721s de Russell. El duelo por la victoria parece cerrado entre estas dos escuderías.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Leclerc y Hamilton empatados en ritmo de carrera (+0,00s).",
-      "Mercedes domina S1 y S2; Ferrari recupera en S3.",
-      "Russell: 27.044s en S1; Leclerc: 27.546s en S3."
-    ],
-    "team": "pilotos",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/analisis-tandas-largas-monza-2026/10852329/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-04T18:03:25.000Z"
-  },
-  {
-    "slug": "gasly-denuncia-robo-tras-perder-podio-de-monaco-por-penalizacion-de-5s",
-    "title": "Gasly denuncia 'robo' tras perder podio de Mónaco por penalización de 5s",
-    "summary": "El Tribunal de Apelación de la FIA restableció las sanciones a Gasly en Mónaco, dejándolo 7º y otorgando el podio a Hadjar. El piloto de Alpine calificó la decisión de injusta y prometió que el caso no terminará aquí.",
-    "content": "<p>El Tribunal Internacional de Apelación de la FIA aceptó los recursos de McLaren y Red Bull, restableciendo las dos penalizaciones de cinco segundos impuestas a Pierre Gasly por exceso de velocidad en el pitlane del GP de Mónaco. Esta decisión anula la revocación previa basada en fallos de cronometraje, relegando a Gasly de la tercera a la séptima posición y entregando el podio a Isack Hadjar.</p><p>En declaraciones a Canal+ en Monza, Gasly afirmó: \"Creo que nos han robado y creo que esto no va a acabar aquí\". El piloto de Alpine argumentó que su velocidad en el pitlane era clara y criticó que los resultados se decidan en despachos legales. La tensión aumentó con las declaraciones de Flavio Briatore, quien cuestionó la independencia de un juez vinculado a McLaren, acusaciones que Andrea Stella calificó de insultantes.</p>",
-    "category": "Reglamento",
-    "keyPoints": [
-      "Gasly pasa de 3º a 7º en Mónaco por dos penalizaciones de 5s restablecidas.",
-      "Isack Hadjar asciende al podio (3º puesto) tras la decisión del tribunal.",
-      "Gasly denuncia un 'robo' y Flavio Briatore cuestiona la independencia de un juez del tribunal."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/gasly-declaraciones-perder-podio-monaco-robo/10852322/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-04T17:36:32.000Z"
   }
 ]
