@@ -14,7 +14,7 @@
     "teamColor": "#0093CC",
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/colapinto-revela-leccion-aprendio-gasly-brillar-madring/10855860/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-18T18:14:08.269Z"
+    "date": "2026-09-19T11:14:04.107Z"
   },
   {
     "slug": "colapinto-alcanza-las-40-carreras-en-f1-y-se-ubica-tercero-entre-los-argentinos",
@@ -31,7 +31,25 @@
     "teamColor": "#0093CC",
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/franco-colapinto-40-carreras-formula1_0_JZxMRwl5Oy.html",
-    "date": "2026-09-18T18:14:07.269Z"
+    "date": "2026-09-19T11:14:03.107Z"
+  },
+  {
+    "slug": "mercedes-presenta-gran-paquete-de-mejoras-en-malasia-para-recuperar-la-lucha-por",
+    "title": "Mercedes presenta gran paquete de mejoras en Malasia para recuperar la lucha por la pole",
+    "summary": "Mercedes introducirá su próxima gran actualización en el GP de Malasia (2-4 octubre) tras un periodo de desarrollo conservador. El objetivo es volver a competir por la pole, algo que no logran desde Spa, pese a liderar el campeonato con 145 puntos de ventaja.",
+    "content": "<p>Mercedes confirmó que su próximo gran paquete de actualizaciones llegará al Gran Premio de Malasia, programado del 2 al 4 de octubre, sustituyendo a Bahréin en el calendario. Andrew Shovlin, director de ingeniería en pista, explicó que para la carrera previa en Bakú no hay novedades significativas, priorizando la resistencia aerodinámica y la velocidad punta, mientras que las mejoras sustanciales están reservadas para el circuito asiático.</p><p>A pesar de liderar el campeonato de 2026 con 145 puntos sobre Ferrari, Mercedes ha reducido su ritmo de desarrollo en favor de pequeñas novedades específicas por circuito. Esto ha permitido a Ferrari y McLaren reducir la brecha, logrando dos victorias cada uno en las últimas ocho carreras, frente a las cuatro de Mercedes. El equipo alemán busca con esta actualización recuperar la posición de privilegio en clasificación, ya que no consiguen una pole desde que Kimi Antonelli marcó el mejor tiempo en Spa.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Gran paquete de actualizaciones para el GP de Malasia (2-4 octubre).",
+      "Mercedes lidera el campeonato con 145 puntos de ventaja sobre Ferrari.",
+      "Última pole de Mercedes en Spa con Kimi Antonelli.",
+      "Ferrari y McLaren han ganado dos carreras cada una en las últimas ocho fechas."
+    ],
+    "team": "mercedes",
+    "teamColor": "#27F4D2",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/mercedes-apunta-malasia-acabar-sequia-poles/10857049/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-19T07:52:41.000Z"
   },
   {
     "slug": "tsunoda-admite-que-copiar-el-setup-de-verstappen-fue-su-mayor-error-en-red-bull",
@@ -1714,22 +1732,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/ferrari-apuesta-escape-soplado-monza/10852106/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-09-05T09:08:52.000Z"
-  },
-  {
-    "slug": "briatore-acusa-a-un-juez-de-la-fia-de-parcialidad-hacia-mclaren-tras-fallo-contr",
-    "title": "Briatore acusa a un juez de la FIA de parcialidad hacia McLaren tras fallo contra Alpine",
-    "summary": "La FIA anuló la exoneración de Pierre Gasly en Mónaco, confirmando su séptima posición. Flavio Briatore acusó a un juez de parcialidad por vínculos con McLaren, generando tensión en la rueda de prensa.",
-    "content": "<p>El Tribunal Internacional de Apelación (ICA) de la FIA anuló la sentencia previa que había restablecido el tercer puesto de Pierre Gasly en el Gran Premio de Mónaco. El fallo determinó que era inadmisible aplicar retroactivamente un criterio de medición diferente al participante recurrente, confirmando las dos sanciones de cinco segundos por exceso de velocidad en el pitlane. Como resultado, Gasly pasó de la tercera a la séptima posición en la clasificación final.</p><p>Tras el anuncio, el asesor ejecutivo de Alpine, Flavio Briatore, acusó públicamente a uno de los cuatro jueces del tribunal de actuar con parcialidad a favor de McLaren debido a vínculos comerciales previos. La intervención generó una fuerte tensión en la rueda de prensa de la FIA, donde el jefe de McLaren, Andrea Stella, reaccionó visiblemente enfurecido ante las declaraciones.</p>",
-    "category": "Reglamento",
-    "keyPoints": [
-      "Pierre Gasly fue reubicado de la 3ª a la 7ª posición en el GP de Mónaco tras la apelación de la FIA.",
-      "El ICA de la FIA anuló la exoneración inicial argumentando inconsistencia en la aplicación de los criterios de medición del pitlane.",
-      "Flavio Briatore acusó a un juez del tribunal de parcialidad hacia McLaren por vínculos comerciales anteriores."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/consecuencias-briatore-acusacion-fia/10852430/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-05T08:10:41.000Z"
   }
 ]
