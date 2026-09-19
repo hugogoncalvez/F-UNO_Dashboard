@@ -14,7 +14,7 @@
     "teamColor": "#0093CC",
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/colapinto-revela-leccion-aprendio-gasly-brillar-madring/10855860/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-19T15:14:02.280Z"
+    "date": "2026-09-19T18:14:03.878Z"
   },
   {
     "slug": "colapinto-alcanza-las-40-carreras-en-f1-y-se-ubica-tercero-entre-los-argentinos",
@@ -31,7 +31,24 @@
     "teamColor": "#0093CC",
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/franco-colapinto-40-carreras-formula1_0_JZxMRwl5Oy.html",
-    "date": "2026-09-19T15:14:01.280Z"
+    "date": "2026-09-19T18:14:02.878Z"
+  },
+  {
+    "slug": "mercedes-confirma-uso-de-codigos-secretos-para-gestionar-paradas-en-boxes",
+    "title": "Mercedes confirma uso de códigos secretos para gestionar paradas en boxes",
+    "summary": "Andrew Shovlin reveló que Mercedes emplea códigos semanales para anticipar paradas bajo VSC. Esta táctica permitió a Antonelli ganar tiempo tras las banderas amarillas y asegurar la victoria en Madrid.",
+    "content": "<p>Andrew Shovlin, director de ingeniería en pista de Mercedes, confirmó en el podcast NU Silver Arrows Radio Show que el equipo utiliza códigos secretos para instruir a sus pilotos sobre posibles entradas a boxes durante un coche de seguridad. Shovlin explicó que estos códigos cambian semanalmente para evitar que otros equipos descifren la estrategia, permitiendo a los pilotos decidir si aprovechar una neutralización inminente.</p><p>En el Gran Premio de España, tras la detención de Lance Stroll (Aston Martin) que generó banderas amarillas en las curvas 18 y 20, el ingeniero de pista Peter Bonnington avisó a Andrea Kimi Antonelli de la posible activación del VSC. Antonelli redujo deliberadamente la velocidad y retrasó la aceleración en el siguiente sector, ganando aproximadamente un segundo extra. Esta maniobra le permitió entrar en el pitlane justo cuando los neumáticos estaban listos, ejecutando una parada crítica que le aseguró la victoria sobre Lando Norris y Max Verstappen.</p>",
+    "category": "Técnica",
+    "keyPoints": [
+      "Mercedes cambia los códigos de radio para paradas en boxes cada semana.",
+      "Antonelli ganó ~1 segundo reduciendo velocidad tras aviso de VSC de Peter Bonnington.",
+      "La parada en boxes fue ejecutada con margen mínimo, justo al recibir los neumáticos."
+    ],
+    "team": "mercedes",
+    "teamColor": "#27F4D2",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/mercedes-revela-codigo-secreto-antonelli-madrid/10857053/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-19T16:35:46.000Z"
   },
   {
     "slug": "imola-prepara-sustitucion-de-abu-dhabi-por-crisis-en-oriente-medio",
@@ -101,6 +118,23 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/mercedes-apunta-malasia-acabar-sequia-poles/10857049/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-09-19T07:52:41.000Z"
+  },
+  {
+    "slug": "hamilton-recuerda-sus-primeros-test-en-f1-con-mclaren-en-2006",
+    "title": "Hamilton recuerda sus primeros test en F1 con McLaren en 2006",
+    "summary": "Lewis Hamilton relata su debut en pruebas de F1 en Silverstone (septiembre 2006), donde superó a Pedro de la Rosa. Su rendimiento en tres días consolidó su fichaje por McLaren para la temporada 2007.",
+    "content": "<p>El heptacampeón del mundo Lewis Hamilton recordó en su libro 'My Story' los test colectivos realizados en Silverstone entre el 19 y el 21 de septiembre de 2006. Tras ganar el título de GP2, el británico de 21 años condujo un McLaren en su bautismo en la máxima categoría, destacando la diferencia de carga aerodinámica en curvas de alta velocidad respecto a la serie de promoción.</p><p>En la primera jornada, Hamilton no marcó tiempos para familiarizarse con el monoplaza. El segundo día completó 64 vueltas, quedando a menos de un segundo de Pedro de la Rosa. En la tercera jornada, logró el tercer mejor registro del día, superando a De la Rosa y quedando a 0.650 segundos de la marca de Nelsinho Piquet (Renault). Este desempeño fue determinante para asegurar su plaza en McLaren para 2007, acompañando a Fernando Alonso, ya que Kimi Raikkonen se marchó a Ferrari.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Test realizados en Silverstone del 19 al 21 de septiembre de 2006.",
+      "Hamilton completó 64 vueltas el segundo día, a menos de 1s de Pedro de la Rosa.",
+      "El tercer mejor tiempo del último día (a 0.650s de Nelsinho Piquet) selló su fichaje por McLaren para 2007."
+    ],
+    "team": "ferrari",
+    "teamColor": "#E8002D",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/aniversario-primer-test-hamilton-f1/829178/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-19T07:23:38.000Z"
   },
   {
     "slug": "tsunoda-admite-que-copiar-el-setup-de-verstappen-fue-su-mayor-error-en-red-bull",
@@ -293,6 +327,23 @@
     "date": "2026-09-17T17:33:17.000Z"
   },
   {
+    "slug": "ralf-schumacher-russell-es-ahora-el-numero-2-de-mercedes-tras-el-avance-de-anton",
+    "title": "Ralf Schumacher: Russell es ahora el 'número 2' de Mercedes tras el avance de Antonelli",
+    "summary": "Ralf Schumacher afirma que George Russell ha perdido su estatus en Mercedes al quedar a 81 puntos de Kimi Antonelli. El expiloto sugiere que Russell debe considerar un cambio de equipo antes de consolidarse como escudero.",
+    "content": "<p>Tras el GP de España, George Russell admitió que su lucha por el título de 2026 es \"muy poco probable\", situándose a 81 puntos de su compañero Andrea Kimi Antonelli. En el podcast 'Backstage Boxengasse' de Sky, Ralf Schumacher declaró que Russell es ahora el \"número 2\" en Mercedes, señalando que el británico conduce de forma \"totalmente insegura\" y debe esperar a que las actualizaciones del coche se adapten mejor a su estilo.</p><p>Schumacher comparó la situación con la de Valtteri Bottas (2017-2021), quien permaneció cinco temporadas como compañero de Lewis Hamilton. Aunque el expiloto cree que Mercedes no despedirá a Russell sin que este cometa errores graves, le aconseja valorar un cambio de rumbo para evitar convertirse en el escudero permanente de un joven piloto de 20 años llamado a romper récords.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "George Russell está a 81 puntos de Kimi Antonelli en el campeonato.",
+      "Ralf Schumacher define a Russell como el 'número 2' de Mercedes.",
+      "Schumacher sugiere que Russell debería considerar dejar el equipo antes de consolidarse como escudero."
+    ],
+    "team": "mercedes",
+    "teamColor": "#27F4D2",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/ralf-schumacher-aviso-russell-numero-dos-mercedes/10856568/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-17T17:23:59.000Z"
+  },
+  {
     "slug": "hamilton-desmiente-presionar-a-ferrari-para-sustituir-a-miembros-clave-del-equip",
     "title": "Hamilton desmiente presionar a Ferrari para sustituir a miembros clave del equipo",
     "summary": "Lewis Hamilton niega haber pedido cambios en la estructura de Ferrari, desmintiendo reportes del Corriere della Sera. El británico asegura que su intención es empoderar al equipo, aunque ya realizó ajustes técnicos para 2026 tras un 2025 sin podios.",
@@ -343,6 +394,23 @@
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/ex-hombre-clave-mercedes-llega-equipo-franco-colapinto_0_IJTBneTGwg.html",
     "date": "2026-09-17T15:28:29.000Z"
+  },
+  {
+    "slug": "mercedes-y-red-bull-abren-puerta-a-modificar-aduo-para-apoyar-a-honda-y-alonso",
+    "title": "Mercedes y Red Bull abren puerta a modificar ADUO para apoyar a Honda y Alonso",
+    "summary": "Toto Wolff admite que Honda necesita más ayuda tras su bajo rendimiento en 2026. La FIA y equipos evalúan ajustes al mecanismo ADUO tras el diálogo entre Ben Sulayem y Alonso.",
+    "content": "<p>Toto Wolff, director de Mercedes, reconoció que Honda \"necesita más\" apoyo para ser competitiva como proveedor de motores de Aston Martin. La marca japonesa, que revirtió su salida de la F1, presentó una unidad de potencia para 2026 con poca potencia, sobrepeso y falta de fiabilidad debido al retraso en la formación de su equipo de ingenieros.</p><p>Tras el primer intento de mejora de Honda, Fernando Alonso y Lance Stroll continúan en la parte trasera de la parrilla. Antes del GP de España, Alonso conversó con Mohammed Ben Sulayem, presidente de la FIA, quien declaró: \"De ninguna manera podemos permitir que Fernando Alonso, un gran campeón, se marche solo por las circunstancias\". Ben Sulayem invitó al piloto a especificar qué medidas necesita para mejorar los resultados.</p><p>El sistema ADUO será replanteado este invierno debido al malestar por la exclusión de Red Bull Ford Powertrains y las mejoras de Mercedes. Tanto Mercedes como Red Bull están abiertos a modificar este mecanismo para facilitar el desarrollo de Honda.</p>",
+    "category": "Reglamento",
+    "keyPoints": [
+      "Toto Wolff admite que Honda necesita más ayuda para ser competitiva en 2026.",
+      "Ben Sulayem se reunió con Alonso en Madrid para discutir mejoras y evitar su salida forzada.",
+      "El mecanismo ADUO se revisará este invierno para incluir a Red Bull y apoyar a Honda."
+    ],
+    "team": "pilotos",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/mercedes-red-bull-aduo-ayudar-honda-aston/10856539/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-17T12:30:58.000Z"
   },
   {
     "slug": "calendario-motorsport-f1-en-azerbaiyan-motogp-en-austria-y-cierre-de-indycar",
@@ -1663,73 +1731,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/sacrifici-antonelli-russell-monza-2026/10852728/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-09-05T18:20:05.000Z"
-  },
-  {
-    "slug": "norris-critica-falta-de-rebufo-y-problemas-de-frenos-tras-salir-8-en-monza",
-    "title": "Norris critica falta de rebufo y problemas de frenos tras salir 8º en Monza",
-    "summary": "Lando Norris saldrá octavo en el GP de Italia tras perder décimas por falta de rebufo y frenos inconsistentes. El piloto de McLaren estima que el efecto aspiración vale 0.5s por vuelta en el circuito.",
-    "content": "<p>Lando Norris partirá desde la octava posición en el Gran Premio de Italia tras una clasificación en la que se quedó a pocas décimas de la tercera plaza. El británico atribuyó su rendimiento a la falta de rebufo, un factor que estima en 0.5 segundos por vuelta, y a un error de Oscar Piastri en la curva 1 que impidió que Norris pudiera aprovechar el efecto aspiración en su último intento de Q3.</p><p>Además de la velocidad punta, Norris denunció problemas de consistencia en los frenos, describiendo el pedal como \"muy inconsistente\" con tirones que mermaban su confianza a velocidades de 320-330 km/h. El piloto concluyó que Monza expone las debilidades del McLaren, ya que la combinación de largas rectas y fuertes frenadas es \"prácticamente todo lo que no le gusta\" al coche.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Norris saldrá 8º en Monza, a décimas de la 3ª plaza.",
-      "El piloto estima que el rebufo equivale a 0.5s por vuelta.",
-      "Norris reportó frenos inconsistentes y falta de confianza a 320-330 km/h."
-    ],
-    "team": "mclaren",
-    "teamColor": "#FF8000",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/declaraciones-norris-clasificacion-monza-2026/10852718/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-05T17:45:47.000Z"
-  },
-  {
-    "slug": "hamilton-4-en-monza-tras-penalizacion-a-piastri-estaba-aislado-y-perdi-el-ritmo",
-    "title": "Hamilton, 4º en Monza tras penalización a Piastri: 'Estaba aislado y perdí el ritmo'",
-    "summary": "Lewis Hamilton saldrá 4º en el GP de Italia, beneficiado por la penalización a Oscar Piastri. El británico admitió que su vuelta en Q3 fue mala debido a la falta de tráfico y problemas de ejecución.",
-    "content": "<p>Lewis Hamilton partirá desde la segunda fila en el Gran Premio de Italia, ocupando la cuarta posición en la parrilla. Este resultado se vio favorecido por la penalización impuesta a Oscar Piastri. Hamilton se ubicará justo al lado de su compañero de equipo, Charles Leclerc, quien logró la tercera plaza. Aunque el SF-26 no es el coche más competitivo en circuitos de alta velocidad como Monza, Ferrari ha mostrado capacidad de adaptación en otras citas como Barcelona y Spa.</p><p>El siete veces campeón mundial explicó que la sesión de clasificación fue complicada. Tras un buen desempeño en Q1 y Q2, la espera prolongada en el pitlane antes de su primer intento en Q3 afectó su ritmo, posiblemente por la presión o temperatura de los neumáticos. Hamilton destacó que en la Q3 se sintió 'completamente aislado', sin tráfico que le ayudara a mantener la velocidad en las curvas, lo que impidió extraer el máximo potencial del monoplaza equipado con el motor renovado bajo las concesiones del 'ADUO 2'.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Hamilton saldrá 4º en Monza, Leclerc 3º.",
-      "La posición de Hamilton mejoró por la penalización a Oscar Piastri.",
-      "Hamilton atribuyó su mala vuelta en Q3 a la falta de tráfico y problemas de ejecución tras una larga espera en el pitlane."
-    ],
-    "team": "ferrari",
-    "teamColor": "#E8002D",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/declaraciones-hamilton-clasificacion-monza-2026/10852684/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-05T17:17:21.000Z"
-  },
-  {
-    "slug": "verstappen-5-en-monza-tras-sancion-a-piastri-algo-volvio-a-fallar-en-el-coche",
-    "title": "Verstappen, 5º en Monza tras sanción a Piastri: 'Algo volvió a fallar en el coche'",
-    "summary": "Max Verstappen saldrá quinto en el GP de Italia tras la sanción a Oscar Piastri, pero su clasificación se vio mermada por problemas de rebote en zonas de baja velocidad. El neerlandés advierte que Red Bull necesita cambiar una pieza para poder competir el domingo.",
-    "content": "<p>Max Verstappen partirá desde la quinta posición en la parrilla del Gran Premio de Italia, beneficiado por la sanción a Oscar Piastri que le relegó de la tercera a la quinta plaza. A pesar de llegar a la última vuelta de la Q3 con opciones de pelear por la pole, el piloto de Red Bull sufrió un comportamiento anómalo del monoplaza que le impidió extraer su máximo potencial.</p><p>El neerlandés explicó que el coche presenta un exceso de rebote en las zonas de baja velocidad, comparando la sensación con 'saltar como un canguro'. Aunque destacó que el auto había mejorado significativamente respecto al viernes en la FP3, la falta de control sobre las irregularidades del asfalto le generó errores. Verstappen concluyó que el equipo debe identificar y cambiar la pieza responsable del fallo, ya que la inestabilidad en frenadas y tracción complicará la carrera en Monza.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Verstappen saldrá 5º en Monza tras la sanción a Oscar Piastri.",
-      "El coche de Red Bull sufre exceso de rebote en zonas de baja velocidad.",
-      "Verstappen exige cambiar la pieza defectuosa para competir el domingo."
-    ],
-    "team": "redbull",
-    "teamColor": "#3671C6",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/declaraciones-verstappen-clasificacion-monza-2026/10852673/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-05T16:55:47.000Z"
-  },
-  {
-    "slug": "leclerc-admite-fallos-en-gestion-de-energia-del-sf-26-en-clasificacion-de-monza",
-    "title": "Leclerc admite fallos en gestión de energía del SF-26 en clasificación de Monza",
-    "summary": "Ferrari terminó tercero y cuarto en Monza tras problemas técnicos en clasificación. Leclerc señala que la gestión de la unidad de potencia no fue óptima, limitando el rendimiento del SF-26.",
-    "content": "<p>Charles Leclerc y Lewis Hamilton clasificaron en tercera y cuarta posición respectivamente para la carrera de Monza, tras una sesión marcada por problemas técnicos en Ferrari. Leclerc reconoció que el equipo \"se complicó la vida\" al no lograr una gestión perfecta de la energía de la unidad de potencia, un factor crítico en un circuito con solo 5 MJ disponibles para recarga.</p><p>El monegasco destacó que los fallos surgieron únicamente en clasificación, no en los entrenamientos libres, lo que impidió optimizar el rendimiento del SF-26. Aunque la distancia con Mercedes no fue abismal, la pole fue para Alpine, un resultado que sorprendió a la Scuderia, quien esperaba una diferencia más significativa respecto al líder.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Leclerc y Hamilton partieron 3º y 4º en Monza.",
-      "Ferrari sufrió problemas de gestión de energía en clasificación.",
-      "La pole fue para Alpine, resultado inesperado para Ferrari."
-    ],
-    "team": "ferrari",
-    "teamColor": "#E8002D",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/leclerc-declaraciones-sabado-monza-2026/10852649/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-05T16:49:39.000Z"
   }
 ]
