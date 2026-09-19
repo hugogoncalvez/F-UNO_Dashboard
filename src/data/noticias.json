@@ -14,7 +14,7 @@
     "teamColor": "#0093CC",
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/colapinto-revela-leccion-aprendio-gasly-brillar-madring/10855860/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-19T11:14:04.107Z"
+    "date": "2026-09-19T15:14:02.280Z"
   },
   {
     "slug": "colapinto-alcanza-las-40-carreras-en-f1-y-se-ubica-tercero-entre-los-argentinos",
@@ -31,7 +31,58 @@
     "teamColor": "#0093CC",
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/franco-colapinto-40-carreras-formula1_0_JZxMRwl5Oy.html",
-    "date": "2026-09-19T11:14:03.107Z"
+    "date": "2026-09-19T15:14:01.280Z"
+  },
+  {
+    "slug": "imola-prepara-sustitucion-de-abu-dhabi-por-crisis-en-oriente-medio",
+    "title": "Imola prepara sustitución de Abu Dhabi por crisis en Oriente Medio",
+    "summary": "El GP de Imola se organiza como sede alternativa para el 6 de diciembre ante la inestabilidad en el Golfo. Los promotores de Qatar y Abu Dhabi mantienen sus fechas, pero la seguridad es cuestionable.",
+    "content": "<p>El circuito Enzo e Dino Ferrari de Imola ha activado la organización del 'GP del Made in Italy' y de Emilia-Romaña para el 6 de diciembre, fecha límite del Mundial de F1. Todos los equipos han reservado hoteles en la zona como medida preventiva ante la posible cancelación de la carrera de cierre en Abu Dhabi.</p><p>La decisión final se pospondrá hasta los primeros días de octubre. La tensión geopolítica en el Estrecho de Ormuz, con ocho petroleros iraníes atacados, y el impacto de un dron hutí en un caza italiano en Arabia Saudí, complican la seguridad de los GPs de Qatar (29 de noviembre) y Abu Dhabi. Liberty Media evita cancelar por penalizaciones contractuales, mientras los promotores árabes aseguran que los eventos son seguros.</p>",
+    "category": "Reglamento",
+    "keyPoints": [
+      "Imola se prepara para albergar la carrera del 6 de diciembre.",
+      "Ocho petroleros iraníes atacados en el Estrecho de Ormuz.",
+      "Decisión sobre el calendario final se tomará en los primeros días de octubre."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/imola-trabaja-acoger-formula1-diciembre/10857094/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-19T11:55:53.000Z"
+  },
+  {
+    "slug": "alonso-admite-el-shock-inicial-del-amr26-y-la-rapida-reaccion-de-aston-martin",
+    "title": "Alonso admite el 'shock' inicial del AMR26 y la rápida reacción de Aston Martin",
+    "summary": "Fernando Alonso reconoce que el bajo rendimiento inicial del AMR26 en 2026 fue un golpe inesperado para el equipo. El asturiano destaca la unidad interna y la rápida definición de la estrategia correctora tras el primer día de pruebas.",
+    "content": "<p>Fernando Alonso ha revelado que el rendimiento inicial del Aston Martin AMR26 en la temporada 2026 supuso un auténtico \"shock\" para el equipo, situándolo lejos de las expectativas generadas por su ambicioso proyecto. El piloto español admitió en una entrevista con Pedro de la Rosa que, pese al optimismo interno, el monoplaza resultó menos competitivo de lo previsto durante sus primeros pasos bajo el nuevo reglamento.</p><p>Alonso detalló que la reacción interna fue inmediata: tras el primer día de pruebas, el equipo ya tenía clara la dirección a seguir. Destacó la unidad del personal y la motivación por convertirse en aspirantes futuros, subrayando que la solución no llegaría de una carrera a otra, sino mediante un trabajo sostenido aprovechando las nuevas instalaciones y la alianza con Honda.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Alonso define el rendimiento inicial del AMR26 como un 'shock' por estar por debajo de las expectativas.",
+      "El equipo definió la estrategia correctora ya en el segundo día de pruebas.",
+      "El proyecto 2026 incluye nuevo reglamento, alianza con Honda y nuevas instalaciones."
+    ],
+    "team": "aston-martin",
+    "teamColor": "#229971",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/alonso-revela-shock-aston-martin-2026/10857051/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-19T10:57:29.000Z"
+  },
+  {
+    "slug": "de-la-rosa-la-velocidad-de-alonso-en-2026-es-identica-a-la-de-2002",
+    "title": "De la Rosa: La velocidad de Alonso en 2026 es idéntica a la de 2002",
+    "summary": "Pedro de la Rosa afirma que la velocidad de Fernando Alonso no ha cambiado en 24 años. El ex piloto destaca la precisión técnica del asturiano, quien en 2002 identificó los fallos del Jaguar en pocas vueltas.",
+    "content": "<p>Pedro de la Rosa, actual compañero de Fernando Alonso en Aston Martin, comparó el rendimiento del asturiano en 2002 con el de 2026, concluyendo que \"la velocidad es la misma\". De la Rosa, quien probó el Jaguar de F1 en Silverstone hace más de dos décadas, recuerda que Alonso demostró una capacidad excepcional para entender el monoplaza.</p><p>El test de 2002 surgió de un acuerdo entre Niki Lauda y Flavio Briatore para determinar si los problemas del Jaguar eran de pilotos o de coche. Alonso, tras pocas vueltas, proporcionó un feedback idéntico al que Eddie Irvine y De la Rosa habían dado durante seis meses. De la Rosa subrayó que el feedback de Alonso era \"muy completo, muy preciso y muy exacto\", confirmando su talento técnico más allá de la pura velocidad.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "De la Rosa afirma que la velocidad de Alonso en 2026 es igual a la de 2002.",
+      "Alonso identificó los fallos del Jaguar en pocas vueltas, igualando el feedback de 6 meses de otros pilotos.",
+      "El test de 2002 fue organizado por Niki Lauda y Flavio Briatore."
+    ],
+    "team": "aston-martin",
+    "teamColor": "#229971",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/pedro-de-la-rosa-compara-alonso-45-anos-con-2002/10856204/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-19T08:25:53.000Z"
   },
   {
     "slug": "mercedes-presenta-gran-paquete-de-mejoras-en-malasia-para-recuperar-la-lucha-por",
@@ -171,6 +222,25 @@
     "date": "2026-09-18T07:35:02.000Z"
   },
   {
+    "slug": "gerard-lopez-y-eric-lux-seran-juzgados-en-diciembre-por-falsificacion-de-documen",
+    "title": "Gerard López y Eric Lux serán juzgados en diciembre por falsificación de documentos",
+    "summary": "El expropietario de Lotus F1 y su socio enfrentan cargos por una transacción de 2 millones de euros con el CS Fola Esch. El Tribunal de Casación desestimó su recurso el 21 de mayo, fijando el inicio del juicio para diciembre.",
+    "content": "<p>Gerard López, antiguo dueño de Lotus F1, y Eric Lux comparecerán ante los tribunales acusados de falsificación y uso de documentos falsos. La Fiscalía investiga una transacción financiera de 2 millones de euros entre Lotus y el club de fútbol luxemburgués CS Fola Esch, presidido entonces por López. Aunque los acusados alegan que el dinero financió un programa de cantera, la acusación sostiene que los documentos no reflejan la realidad.</p><p>El juicio está previsto para diciembre, tras la desestimación del último recurso por parte del Tribunal de Casación el 21 de mayo. Además de López y Lux, deberán responder Mauro Mariani y François Dele, vinculados al Fola Esch. En caso de condena, los implicados enfrentan penas de hasta cinco años de prisión.</p>",
+    "category": "Off-track",
+    "keyPoints": [
+      "Acusados: Gerard López, Eric Lux, Mauro Mariani y François Dele.",
+      "Monto de la transacción sospechosa: 2 millones de euros.",
+      "Fecha de desestimación del recurso: 21 de mayo.",
+      "Inicio del juicio: Diciembre.",
+      "Penalización máxima: 5 años de prisión."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/ex-dueno-lotus-formula-juzgado/10856760/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-18T06:54:50.000Z"
+  },
+  {
     "slug": "fritz-enzinger-revela-que-el-acuerdo-red-bull-porsche-estaba-cerrado-antes-del-c",
     "title": "Fritz Enzinger revela que el acuerdo Red Bull-Porsche estaba cerrado antes del cambio de rumbo",
     "summary": "El exjefe de Porsche Motorsport confirma que Oliver Blume y Dietrich Mateschitz ya habían sellado el pacto. El anuncio se pospuso por dudas reglamentarias y nunca se materializó tras un cambio de dirección en Red Bull.",
@@ -239,6 +309,23 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/hamilton-desmiente-presion-ferrari-sustituir-miembros/10856676/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-09-17T17:02:16.000Z"
+  },
+  {
+    "slug": "verstappen-supera-sus-expectativas-al-ganar-max-vs-100-en-13-vueltas",
+    "title": "Verstappen supera sus expectativas al ganar 'Max vs 100' en 13 vueltas",
+    "summary": "El neerlandés completó el reto de karting en Silverstone en 37 minutos, adelantando a 100 rivales desde la última posición. Superó su meta inicial de 30 vueltas gracias a una primera vuelta en la que pasó a 64 pilotos.",
+    "content": "<p>Max Verstappen, cuatro veces campeón del mundo, se enfrentó a 100 pilotos de karting aficionados en el evento 'Max vs 100' organizado por Red Bull en Silverstone. El circuito, construido expresamente para la ocasión, combinaba la pista de karts con secciones del trazado principal como Brooklands. La regla era clara: salir desde la última posición y adelantar a todos los rivales en un máximo de 30 vueltas.</p><p>Verstappen completó la hazaña en solo 13 vueltas (37 minutos), superando sus propias expectativas. Su primera vuelta fue decisiva, logrando adelantar a 64 rivales y situarse por delante de 84 pilotos antes de la quinta vuelta. El piloto atribuyó su éxito a su velocidad de reacción instintiva y a la conducta ordenada de los competidores, quienes no provocaron incidentes. Tras el evento, Verstappen insinuó la posibilidad de futuros retos con un mayor número de participantes, mencionando la cifra de 200 rivales.</p>",
+    "category": "Off-track",
+    "keyPoints": [
+      "Verstappen completó el reto en 13 vueltas (37 minutos), por debajo del límite de 30.",
+      "Adelantó a 64 rivales en la primera vuelta y a 84 antes de la quinta.",
+      "El evento se realizó en Silverstone con un circuito mixto de karting y F1."
+    ],
+    "team": "redbull",
+    "teamColor": "#3671C6",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/general/news/verstappen-sorpendido-si-mismo-reto-karting/10856652/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-17T16:10:07.000Z"
   },
   {
     "slug": "mike-elliott-ex-cto-de-mercedes-se-une-a-alpine-como-director-tecnico",
@@ -1644,93 +1731,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/leclerc-declaraciones-sabado-monza-2026/10852649/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-09-05T16:49:39.000Z"
-  },
-  {
-    "slug": "gasly-logra-su-primera-pole-en-f1-en-monza-superando-a-russell-por-60-milesimas",
-    "title": "Gasly logra su primera pole en F1 en Monza, superando a Russell por 60 milésimas",
-    "summary": "Pierre Gasly se adjudicó la pole position del GP de Italia 2026, la primera de su carrera y de Alpine como tal. George Russell partirá segundo, mientras que Oscar Piastri completó el podio de clasificación.",
-    "content": "<p>Pierre Gasly (Alpine) conquistó la pole position del Gran Premio de Italia 2026 en Monza, batiendo a George Russell (Mercedes) por 60 milésimas. Es la primera pole de Gasly en Fórmula 1 y la primera para Alpine bajo su identidad actual; el equipo no lograba una pole desde la de Fernando Alonso en Hungría 2009. Gasly aprovechó el rebufo de Lewis Hamilton en su último intento de la Q3 para marcar el tiempo definitivo.</p><p>La parrilla de salida presenta cambios significativos: Andrea Kimi Antonelli (Mercedes), clasificado 7º, partirá al fondo por penalización de motor. Oscar Piastri (McLaren) será tercero, seguido por Charles Leclerc (Ferrari) en cuarto y Lewis Hamilton (Ferrari) en quinto, quien superó la Q2 por una milésima. Max Verstappen (Red Bull) se clasificó sexto. Fernando Alonso (Aston Martin) fue 21º, abandonando la sesión antes del final de la Q1, por delante de Lance Stroll. Valtteri Bottas (19º) y Sergio Pérez (20º) completaron la zona de eliminación inicial.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "Pierre Gasly (Alpine) logra su primera pole en F1 en Monza.",
-      "George Russell (Mercedes) parte segundo, a 0.060s de Gasly.",
-      "Kimi Antonelli (Mercedes) parte al fondo por penalización de motor.",
-      "Fernando Alonso (Aston Martin) se clasificó 21º y abandonó la Q1 antes de finalizar."
-    ],
-    "team": "pilotos",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/pole-monza-clasificacion-italia/10852571/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-05T15:04:27.000Z"
-  },
-  {
-    "slug": "gp-de-italia-2026-la-carrera-de-f1-en-monza-arranca-a-las-1500h",
-    "title": "GP de Italia 2026: La carrera de F1 en Monza arranca a las 15:00h",
-    "summary": "La 13ª carrera de la temporada 2026 se disputará este domingo en Monza a las 15:00h (hora peninsular española). La prueba consta de 53 vueltas y 307,029 km, con una duración estimada de menos de una hora y media.",
-    "content": "<p>El Gran Premio de Italia 2026, correspondiente a la 13ª jornada de la temporada, se celebrará este domingo en el circuito de Monza. La carrera iniciará a las 15:00h, horario coincidente tanto para la zona local italiana como para la península española. Se estima que la bandera a cuadros ondeará poco antes de las 16:30h, asumiendo condiciones meteorológicas secas y una duración inferior a las 90 minutos.</p><p>La distancia total de la prueba es de 53 vueltas, lo que equivale a 307,029 km. Para los aficionados de Latinoamérica, el horario varía: en México el inicio es a las 07:00h y en Argentina a las 10:00h. Los derechos de transmisión en España corresponden a DAZN, mientras que en la mayoría de países latinoamericanos es ESPN vía Disney+ Premium, con FOX Sports como excepción en México. F1 TV está disponible en Latinoamérica pero no en España.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "Inicio de carrera: 15:00h (hora local y peninsular española).",
-      "Distancia: 53 vueltas / 307,029 km.",
-      "Duración estimada: Menos de 1 hora y 30 minutos.",
-      "Transmisión España: DAZN.",
-      "Transmisión Latinoamérica: ESPN (Disney+ Premium) y FOX Sports (México)."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/hora-carrera-monza-italia-formula1-2026/10852541/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-05T14:30:36.000Z"
-  },
-  {
-    "slug": "mclaren-mcl40-sufre-en-monza-deficit-aerodinamico-frente-a-mercedes",
-    "title": "McLaren MCL40 sufre en Monza: déficit aerodinámico frente a Mercedes",
-    "summary": "El MCL40 pierde eficiencia aerodinámica en Monza, quedando a 0.4s de Russell en el viernes. La nueva ala trasera no compensa la resistencia en rectas ni el rendimiento en curvas largas.",
-    "content": "<p>El McLaren MCL40 enfrenta dificultades en Monza, donde su diseño aerodinámico, optimizado para carga, sacrifica eficiencia frente a rivales como Mercedes. A pesar de estrenar un alerón trasero abatible para reducir resistencia, el equipo no se ve competitivo por la pole, terminando el viernes a casi cuatro décimas de George Russell.</p><p>Andrea Stella confirmó que el coche funciona 'al revés' en este trazado: pierde rendimiento en las curvas largas donde se esperaba fortaleza y no logra compensar la pérdida de velocidad punta. Esta situación contrasta con las victorias recientes en Hungría y Países Bajos, circuitos de alta carga aerodinámica.</p>",
-    "category": "Técnica",
-    "keyPoints": [
-      "El MCL40 sacrifica eficiencia aerodinámica por carga, penalizándolo en Monza.",
-      "El equipo quedó a 0.4s de George Russell en las sesiones del viernes.",
-      "Se estrenó un alerón trasero abatible que no logra revertir el déficit de rendimiento."
-    ],
-    "team": "mclaren",
-    "teamColor": "#FF8000",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/problemas-mclaren-monza/10852453/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-05T13:22:22.000Z"
-  },
-  {
-    "slug": "la-pole-solo-ha-garantizado-la-victoria-en-monza-en-el-3467-de-las-carreras-de-f",
-    "title": "La pole solo ha garantizado la victoria en Monza en el 34,67% de las carreras de F1",
-    "summary": "Históricamente, el piloto de pole ha ganado solo 26 de las 75 carreras disputadas en Monza. En los últimos cinco GP de Italia, ningún poleman se ha impuesto.",
-    "content": "<p>El Autodromo Nazionale Monza presenta una paradoja estadística: a pesar de su reputación como circuito de alta velocidad, la posición de salida no es un factor determinante. De las 75 carreras de Fórmula 1 disputadas en el trazado, el piloto que partía desde la pole ha ganado únicamente en 26 ocasiones (34,67%), mientras que en 49 carreras (65,31%) la victoria fue para un competidor que no salía primero.</p><p>Desde la implementación de la configuración actual de la pista en 2000, el poleman ha ganado 15 de las 25 carreras disputadas. No obstante, en los últimos cinco Grandes Premios de Italia, ningún piloto que saliera desde la primera posición ha logrado la victoria. Esta variabilidad histórica contrasta con periodos como el comprendido entre 2010 y 2015, donde se registraron seis victorias consecutivas desde la pole.</p>",
-    "category": "Técnica",
-    "keyPoints": [
-      "El poleman ha ganado solo 26 de las 75 carreras de F1 en Monza (34,67%).",
-      "En los últimos 5 GP de Italia, ningún piloto que saliera desde la pole ha ganado.",
-      "Desde 2000, con la configuración actual del circuito, el poleman ha ganado 15 de 25 carreras."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/estadisticas-pole-victoria-posicion-salida-monza/10757053/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-05T09:17:52.000Z"
-  },
-  {
-    "slug": "ferrini-presenta-escape-soplado-con-ranura-en-monza-para-reducir-resistencia-y-g",
-    "title": "Ferrini presenta escape soplado con ranura en Monza para reducir resistencia y ganar potencia",
-    "summary": "Ferrari estrena una evolución del FTM con escape soplado ranurado en el GP de Italia para equilibrar carga y velocidad punta. La FIA limita la recarga híbrida a 5 MJ, favoreciendo a Mercedes en clasificación.",
-    "content": "<p>Ferrari ha introducido una novedad aerodinámica en el SF-26 para el Gran Premio de Italia: una ranura en el escape soplado del FTM. Esta modificación busca reducir la resistencia en las rectas manteniendo la carga necesaria en las chicanes, un ajuste crítico dado que Andrea Stella, de McLaren, advirtió que las velocidades máximas en Hungría podrían superar las de Monza bajo el nuevo reglamento.</p><p>El nuevo diseño del escape permite un 'tapón' menos invasivo, lo que libera más potencia del motor 067/6 y aprovecha los 15 CV extra del segundo ADUO. Además, la FIA ha limitado la recarga máxima del sistema híbrido a 5 MJ por vuelta en clasificación, una restricción que podría beneficiar a Ferrari en la vuelta rápida. En el paddock, George Russell (Mercedes) es el favorito para la pole, mientras que su compañero Kimi Antonelli saldrá 20 posiciones más atrás por usar su quinto motor.</p>",
-    "category": "Técnica",
-    "keyPoints": [
-      "Ferrari añade una ranura al escape soplado del FTM para reducir resistencia aerodinámica.",
-      "La FIA limita la recarga híbrida a 5 MJ por vuelta en clasificación.",
-      "George Russell es el favorito para la pole; Kimi Antonelli recibe penalización de 20 posiciones."
-    ],
-    "team": "ferrari",
-    "teamColor": "#E8002D",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/ferrari-apuesta-escape-soplado-monza/10852106/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-05T09:08:52.000Z"
   }
 ]
