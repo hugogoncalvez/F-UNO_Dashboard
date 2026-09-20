@@ -14,7 +14,7 @@
     "teamColor": "#0093CC",
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/colapinto-revela-leccion-aprendio-gasly-brillar-madring/10855860/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-20T11:14:03.305Z"
+    "date": "2026-09-20T15:14:03.596Z"
   },
   {
     "slug": "colapinto-alcanza-las-40-carreras-en-f1-y-se-ubica-tercero-entre-los-argentinos",
@@ -31,7 +31,41 @@
     "teamColor": "#0093CC",
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/franco-colapinto-40-carreras-formula1_0_JZxMRwl5Oy.html",
-    "date": "2026-09-20T11:14:02.305Z"
+    "date": "2026-09-20T15:14:02.596Z"
+  },
+  {
+    "slug": "vettel-celebra-que-antonelli-pueda-batir-su-record-de-campeon-mas-joven",
+    "title": "Vettel celebra que Antonelli pueda batir su récord de campeón más joven",
+    "summary": "Sebastian Vettel expresó su alegría ante la posibilidad de que Andrea Kimi Antonelli supere su marca de 2010. El italiano lidera el Mundial con 81 puntos de ventaja sobre George Russell.",
+    "content": "<p>Sebastian Vettel afirmó que estaría \"muy feliz\" si Andrea Kimi Antonelli supera su récord como el campeón del mundo más joven de la historia de la Fórmula 1. Vettel estableció la marca en 2010 al coronarse con 23 años, cuatro meses y 11 días, rebajando en cinco meses y medio el anterior registro de Lewis Hamilton (2008). Antonelli, de 20 años, tiene opciones reales de lograrlo tras ampliar su ventaja en el campeonato a 81 puntos sobre su compañero de equipo en Mercedes, George Russell, gracias a su victoria en el Gran Premio de España.</p><p>El tetracampeón alemán destacó el trabajo detrás del logro y el apoyo mutuo entre ambos pilotos. Antonelli ya ha batido récords de Vettel, como la primera pole position y el primer 'hat-trick', logrados por el italiano a los 19 años frente a los 21 del alemán. Además, Antonelli posee los registros de piloto más joven en lograr una vuelta rápida, liderar una carrera, encabezar el Mundial y completar un 'grand chelem', arrebatándoselos a Lewis Hamilton y Max Verstappen. Verstappen conserva las marcas de piloto más joven en disputar un GP, sumar puntos, subir al podio y ganar una carrera.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Vettel batió el récord de campeón más joven en 2010 con 23 años, 4 meses y 11 días.",
+      "Antonelli lidera el Mundial con 81 puntos de ventaja sobre George Russell.",
+      "Antonelli ya superó a Vettel en récords de pole position y 'hat-trick' a los 19 años."
+    ],
+    "team": "mercedes",
+    "teamColor": "#27F4D2",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/vettel-ante-amenaza-antonelli-record/10856283/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-20T12:23:23.000Z"
+  },
+  {
+    "slug": "ben-sulayem-promete-apoyo-a-alonso-para-evitar-su-salida-de-la-f1",
+    "title": "Ben Sulayem promete apoyo a Alonso para evitar su salida de la F1",
+    "summary": "El presidente de la FIA, Mohammed Ben Sulayem, se reunió con Fernando Alonso y Lawrence Stroll en Madrid para abordar la crisis del motor Honda en Aston Martin. Ben Sulayem afirmó que tomará medidas legales para mejorar el rendimiento del equipo y evitar que el bicampeón abandone la categoría por falta de competitividad.",
+    "content": "<p>Antes del Gran Premio de España, el presidente de la FIA, Mohammed Ben Sulayem, mantuvo conversaciones con Fernando Alonso y el propietario de Aston Martin, Lawrence Stroll, sobre la alianza poco competitiva con Honda. Ben Sulayem declaró en Madrid: \"De ninguna manera podemos permitir que Fernando Alonso, un gran campeón, se marche solo por las circunstancias... Tiene que triunfar y luego marcharse cuando quiera, no verse obligado a irse por culpa de los resultados\".</p><p>El dirigente de la FIA reconoció haber visto a Alonso \"muy triste\" y le ofreció su apoyo directo: \"Dime lo que quieres, porque tú eres el piloto. Ven y dime qué quieres que hagamos para mejorar estos resultados\". Ben Sulayem recordó que en mayo se implementaron cambios legales para mejorar el motor, y sugirió que tomará acciones adicionales para garantizar un paquete competitivo, aunque el texto indica que esta dinámica no parece estar ocurriendo actualmente.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Reunión entre Ben Sulayem, Alonso y Stroll antes del GP de España.",
+      "Ben Sulayem promete medidas legales para mejorar el motor Honda/Aston Martin.",
+      "La FIA busca evitar la salida de Alonso por falta de competitividad."
+    ],
+    "team": "aston-martin",
+    "teamColor": "#229971",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/conversaciones-alonso-sulayem-consecuencias/10856605/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-20T11:19:04.000Z"
   },
   {
     "slug": "vasseur-mi-tarea-es-proteger-a-ferrari-y-he-pedido-lo-mismo-a-leclerc-y-hamilton",
@@ -67,6 +101,23 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/verstappen-ventaja-antonelli-mundial/10857105/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-09-19T18:59:47.000Z"
+  },
+  {
+    "slug": "steiner-critica-a-ben-sulayem-por-ofrecer-ayuda-a-alonso-no-es-problema-de-la-fi",
+    "title": "Steiner critica a Ben Sulayem por ofrecer ayuda a Alonso: 'No es problema de la FIA'",
+    "summary": "Guenther Steiner reprochó a la FIA su intención de asistir a Aston Martin para retener a Fernando Alonso. El exjefe de Haas argumentó que la competitividad es responsabilidad del equipo, no de la federación.",
+    "content": "<p>Guenther Steiner, exdirector de Haas, criticó las declaraciones de Mohammed Ben Sulayem, presidente de la FIA, quien se ofreció a ayudar a Aston Martin para evitar la posible salida de Fernando Alonso. Ben Sulayem afirmó antes del Gran Premio de España que 'no era aceptable' que el bicampeón no fuera competitivo y prometió hablar con el piloto para mejorar sus resultados, tras haber realizado ajustes legales en el motor en mayo.</p><p>Steiner, en el podcast The Red Flags, rechazó la intervención de la FIA señalando que 'nadie merece estar en la Fórmula 1' y que la permanencia depende del trabajo y el deseo del equipo. Utilizó como ejemplo a Cadillac, el undécimo equipo de la parrilla en 2026, que aún no ha sumado puntos, para ilustrar que los problemas de rendimiento son responsabilidad interna de cada escudería, no de la federación. Alonso termina su contrato con Aston Martin al final de esta temporada, lo que ha generado rumores sobre un fichaje por Alpine o su retirada.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Ben Sulayem ofreció ayuda a Aston Martin para retener a Alonso tras su mala temporada 2026.",
+      "Steiner argumentó que la FIA no debe intervenir en problemas de rendimiento de equipos específicos.",
+      "Alonso finaliza su contrato con Aston Martin al cierre de la temporada actual."
+    ],
+    "team": "aston-martin",
+    "teamColor": "#229971",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/steiner-carga-fia-be-sulayem-querer-ayudar-alonso/10857138/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-19T17:59:19.000Z"
   },
   {
     "slug": "mercedes-confirma-uso-de-codigos-secretos-para-gestionar-paradas-en-boxes",
@@ -499,6 +550,24 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/cuando-proxima-carrera-formula1-motogp-indycar-mas/10805953/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-09-17T11:56:22.000Z"
+  },
+  {
+    "slug": "haas-busca-nuevos-patrocinadores-para-alcanzar-el-limite-de-215-m-en-2027",
+    "title": "Haas busca nuevos patrocinadores para alcanzar el límite de 215 M$ en 2027",
+    "summary": "Ayao Komatsu confirma negociaciones activas con múltiples socios para elevar el presupuesto de Haas al tope reglamentario. El equipo descarta depender de pilotos para financiar la operación y mantiene su foco en el rendimiento.",
+    "content": "<p>Ayao Komatsu, jefe de Haas F1, afirmó que el equipo mantiene conversaciones con \"muchísimos\" posibles socios para acercar su presupuesto anual al límite de 215 millones de dólares. Actualmente, la escudería opera muy por debajo de este tope, contando con una plantilla de poco más de 400 empleados y un patrocinio principal vigente con Gazoo Racing (Toyota), que sustituyó a MoneyGram este año.</p><p>Ante los rumores de una posible alianza con BWT, quien dejará Alpine en 2027 para unirse a Gucci, Komatsu bromeó: \"¡No vamos a tener coches rosas, si es eso lo que estás insinuando!\". El directivo aclaró que no recurrirá a futuros pilotos para cubrir déficits presupuestarios, asegurando que la selección de la alineación para 2027 se basará exclusivamente en el rendimiento deportivo.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Límite presupuestario objetivo: 215 millones de dólares.",
+      "Patrocinador actual: Gazoo Racing (Toyota).",
+      "Rumor de negociación con BWT, quien saldrá de Alpine en 2027.",
+      "Haas cuenta con más de 400 empleados y opera bajo el tope de gasto."
+    ],
+    "team": "haas",
+    "teamColor": "#B6BABD",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/haas-confia-acercarse-limite-presupuestario-nuevos-patrocinadores/10856193/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-17T08:33:06.000Z"
   },
   {
     "slug": "gp-de-azerbaiyan-2026-la-carrera-se-adelanta-al-sabado-por-el-dia-del-recuerdo",
@@ -1662,75 +1731,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/como-intento-verstappen-compensar-ritmo-tortuga-monza/10853180/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-09-07T09:16:59.000Z"
-  },
-  {
-    "slug": "hamilton-critica-a-ferrari-tras-choque-con-leclerc-y-caida-en-monza",
-    "title": "Hamilton critica a Ferrari tras choque con Leclerc y caída en Monza",
-    "summary": "Lewis Hamilton terminó sexto en el GP de Italia tras ser mandado a la grava por Charles Leclerc en la primera vuelta. El británico admite que es demasiado tarde para pelear el título y critica la gestión del equipo.",
-    "content": "<p>En el Gran Premio de Italia, Lewis Hamilton finalizó en la sexta posición después de que Charles Leclerc lo enviara a la grava en la primera vuelta. Leclerc se salió a gran velocidad y chocó contra las barreras de la Parabólica al final de la segunda vuelta, lo que provocó una bandera roja. Este incidente amplió la brecha de Hamilton con Mercedes en el campeonato.</p><p>En la clasificación de constructores, Ferrari se encuentra a 122 puntos de Mercedes. En el Mundial de Pilotos, Kimi Antonelli lidera con 66 puntos de ventaja sobre George Russell y 76 sobre Hamilton, mientras que Leclerc ocupa la quinta posición, a 112 puntos de Antonelli. Hamilton declaró que es \"demasiado tarde\" para tomar decisiones estratégicas que le permitan competir por el título y expresó su decepción por no haber ejecutado bien las estrategias, especialmente tras el incidente en Países Bajos donde consideró que el equipo titubeó en las órdenes de equipo.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Hamilton terminó 6º en Monza tras choque con Leclerc en la vuelta 1.",
-      "Ferrari está a 122 puntos de Mercedes en la clasificación de constructores.",
-      "Kimi Antonelli lidera el Mundial con 76 puntos de ventaja sobre Hamilton.",
-      "Hamilton admite que es demasiado tarde para pelear el título de pilotos."
-    ],
-    "team": "ferrari",
-    "teamColor": "#E8002D",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/hamilton-pide-ferrari-normas-internas-leclerc/10853336/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-07T09:07:05.000Z"
-  },
-  {
-    "slug": "antonelli-gana-el-gp-de-italia-2026-y-rompe-74-anos-de-sequia-italiana",
-    "title": "Antonelli gana el GP de Italia 2026 y rompe 74 años de sequía italiana",
-    "summary": "Andrea Kimi Antonelli remontó desde la 19ª posición para ganar el GP de Italia 2026, convirtiéndose en el primer italiano en vencer en Monza desde 1952. La victoria llegó tras adelantar a George Russell con neumáticos medios más frescos.",
-    "content": "<p>Andrea Kimi Antonelli, líder del Mundial, conquistó el Gran Premio de Italia 2026 tras una remontada desde la 19ª posición, causada por una penalización de motor. El piloto de Mercedes se convirtió en el primer italiano en ganar en Monza desde Alberto Ascari en 1952, rompiendo una racha de 74 años.</p><p>La carrera se reanudó tras una bandera roja provocada por el choque de Charles Leclerc en la curva de Parabólica. Tras la resalida, Max Verstappen lideró brevemente antes de que George Russell recuperara la primera posición. Antonelli alcanzó el segundo puesto en 15 vueltas y superó a su compañero en las últimas vueltas gracias a neumáticos medios colocados bajo un Virtual Safety Car, mientras Russell mantenía neumáticos duros usados.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "Primera victoria italiana en Monza desde Alberto Ascari (1952).",
-      "Antonelli partió desde la 19ª posición por penalización de motor.",
-      "Bandera roja inicial por choque de Charles Leclerc en Parabólica.",
-      "Victoria de Antonelli sobre George Russell gracias a neumáticos medios más frescos."
-    ],
-    "team": "mercedes",
-    "teamColor": "#27F4D2",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/cronica-resumen-resultados-carrera-monza-2026/10852986/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-06T14:58:47.000Z"
-  },
-  {
-    "slug": "mercedes-amplia-ventaja-a-122-puntos-tras-el-doblete-en-monza-antonelli-lidera-c",
-    "title": "Mercedes amplía ventaja a 122 puntos tras el doblete en Monza; Antonelli lidera con 66 de renta",
-    "summary": "Kimi Antonelli ganó en Monza y aumentó su ventaja sobre George Russell a 66 puntos. Mercedes se distancia de Ferrari (122 pts) y McLaren (183 pts) con 10 carreras restantes.",
-    "content": "<p>Tras el Gran Premio de Italia, Mercedes amplió su dominio en el Mundial de Constructores. El equipo alemán, que llegó con 87 puntos de ventaja sobre Ferrari, ahora saca 122 puntos a los rojos y 183 a McLaren gracias al doblete de sus pilotos. Kimi Antonelli, que partía 19º por un cambio de motor, remontó para ganar y aumentar su ventaja sobre su compañero George Russell a 66 puntos.</p><p>En el resto de la parrilla, Charles Leclerc sufrió un accidente sin puntos, permitiendo a Max Verstappen acercarse al top 5. Fernando Alonso se mantiene 19º con 3 puntos, igualado con Esteban Ocon. Carlos Sainz es 15º, mientras que Sergio Pérez es el último clasificado (23º), superado por Yuki Tsunoda. Quedan 10 carreras por disputar, incluyendo Qatar y Abu Dabi.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "Mercedes lidera Constructores con 122 pts de ventaja sobre Ferrari y 183 sobre McLaren.",
-      "Kimi Antonelli ganó Monza y amplió su ventaja sobre Russell a 66 puntos.",
-      "Sergio Pérez es el último piloto clasificado (23º), mientras que Alonso y Ocon suman 3 puntos."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/mundial-puntos-posiciones-actualizado-carrera-italia/10852989/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-06T14:54:39.000Z"
-  },
-  {
-    "slug": "alonso-y-stroll-abandonan-en-monza-por-danos-y-fallo-hidraulico",
-    "title": "Alonso y Stroll abandonan en Monza por daños y fallo hidráulico",
-    "summary": "Aston Martin-Honda no sumó puntos en el GP de Italia. Alonso se retiró por daños tras salirse en Lesmo 2 y Stroll abandonó por un problema hidráulico.",
-    "content": "<p>Fernando Alonso y Lance Stroll no completaron el Gran Premio de Italia en Monza. Alonso, que partía desde el pitlane tras un cambio de unidad de potencia nocturno, abandonó en la vuelta 25. El equipo retiró el coche al sospechar daños estructurales provocados por una salida de pista en la curva Lesmo 2, donde el asturiano pisó la grava.</p><p>Dos vueltas después, Stroll se detuvo en pista sin llegar al box por un fallo hidráulico, lo que activó un Virtual Safety Car. Antes de sus abandonos, Alonso era 18º y Stroll 20º. La escudería de Silverstone vuelve a irse de vacío tras puntuar en Zandvoort, mientras Honda admite que las mejoras del motor para esta temporada están prácticamente descartadas hasta 2027.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Alonso abandonó en la vuelta 25 por daños tras salirse en Lesmo 2.",
-      "Stroll se retiró dos vueltas después por un problema hidráulico.",
-      "Honda admite que mejorar el motor actual es casi imposible hasta 2027."
-    ],
-    "team": "aston-martin",
-    "teamColor": "#229971",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/doble-abandono-alonso-stroll-monza/10853005/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-06T14:24:26.000Z"
   }
 ]
