@@ -15,7 +15,76 @@
     "teamColor": "#0093CC",
     "source": "Clarín Deportes",
     "originalLink": "https://www.clarin.com/deportes/gp-azerbaiyan-franco-colapinto-11-entrenamientos-todavia-siente-comodo-desafio-impone-baku_0_W7U8vuuIh3.html",
-    "date": "2026-09-24T14:47:32.000Z"
+    "date": "2026-09-24T18:14:11.993Z"
+  },
+  {
+    "slug": "mercedes-lidera-libres-en-baku-con-russell-a-0827s-de-verstappen",
+    "title": "Mercedes lidera libres en Bakú con Russell a 0.827s de Verstappen",
+    "summary": "George Russell dominó las sesiones de Bakú, dejando a Max Verstappen a 0.827s. Red Bull admite la brecha, aunque Mercedes atribuye la ventaja a más vueltas con neumático blando.",
+    "content": "<p>George Russell encabezó la tabla de tiempos en ambas sesiones de entrenamientos libres del Gran Premio de Bakú. El británico dejó al primer coche no Mercedes, el Red Bull de Max Verstappen, a 0.827 segundos al final de la jornada. Red Bull introdujo su último gran paquete de mejoras para el RB22, pero su director técnico, Pierre Waché, reconoció que la diferencia, especialmente en las rectas, fue mayor de lo esperado.</p><p>Isack Hadjar, de vuelta al volante, señaló que Mercedes está \"fuera de su alcance\" en comparación con la lucha que mantienen contra McLaren y Ferrari. Por su parte, Bradley Lord, director adjunto de Mercedes, matizó que la ventaja podría no ser representativa, ya que el equipo realizó más vueltas cronometradas con neumático blando en la FP2 que sus rivales, lo que mejoró sus tiempos progresivamente.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "George Russell lideró FP1 y FP2 en Bakú.",
+      "Max Verstappen quedó a 0.827s del mejor tiempo de Mercedes.",
+      "Pierre Waché (Red Bull) admite brecha inesperada en rectas.",
+      "Bradley Lord (Mercedes) atribuye la ventaja a más vueltas con blando."
+    ],
+    "team": "mercedes",
+    "teamColor": "#27F4D2",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/why-mercedes-huge-baku-practice-advantage-may-not-be-the-real-picture/10858686/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-24T17:28:52.000Z"
+  },
+  {
+    "slug": "nielsen-gasly-refleja-el-potencial-real-del-alpine-a526-en-baku",
+    "title": "Nielsen: Gasly refleja el potencial real del Alpine A526 en Bakú",
+    "summary": "Pierre Gasly terminó séptimo en la FP2 de Bakú, marcando el rendimiento esperado del coche. Franco Colapinto fue 11º, a más de medio segundo de su compañero, debido a problemas de balance.",
+    "content": "<p>Steve Nielsen, responsable de Alpine, afirmó que la séptima posición de Pierre Gasly en la FP2 de Bakú representa el verdadero potencial del A526. En contraste, Franco Colapinto finalizó 11º, a más de medio segundo de su compañero, debido a dificultades para encontrar el equilibrio adecuado del monoplaza.</p><p>El equipo no introdujo novedades técnicas en Azerbaiyán, enfocándose en la gestión de energía y neumáticos. Nielsen descartó problemas estructurales en el coche de Colapinto, calificando la situación como ajustes de balance que el equipo busca resolver antes de la clasificación, confiando en la capacidad de su personal técnico para mejorar el rendimiento de un día para otro.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Pierre Gasly terminó 7º en la FP2 de Bakú.",
+      "Franco Colapinto fue 11º, a más de 0.5s de Gasly.",
+      "Alpine no llevó novedades técnicas al GP de Azerbaiyán."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/alpine-gasly-marca-referencia-colapinto-no-comodo-baku/10858682/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-24T17:02:28.000Z"
+  },
+  {
+    "slug": "red-bull-confirma-mejoras-en-baku-y-mantiene-la-victoria-como-objetivo",
+    "title": "Red Bull confirma mejoras en Bakú y mantiene la victoria como objetivo",
+    "summary": "Red Bull presentó su último gran paquete de actualizaciones en Bakú, logrando sensaciones positivas y acercándose al podio. Laurent Mekies confirma que el desarrollo se centra ya en 2027, pero la victoria sigue siendo prioritaria.",
+    "content": "<p>Red Bull llegó al Gran Premio de Bakú con un paquete de actualizaciones que representa el último gran paso evolutivo de la temporada. Laurent Mekies, director de equipo, confirmó que parte significativa de los recursos ya se ha destinado al monoplaza de 2027 debido a restricciones presupuestarias y al volumen de novedades introducidas para corregir las limitaciones del RB22. A pesar de esto, el equipo mantiene la victoria como objetivo concreto para el tramo final de la temporada.</p><p>Max Verstappen calificó la jornada como \"bastante positiva\", destacando que las actualizaciones se comportaron como se esperaba. Aunque Mercedes sigue siendo un rival difícil de alcanzar, las sensaciones del equipo son alentadoras, especialmente en circuitos de curvas lentas donde Red Bull suele tener dificultades. El objetivo inmediato es afinar detalles para reducir el tiempo por vuelta y mantenerse en la pelea por el podio.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Red Bull presentó su último gran paquete de actualizaciones de la temporada en Bakú.",
+      "Laurent Mekies confirmó que el desarrollo se ha desplazado hacia el monoplaza de 2027.",
+      "Max Verstappen reportó sensaciones positivas y el coche se comportó como se esperaba."
+    ],
+    "team": "redbull",
+    "teamColor": "#3671C6",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/red-bull-mejoras-baku-funcionan-jueves/10858661/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-24T16:26:32.000Z"
+  },
+  {
+    "slug": "f1-activa-plan-b-en-imola-gradas-en-construccion-mientras-qatar-y-abu-dhabi-sigu",
+    "title": "F1 activa plan B en Imola: gradas en construcción mientras Qatar y Abu Dhabi siguen como opción principal",
+    "summary": "La F1 autoriza la construcción de gradas en Imola como alternativa ante la inestabilidad en Oriente Medio. Qatar y Abu Dhabi permanecen como plan A, con una decisión definitiva esperada para mediados de octubre.",
+    "content": "<p>La Fórmula 1 ha dado luz verde a los organizadores del Autodromo Enzo e Dino Ferrari de Imola para construir gradas y realizar preparativos inmediatos, estableciendo un plan B ante la posible cancelación de los Grandes Premios de Qatar y Abu Dhabi por la inestabilidad en Oriente Medio. Aunque la F1 insiste en que las carreras en el Golfo siguen siendo el plan A, la necesidad de garantizar un final de temporada tras Las Vegas obliga a avanzar con esta alternativa logística.</p><p>Formula One Management (FOM) asume íntegramente los riesgos económicos, pagando la construcción de las gradas temporales para que Imola no incurra en pérdidas si la carrera no se disputa. Si bien Stefano Domenicali inicialmente apuntaba a una decisión a mediados de septiembre, los jefes de equipo estiman ahora que la claridad llegará a mediados de octubre, sin que exista una fecha límite estricta oficial.</p>",
+    "category": "Reglamento",
+    "keyPoints": [
+      "Imola recibe autorización para construir gradas como plan B ante la inestabilidad en Oriente Medio.",
+      "FOM cubre todos los costes de preparación, eliminando el riesgo financiero para el circuito de Imola.",
+      "La decisión definitiva sobre Qatar y Abu Dhabi se espera para mediados de octubre, retrasando el plazo inicial de septiembre."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/imola-construye-gradas-plana-qatar-abu-dhabi/10858642/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-24T15:57:29.000Z"
   },
   {
     "slug": "antonelli-optimista-tras-averia-hidraulica-en-baku-mercedes-cambiara-la-unidad-d",
@@ -1660,73 +1729,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/general/news/sede-pilotos-race-of-champions-2027/10856020/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-09-15T08:38:26.000Z"
-  },
-  {
-    "slug": "pilotos-de-f1-proponen-frenadas-en-curvas-5-6-y-13-para-mejorar-adelantamientos-",
-    "title": "Pilotos de F1 proponen frenadas en curvas 5-6 y 13 para mejorar adelantamientos en Madrid",
-    "summary": "La FIA estudia modificar el trazado de Madrid tras la falta de acción en la carrera. Los pilotos sugieren añadir zonas de frenada en las curvas 5-6 y 13, y ajustar la anchura de la curva 20.",
-    "content": "<p>Tras el estreno del circuito de Madrid, la FIA y los organizadores evalúan cambios en el diseño para fomentar los adelantamientos. Las modificaciones técnicas bajo consideración incluyen una mayor frenada en la entrada a la chicane de las curvas 5-6, un punto de frenado adicional en la curva 13 tras la 'Monumental' y ajustes en la anchura de la curva 20.</p><p>Los pilotos respaldan la necesidad de cambios. Lewis Hamilton propone añadir una recta larga con un único punto de adelantamiento, similar a Bakú o Macao. Fernando Alonso señala la zona de las curvas 5, 6 y 7, aunque advierte de limitaciones estructurales por el paso bajo la carretera. Kimi Antonelli, líder del mundial, critica que el 80% de las maniobras conllevan riesgo de toque, mientras que Lando Norris considera que el trazado no es un gran circuito para la competición.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "La FIA trabaja en cambios de diseño tras la carrera de Madrid",
-      "Se estudian frenadas en curvas 5-6 y 13, y ancho en curva 20",
-      "Hamilton propone una recta larga; Alonso cita limitaciones en curvas 5-7"
-    ],
-    "team": "pilotos",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/cambios-pilotos-circuito-madring/10856007/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-15T08:09:10.000Z"
-  },
-  {
-    "slug": "f1-madrid-error-en-senal-tv-confundio-ganadores-con-poles-de-1979-y-1981",
-    "title": "F1 Madrid: Error en señal TV confundió ganadores con poles de 1979 y 1981",
-    "summary": "La señal internacional de F1 mostró erróneamente a Laffite, Andretti y Hunt como ganadores en Madrid. En realidad, eran los autores de la pole; los verdaderos ganadores fueron Depailler y Villeneuve.",
-    "content": "<p>Antes de la salida del estreno de la Fórmula 1 en el circuito Madring, la señal internacional de televisión emitió un gráfico incorrecto sobre los ganadores históricos en Madrid. El gráfico listaba a Jacques Laffite, Mario Andretti y James Hunt, omitiendo a los verdaderos vencedores de las carreras de 1979 y 1981: Patrick Depailler y Gilles Villeneuve.</p><p>El error se debió a una confusión entre 'ganadores' y 'autores de la pole'. Laffite (1979 y 1981), Andretti (1977 y 1988) y Hunt (1976) sí lograron las poles en esas fechas. La producción de los gráficos, gestionada por Formula One Management (FOM) desde Biggin Hill, Inglaterra, ha protagonizado otros incidentes similares, como el anuncio erróneo de Kimi Antonelli como 'Kimi Raikkonen' en China o la confusión de Marc Márquez como expiloto de MotoGP en Barcelona.</p>",
-    "category": "Off-track",
-    "keyPoints": [
-      "El gráfico mostraba a Laffite, Andretti y Hunt, quienes fueron autores de la pole, no ganadores.",
-      "Los verdaderos ganadores en Madrid fueron Patrick Depailler (1979) y Gilles Villeneuve (1981).",
-      "La señal internacional de TV es producida por Formula One Management (FOM) desde Biggin Hill, Inglaterra."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/fallo-formula1-fom-madrid-ganadores/10855900/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-14T17:45:06.000Z"
-  },
-  {
-    "slug": "honda-rechaza-milagros-orihara-enfria-plan-de-ben-sulayem-para-salvar-a-alonso",
-    "title": "Honda rechaza milagros: Orihara enfría plan de Ben Sulayem para salvar a Alonso",
-    "summary": "El jefe de ingeniería de Honda, Shintaro Orihara, desconoce las concesiones que la FIA estudia para acelerar el desarrollo del motor. Orihara advierte que no hay soluciones mágicas para la falta de competitividad de Aston Martin.",
-    "content": "<p>Mohammed Ben Sulayem, presidente de la FIA, ha confirmado tras reunirse con Lawrence Stroll en Madrid que explora un paquete de concesiones para ayudar a Honda a mejorar su unidad de potencia de cara a 2027. El objetivo es evitar que Fernando Alonso abandone la Fórmula 1 debido a la falta de competitividad de Aston Martin. Entre las medidas bajo consideración se encuentran una mayor libertad de homologación y más margen económico para el fabricante japonés.</p><p>Shintaro Orihara, Director General de Pista y Jefe de Ingeniería de Honda Racing Corporation, respondió con prudencia a estas informaciones. Orihara admitió no conocer los detalles concretos de la propuesta de la FIA, aunque reconoció que Ben Sulayem está \"pensando mucho\" en el asunto. El ingeniero japonés matizó que no existen soluciones mágicas para revertir la situación técnica actual del equipo.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Ben Sulayem explora concesiones para Honda de cara a 2027",
-      "Shintaro Orihara desconoce los detalles de la propuesta de la FIA",
-      "El objetivo es evitar la salida de Fernando Alonso por falta de competitividad"
-    ],
-    "team": "aston-martin",
-    "teamColor": "#229971",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/honda-responde-ben-sulayem-ayudas-alonso/10855907/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-14T16:26:31.000Z"
-  },
-  {
-    "slug": "jacques-villeneuve-yo-puedo-hacerlo-tu-no-y-la-nueva-biografia-de-su-padre",
-    "title": "Jacques Villeneuve: 'Yo puedo hacerlo, tú no' y la nueva biografía de su padre",
-    "summary": "Jacques Villeneuve rompe el mito de su padre Gilles, negando que corra por continuar su legado. La película 'Villeneuve: Rise of a Legend' se estrena en Toronto el 19 de septiembre.",
-    "content": "<p>Jacques Villeneuve ha desmentido la narrativa romántica sobre su padre, Gilles, quien falleció a los 32 años en el GP de Bélgica de 1982. El campeón del mundo de 1997 aclaró que su motivación en la Fórmula 1 fue puramente competitiva, no un intento de mantener viva la llama de su progenitor. 'Yo corro porque me encanta correr', afirmó, rechazando las comparaciones constantes de la prensa.</p><p>La película biográfica 'Villeneuve: Rise of a Legend', producida ejecutivamente por la hermana de Jacques, Melanie, se centrará en los años previos al éxito de Gilles en Ferrari. Su estreno mundial será en el Festival de Cine de Toronto el 19 de septiembre, seguido de su llegada a los cines de Quebec en noviembre. El lanzamiento coincide con el 50.º aniversario del debut de Gilles en F1 con McLaren en el GP de Gran Bretaña de 1977.</p>",
-    "category": "Off-track",
-    "keyPoints": [
-      "Jacques Villeneuve niega que su carrera sea una continuación del legado de Gilles.",
-      "La película 'Villeneuve: Rise of a Legend' se estrena el 19 de septiembre en Toronto.",
-      "Gilles Villeneuve debutó en F1 en 1977 con McLaren; la película llega en su 50.º aniversario."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/lo-que-jacques-villeneuve-aprendio-padre-gilles/10853900/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-14T14:35:47.000Z"
   }
 ]
