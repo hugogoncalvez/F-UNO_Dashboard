@@ -15,7 +15,76 @@
     "teamColor": "#0093CC",
     "source": "Clarín Deportes",
     "originalLink": "https://www.clarin.com/deportes/gp-azerbaiyan-franco-colapinto-11-entrenamientos-todavia-siente-comodo-desafio-impone-baku_0_W7U8vuuIh3.html",
-    "date": "2026-09-24T18:14:11.993Z"
+    "date": "2026-09-25T11:14:09.943Z"
+  },
+  {
+    "slug": "f1-y-motogp-coincidiran-en-8-fines-de-semana-durante-la-temporada-2027",
+    "title": "F1 y MotoGP coincidirán en 8 fines de semana durante la temporada 2027",
+    "summary": "Los calendarios oficiales de 2027 revelan 8 dobletes entre ambos campeonatos. La F1 tendrá 24 carreras (10 sprints) y MotoGP 22, con cambios clave como el retorno de Argentina y la salida de Hungría.",
+    "content": "<p>La Fórmula 1 y MotoGP publicaron sus calendarios para 2027, confirmando 8 fines de semana compartidos. La F1 disputará 24 Grandes Premios, aumentando los formatos Sprint a 10 (frente a 6 en 2026), mientras que MotoGP tendrá 22 carreras. Entre los cambios destacados en el Mundial de Motociclismo figuran el retorno de Argentina en el renovado circuito de Buenos Aires, la llegada de Adelaida como sede del GP de Australia (reemplazando a Phillip Island) y la eliminación de Hungría (Balaton Park).</p><p>Las coincidencias inician en marzo: el GP de Bahréin de F1 (12-14 de marzo, Sprint) se celebra el mismo fin de semana que el GP de Qatar de MotoGP. En abril, las carreras asiáticas de F1 (Melbourne y Suzuka) no coinciden con MotoGP, que estará en Brasil y Argentina. La siguiente coincidencia es en julio, con el GP de Austria de F1 (9-11 de julio) y el GP de Alemania de MotoGP en Sachsenring. A inicios de septiembre, ambos campeonatos coinciden en España: F1 en Madrid (10-12 de septiembre) y MotoGP en el circuito de Montmeló.</p>",
+    "category": "Reglamento",
+    "keyPoints": [
+      "8 fines de semana coincidentes entre F1 y MotoGP en 2027",
+      "F1: 24 carreras con 10 formatos Sprint; MotoGP: 22 carreras",
+      "MotoGP: Retorno de Argentina, llegada de Adelaida (Australia) y salida de Hungría",
+      "Primera coincidencia: 12-14 de marzo (Bahréin F1 / Qatar MotoGP)"
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/motogp/news/coincidencias-f1-motogp-calendario-2027/10858766/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-25T10:02:20.000Z"
+  },
+  {
+    "slug": "hamilton-y-lawson-la-gestion-de-energia-en-baku-genera-riesgos-de-seguridad",
+    "title": "Hamilton y Lawson: La gestión de energía en Bakú genera riesgos de seguridad",
+    "summary": "Lewis Hamilton fue reprimendado por obstaculizar a Liam Lawson en FP2 de Bakú. El incidente expuso los peligros de la gestión de energía eléctrica en las curvas 16-19, donde los coches lentos dificultan las vueltas rápidas.",
+    "content": "<p>Lewis Hamilton recibió una reprimenda de los comisarios por obstaculizar a Liam Lawson (Racing Bulls) durante la segunda sesión de entrenamientos libres (FP2) del Gran Premio de Azerbaiyán. El incidente ocurrió en la secuencia de curvas 16 a 19, una zona crítica donde los monoplazas actuales deben conservar energía eléctrica para la recta principal, generando grandes diferencias de velocidad entre quienes circulan a fondo y quienes preparan una vuelta rápida.</p><p>Hamilton, en una vuelta de preparación, aceleró al creer tener margen, pero el software del coche limitó la potencia eléctrica hasta un punto predeterminado de la recta, provocando una pérdida de tracción repentina. Lawson, que se acercaba en una vuelta rápida, tuvo que esquivar al Ferrari para evitar el choque. Aunque Lawson calificó la situación como \"jodidamente peligrosa\" por radio, ambos pilotos coincidieron posteriormente en que la restricción de software hace que sea difícil reaccionar a tiempo ante estos cambios de velocidad.</p>",
+    "category": "Técnica",
+    "keyPoints": [
+      "Hamilton recibió una reprimenda por obstaculizar a Lawson en FP2 de Bakú.",
+      "El software limita la potencia eléctrica hasta un punto específico de la recta para conservar batería.",
+      "Las curvas 16-19 se han convertido en puntos de riesgo debido a las diferencias de velocidad entre coches en modo ahorro y vuelta rápida."
+    ],
+    "team": "pilotos",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/incidente-hamilton-lawson-baku-no-supuesto-ningun-cambio/10858790/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-25T09:15:57.000Z"
+  },
+  {
+    "slug": "colapinto-cierra-la-fp3-en-baku-en-la-10-posicion-con-ritmo-parejo",
+    "title": "Colapinto cierra la FP3 en Bakú en la 10ª posición con ritmo parejo",
+    "summary": "Franco Colapinto finalizó décimo en la tercera práctica libre del GP de Azerbaiyán. El argentino acumuló 20 vueltas en el circuito urbano de Bakú mostrando un desempeño consistente.",
+    "content": "<p>Franco Colapinto se ubicó en la décima posición al concluir la FP3 del Gran Premio de Azerbaiyán. El piloto argentino completó un total de 20 vueltas en el trazado urbano de Bakú, manteniendo un ritmo parejo que generó expectativas positivas de cara a la clasificación.</p><p>El desempeño del pilarense en las condiciones exigentes del circuito le permitió dejar buenas sensaciones para el resto del fin de semana. La información proviene de la cobertura en vivo de Olé, que detalla el horario y las opciones de transmisión para la sesión de clasificación.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Colapinto terminó 10° en la FP3",
+      "Acumuló 20 vueltas en Bakú",
+      "Mantuvo un ritmo parejo en el circuito urbano"
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/formula1-gran-premio-deazerbaiyan-2026-clasificacion-vivo-franco-colapinto-alpine_0_SGTtDR8tCI.html",
+    "date": "2026-09-25T07:57:16.000Z"
+  },
+  {
+    "slug": "de-amenazas-a-halagos-la-reaccion-argentina-a-pierre-gasly-tras-el-incidente-con",
+    "title": "De amenazas a halagos: la reacción argentina a Pierre Gasly tras el incidente con Colapinto",
+    "summary": "Tras el 'tapón' a Franco Colapinto en Madrid, Gasly recibió insultos que provocaron la advertencia de Flavio Briatore. La reacción cambió rápidamente a una ola de halagos irónicos en redes sociales.",
+    "content": "<p>El piloto francés Pierre Gasly fue objeto de amenazas e insultos en redes sociales tras bloquear a Franco Colapinto en el Gran Premio de Madrid. La situación escaló hasta que Flavio Briatore advirtió que, si las críticas continuaban, Colapinto podría dejar de hablar con la televisión argentina.</p><p>Posteriormente, la reacción de los fanáticos argentinos se invirtió, generando una oleada de mensajes de apoyo irónico hacia Gasly. Entre los comentarios destacados se leyeron frases como 'Croissant cósmico', 'sos mejor que Maradona, Colapinto y Messi' y 'esta noche toca Pierre', reflejando el cambio abrupto de la opinión pública local.</p>",
+    "category": "Off-track",
+    "keyPoints": [
+      "Gasly recibió amenazas tras el incidente con Colapinto en Madrid",
+      "Flavio Briatore advirtió sobre el impacto en la relación de Colapinto con la prensa argentina",
+      "Los fanáticos argentinos cambiaron a halagos irónicos hacia Gasly en redes sociales"
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/opinion/pierre-gasly-enojo-opinion-colapinto-pasion-argentina_0_V3RfvHCVco.html",
+    "date": "2026-09-25T01:17:53.000Z"
   },
   {
     "slug": "mercedes-lidera-libres-en-baku-con-russell-a-0827s-de-verstappen",
@@ -1657,77 +1726,5 @@
     "source": "Motorsport.com LAT",
     "originalLink": "https://lat.motorsport.com/f1/news/colapinto-power-rankings-carrera-madring-espana/10856165/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=lat",
     "date": "2026-09-15T15:24:23.000Z"
-  },
-  {
-    "slug": "mercedes-detalla-la-doble-parada-de-russell-en-madrid-por-el-vsc",
-    "title": "Mercedes detalla la doble parada de Russell en Madrid por el VSC",
-    "summary": "Bradley Lord explica que Russell cambió a medios bajo VSC para evitar seguir a Leclerc. La estrategia de dos paradas le permitió completar 20 vueltas antes de volver a duros.",
-    "content": "<p>Bradley Lord, subdirector de Mercedes, justificó la estrategia de dos paradas de George Russell en el Gran Premio de España. Russell, que salió sexto con neumáticos duros, entró en boxes durante el Virtual Safety Car (VSC) activado al final de la vuelta 14. Su objetivo inicial era una sola parada, pero al ser el segundo coche con duros, detrás de Charles Leclerc, la opción de adelantar era casi inexistente.</p><p>El equipo le indicó a Russell realizar una 'parada opuesta' a la de Leclerc, montando neumáticos medios. Aunque estos no aguantarían hasta el final, le permitieron completar una tanda de 20 vueltas antes de volver a los duros en la vuelta 28. Esta maniobra evitó que Russell se viera atrapado detrás del Ferrari hasta la meta, aprovechando la brecha creada por la neutralización que benefició a los cuatro primeros, excepto a Lando Norris, quien ya había pasado la entrada al pit lane.</p>",
-    "category": "Estrategia",
-    "keyPoints": [
-      "VSC activado al final de la vuelta 14 benefició a los cuatro primeros, salvo Norris.",
-      "Russell salió 6º con duros; Leclerc lideró hasta su parada en la vuelta 45.",
-      "Russell montó medios bajo VSC y volvió a duros en la vuelta 28 tras 20 vueltas."
-    ],
-    "team": "mercedes",
-    "teamColor": "#27F4D2",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/mercedes-explica-dos-paradas-russell-madring/10856098/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-15T13:34:21.000Z"
-  },
-  {
-    "slug": "circuito-de-madrid-acoge-353000-espectadores-en-su-debut-como-sede-del-gp-de-esp",
-    "title": "Circuito de Madrid acoge 353.000 espectadores en su debut como sede del GP de España",
-    "summary": "El Gran Premio de España registró un 'sold out' con 353.000 asistentes en tres días, superando las expectativas iniciales. La afición española, mayoritariamente, apoyó a Carlos Sainz y Fernando Alonso pese a las dificultades de sus equipos.",
-    "content": "<p>El circuito de Madrid (Madring) agotó todas las entradas para el Gran Premio de España, acumulando un total de 353.000 espectadores durante los tres días de competición. Esto supone una media superior a 100.000 fans diarios. Las primeras 50.000 entradas se vendieron en la primera semana, aunque inicialmente no permitían la selección de asientos concretos, solo zonas.</p><p>La asistencia estuvo dominada por aficionados españoles, con una fuerte presencia de seguidores de Carlos Sainz (Williams) y Fernando Alonso (Aston Martin), aunque también se observaron camisetas de Ferrari, McLaren, Red Bull y Mercedes. Alonso calificó el apoyo de la afición como \"lo mejor del fin de semana\", destacando la vuelta al box a baja velocidad para saludarles. Los asistentes consultados por Motorsport.com afirmaron que repetirían la experiencia pese a los problemas logísticos de esta primera edición, citando el interés por ver a los pilotos nacionales como motivo principal.</p>",
-    "category": "Off-track",
-    "keyPoints": [
-      "353.000 espectadores totales en el fin de semana.",
-      "Más de 100.000 asistentes diarios en promedio.",
-      "50.000 entradas vendidas en la primera semana.",
-      "Mayoría de la afición compuesta por españoles."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/madrid-aficion-espanola-seguimiento/10856096/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-15T11:50:21.000Z"
-  },
-  {
-    "slug": "franco-colapinto-ficha-tecnica-trayectoria-y-confirmacion-de-su-futuro-en-alpine",
-    "title": "Franco Colapinto: ficha técnica, trayectoria y confirmación de su futuro en Alpine hasta 2027",
-    "summary": "El argentino Franco Colapinto (23 años) disputa su primera temporada completa en F1 con Alpine, donde comparte asiento con Pierre Gasly. El equipo confirmó el 27 de agosto de 2026 su continuidad para la campaña 2027.",
-    "content": "<p>Franco Alejandro Colapinto, nacido el 27 de mayo de 2003 en Pilar, Buenos Aires, es piloto de Alpine en la Fórmula 1. Con 23 años y doble nacionalidad argentina e italiana, utiliza el dorsal 43 y compite junto a Pierre Gasly. Su trayectoria incluye un debut en 2024 con Williams sustituyendo a Logan Sargeant y una etapa en 2025 reemplazando a Jack Doohan en Alpine.</p><p>La temporada 2026 marca un hito al ser la primera en la que inicia el campeonato con un asiento titular asegurado. Alpine anunció el 27 de agosto de 2026 que Colapinto y Gasly mantendrán su pareja de pilotos para la temporada 2027. Colapinto comenzó en el karting a los 10 años, ganó los Juegos Olímpicos de la Juventud de Buenos Aires 2018 y se trasladó a Europa en 2017 para desarrollar su carrera profesional.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Nació el 27 de mayo de 2003 en Pilar, Argentina; tiene 23 años.",
-      "Corre para Alpine con el dorsal 43 junto a Pierre Gasly.",
-      "Alpine confirmó su continuidad para la temporada 2027 el 27 de agosto de 2026.",
-      "Debutó en F1 en 2024 con Williams y pasó a Alpine en 2025.",
-      "Ganó el karting en los Juegos Olímpicos de la Juventud de Buenos Aires 2018."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/franco-colapinto-carrera-trayectoria/10648520/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-15T09:00:00.000Z"
-  },
-  {
-    "slug": "race-of-champions-2027-wellington-nueva-zelanda-acoge-la-cita-con-vettel-y-botta",
-    "title": "Race of Champions 2027: Wellington, Nueva Zelanda, acoge la cita con Vettel y Bottas",
-    "summary": "La Race of Champions 2027 se celebrará el 9 y 10 de enero en el Henry Stadium de Wellington. Sebastian Vettel y Valtteri Bottas son los primeros pilotos confirmados para el evento.",
-    "content": "<p>La Race of Champions (ROC) 2027 tendrá lugar los días 9 y 10 de enero en Wellington, Nueva Zelanda. La sede será el Henry Stadium, que se transformará en circuito para la ocasión. El sábado 9 de enero se disputará la ROC Nations Cup (por países) y el domingo 10 la competición individual.</p><p>Se han anunciado los primeros pilotos inscritos: Sebastian Vettel, tetracampeón de F1, y Valtteri Bottas, actual piloto de Cadillac. Vettel, quien pidió a los organizadores llevar el evento a Nueva Zelanda tras visitar el país, es uno de los pilotos con más participaciones y victorias en la historia de la ROC, donde formó un histórico tándem con Michael Schumacher. Bottas expresó su entusiasmo por competir en el mismo circuito con distintos tipos de coches junto a otros campeones.</p>",
-    "category": "Off-track",
-    "keyPoints": [
-      "Fecha: 9 y 10 de enero de 2027",
-      "Sede: Henry Stadium, Wellington, Nueva Zelanda",
-      "Pilotos confirmados: Sebastian Vettel y Valtteri Bottas",
-      "Formato: ROC Nations Cup (sábado) y ROC individual (domingo)"
-    ],
-    "team": "pilotos",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/general/news/sede-pilotos-race-of-champions-2027/10856020/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-15T08:38:26.000Z"
   }
 ]
