@@ -1,5 +1,58 @@
 [
   {
+    "slug": "norris-se-disculpa-con-colapinto-tras-pedir-su-sancion-por-el-accidente-en-baku",
+    "title": "Norris se disculpa con Colapinto tras pedir su sanción por el accidente en Bakú",
+    "summary": "Lando Norris pidió perdón a Franco Colapinto por exigir una suspensión tras el choque múltiple en el GP de Azerbaiyán 2026. El piloto de McLaren admitió que sus comentarios fueron un error emocional y confirmó que ambos siguen siendo amigos.",
+    "content": "<p>Lando Norris, campeón del mundo, se disculpó públicamente ante Franco Colapinto por sus declaraciones posteriores al Gran Premio de Azerbaiyán 2026. Norris había exigido que la FIA impusiera una suspensión de una carrera a Colapinto tras provocar un accidente múltiple en la reanudación de la vuelta 36, donde bloqueó las ruedas en la curva 1 del circuito urbano de Bakú. El incidente causó el abandono de Colapinto, su compañero Pierre Gasly y Norris, quien perdió piezas críticas de su monoplaza.</p><p>En un mensaje en redes sociales, Norris reconoció que \"las emociones estaban a flor de piel\" y que \"se equivocó\", aunque insistió en que la conducción imprudente no debe estar en la Fórmula 1. Colapinto asumió la responsabilidad de su \"gran error\", lo cual también generó la ira del jefe de Alpine, Flavio Briatore, por la pérdida de un potencial doblete. Ambos pilotos confirmaron que han llegado a un buen entendimiento y están deseando volver a competir este fin de semana.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Norris pidió inicialmente una sanción de una carrera para Colapinto tras el choque en la vuelta 36 de Bakú.",
+      "El accidente en la curva 1 eliminó a Colapinto, Gasly y Norris de la carrera.",
+      "Norris admitió su error en redes sociales y confirmó que mantiene una buena amistad con Colapinto."
+    ],
+    "team": "pilotos",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/norris-perdon-colapinto-palabras-accidente-baku/10859743/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-28T09:40:45.000Z"
+  },
+  {
+    "slug": "mclaren-cede-08s-a-mercedes-en-baku-por-baja-eficiencia-aerodinamica-y-gestion-d",
+    "title": "McLaren cede 0.8s a Mercedes en Bakú por baja eficiencia aerodinámica y gestión de energía",
+    "summary": "George Russell superó a Oscar Piastri por 0.8s en Bakú, con 10 km/h más de velocidad punta. McLaren atribuye la brecha a la debilidad del MCL40 en curvas lentas y una suboptimización de la unidad de potencia Mercedes.",
+    "content": "<p>En el Gran Premio de Azerbaiyán, George Russell (Mercedes) logró una ventaja de ocho décimas sobre Oscar Piastri (McLaren), una diferencia significativa dado que ambos comparten la misma unidad de potencia. Russell dominó el segundo sector mediante una mejor gestión de la energía y alcanzó una velocidad punta 10 km/h superior en la recta de meta, consolidando su ventaja sobre el australiano.</p><p>El jefe de equipo de McLaren, Andrea Stella, reconoció que el MCL40 sufre en las curvas de baja velocidad predominantes en el circuito de 6 km de Bakú. Aunque el equipo llevó mejoras aerodinámicas que funcionaron correctamente, la falta de eficiencia general del coche en ese tipo de curvas limitó su impacto. Además, Stella admitió que la unidad de potencia no estaba tan optimizada para la carrera como para la clasificación, un factor que, sumado a la aerodinámica, explicó la brecha temporal.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Diferencia de 0.8s entre Russell y Piastri en Bakú",
+      "Velocidad punta de Russell 10 km/h superior a la de Piastri",
+      "MCL40 presenta debilidad aerodinámica en curvas de baja velocidad",
+      "McLaren no optimizó la unidad de potencia Mercedes para la carrera"
+    ],
+    "team": "pilotos",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/por-que-mclaren-lento-mercedes-rectas-baku/10859699/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-28T09:28:44.000Z"
+  },
+  {
+    "slug": "russell-logra-su-primer-grand-slam-en-baku-y-recupera-la-confianza-tras-seis-car",
+    "title": "Russell logra su primer Grand Slam en Bakú y recupera la confianza tras seis carreras sin ganar",
+    "summary": "George Russell sumó su tercera victoria de la temporada 2026 en Azerbaiyán, liderando todas las vueltas. El piloto de Mercedes rompió una racha de seis fines de semana sin triunfos mientras su compañero, Antonelli, se mantiene líder del campeonato.",
+    "content": "<p>George Russell conquistó el Gran Premio de Azerbaiyán, logrando su tercera victoria en la temporada 2026 y su primer 'Grand Slam' en la historia de su carrera. El británico lideró la totalidad de las vueltas en Bakú, poniendo fin a una sequía de seis fines de semana sin victorias, periodo en el que su compañero de equipo, Andrea Kimi Antonelli, consolidó su dominio con una remontada desde la P16 a la victoria en Monza.</p><p>Russell atribuyó el resultado a la adaptación de su estilo de conducción a las exigencias de la normativa 2026, que inicialmente favorecían a Antonelli. A pesar de que el británico sigue a 66 puntos del italiano en la clasificación general, la victoria en Bakú le devolvió la confianza y la sensación de competir en igualdad de condiciones tras meses de dificultades técnicas y psicológicas.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Russell logró su primer Grand Slam de carrera en Bakú (2026).",
+      "Fue su tercera victoria de la temporada y la primera desde Austria en junio.",
+      "Rompió una racha de seis fines de semana sin ganar mientras Antonelli lideraba el campeonato.",
+      "Russell se encuentra a 66 puntos de su compañero Andrea Kimi Antonelli en la clasificación general."
+    ],
+    "team": "mercedes",
+    "teamColor": "#27F4D2",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/russell-recupera-confianza-victoria-baku/10859616/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-28T07:32:16.000Z"
+  },
+  {
     "slug": "colapinto-sufre-ciberacoso-tras-error-en-baku-que-elimino-a-norris-y-gasly",
     "title": "Colapinto sufre ciberacoso tras error en Bakú que eliminó a Norris y Gasly",
     "summary": "Franco Colapinto recibió fuertes ataques en redes sociales tras su error en el relanzamiento del GP de Azerbaiyán, que dejó fuera a Lando Norris y Pierre Gasly. Alpine emitió un comunicado de apoyo y condenó la hostilidad digital.",
@@ -139,6 +192,23 @@
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/francocolapinto-alpine-comunicado_0_qNOSLJozky.html",
     "date": "2026-09-27T12:24:33.000Z"
+  },
+  {
+    "slug": "alpine-condena-el-abuso-en-redes-tras-el-error-de-colapinto-en-baku",
+    "title": "Alpine condena el abuso en redes tras el error de Colapinto en Bakú",
+    "summary": "Alpine emitió un comunicado condenando los mensajes de odio recibidos por sus pilotos tras el accidente de Franco Colapinto en Azerbaiyán. El incidente causó el abandono de Gasly y Norris, y resultó en una sanción de cinco posiciones para el argentino.",
+    "content": "<p>Alpine publicó un comunicado oficial para denunciar el aumento de abusos y mensajes de odio en redes sociales tras el Gran Premio de Azerbaiyán. El incidente central fue el error de frenada de Franco Colapinto en la curva 1 durante la resalida, donde impactó contra su compañero Pierre Gasly y provocó el abandono de Lando Norris (McLaren).</p><p>Colapinto asumió la responsabilidad inmediata y pidió disculpas al equipo y a los pilotos afectados. La FIA sancionó al argentino con cinco posiciones de penalización en la parrilla para la próxima carrera. El equipo francés reiteró su compromiso con la F1, la FIA y el promotor para erradicar el acoso online, destacando que la rivalidad deportiva debe mantenerse dentro de los límites de la sana competencia.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Franco Colapinto recibió una sanción de 5 posiciones en parrilla por el accidente en Bakú.",
+      "El error de Colapinto causó el abandono de Pierre Gasly y Lando Norris.",
+      "Alpine condenó públicamente el abuso en redes sociales dirigido a sus pilotos y al paddock."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/alpine-condena-de-nuevo-abuso-redes-colapinto-baku/10859567/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-09-27T11:44:37.000Z"
   },
   {
     "slug": "vasseur-desmiente-rumores-de-salida-horner-busca-trabajo-en-todas-partes",
@@ -1658,74 +1728,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/imola-trabaja-acoger-formula1-diciembre/10857094/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-09-19T11:55:53.000Z"
-  },
-  {
-    "slug": "alonso-admite-el-shock-inicial-del-amr26-y-la-rapida-reaccion-de-aston-martin",
-    "title": "Alonso admite el 'shock' inicial del AMR26 y la rápida reacción de Aston Martin",
-    "summary": "Fernando Alonso reconoce que el bajo rendimiento inicial del AMR26 en 2026 fue un golpe inesperado para el equipo. El asturiano destaca la unidad interna y la rápida definición de la estrategia correctora tras el primer día de pruebas.",
-    "content": "<p>Fernando Alonso ha revelado que el rendimiento inicial del Aston Martin AMR26 en la temporada 2026 supuso un auténtico \"shock\" para el equipo, situándolo lejos de las expectativas generadas por su ambicioso proyecto. El piloto español admitió en una entrevista con Pedro de la Rosa que, pese al optimismo interno, el monoplaza resultó menos competitivo de lo previsto durante sus primeros pasos bajo el nuevo reglamento.</p><p>Alonso detalló que la reacción interna fue inmediata: tras el primer día de pruebas, el equipo ya tenía clara la dirección a seguir. Destacó la unidad del personal y la motivación por convertirse en aspirantes futuros, subrayando que la solución no llegaría de una carrera a otra, sino mediante un trabajo sostenido aprovechando las nuevas instalaciones y la alianza con Honda.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Alonso define el rendimiento inicial del AMR26 como un 'shock' por estar por debajo de las expectativas.",
-      "El equipo definió la estrategia correctora ya en el segundo día de pruebas.",
-      "El proyecto 2026 incluye nuevo reglamento, alianza con Honda y nuevas instalaciones."
-    ],
-    "team": "aston-martin",
-    "teamColor": "#229971",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/alonso-revela-shock-aston-martin-2026/10857051/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-19T10:57:29.000Z"
-  },
-  {
-    "slug": "de-la-rosa-la-velocidad-de-alonso-en-2026-es-identica-a-la-de-2002",
-    "title": "De la Rosa: La velocidad de Alonso en 2026 es idéntica a la de 2002",
-    "summary": "Pedro de la Rosa afirma que la velocidad de Fernando Alonso no ha cambiado en 24 años. El ex piloto destaca la precisión técnica del asturiano, quien en 2002 identificó los fallos del Jaguar en pocas vueltas.",
-    "content": "<p>Pedro de la Rosa, actual compañero de Fernando Alonso en Aston Martin, comparó el rendimiento del asturiano en 2002 con el de 2026, concluyendo que \"la velocidad es la misma\". De la Rosa, quien probó el Jaguar de F1 en Silverstone hace más de dos décadas, recuerda que Alonso demostró una capacidad excepcional para entender el monoplaza.</p><p>El test de 2002 surgió de un acuerdo entre Niki Lauda y Flavio Briatore para determinar si los problemas del Jaguar eran de pilotos o de coche. Alonso, tras pocas vueltas, proporcionó un feedback idéntico al que Eddie Irvine y De la Rosa habían dado durante seis meses. De la Rosa subrayó que el feedback de Alonso era \"muy completo, muy preciso y muy exacto\", confirmando su talento técnico más allá de la pura velocidad.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "De la Rosa afirma que la velocidad de Alonso en 2026 es igual a la de 2002.",
-      "Alonso identificó los fallos del Jaguar en pocas vueltas, igualando el feedback de 6 meses de otros pilotos.",
-      "El test de 2002 fue organizado por Niki Lauda y Flavio Briatore."
-    ],
-    "team": "aston-martin",
-    "teamColor": "#229971",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/pedro-de-la-rosa-compara-alonso-45-anos-con-2002/10856204/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-19T08:25:53.000Z"
-  },
-  {
-    "slug": "mercedes-presenta-gran-paquete-de-mejoras-en-malasia-para-recuperar-la-lucha-por",
-    "title": "Mercedes presenta gran paquete de mejoras en Malasia para recuperar la lucha por la pole",
-    "summary": "Mercedes introducirá su próxima gran actualización en el GP de Malasia (2-4 octubre) tras un periodo de desarrollo conservador. El objetivo es volver a competir por la pole, algo que no logran desde Spa, pese a liderar el campeonato con 145 puntos de ventaja.",
-    "content": "<p>Mercedes confirmó que su próximo gran paquete de actualizaciones llegará al Gran Premio de Malasia, programado del 2 al 4 de octubre, sustituyendo a Bahréin en el calendario. Andrew Shovlin, director de ingeniería en pista, explicó que para la carrera previa en Bakú no hay novedades significativas, priorizando la resistencia aerodinámica y la velocidad punta, mientras que las mejoras sustanciales están reservadas para el circuito asiático.</p><p>A pesar de liderar el campeonato de 2026 con 145 puntos sobre Ferrari, Mercedes ha reducido su ritmo de desarrollo en favor de pequeñas novedades específicas por circuito. Esto ha permitido a Ferrari y McLaren reducir la brecha, logrando dos victorias cada uno en las últimas ocho carreras, frente a las cuatro de Mercedes. El equipo alemán busca con esta actualización recuperar la posición de privilegio en clasificación, ya que no consiguen una pole desde que Kimi Antonelli marcó el mejor tiempo en Spa.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Gran paquete de actualizaciones para el GP de Malasia (2-4 octubre).",
-      "Mercedes lidera el campeonato con 145 puntos de ventaja sobre Ferrari.",
-      "Última pole de Mercedes en Spa con Kimi Antonelli.",
-      "Ferrari y McLaren han ganado dos carreras cada una en las últimas ocho fechas."
-    ],
-    "team": "mercedes",
-    "teamColor": "#27F4D2",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/mercedes-apunta-malasia-acabar-sequia-poles/10857049/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-19T07:52:41.000Z"
-  },
-  {
-    "slug": "hamilton-recuerda-sus-primeros-test-en-f1-con-mclaren-en-2006",
-    "title": "Hamilton recuerda sus primeros test en F1 con McLaren en 2006",
-    "summary": "Lewis Hamilton relata su debut en pruebas de F1 en Silverstone (septiembre 2006), donde superó a Pedro de la Rosa. Su rendimiento en tres días consolidó su fichaje por McLaren para la temporada 2007.",
-    "content": "<p>El heptacampeón del mundo Lewis Hamilton recordó en su libro 'My Story' los test colectivos realizados en Silverstone entre el 19 y el 21 de septiembre de 2006. Tras ganar el título de GP2, el británico de 21 años condujo un McLaren en su bautismo en la máxima categoría, destacando la diferencia de carga aerodinámica en curvas de alta velocidad respecto a la serie de promoción.</p><p>En la primera jornada, Hamilton no marcó tiempos para familiarizarse con el monoplaza. El segundo día completó 64 vueltas, quedando a menos de un segundo de Pedro de la Rosa. En la tercera jornada, logró el tercer mejor registro del día, superando a De la Rosa y quedando a 0.650 segundos de la marca de Nelsinho Piquet (Renault). Este desempeño fue determinante para asegurar su plaza en McLaren para 2007, acompañando a Fernando Alonso, ya que Kimi Raikkonen se marchó a Ferrari.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Test realizados en Silverstone del 19 al 21 de septiembre de 2006.",
-      "Hamilton completó 64 vueltas el segundo día, a menos de 1s de Pedro de la Rosa.",
-      "El tercer mejor tiempo del último día (a 0.650s de Nelsinho Piquet) selló su fichaje por McLaren para 2007."
-    ],
-    "team": "ferrari",
-    "teamColor": "#E8002D",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/aniversario-primer-test-hamilton-f1/829178/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-19T07:23:38.000Z"
   }
 ]
