@@ -1,5 +1,56 @@
 [
   {
+    "slug": "gp-de-singapur-colapinto-busca-puntos-en-fin-de-semana-sprint-del-9-al-11-de-oct",
+    "title": "GP de Singapur: Colapinto busca puntos en fin de semana Sprint del 9 al 11 de octubre",
+    "summary": "Franco Colapinto disputará su tercera carrera en Marina Bay, un fin de semana Sprint que otorga puntos extra. Alpine, 6º en Constructores con 68 puntos, busca cerrar la brecha con Racing Bulls.",
+    "content": "<p>El Gran Premio de Singapur, 17ª fecha del calendario de Fórmula 1, se disputará del viernes 9 al domingo 11 de octubre en el circuito callejero de Marina Bay. La jornada tendrá formato Sprint, lo que reduce las sesiones de práctica pero añade una carrera clasificatoria puntuable. Franco Colapinto, piloto de Alpine, llega tras remontar en Malasia desde la 15ª posición hasta el 13º puesto, tras arrastrar una penalización de 15 lugares por el choque en Azerbaiyán y el exceso de motores.</p><p>Colapinto acumula 27 puntos y ocupa el 12º lugar en el Campeonato de Pilotos, a 14 unidades de su compañero Pierre Gasly. En el Campeonato de Constructores, Alpine se ubica sexto con 68 puntos, persiguiendo a Racing Bulls (90 puntos). La transmisión en vivo estará disponible a través de Disney+ Premium.</p>",
+    "category": "Carrera",
+    "keyPoints": [
+      "Fechas: 9 al 11 de octubre en Marina Bay (Singapur).",
+      "Formato: Fin de semana Sprint con carrera clasificatoria puntuable.",
+      "Posiciones: Colapinto 12º (27 pts); Alpine 6º en Constructores (68 pts)."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/gp-gran-premio-singapur-formula-1-f1-dias-horarios-ver-tv-franco-colapinto_0_nbYMYJmN6i.html",
+    "date": "2026-10-06T15:14:04.925Z"
+  },
+  {
+    "slug": "gasly-critica-a-racing-bulls-por-regalar-puntos-en-malasia-tras-errores-de-alpin",
+    "title": "Gasly critica a Racing Bulls por 'regalar' puntos en Malasia tras errores de Alpine",
+    "summary": "Pierre Gasly denunció que Racing Bulls obtuvo cinco puntos 'gratis' en el GP de Malasia debido a incidentes finales. Alpine, con estrategia errónea, quedó a 22 puntos de su rival directo en el campeonato de constructores.",
+    "content": "<p>Pierre Gasly criticó duramente a Racing Bulls tras el Gran Premio de Malasia, argumentando que el equipo de Faenza recibió \"cinco puntos extra gratis\" en las últimas vueltas. La queja se centra en cómo Lawson y Lindblad aprovecharon los retiros de George Russell (Mercedes) y el error de Lando Norris (McLaren) durante el coche de seguridad para sumar posiciones.</p><p>Alpine sufrió una estrategia fallida al salir con neumáticos lisos en pista mojada, lo que dejó a Gasly 16º y a Franco Colapinto 13º, sin puntos. Este resultado amplió la brecha en el campeonato de constructores: Racing Bulls ahora lidera la lucha por la quinta posición con 22 puntos de ventaja sobre Alpine, la mayor distancia registrada en la temporada. Gasly señaló que el equipo buscará reducir la diferencia carrera a carrera, citando la competitividad mostrada en Bakú, Madrid y la clasificación de Malasia como base para el próximo GP de Singapur.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Racing Bulls sumó 5 puntos en Malasia: Liam Lawson 7º y Arvid Lindblad 10º.",
+      "Alpine quedó sin puntos: Pierre Gasly 16º y Franco Colapinto 13º por error estratégico de neumáticos.",
+      "La distancia en el campeonato de constructores entre Racing Bulls y Alpine es de 22 puntos."
+    ],
+    "team": "pilotos",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com LAT",
+    "originalLink": "https://lat.motorsport.com/f1/news/gasly-molesto-racing-bulls-puntos-gratis/10862505/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=lat",
+    "date": "2026-10-06T11:56:05.000Z"
+  },
+  {
+    "slug": "ocon-el-fallo-de-software-en-bahrein-se-resolvio-reiniciando-windows",
+    "title": "Ocon: El fallo de software en Bahrein se resolvió 'reiniciando Windows'",
+    "summary": "Esteban Ocon describió el fallo de potencia en su Haas durante la salida del GP de Bahrein como un reinicio de ordenador. El problema, causado por un bucle de software en baja velocidad, obligó a la FIA a parchear el sistema antes de la carrera.",
+    "content": "<p>Esteban Ocon resolvió la pérdida de potencia de su Haas F1 durante la vuelta de formación del Gran Premio de Bahrein apagando y reiniciando el monoplaza, una acción que comparó con 'reiniciar Windows'. El piloto francés explicó que el acelerador dejó de responder y que, tras detener el coche y reiniciar el sistema, la entrega de potencia se normalizó.</p><p>El incidente afectó a varios pilotos, incluyendo a Max Verstappen y Lewis Hamilton, quienes sufrieron caídas de rendimiento detrás del coche de seguridad. La causa fue un bucle en el software que gestiona la reducción de potencia eléctrica para condiciones de lluvia, activado por las velocidades extremadamente bajas. La FIA tuvo que preparar una modificación de software de emergencia para permitir el inicio de la carrera.</p>",
+    "category": "Técnica",
+    "keyPoints": [
+      "Esteban Ocon reinició su Haas para solucionar la falta de respuesta del acelerador.",
+      "El fallo afectó a Verstappen y Hamilton durante la salida tras el coche de seguridad.",
+      "La causa fue un bucle de software en la gestión de potencia eléctrica en baja velocidad."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/ocon-reiniciar-windows-fallo-software-fia-sepang/10862312/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-06T11:26:02.000Z"
+  },
+  {
     "slug": "mercedes-supera-a-ferrari-como-motorista-con-mas-victorias-en-la-historia-de-la-",
     "title": "Mercedes supera a Ferrari como motorista con más victorias en la historia de la F1",
     "summary": "El motor Mercedes alcanza las 252 victorias, superando el récord histórico de Ferrari. El cambio se debe a los triunfos de McLaren y Mercedes en 2025-2026, mientras Ferrari no ganaba desde 2024.",
@@ -18,6 +69,23 @@
     "date": "2026-10-06T09:57:50.000Z"
   },
   {
+    "slug": "vowles-el-limite-de-gastos-empeoro-la-brecha-en-f1-el-top-4-acapara-el-83-de-los",
+    "title": "Vowles: El límite de gastos empeoró la brecha en F1; el top 4 acapara el 83% de los puntos",
+    "summary": "James Vowles critica el reglamento financiero por consolidar la división entre el top 4 y el resto. Señala que la igualdad económica no se tradujo en paridad deportiva, empeorando la concentración de puntos y podios.",
+    "content": "<p>James Vowles, director de Williams, argumentó en Sepang que el límite de gastos ha fracasado en su objetivo de equilibrar la parrilla. Según sus datos, cuatro equipos acaparan actualmente el 83% de los puntos, una cifra que se ha incrementado desde el 70% registrado antes de la implementación del reglamento financiero.</p><p>El director de Williams explicó que la 'trampa' radica en que el presupuesto iguala a equipos con bases infraestructurales muy distintas. Mientras las escuderías punteras invierten directamente en rendimiento, equipos como Williams deben destinar recursos a construir infraestructura básica, sacrificando desarrollo inmediato. Como consecuencia, la probabilidad de podio para los equipos fuera del 'top 4' ha caído del 10% al 5%.</p>",
+    "category": "Reglamento",
+    "keyPoints": [
+      "El top 4 de F1 obtiene el 83% de los puntos, frente al 70% previo al límite de gastos.",
+      "La probabilidad de podio para equipos fuera del top 4 descendió del 10% al 5%.",
+      "Williams priorizó la construcción de infraestructura futura sobre el rendimiento inmediato en el túnel de viento."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/vowles-critica-limite-gastos-explica-contras/10861316/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-06T09:07:28.000Z"
+  },
+  {
     "slug": "prost-sella-su-primer-titulo-de-f1-en-1985-con-alboreto-fuera-de-combate",
     "title": "Prost sella su primer título de F1 en 1985 con Alboreto fuera de combate",
     "summary": "Alain Prost ganó el campeonato de 1985 en Brands Hatch al ampliar su ventaja sobre Michele Alboreto. El francés necesitaba 18 puntos de diferencia y la clasificación de su rival complicó su título.",
@@ -33,23 +101,6 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/asi-gano-prost-primer-titulo-1985/10765283/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-10-06T06:11:49.000Z"
-  },
-  {
-    "slug": "gp-de-singapur-colapinto-busca-puntos-en-fin-de-semana-sprint-del-9-al-11-de-oct",
-    "title": "GP de Singapur: Colapinto busca puntos en fin de semana Sprint del 9 al 11 de octubre",
-    "summary": "Franco Colapinto disputará su tercera carrera en Marina Bay, un fin de semana Sprint que otorga puntos extra. Alpine, 6º en Constructores con 68 puntos, busca cerrar la brecha con Racing Bulls.",
-    "content": "<p>El Gran Premio de Singapur, 17ª fecha del calendario de Fórmula 1, se disputará del viernes 9 al domingo 11 de octubre en el circuito callejero de Marina Bay. La jornada tendrá formato Sprint, lo que reduce las sesiones de práctica pero añade una carrera clasificatoria puntuable. Franco Colapinto, piloto de Alpine, llega tras remontar en Malasia desde la 15ª posición hasta el 13º puesto, tras arrastrar una penalización de 15 lugares por el choque en Azerbaiyán y el exceso de motores.</p><p>Colapinto acumula 27 puntos y ocupa el 12º lugar en el Campeonato de Pilotos, a 14 unidades de su compañero Pierre Gasly. En el Campeonato de Constructores, Alpine se ubica sexto con 68 puntos, persiguiendo a Racing Bulls (90 puntos). La transmisión en vivo estará disponible a través de Disney+ Premium.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "Fechas: 9 al 11 de octubre en Marina Bay (Singapur).",
-      "Formato: Fin de semana Sprint con carrera clasificatoria puntuable.",
-      "Posiciones: Colapinto 12º (27 pts); Alpine 6º en Constructores (68 pts)."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Olé",
-    "originalLink": "https://www.ole.com.ar/autos/gp-gran-premio-singapur-formula-1-f1-dias-horarios-ver-tv-franco-colapinto_0_nbYMYJmN6i.html",
-    "date": "2026-10-05T19:40:21.000Z"
   },
   {
     "slug": "colapinto-enfrenta-sprint-y-calor-en-singapur-con-solo-una-practica",
@@ -102,6 +153,24 @@
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/francocolapinto-alpine-estrategia-granpremiodebahrein_0_xhCW8p7yDM.html",
     "date": "2026-10-05T18:14:05.281Z"
+  },
+  {
+    "slug": "colapinto-la-apuesta-por-slicks-en-sepang-le-costo-caro-pese-a-buen-ritmo-poster",
+    "title": "Colapinto: La apuesta por slicks en Sepang le costó caro pese a buen ritmo posterior",
+    "summary": "Franco Colapinto terminó 13º en Sepang tras una estrategia agresiva con neumáticos blandos sobre pista mojada que no se secó. Alpine cometió el mismo error con Gasly, aunque el argentino recuperó posiciones en pista una vez seco el asfalto.",
+    "content": "<p>Franco Colapinto partió desde la 21ª posición en el Gran Premio de Malasia debido a penalizaciones acumuladas durante el fin de semana. Alpine optó por una estrategia agresiva montando neumáticos blandos (slicks) al inicio de la carrera, bajo la premisa de que la pista se secaría rápidamente gracias al calor y la rugosidad del asfalto de Sepang.</p><p>La predicción falló: la pista permaneció mojada durante mucho tiempo, generando una falta de agarre que Colapinto describió como \"conducir sobre hielo\". Esto provocó que perdiera segundos y posiciones frente a rivales que utilizaron neumáticos intermedios. Pierre Gasly, su compañero de equipo, también partió con blandos y sufrió las mismas consecuencias.</p><p>Una vez que el asfalto se secó por completo, el Alpine A524 demostró un ritmo competitivo. Colapinto logró recuperar posiciones directamente en pista utilizando los compuestos medio y duro, confirmando que el coche tenía velocidad suficiente para pelear, aunque la estrategia inicial había comprometido su resultado final.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Colapinto partió 21º y terminó 13º en Sepang.",
+      "Alpine montó slicks en ambos coches (Colapinto y Gasly) sobre pista mojada.",
+      "La pista no se secó al ritmo esperado, causando pérdida de tiempo inicial.",
+      "El Alpine tuvo buen ritmo con medios y duros una vez seco el asfalto."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/colapinto-explica-apuesta-costo-caro-sepang-momento-arriesgar/10862323/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-05T17:53:16.000Z"
   },
   {
     "slug": "mclaren-decepciona-en-sepang-el-mcl40-cae-a-cuarta-fuerza-pese-a-expectativas-al",
@@ -1657,76 +1726,5 @@
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/francocolapinto-baku-redessociales-pierregasly-ataques-criticas_0_2qnW9Qw4Gz.html",
     "date": "2026-09-27T17:49:28.000Z"
-  },
-  {
-    "slug": "bullet-sports-management-respalda-a-colapinto-tras-el-incidente-en-baku",
-    "title": "Bullet Sports Management respalda a Colapinto tras el incidente en Bakú",
-    "summary": "La agencia de Colapinto publicó dos mensajes tras el choque en Azerbaiyán. El primero asumió la responsabilidad del error; el segundo instó a ignorar las críticas, incluidas las de Lando Norris.",
-    "content": "<p>Tras el accidente en el GP de Azerbaiyán que dejó fuera a Pierre Gasly y Lando Norris, Bullet Sports Management, agencia de Franco Colapinto, emitió un comunicado inicial reconociendo la responsabilidad del argentino. La firma, liderada por María Catarineu y Jamie Campbell-Walter, calificó el incidente como \"un pequeño error que se convirtió en una bola de nieve con graves consecuencias\" y destacó que Colapinto asumió la culpa y se disculpó con Gasly y el equipo Alpine.</p><p>Ante la ola de críticas, incluido el reclamo de Norris de una suspensión mínima de una carrera, la agencia publicó un segundo mensaje evitando la confrontación directa. El texto instó a \"ignorar a quienes hablan desde el odio\" y a \"silenciar el ruido\", enfatizando que la respuesta más fuerte es no responder y concentrarse en la recuperación del piloto, a quien describieron como \"un luchador\".</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Bullet Sports Management asumió la responsabilidad de Colapinto por el choque en Bakú.",
-      "La agencia instó a ignorar las críticas y no responder a los ataques, especialmente los de Lando Norris.",
-      "Se destacó la disculpa de Colapinto hacia Pierre Gasly y el equipo Alpine tras el incidente."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Olé",
-    "originalLink": "https://www.ole.com.ar/autos/francocolapinto-bulletsportsmanagement-mariacatarineu-jamiecampbell-walter-landonorris-alpine-formula1-baku_0_qsseLW1MlR.html",
-    "date": "2026-09-27T17:35:59.000Z"
-  },
-  {
-    "slug": "krack-defiende-mejoras-de-aston-martin-tras-doble-abandono-en-baku",
-    "title": "Krack defiende mejoras de Aston Martin tras doble abandono en Bakú",
-    "summary": "Mike Krack asegura que las actualizaciones del AMR26 funcionan pese a los abandonos en Azerbaiyán. El jefe de rendimiento matiza que la comparación directa con rivales como Williams puede ser engañosa.",
-    "content": "<p>Aston Martin llegó al Gran Premio de Azerbaiyán 2026 con un paquete de mejoras centrado en la reducción de peso del AMR26, pero los resultados fueron decepcionantes: Fernando Alonso clasificó 19º y ambos pilotos abandonaron en carrera. Ante las críticas, Mike Krack, jefe de rendimiento en pista, defendió la efectividad de las piezas: \"Sí, creo que sí. Al final, en la pista lo que haces es simplemente validar las pruebas que haces en casa con la simulación. Así que todo lo que hemos traído funciona\".</p><p>Krack advirtió sobre la simplificación de los diagnósticos, señalando que los rivales también evolucionan sus coches. Utilizó a Williams como ejemplo: aunque el equipo de Grove pareció dar un salto adelante en Bakú, esto no implica necesariamente que Aston Martin haya retrocedido, sino que ambos podrían haber mejorado a ritmos distintos. \"Ese tipo de análisis y estudio lleva mucho tiempo. Y hay que hacerlo con cuidado\", concluyó el luxemburgués, reafirmando que las partes traídas a Bakú son mejores.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Aston Martin abandonó con ambos pilotos en el GP de Azerbaiyán 2026.",
-      "Fernando Alonso logró el 19º puesto en la clasificación.",
-      "Mike Krack afirma que las mejoras de peso del AMR26 funcionan según simulaciones.",
-      "Krack critica la comparación directa con Williams, que también mejoró su coche."
-    ],
-    "team": "aston-martin",
-    "teamColor": "#229971",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/aston-martin-defiende--fiasco-baku-mejoras-funcionan/10859560/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-27T16:00:09.000Z"
-  },
-  {
-    "slug": "russell-vencio-en-baku-superando-el-rebufo-de-verstappen-con-traccion-superior",
-    "title": "Russell venció en Bakú superando el rebufo de Verstappen con tracción superior",
-    "summary": "George Russell defendió su victoria en Bakú contra Max Verstappen, quien aprovechó el coche de seguridad para atacar con rebufo. El británico compensó las 0.4s perdidas en la recta final dominando los sectores 1 y 2 gracias a la tracción del W17.",
-    "content": "<p>George Russell mantuvo la primera posición en el Gran Premio de Bakú tras una intensa lucha final contra Max Verstappen. Aunque Russell salió desde la octava posición debido a un problema de motor que le costó la primera fila, un coche de seguridad permitió a Verstappen reengancharse en la lucha por la victoria. En las últimas diez vueltas, Russell impuso un ritmo de clasificación, sacando aproximadamente un segundo por vuelta al resto del pelotón.</p><p>La estrategia de Verstappen se basó en el rebufo en la larga recta final, una ventaja de casi 0.4 segundos por vuelta que replicó su táctica de Monza. Russell neutralizó esta amenaza dominando los sectores 1 y 2, aprovechando la superioridad en tracción del Mercedes W17. Como referencia de la intensidad, Isack Hadjar perdió unos siete segundos en esas mismas diez vueltas, mientras que Russell y Verstappen 'maltrataron' los neumáticos blandos para sostener el duelo.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "Russell salió 8º por un fallo de motor que le impidió partir desde la primera fila.",
-      "Verstappen recuperó la posición tras el coche de seguridad y atacó con rebufo en la recta final.",
-      "El rebufo de Verstappen valió casi 0.4 segundos por vuelta en la recta de Bakú.",
-      "Russell compensó la pérdida en la recta dominando los sectores 1 y 2 gracias a la tracción del W17.",
-      "Isack Hadjar perdió 7 segundos en las últimas 10 vueltas, evidenciando el ritmo extremo de los líderes."
-    ],
-    "team": "pilotos",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/analisis-russell-resistio-rebufo-verstappen/10859547/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-27T14:15:03.000Z"
-  },
-  {
-    "slug": "mekies-destaca-la-calma-de-hadjar-al-ceder-posicion-a-verstappen-en-baku",
-    "title": "Mekies destaca la calma de Hadjar al ceder posición a Verstappen en Bakú",
-    "summary": "Isack Hadjar logró su tercer podio en F1 tras su regreso en Bakú. Laurent Mekies elogió su ritmo con neumáticos medios y su compostura al ceder posición a Verstappen.",
-    "content": "<p>Isack Hadjar completó un regreso impecable en el Circuito Urbano de Bakú, logrando su segundo podio de la temporada y el tercero de su carrera en la Fórmula 1. El piloto francés, que se perdió tres fines de semana por una lesión en la muñeca, se clasificó cuarto y terminó en el podio, demostrando que su recuperación era total y sin dolor.</p><p>Laurent Mekies, director de Red Bull, calificó el desempeño de Hadjar como \"excepcional\", destacando dos aspectos clave: el ritmo de carrera mostrado con neumáticos medios y blandos, algo inédito para el equipo, y su comportamiento durante la primera tanda. Aunque Red Bull le pidió ceder la posición a Max Verstappen, Hadjar mantuvo la calma incluso cuando el neerlandés tuvo dificultades con los neumáticos medios, mostrando una madurez que superó las expectativas del equipo.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Hadjar logró su 3er podio en F1 y 2do de la temporada en Bakú.",
-      "Mekies destacó el ritmo inédito de Hadjar con neumáticos medios.",
-      "Hadjar cedió posición a Verstappen manteniendo la calma ante las dificultades del rival."
-    ],
-    "team": "redbull",
-    "teamColor": "#3671C6",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/detalle-impresionado-red-bull-hadjar-regreso-baku/10859542/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-27T13:20:33.000Z"
   }
 ]
