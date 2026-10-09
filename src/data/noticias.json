@@ -14,7 +14,42 @@
     "teamColor": "#0093CC",
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/franco-colapinto-numero-43-carreras-formula-1-gran-premio-singapur-alpine-cifra-podio-pilotos-argentinos_0_TuC04YnCgN.html",
-    "date": "2026-10-09T11:14:04.580Z"
+    "date": "2026-10-09T15:14:04.898Z"
+  },
+  {
+    "slug": "antonelli-septimo-en-singapur-critica-al-nuevo-mercedes-no-se-de-donde-sacar-7-d",
+    "title": "Antonelli, séptimo en Singapur, critica al 'nuevo' Mercedes: \"No sé de dónde sacar 7 décimas\"",
+    "summary": "El líder del Mundial, Andrea Kimi Antonelli, calificó de impredecible al paquete de mejoras del W17 tras quedar séptimo en la clasificación sprint de Singapur. El italiano admite que el coche es difícil de conducir y no ve margen para recuperar las 0,7s de desventaja frente a Verstappen.",
+    "content": "<p>Andrea Kimi Antonelli, líder del Mundial de Fórmula 1 con 86 puntos de ventaja sobre George Russell, se clasificó séptimo para la carrera sprint del Gran Premio de Singapur. El piloto italiano terminó a 0,573 segundos de Russell (segundo) y a 0,693 segundos de Max Verstappen, quien logró la pole position. Esta es la segunda semana consecutiva en la que Mercedes no logra exprimir su evolución: en Sepang, Antonelli fue segundo tras Verstappen, pero el equipo no sacó el máximo partido a las novedades.</p><p>Para este fin de semana, Antonelli utiliza la versión actualizada del W17, mientras que Russell ha regresado a la especificación anterior para comparar datos. Antonelli describió el coche como \"muy difícil de conducir\" y \"impredecible\", confirmando las declaraciones de Toto Wolff, quien reconoció que el nuevo paquete es más complejo. El italiano expresó su desesperación al afirmar: \"Sinceramente, no veo de dónde podemos sacar siete décimas\", aunque espera que los ingenieros, junto a Peter Bonnington, encuentren una solución durante la noche.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Antonelli es líder del Mundial con 86 puntos de ventaja sobre Russell.",
+      "Clasificación Sprint Singapur: 7º Antonelli, 2º Russell, 1º Verstappen (pole).",
+      "Diferencia de tiempo: Antonelli a 0,693s de la pole y 0,573s de Russell.",
+      "Mercedes está comparando la nueva evolución del W17 (Antonelli) con la especificación anterior (Russell)."
+    ],
+    "team": "mercedes",
+    "teamColor": "#27F4D2",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/antonelli-declaraciones-viernes-singapur-2026/10863497/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-09T14:59:41.000Z"
+  },
+  {
+    "slug": "alonso-15-en-singapur-decepcion-por-no-pasar-a-sq3-pese-a-buena-vuelta",
+    "title": "Alonso, 15º en Singapur: decepción por no pasar a SQ3 pese a buena vuelta",
+    "summary": "Fernando Alonso finalizó 15º en la clasificación al sprint del GP de Singapur. El piloto de Aston Martin se mostró decepcionado al no acceder a la SQ3, atribuyendo la causa a la carga aerodinámica y la falta de potencia del motor Honda.",
+    "content": "<p>Fernando Alonso terminó en la 15ª posición en la clasificación al sprint del Gran Premio de Singapur, quedando fuera de la tercera ronda (SQ3). El asturiano expresó su decepción, indicando que consideraba su vuelta \"lo bastante buena\" para avanzar, pero el resultado final lo dejó lejos de esa meta.</p><p>Alonso señaló que el coche tenía buen agarre y estaba cerca de su rendimiento óptimo, aunque persiste un problema de subviraje no resuelto desde las pruebas libres. El bicampeón mundial identificó dos factores limitantes principales: la excesiva carga aerodinámica del Aston Martin, que supone una gran desventaja en este circuito, y la falta de potencia del motor Honda en las largas rectas de Marina Bay.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Posición final: 15º en la clasificación al sprint.",
+      "Causa de la eliminación: No accedió a la SQ3 pese a valorar su vuelta como suficiente.",
+      "Problemas técnicos citados: Subviraje, alta carga aerodinámica y falta de potencia del motor Honda."
+    ],
+    "team": "aston-martin",
+    "teamColor": "#229971",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/declaraciones-alonso-viernes-singapur-2026/10863501/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-09T14:46:02.000Z"
   },
   {
     "slug": "colapinto-19-en-la-fp1-del-gp-de-singapur-russell-lidera-la-practica",
@@ -66,6 +101,23 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/mercedes-defiende-polemica-decision-dejar-russell-sin-refrigeracion/10862751/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-10-09T08:00:24.000Z"
+  },
+  {
+    "slug": "f1-singapur-verstappen-ante-comisarios-por-bandera-amarilla-mercedes-sanciona-a-",
+    "title": "F1 Singapur: Verstappen ante comisarios por bandera amarilla; Mercedes sanciona a Russell",
+    "summary": "Max Verstappen comparecerá ante los comisarios por adelantar a Hamilton bajo bandera amarilla en la clasificación sprint. Mercedes recibió una sanción por cambios en el motor de George Russell tras su DNF en Malasia.",
+    "content": "<p>La FIA emitió una declaración oficial reconociendo un error humano en la Dirección de Carrera durante la Clasificación Sprint de Singapur. El Modo Adelantamiento no estuvo disponible tras la bandera roja en SQ1 y se activó erróneamente durante 27 segundos, afectando el rendimiento de ciertos vehículos. Los períodos SQ2 y SQ3 no se vieron impactados por esta incidencia técnica.</p><p>Max Verstappen deberá comparecer ante los comisarios por una maniobra en la que adelantó a Lewis Hamilton bajo bandera amarilla simple durante la SQ1, provocada por los restos del alerón de Sergio Pérez. Según el reglamento, esta acción podría acarrearle una penalización de cinco posiciones en la parrilla. Por otro lado, Mercedes fue sancionado por modificar elementos de la unidad de potencia de George Russell tras su abandono en Malasia, lo que obligará al británico a partir desde el fondo de la grilla en la carrera sprint.</p>",
+    "category": "Reglamento",
+    "keyPoints": [
+      "Verstappen ante comisarios por adelantar a Hamilton bajo bandera amarilla en SQ1",
+      "Error de Dirección de Carrera: Modo Adelantamiento activo 27s tras bandera roja en SQ1",
+      "Mercedes sancionado por cambios en PU de Russell; parte desde el fondo en sprint"
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Clarín Deportes",
+    "originalLink": "https://www.clarin.com/deportes/f1-gp-singapur-colapinto-vivo-horario-fp1-clasificacion-sprint-ver-formula-1_0_nRE3ISlf7E.html",
+    "date": "2026-10-09T06:01:37.000Z"
   },
   {
     "slug": "horarios-y-formato-de-la-clasificacion-sprint-del-gp-de-singapur-2026",
@@ -1676,56 +1728,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/mercedes-decoracion-coche-sepang-2026/10860215/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-09-30T08:54:34.000Z"
-  },
-  {
-    "slug": "haas-confirma-la-salida-de-esteban-ocon-al-final-de-la-temporada-2026",
-    "title": "Haas confirma la salida de Esteban Ocon al final de la temporada 2026",
-    "summary": "Haas F1 anunció oficialmente que Esteban Ocon no continuará en el equipo para la temporada 2027. El francés, de 30 años, se marcha tras dos años en la escudería y queda como agente libre.",
-    "content": "<p>Haas F1 confirmó este miércoles que su colaboración con Esteban Ocon finalizará al término del Campeonato del Mundo de Fórmula 1 de la FIA de 2026. El piloto francés, de 30 años, se unió al equipo TGR Haas F1 para la temporada 2025 y disputó 39 carreras con la escudería, acumulando un total de 195 grandes premios en su carrera profesional y 490 puntos, incluyendo la victoria en el GP de Hungría de 2021.</p><p>Ocon, quien llegó a Haas procedente de Alpine, ha compartido asiento con Oliver Bearman durante las temporadas 2025 y 2026. En este periodo, Ocon sumó 45 puntos frente a los 61 de Bearman, ocupando actualmente la 16ª posición en el Mundial de Pilotos de 2026, tres puestos por detrás de su compañero. El equipo ha probado a Rafael Cámara, Leonardo Fornaroli y Ryo Hirakawa para definir la alineación de 2027, dejando a Ocon como agente libre con opciones limitadas en la parrilla.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Haas confirma la salida de Esteban Ocon al final de la temporada 2026.",
-      "Ocon disputó 39 carreras con Haas y suma 195 GP y 490 puntos en su carrera.",
-      "El francés queda como agente libre tras sumar 45 puntos en 2025-2026, por detrás de Oliver Bearman (61 puntos)."
-    ],
-    "team": "haas",
-    "teamColor": "#B6BABD",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/oficial-haas-ocon-2027/10860201/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-30T08:21:38.000Z"
-  },
-  {
-    "slug": "sainz-estoy-en-mi-punto-algido-a-los-32-pero-el-fw48-me-frustra",
-    "title": "Sainz: 'Estoy en mi punto álgido a los 32, pero el FW48 me frustra'",
-    "summary": "Carlos Sainz llega a Bakú recordando su primer podio con Williams en 2025. El español afirma estar en su mejor momento físico y de pilotaje, pero critica la falta de resultados del coche en 2026.",
-    "content": "<p>Carlos Sainz se encuentra en Bakú para el Gran Premio de Azerbaiyán, un circuito que le recuerda su primer podio con Williams en la temporada 2025. A sus 32 años, el piloto español asegura sentirse cerca del punto álgido de su carrera y pilotar a un nivel muy alto, tras doce temporadas en la Fórmula 1.</p><p>La frustración de Sainz radica en el contraste entre su rendimiento personal y los resultados del equipo. El coche FW48 ha presentado problemas técnicos que impiden alcanzar los objetivos marcados para la temporada 2026, lo que el piloto describe como un año 'perdido' en términos competitivos, aunque espera que sea solo una anomalía antes de mejorar en la próxima campaña.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Sainz tiene 32 años y se considera en su punto álgido de carrera.",
-      "El piloto destaca su primer podio con Williams en Bakú durante la temporada 2025.",
-      "Sainz califica la temporada 2026 como frustrante debido a los problemas del coche FW48."
-    ],
-    "team": "ferrari",
-    "teamColor": "#E8002D",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/entrevista-carlos-sainz-baku-2026/10860125/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-09-30T07:03:44.000Z"
-  },
-  {
-    "slug": "f1-vuelve-a-sepang-colapinto-debutara-en-el-trazado-malayo-tras-9-anos",
-    "title": "F1 vuelve a Sepang: Colapinto debutará en el trazado malayo tras 9 años",
-    "summary": "La Fórmula 1 regresa al Circuito Internacional de Sepang para el GP de Bahrein, una fecha atípica por el conflicto en Medio Oriente. Franco Colapinto no tiene experiencia previa en el circuito, al igual que la mitad de la parrilla actual.",
-    "content": "<p>La Fórmula 1 disputará el Gran Premio de Bahrein en el Circuito Internacional de Sepang, Malasia, tras nueve años de ausencia. Esta designación se debe a que el conflicto bélico en Medio Oriente impidió la carrera en Sakhir. El trazado, presente en el calendario desde 1999 hasta 2017, presenta un desafío para la mitad de los pilotos, incluido Franco Colapinto, quien nunca giró allí ni en las categorías formativas.</p><p>El circuito diseñado por Hermann Tilke mide 5,5 km, cuenta con 15 curvas y 8 rectas, y se recorre en sentido horario. Destaca por su anchura (16 a 22 metros) y dos largas rectas paralelas que facilitan los sobrepasos en las curvas 1 y 15. Solo nueve pilotos actuales tienen experiencia completa en Sepang: Verstappen, Hamilton, Bottas, Pérez, Stroll, Ocon, Alonso, Gasly y Sainz, mientras que Leclerc solo participó en la FP1 de 2017.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "El GP de Bahrein se correrá en Sepang, Malasia, debido a la imposibilidad de usar Sakhir.",
-      "Franco Colapinto debutará en el circuito, que no formó parte de su trayectoria en categorías inferiores.",
-      "Sepang mide 5,5 km, tiene 15 curvas y una anchura de 16 a 22 metros."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Olé",
-    "originalLink": "https://www.ole.com.ar/autos/gran-premio-bahrein-malasia-sepang-franco-colapinto-caracteristicas-circuito-trazado_0_s8Y9GPb5A3.html",
-    "date": "2026-09-29T23:52:53.000Z"
   }
 ]
