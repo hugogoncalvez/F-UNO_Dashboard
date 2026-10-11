@@ -14,7 +14,93 @@
     "teamColor": "#0093CC",
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/golpe-pared-arruino-clasificacion-franco-colapinto-singapur_0_YhkEbkUkxT.html",
-    "date": "2026-10-10T18:13:58.636Z"
+    "date": "2026-10-11T11:14:04.921Z"
+  },
+  {
+    "slug": "fia-admite-error-humano-en-singapur-que-altero-la-clasificacion-sprint",
+    "title": "FIA admite error humano en Singapur que alteró la clasificación sprint",
+    "summary": "Nikolas Tombazis reconoció que un fallo de Dirección de Carrera afectó la SQ1 del GP de Singapur. El modo adelantamiento se desactivó erróneamente tras una bandera roja, perjudicando a varios pilotos.",
+    "content": "<p>La FIA ha confirmado un error humano durante la clasificación sprint del Gran Premio de Singapur. Tras la interrupción por el accidente de Sergio Pérez, Dirección de Carrera no reactivó correctamente el modo adelantamiento (overriding) en la fase final de la SQ1. El sistema permaneció desactivado inicialmente, se habilitó durante 27 segundos y luego se desactivó nuevamente, generando confusión y quejas entre los pilotos por la falta de potencia.</p><p>Nikolas Tombazis, director de monoplazas de la FIA, explicó a Sky Alemania que el fallo se debió a una ventana emergente en el ordenador de un operador que no fue atendida a tiempo debido a la presión del momento. Tombazis calificó la situación como \"lo peor\" que puede ocurrir a la Federación, ya que la inconsistencia en la potencia afectó desigualmente a los pilotos e interfirió en los resultados competitivos de la sesión.</p>",
+    "category": "Reglamento",
+    "keyPoints": [
+      "El error ocurrió en la SQ1 de la clasificación sprint del GP de Singapur tras la bandera roja por el accidente de Sergio Pérez.",
+      "El modo adelantamiento se desactivó, se activó por 27 segundos y se desactivó de nuevo debido a un fallo operativo en Dirección de Carrera.",
+      "Nikolas Tombazis atribuyó el fallo a una ventana emergente no atendida a tiempo y reconoció que la situación afectó la igualdad de condiciones entre pilotos."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/fia-admite-altero-resultados-singapur-desastre/10864063/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-11T09:45:52.000Z"
+  },
+  {
+    "slug": "alonso-saldra-desde-el-pitlane-en-singapur-tras-sustituir-el-turbo-de-su-motor-h",
+    "title": "Alonso saldrá desde el pitlane en Singapur tras sustituir el turbo de su motor Honda",
+    "summary": "Fernando Alonso arrancará último en el GP de Singapur por cambiar el turbo de su unidad de potencia. La FIA confirmó que también partirán desde boxes Lance Stroll e Isack Hadjar por modificaciones mecánicas.",
+    "content": "<p>Fernando Alonso saldrá desde el pitlane en la carrera del GP de Singapur tras sustituir el turbo (TC) de su motor Honda. Este es el sexto cambio de este componente en la temporada, superando el límite de cuatro permitido, lo que obliga a arrancar desde el fondo de la parrilla.</p><p>La FIA confirmó que Lance Stroll (Aston Martin) e Isack Hadjar (Red Bull) también partirán desde el carril de boxes. Stroll cambió la configuración de la suspensión, mientras que Hadjar sustituyó el motor de combustión interna (ICE), el turbo, el sistema de escape (EXH) y el componente auxiliar (PU-ANC). El orden de salida en el pitlane será Alonso, Stroll y Hadjar, respectivamente.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Alonso cambió el turbo (TC), su sexto de la temporada (límite: 4).",
+      "Stroll cambió la configuración de la suspensión.",
+      "Hadjar sustituyó ICE, TC, EXH y PU-ANC.",
+      "Orden de salida en pitlane: Alonso, Stroll, Hadjar."
+    ],
+    "team": "aston-martin",
+    "teamColor": "#229971",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/alonso-pitlane-singapur-cambio-motor/10864199/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-11T09:35:40.000Z"
+  },
+  {
+    "slug": "la-pole-en-singapur-6875-de-probabilidad-de-victoria-en-16-gps",
+    "title": "La pole en Singapur: 68,75% de probabilidad de victoria en 16 GPs",
+    "summary": "En el 68,75% de las 16 ediciones del GP de Singapur, el ganador salió desde la pole position. Solo cinco pilotos han ganado sin partir primeros, con Alonso en 2008 como el caso más extremo desde la P15.",
+    "content": "<p>El análisis histórico de las 16 carreras disputadas en Marina Bay revela que la pole position es un factor decisivo: en 11 ocasiones (68,75%) el piloto que sale primero se lleva la victoria. Si se incluye la sprint de 2026 ganada por Verstappen desde la P1, la estadística asciende al 70,59%.</p><p>Los cinco casos donde ganó quien no partió desde la pole son excepciones notables: Fernando Alonso (2008, desde la P15 tras el 'Crashgate'), Sergio Pérez (2022, P2), Sebastian Vettel (2012 y 2019, P3) y Lewis Hamilton (2017, P5). Vettel lidera el palmarés del circuito con 5 victorias y 4 poles, seguido de Hamilton con 4 victorias y 4 poles.</p>",
+    "category": "Carrera",
+    "keyPoints": [
+      "68,75% de las carreras en Singapur las gana el piloto de la pole (11 de 16 GPs).",
+      "Fernando Alonso ganó en 2008 saliendo 15º, la posición más baja en ganar en Marina Bay.",
+      "Sebastian Vettel es el piloto con más victorias en Singapur (5) y empatado en poles (4) con Hamilton."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/importancia-pole-ganar-singapur/10656716/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-11T08:36:39.000Z"
+  },
+  {
+    "slug": "verstappen-con-una-salida-asi-la-carrera-del-domingo-se-acabo",
+    "title": "Verstappen: 'Con una salida así, la carrera del domingo se acabó'",
+    "summary": "Max Verstappen logró la pole en Singapur tras ganar el sprint, pero advierte que los problemas de arranque del RB22 pueden costarle el Gran Premio. El neerlandés minimiza sus logros previos y se centra en mejorar la salida para evitar perder posiciones iniciales.",
+    "content": "<p>Max Verstappen se adjudicó la pole position para el Gran Premio de Singapur tras liderar la clasificación en el Circuito de Marina Bay, sumando este resultado a su victoria en la carrera sprint del sábado. A pesar de que Red Bull demostró la competitividad del RB22 en un circuito donde históricamente ha sufrido, el piloto neerlandés minimizó el impacto de estos logros previos, reiterando que su único objetivo es ganar la carrera principal del domingo.</p><p>La principal preocupación de Verstappen es el rendimiento del coche en las salidas, un problema persistente que le costó posiciones frente a George Russell en la sesión de clasificación y que ya afectó su carrera en Malasia. 'La salida volvió a ser horrible... Si el domingo ocurre algo así, la carrera se acabó, a menos que pase alguna locura', advirtió el piloto, quien atribuyó el fallo a que el coche 'simplemente no arranca bien' y no acelera correctamente al salir de la parrilla.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Verstappen logró la pole en Singapur tras ganar la carrera sprint.",
+      "El piloto advierte que una mala salida el domingo acabaría con sus opciones de victoria.",
+      "Red Bull sufre problemas técnicos de arranque que impiden una aceleración correcta al salir de la parrilla."
+    ],
+    "team": "redbull",
+    "teamColor": "#3671C6",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/verstappen-advierte-red-bull-salidas-singapur/10863864/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-11T07:14:56.000Z"
+  },
+  {
+    "slug": "franco-colapinto-largara-15-en-el-gp-de-singapur-de-formula-1",
+    "title": "Franco Colapinto largará 15º en el GP de Singapur de Fórmula 1",
+    "summary": "El argentino saldrá desde la 15ª posición en Marina Bay este domingo. Su objetivo es remontar tras un sábado complicado y sumar puntos.",
+    "content": "<p>Franco Colapinto disputará el Gran Premio de Singapur este domingo desde la 15ª posición de la parrilla en el circuito de Marina Bay.</p><p>El piloto argentino buscará una remontada para ingresar a la zona de puntos, tras un sábado de clasificación que calificó como complicado.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Franco Colapinto largará 15º",
+      "Carrera: GP de Singapur (Marina Bay)",
+      "Día: Domingo"
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/hora-corre-franco-colapinto-gp-singapur-ver-hoy-vivo-carrera-formula-1_0_8t5V0t2HUB.html",
+    "date": "2026-10-11T03:00:05.000Z"
   },
   {
     "slug": "norris-mclaren-es-demasiado-dificil-de-conducir-en-singapur",
@@ -1640,91 +1726,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/alonso-/10860968/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-10-02T10:18:18.000Z"
-  },
-  {
-    "slug": "colapinto-arrancara-desde-el-fondo-en-malasia-por-15-puestos-de-penalizacion",
-    "title": "Colapinto arrancará desde el fondo en Malasia por 15 puestos de penalización",
-    "summary": "Franco Colapinto sumará 15 posiciones de castigo en el GP de Malasia por un incidente en Bakú y el cambio de su quinto motor. Alpine optó por asumir la sanción ahora para evitar penalizaciones futuras y busca puntos aprovechando las rectas de Sepang.",
-    "content": "<p>Franco Colapinto enfrentará una penalización total de 15 posiciones en el Gran Premio de Malasia. Esta sanción combina cinco puestos por el incidente en Azerbaiyán que involucró a Pierre Gasly y Lando Norris, con otros diez por la instalación de su quinto motor de combustión interna (V6 Mercedes). El equipo Alpine decidió asumir este castigo en Sepang, considerando que era el momento menos costoso para cumplir con el límite reglamentario de cuatro motores por temporada y evitar sanciones más graves en carreras futuras.</p><p>A pesar de partir desde la última fila, Alpine mantiene el objetivo de sumar puntos con ambos autos, aprovechando las características del Circuito Internacional de Sepang, cuyas largas rectas facilitan los sobrepasos. Durante los entrenamientos, Colapinto trabajó con una configuración específica para la carrera, incluyendo rodadas con mucho combustible, mientras que su compañero Gasly siguió un programa distinto. La FIA publicó la documentación oficial de la infracción (Doc 18) el 2 de octubre de 2026.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "15 puestos de penalización total (5 por incidente en Bakú + 10 por cambio de motor).",
-      "Colapinto instala su quinto motor de combustión interna (V6 Mercedes).",
-      "Alpine elige Sepang para asumir el castigo por las oportunidades de sobrepaso en la pista."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Clarín Deportes",
-    "originalLink": "https://www.clarin.com/deportes/colapinto-fin-semana-cuesta-arriba-malasia-15-puestos-penalizacion-estrategia-distinta-alpine_0_rDYW1h3cVw.html",
-    "date": "2026-10-02T06:03:42.000Z"
-  },
-  {
-    "slug": "audi-construira-un-nuevo-campus-de-f1-en-hinwil-suiza-para-2030",
-    "title": "Audi construirá un nuevo campus de F1 en Hinwil, Suiza, para 2030",
-    "summary": "Audi F1 Team confirmará la construcción de un nuevo campus en Hinwil, Suiza, con operaciones iniciales en verano de 2026 y finalización total en 2030. El proyecto busca modernizar instalaciones clave como el CFD y atraer talento global.",
-    "content": "<p>Audi ha anunciado la construcción de un nuevo campus de Fórmula 1 cerca de su sede actual en Hinwil, Suiza. Según el comunicado oficial, algunas instalaciones estarán operativas en el verano de 2026, mientras que el proyecto se completará íntegramente en 2030. Esta inversión responde a la necesidad de modernizar infraestructuras críticas, incluyendo el centro de dinámica de fluidos computacional (CFD) y el túnel de viento, que requerían actualizaciones sustanciales tras años de funcionamiento con presupuestos reducidos.</p><p>El equipo, que asumió el control total de la estructura en enero de 2025, mantendrá sus instalaciones de desarrollo de motores en Neuberg y sus oficinas en Bicester, Reino Unido. Mattia Binotto, CEO de Audi F1 Team, destacó que el nuevo campus es fundamental para atraer y retener talento de talla mundial, permitiendo al equipo diseñar su futuro desde cero. El histórico túnel de viento de Hinwil, financiado originalmente con fondos de Mercedes en 2002, se conservará y remodelará dentro de las instalaciones de Wildbachstrasse.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Nuevo campus en Hinwil, Suiza, con inicio parcial en verano de 2026 y finalización en 2030.",
-      "Modernización urgente del centro CFD y del túnel de viento existente.",
-      "Mantención de sedes en Neuberg (motores) y Bicester (Reino Unido) para retener talento."
-    ],
-    "team": "sauber",
-    "teamColor": "#52E252",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/audi-planes-nuevo-campus-hinwill/10860556/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-01T17:53:57.000Z"
-  },
-  {
-    "slug": "colapinto-norris-se-paso-tres-pueblos-con-sus-declaraciones-tras-choque-en-azerb",
-    "title": "Colapinto: Norris 'se pasó tres pueblos' con sus declaraciones tras choque en Azerbaiyán",
-    "summary": "Franco Colapinto calificó de excesivas las palabras de Lando Norris tras el incidente en el GP de Azerbaiyán. Ambos pilotos confirmaron que se disculparon mutuamente y cerraron el capítulo.",
-    "content": "<p>Franco Colapinto afirmó que Lando Norris \"se pasó tres pueblos\" con sus declaraciones iniciales tras el choque en el Gran Premio de Azerbaiyán, donde el británico sugirió que algunos pilotos no merecían estar en la Fórmula 1 y pidió una suspensión para el argentino. Aunque ambos ya conversaron y se disculparon, Colapinto consideró que las palabras de Norris fueron desproporcionadas.</p><p>El piloto de Alpine comparó la situación con el incidente entre Max Verstappen y Kimi Antonelli, señalando que Verstappen aceptó las disculpas rápidamente. Norris, por su parte, confirmó en el Media Day que se disculpó directamente con Colapinto por el choque y sus comentarios, destacando que prefiere resolver estos temas de forma personal y no a través de redes sociales. Colapinto aclaró que su relación con Norris se distanció ligeramente desde su llegada en 2024, pero mantiene buenos vínculos con la mayoría de los pilotos.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Colapinto calificó las declaraciones de Norris como excesivas ('se pasó tres pueblos').",
-      "Norris pidió inicialmente una suspensión para Colapinto tras el choque en Azerbaiyán.",
-      "Ambos pilotos confirmaron disculpas mutuas y cierre del incidente.",
-      "Colapinto comparó la reacción de Norris con la de Verstappen ante Kimi Antonelli."
-    ],
-    "team": "pilotos",
-    "teamColor": "#e10600",
-    "source": "Olé",
-    "originalLink": "https://www.ole.com.ar/autos/alla-disculpas-colapinto-dijo-norris-paso-pueblos_0_qZKMRWT1c8.html",
-    "date": "2026-10-01T17:45:44.000Z"
-  },
-  {
-    "slug": "alonso-renueva-con-aston-martin-hasta-2017-y-anticipa-sorpresas-inminentes",
-    "title": "Alonso renueva con Aston Martin hasta 2017 y anticipa sorpresas inminentes",
-    "summary": "Fernando Alonso, de 45 años, amplió su contrato con Aston Martin hasta finales de 2017. El bicampeón anunció que tiene proyectos sorpresa en mente para las próximas semanas.",
-    "content": "<p>Fernando Alonso ha firmado una renovación con Aston Martin que lo mantiene en la Fórmula 1 como mínimo hasta finales de 2017. A sus 45 años, el piloto asturiano atribuye su longevidad a la adaptación constante a los cambios técnicos del deporte, desde los motores V10 hasta las actuales unidades de potencia híbridas.</p><p>Alonso destacó su versatilidad al haber competido en el WEC, las 500 Millas de Indianápolis y el Rally Dakar, logrando victorias en Le Mans. Señaló a Max Verstappen como la única excepción actual en competir en GT, pero afirmó que él seguirá intentando desafíos fuera de su zona de confort. Finalmente, adelantó que habrá \"sorpresas\" en las próximas semanas relacionadas con sus próximos pasos.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Renovación con Aston Martin hasta finales de 2017",
-      "Alonso tiene 45 años y anticipa sorpresas en semanas",
-      "Carrera incluye victorias en Le Mans, Indy 500 y Rally Dakar"
-    ],
-    "team": "aston-martin",
-    "teamColor": "#229971",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/alonso-avisa-sorpresas-descubrir-limites-posible/10860619/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-01T15:34:04.000Z"
-  },
-  {
-    "slug": "lindblad-saldra-desde-el-fondo-en-bahrein-por-cambios-de-motor-colapinto-pierde-",
-    "title": "Lindblad saldrá desde el fondo en Bahréin por cambios de motor; Colapinto pierde 5 posiciones",
-    "summary": "Arvid Lindblad recibirá una sanción de parrilla para el GP de Bahréin al superar el límite de componentes de la unidad de potencia. Franco Colapinto también penalizará cinco posiciones por el choque en Bakú.",
-    "content": "<p>Arvid Lindblad (RB) saldrá desde la última posición de la parrilla en el Gran Premio de Bahréin de Fórmula 1. La sanción se debe a que el piloto británico superará su asignación de componentes de la unidad de potencia, instalando un quinto motor de combustión interna, turbocompresor y escapes para la carrera en Sepang. Lindblad había alcanzado el límite máximo de cuatro piezas sin penalización en Azerbaiyán, por lo que el equipo decidió asumir la sanción en esta ronda.</p><p>Además, Lindblad utilizó un nuevo conjunto de componentes auxiliares en Bakú, aunque no superó el límite de seis conjuntos permitidos. En la misma carrera, Franco Colapinto (Alpine) deberá cumplir una sanción de cinco posiciones en la parrilla de salida debido al choque que provocó en Bakú. Lindblad terminó séptimo en Azerbaiyán tras un incidente con su compañero Liam Lawson en la resalida, incidente que el piloto reconoció haber analizado internamente.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Arvid Lindblad saldrá desde el fondo de la parrilla en Bahréin.",
-      "Lindblad superó el límite de 4 motores, turbos y escapes instalando la quinta unidad.",
-      "Franco Colapinto penalizará 5 posiciones por el choque en Bakú."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Motorsport.com LAT",
-    "originalLink": "https://lat.motorsport.com/f1/news/lindblad-penaliza-parrilla-salida-bahrein/10860540/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=lat",
-    "date": "2026-10-01T15:14:08.223Z"
   }
 ]
