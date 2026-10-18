@@ -14,7 +14,7 @@
     "teamColor": "#e10600",
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/lando-norris-franquito-colapinto-regalo-carta-stream_0_0PdbcpGdJN.html",
-    "date": "2026-10-17T18:14:02.610Z"
+    "date": "2026-10-18T11:14:01.970Z"
   },
   {
     "slug": "briatore-respalda-a-colapinto-tras-su-pedido-de-fin-al-hostigamiento-en-redes",
@@ -31,7 +31,59 @@
     "teamColor": "#0093CC",
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/francocolapinto-formula1-alpine-flaviobriatore_0_vdaOhTo6GX.html",
-    "date": "2026-10-17T18:14:01.610Z"
+    "date": "2026-10-18T11:14:00.970Z"
+  },
+  {
+    "slug": "ruanda-construira-un-gp-de-f1-a-1400-m-de-altitud-junto-a-un-nuevo-aeropuerto",
+    "title": "Ruanda construirá un GP de F1 a 1.400 m de altitud junto a un nuevo aeropuerto",
+    "summary": "Ruanda firmó un contrato de 10 años para albergar un GP de F1, con debut previsto para los primeros años de la próxima década. El trazado, diseñado por Tilke y Wurz, se ubicará a 1.400 m de altitud junto a un nuevo aeropuerto en Bugesera.",
+    "content": "<p>Ruanda ha firmado un contrato de diez años para incorporar un Gran Premio de Fórmula 1 a su calendario, aunque la fecha exacta de debut aún no está definida, con el objetivo de cumplirlo en los primeros años de la próxima década. El proyecto requiere la construcción desde cero de infraestructuras adyacentes, incluyendo carreteras y hoteles, y está vinculado al desarrollo de un nuevo aeropuerto en la zona de Bugesera, diseñado para acoger a cinco millones de viajeros anuales.</p><p>El trazado, diseñado en colaboración entre Tilke y Wurz Design, se situará a 1.400 metros sobre el nivel del mar, solo por detrás del GP de México. Esta altitud reducirá la densidad del aire, afectando la refrigeración de los motores y el agarre aerodinámico, por lo que el diseño incluye secciones con peralte para compensar estos efectos. Qatar, patrocinador de la F1, participa en la inversión del proyecto, que busca posicionar a Ruanda como un hub turístico y logístico central.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Contrato de 10 años firmado para un GP de F1 en Ruanda.",
+      "Trazado a 1.400 m de altitud, diseñado por Tilke y Wurz Design.",
+      "Ubicación junto a un nuevo aeropuerto en Bugesera con capacidad para 5 millones de pasajeros."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/analisis-caracteristicas-circuito-ruanda/10866013/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-18T10:37:28.000Z"
+  },
+  {
+    "slug": "horarios-gp-de-eeuu-2026-cambio-de-hora-en-espana-afecta-a-la-carrera-del-doming",
+    "title": "Horarios GP de EE.UU. 2026: Cambio de hora en España afecta a la carrera del domingo",
+    "summary": "El GP de Estados Unidos se disputará del 23 al 25 de octubre en Austin con formato tradicional. La carrera del domingo a las 21:00h (España) coincide con el cambio a horario de invierno, reduciendo la diferencia horaria a 6 horas.",
+    "content": "<p>La Fórmula 1 llega al Circuito de las Américas en Austin para el Gran Premio de Estados Unidos 2026, programado del viernes 23 al domingo 25 de octubre. Tras los recientes fines de semana de sprint, el evento regresa al formato tradicional con tres sesiones de entrenamientos libres, clasificación y carrera.</p><p>Los horarios en España peninsular son: Viernes 23, FP1 a las 19:30h y FP2 a las 23:00h. Sábado 24, FP3 a las 19:30h y Clasificación a las 23:00h. Domingo 25, Carrera a las 21:00h. Es crucial notar que España cambia al horario de invierno durante la madrugada del sábado al domingo, lo que reduce la diferencia horaria con Texas de 7 a 6 horas justo el día de la carrera. Además, Andrea Kimi Antonelli llega a esta cita con la primera oportunidad matemática de proclamarse campeón del mundo.</p>",
+    "category": "Carrera",
+    "keyPoints": [
+      "Fechas: 23, 24 y 25 de octubre de 2026 en Austin.",
+      "Carrera del domingo a las 21:00h (hora española) / 15:00h (hora local).",
+      "Cambio de hora en España el domingo reduce la diferencia horaria a 6 horas.",
+      "Kimi Antonelli tiene su primera oportunidad de título mundial en esta carrera."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/horarios-estados-unidos-2026-austin-como-ver-espana/10865936/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-18T09:00:31.000Z"
+  },
+  {
+    "slug": "brawn-gp-el-doblete-historico-en-melbourne-y-el-dominio-inicial-de-2009",
+    "title": "Brawn GP: El doblete histórico en Melbourne y el dominio inicial de 2009",
+    "summary": "Tras la salida de Honda, Brawn GP debutó con un doblete inédito en Melbourne gracias al doble difusor. El equipo logró seis victorias en los primeros ocho GP antes de que sus rivales igualaran la tecnología.",
+    "content": "<p>El 5 de diciembre de 2008, Honda anunció el cierre de su proyecto de F1 debido a la crisis mundial, dejando a Ross Brawn y Pat Fry con un equipo que en 2008 solo superó a Force India y Super Aguri. Mercedes proporcionó el motor V8 y el chasis RA109, diseñado por Jörg Zander y Loïc Bigois, incorporó el controvertido doble difusor. El 6 de marzo de 2009, a 23 días del inicio, se confirmó el nombre Brawn GP tras no encontrar comprador.</p><p>En su debut en Melbourne, Jenson Button y Rubens Barrichello lograron el primer doblete de la temporada, un hito sin precedentes en la historia de la F1. Brawn GP dominó la primera mitad del año con seis victorias y seis podios en los primeros ocho Grandes Premios. La ventaja se diluyó posteriormente cuando rivales con mayores presupuestos replicaron el doble difusor; Button no volvió a ganar el resto de la campaña.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Honda cerró su proyecto el 5 de diciembre de 2008 por la crisis económica.",
+      "Brawn GP logró el primer doblete de la temporada en Melbourne con Button y Barrichello.",
+      "El equipo obtuvo 6 victorias y 6 podios en los primeros 8 GP gracias al doble difusor."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/brawn-gp-titulo-formula1-2009-historia/4559407/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-18T06:22:18.000Z"
   },
   {
     "slug": "sainz-me-he-convertido-en-un-mejor-clasificador-tras-su-evolucion-en-williams",
@@ -1676,57 +1728,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/wolff-estalla-acusaciones-favoritismo-mercedes/10863400/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-10-10T06:15:30.000Z"
-  },
-  {
-    "slug": "mercedes-admite-que-el-w17-es-mas-nervioso-y-complejo-de-pilotar-tras-singapur",
-    "title": "Mercedes admite que el W17 es más nervioso y complejo de pilotar tras Singapur",
-    "summary": "El equipo volvió a especificaciones anteriores para George Russell en Singapur tras dos fines de semana de vulnerabilidad. Bradley Lord confirma que el nuevo paquete de mejoras ofrece un techo de rendimiento más alto, pero es menos estable y exige más confianza al volante.",
-    "content": "<p>Mercedes ha decidido revertir a una especificación anterior en el coche de George Russell para el Gran Premio de Singapur, tras dos fines de semana consecutivos donde el W17 se mostró vulnerable. En la clasificación del sprint, Russell logró el segundo mejor tiempo, mientras que el líder del campeonato, Andrea Kimi Antonelli, se quedó en séptima posición, a medio segundo de su compañero. Russell tuvo que esperar hasta los últimos segundos de la SQ2 para marcar un tiempo suficiente, tras bloquear una rueda en su intento previo.</p><p>La situación se agravó en Malasia, donde el equipo incorporó su último gran paquete de mejoras del año. Allí, ni Russell ni Antonelli pudieron competir con Max Verstappen, y Russell sufrió un fallo de motor en las últimas vueltas. Bradley Lord, subdirector del equipo, explicó que el nuevo paquete es \"menos consistente y menos estable\", con un subviraje que obliga a acelerar más y un comportamiento \"nervioso\" en las entradas a curvas de alta velocidad. Aunque el techo de rendimiento potencial es mayor, la complejidad de pilotaje ha reducido la confianza de los pilotos, reflejándose en los resultados recientes.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "George Russell usó especificaciones anteriores en Singapur tras penalización en parrilla.",
-      "Kimi Antonelli fue 7º en clasificación sprint, a 0.5s de Russell.",
-      "El nuevo paquete de mejoras de Bahrein/Malasia es más rápido en teoría pero menos estable.",
-      "Bradley Lord señala subviraje y nerviosismo en curvas rápidas como principales problemas."
-    ],
-    "team": "mercedes",
-    "teamColor": "#27F4D2",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/mercedes-defiende-nuevo-w17-mas-nervioso-singapur/10863583/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-09T18:09:39.000Z"
-  },
-  {
-    "slug": "antonelli-podria-ser-campeon-tras-singapur-si-se-cancelan-qatar-y-abu-dabi",
-    "title": "Antonelli podría ser campeón tras Singapur si se cancelan Qatar y Abu Dabi",
-    "summary": "Kimi Antonelli lidera la F1 2026 con 84 puntos de ventaja sobre Russell. Solo un escenario extremo de cancelaciones permitiría que gane el título en Singapur sin saberlo.",
-    "content": "<p>Tras su segundo puesto en Sepang, Andrea Kimi Antonelli amplió su ventaja a 84 puntos sobre George Russell y a 106 sobre Lewis Hamilton. Charles Leclerc (129), Lando Norris (132) y Max Verstappen (132) siguen en la lucha matemática, mientras el resto quedó fuera.</p><p>Matemáticamente, Antonelli no puede ser campeón en Singapur (carrera 17) porque quedan 150 puntos por repartir. Sin embargo, si se cancelan las carreras de Qatar y Abu Dabi sin sustitución, el título podría decidirse allí. Para ello, necesitaría una ventaja final de 100 puntos, lo que implica ganar la sprint y el GP, sumando 16 puntos más que Russell y perdiendo máximo 6 frente a Hamilton.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "Ventaja actual de Antonelli: 84 pts sobre Russell, 106 sobre Hamilton.",
-      "Requiere ventaja de 100 pts tras Singapur para ser campeón automático.",
-      "Escenario depende de la cancelación total de Qatar y Abu Dabi."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/posibilidad-campeon-singapur-2026/10863359/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-09T17:38:36.000Z"
-  },
-  {
-    "slug": "norris-admite-falta-de-excusa-tras-perder-la-pole-sprint-ante-piastri-en-singapu",
-    "title": "Norris admite falta de excusa tras perder la pole sprint ante Piastri en Singapur",
-    "summary": "Lando Norris quedó quinto en la clasificación sprint de Singapur, superado por Oscar Piastri por 0,133s en la SQ3. El británico reconoce su error y destaca la mejora del MCL40 tras los problemas de inyección en Bakú y Malasia.",
-    "content": "<p>Lando Norris admitió que no tiene excusa por su rendimiento en la clasificación del Gran Premio de Singapur 2026, donde terminó quinto en la ronda decisiva (SQ3). Su compañero de equipo en McLaren, Oscar Piastri, logró la cuarta posición y superó al británico por 0,133s en esa fase final. Norris, quien había sido tercero en la SQ2 (0,534s más rápido que Piastri) y séptimo en la SQ1, reconoció: \"Simplemente no creo que haya hecho una vuelta muy buena\".</p><p>El contexto técnico es relevante: McLaren introdujo una solución para el circuito de Marina Bay tras los problemas de inyección de combustible que afectaron al MCL40 en Bakú y Malasia. Norris señaló que el equipo parece \"más unido\" y que la solución inicial parece funcionar, aunque aún están investigando. Por su parte, Piastri, quien ha superado a Norris en tres de las últimas cinco sesiones de clasificación, destacó la mejor respuesta del coche con neumáticos blandos y la mejora en la primera sección del circuito.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Norris terminó 5º en la clasificación sprint; Piastri 4º, superándolo por 0,133s en la SQ3.",
-      "McLaren implementó una solución técnica para el MCL40 tras problemas de inyección en Bakú y Malasia.",
-      "Piastri ha superado a Norris en 3 de las últimas 5 sesiones de clasificación, incluyendo Bakú."
-    ],
-    "team": "mclaren",
-    "teamColor": "#FF8000",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/declaraciones-norris-viernes-singapur-2026/10863571/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-09T17:12:58.000Z"
   }
 ]
