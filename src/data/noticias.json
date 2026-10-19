@@ -14,7 +14,59 @@
     "teamColor": "#e10600",
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/lando-norris-franquito-colapinto-regalo-carta-stream_0_0PdbcpGdJN.html",
-    "date": "2026-10-19T11:14:04.924Z"
+    "date": "2026-10-19T15:14:07.882Z"
+  },
+  {
+    "slug": "colapinto-busca-puntos-en-austin-horarios-y-tv-del-gp-de-eeuu",
+    "title": "Colapinto busca puntos en Austin: horarios y TV del GP de EE.UU.",
+    "summary": "Franco Colapinto compite en el Gran Premio de Estados Unidos en el Circuito de las Américas, Austin. La carrera se transmite por Fox Sports y Disney+ Premium durante la tarde argentina.",
+    "content": "<p>Franco Colapinto (Alpine) disputa el Gran Premio de los Estados Unidos en el Circuito de las Américas, Austin, Texas. El piloto argentino busca recuperar puntos tras tres carreras sin sumar: abandonos en Azerbaiyán y Singapur, y un 13° puesto en Bahrein. En esta pista, Colapinto fue 10° en 2024 con Williams y 17° en 2025 con Alpine.</p><p>La actividad de la 18° fecha de la temporada 2026 se sigue por Fox Sports y Disney+ Premium, con horarios de tarde para la audiencia argentina. El circuito mide 5,513 km y tiene 20 curvas (11 a la izquierda, 9 a la derecha). Lewis Hamilton lidera el récord histórico con 5 victorias, seguido por Max Verstappen con 4 triunfos en las últimas 5 ediciones. Kimi Antonelli es otro candidato destacado. Próximas fechas: GP de México (1 de noviembre) y GP de Brasil (8 de noviembre).</p>",
+    "category": "Carrera",
+    "keyPoints": [
+      "Colapinto busca puntos tras 3 carreras sin sumar (abandonos en AZ y SG, 13° en BH).",
+      "Circuito de las Américas: 5,513 km, 20 curvas, primera curva cerrada a la derecha.",
+      "Transmisión: Fox Sports y Disney+ Premium; horarios de tarde en Argentina.",
+      "Récord histórico: Lewis Hamilton (5 victorias), Max Verstappen (4 en últimas 5 ediciones)."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/colapinto-gran-premio-estados-unidos-austin-dia-hora-tv_0_Ds2Xw9qaxH.html",
+    "date": "2026-10-19T14:34:01.000Z"
+  },
+  {
+    "slug": "lynx-racing-de-arabia-saudi-gana-la-final-mundial-de-stem-racing-2026-en-singapu",
+    "title": "Lynx Racing de Arabia Saudí gana la final mundial de STEM Racing 2026 en Singapur",
+    "summary": "El equipo Lynx Racing, compuesto por seis estudiantes de secundaria, se coronó campeón en la edición más grande de la historia de STEM Racing. La final reunió a 91 equipos de 36 países en el paddock del GP de Singapur.",
+    "content": "<p>El equipo Lynx Racing, integrado por cuatro chicos y dos chicas de Arabia Saudí, ganó la final mundial de STEM Racing 2026 celebrada en Singapur. El trofeo se entregó en el podio del Gran Premio, donde los estudiantes conocieron a Fernando Alonso y visitaron el box de Aston Martin.</p><p>La edición 2026 fue la más extensa hasta la fecha, con 91 equipos de 36 países. Los participantes diseñan coches de F1 en miniatura propulsados por CO₂ que alcanzan 70 km/h en una pista de 20 metros. El proceso incluye diseño CAD, fabricación en fresadora CNC, impresión 3D de alerones y verificaciones técnicas estrictas. Además, se evalúan habilidades comerciales como marketing, patrocinio y presentaciones orales.</p>",
+    "category": "Off-track",
+    "keyPoints": [
+      "Ganadores: Lynx Racing (Arabia Saudí), 6 estudiantes de secundaria.",
+      "Participación récord: 91 equipos de 36 países en la final de Singapur 2026.",
+      "Técnica: Coches miniatura con CO₂, velocidad máx. 70 km/h, fabricación CNC e impresión 3D."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/concurso-descubrir-futuros-ingenieros-formula1/10866223/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-19T13:31:57.000Z"
+  },
+  {
+    "slug": "horner-admite-que-red-bull-disenaba-coches-a-medida-para-verstappen",
+    "title": "Horner admite que Red Bull diseñaba coches a medida para Verstappen",
+    "summary": "Christian Horner revela que el desarrollo técnico de Red Bull se orientó a las exigencias de Max Verstappen, dificultando el rendimiento de sus compañeros. El exjefe de equipo confirma errores de gestión y cita a Gasly, Albon, Pérez y Lawson como afectados.",
+    "content": "<p>Christian Horner explicó en el podcast High Performance que el segundo asiento de Red Bull se volvió inestable porque el departamento técnico priorizó las características específicas exigidas por Max Verstappen. Según Horner, Verstappen demanda más tracción delantera y gestiona mejor las reacciones de la parte trasera, lo que obligó a alinear las prioridades de diseño hacia su estilo de conducción, haciendo el coche difícil de pilotar para el resto.</p><p>El exjefe de equipo admitió que este sesgo comenzó a manifestarse en 2018, cuando Daniel Ricciardo y Verstappen eran compañeros, y se intensificó a partir de 2022. Horner reconoció errores de gestión y señaló que pilotos como Pierre Gasly, Alex Albon, Sergio Pérez y Liam Lawson sufrieron las consecuencias de un monoplaza cada vez más extremo y menos adaptable a otros perfiles.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Horner confirma que el desarrollo técnico se orientó a maximizar el potencial de Verstappen.",
+      "El proceso de especialización del coche comenzó en 2018 con la llegada de Verstappen.",
+      "Pilotos afectados citados: Pierre Gasly, Alex Albon, Sergio Pérez y Liam Lawson."
+    ],
+    "team": "redbull",
+    "teamColor": "#3671C6",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/horner-habla-claro-problema-segundo-red-bull/10866200/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-19T12:59:59.000Z"
   },
   {
     "slug": "briatore-respalda-a-colapinto-tras-su-pedido-de-fin-al-hostigamiento-en-redes",
@@ -66,6 +118,24 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/alpine-pierde-rendimiento-carrera-llantas-neumaticos/10866058/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-10-19T10:20:33.000Z"
+  },
+  {
+    "slug": "leclerc-el-reglamento-2026-penaliza-su-estilo-y-complica-la-adaptacion-del-sf-26",
+    "title": "Leclerc: El reglamento 2026 penaliza su estilo y complica la adaptación del SF-26",
+    "summary": "Charles Leclerc afirma que las nuevas reglas de 2026 perjudican su pilotaje basado en sensaciones, especialmente en Q3. El monegasco reconoce que la unidad de potencia del Ferrari SF-26 se readapta constantemente, lo que le resta tiempo.",
+    "content": "<p>Charles Leclerc sostiene que el reglamento de la Fórmula 1 2026 penaliza su estilo de conducción, que históricamente se basa en las sensaciones. El piloto de Ferrari indica que estas referencias le fallan \"una y otra vez\", particularmente en la Q3, y que exigirle al monoplaza de una forma nueva tiene un coste en rendimiento.</p><p>Leclerc atribuye parte de la dificultad a la complejidad de la unidad de potencia: \"Cuando pruebas algo nuevo, el sistema intenta readaptarse partiendo de una base desconocida... se pierde algo de tiempo\". Esta tesis se ve respaldada por la comparación con su compañero Lewis Hamilton, quien lidera el duelo interno en clasificaciones por 9 a 8 tras el GP de Singapur, frente al 19 a 5 de 2025. En el Mundial, Hamilton es tercero con 229 puntos y Leclerc quinto con 215; ambos han ganado una carrera en 2026 (Hamilton en Barcelona, Leclerc en Gran Bretaña).</p>",
+    "category": "Reglamento",
+    "keyPoints": [
+      "Leclerc afirma que el reglamento 2026 perjudica su estilo de pilotaje basado en sensaciones, especialmente en Q3.",
+      "El piloto culpa a la unidad de potencia del SF-26 de perder tiempo al readaptarse constantemente a nuevas entradas de datos.",
+      "Hamilton lidera el duelo interno en clasificaciones por 9 a 8 tras Singapur, invirtiendo la tendencia de 2025 (19 a 5 para Leclerc).",
+      "Hamilton es 3º en el Mundial con 229 puntos; Leclerc es 5º con 215 puntos."
+    ],
+    "team": "ferrari",
+    "teamColor": "#E8002D",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/leclerc-reglas-2026-perjudican-estilo/10866087/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-19T09:46:44.000Z"
   },
   {
     "slug": "zak-brown-piastri-recupera-la-confianza-y-controla-el-mcl40-tras-inicio-irregula",
@@ -1659,74 +1729,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/fia-admite-altero-resultados-singapur-desastre/10864063/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-10-11T09:45:52.000Z"
-  },
-  {
-    "slug": "alonso-saldra-desde-el-pitlane-en-singapur-tras-sustituir-el-turbo-de-su-motor-h",
-    "title": "Alonso saldrá desde el pitlane en Singapur tras sustituir el turbo de su motor Honda",
-    "summary": "Fernando Alonso arrancará último en el GP de Singapur por cambiar el turbo de su unidad de potencia. La FIA confirmó que también partirán desde boxes Lance Stroll e Isack Hadjar por modificaciones mecánicas.",
-    "content": "<p>Fernando Alonso saldrá desde el pitlane en la carrera del GP de Singapur tras sustituir el turbo (TC) de su motor Honda. Este es el sexto cambio de este componente en la temporada, superando el límite de cuatro permitido, lo que obliga a arrancar desde el fondo de la parrilla.</p><p>La FIA confirmó que Lance Stroll (Aston Martin) e Isack Hadjar (Red Bull) también partirán desde el carril de boxes. Stroll cambió la configuración de la suspensión, mientras que Hadjar sustituyó el motor de combustión interna (ICE), el turbo, el sistema de escape (EXH) y el componente auxiliar (PU-ANC). El orden de salida en el pitlane será Alonso, Stroll y Hadjar, respectivamente.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Alonso cambió el turbo (TC), su sexto de la temporada (límite: 4).",
-      "Stroll cambió la configuración de la suspensión.",
-      "Hadjar sustituyó ICE, TC, EXH y PU-ANC.",
-      "Orden de salida en pitlane: Alonso, Stroll, Hadjar."
-    ],
-    "team": "aston-martin",
-    "teamColor": "#229971",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/alonso-pitlane-singapur-cambio-motor/10864199/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-11T09:35:40.000Z"
-  },
-  {
-    "slug": "la-pole-en-singapur-6875-de-probabilidad-de-victoria-en-16-gps",
-    "title": "La pole en Singapur: 68,75% de probabilidad de victoria en 16 GPs",
-    "summary": "En el 68,75% de las 16 ediciones del GP de Singapur, el ganador salió desde la pole position. Solo cinco pilotos han ganado sin partir primeros, con Alonso en 2008 como el caso más extremo desde la P15.",
-    "content": "<p>El análisis histórico de las 16 carreras disputadas en Marina Bay revela que la pole position es un factor decisivo: en 11 ocasiones (68,75%) el piloto que sale primero se lleva la victoria. Si se incluye la sprint de 2026 ganada por Verstappen desde la P1, la estadística asciende al 70,59%.</p><p>Los cinco casos donde ganó quien no partió desde la pole son excepciones notables: Fernando Alonso (2008, desde la P15 tras el 'Crashgate'), Sergio Pérez (2022, P2), Sebastian Vettel (2012 y 2019, P3) y Lewis Hamilton (2017, P5). Vettel lidera el palmarés del circuito con 5 victorias y 4 poles, seguido de Hamilton con 4 victorias y 4 poles.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "68,75% de las carreras en Singapur las gana el piloto de la pole (11 de 16 GPs).",
-      "Fernando Alonso ganó en 2008 saliendo 15º, la posición más baja en ganar en Marina Bay.",
-      "Sebastian Vettel es el piloto con más victorias en Singapur (5) y empatado en poles (4) con Hamilton."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/importancia-pole-ganar-singapur/10656716/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-11T08:36:39.000Z"
-  },
-  {
-    "slug": "verstappen-con-una-salida-asi-la-carrera-del-domingo-se-acabo",
-    "title": "Verstappen: 'Con una salida así, la carrera del domingo se acabó'",
-    "summary": "Max Verstappen logró la pole en Singapur tras ganar el sprint, pero advierte que los problemas de arranque del RB22 pueden costarle el Gran Premio. El neerlandés minimiza sus logros previos y se centra en mejorar la salida para evitar perder posiciones iniciales.",
-    "content": "<p>Max Verstappen se adjudicó la pole position para el Gran Premio de Singapur tras liderar la clasificación en el Circuito de Marina Bay, sumando este resultado a su victoria en la carrera sprint del sábado. A pesar de que Red Bull demostró la competitividad del RB22 en un circuito donde históricamente ha sufrido, el piloto neerlandés minimizó el impacto de estos logros previos, reiterando que su único objetivo es ganar la carrera principal del domingo.</p><p>La principal preocupación de Verstappen es el rendimiento del coche en las salidas, un problema persistente que le costó posiciones frente a George Russell en la sesión de clasificación y que ya afectó su carrera en Malasia. 'La salida volvió a ser horrible... Si el domingo ocurre algo así, la carrera se acabó, a menos que pase alguna locura', advirtió el piloto, quien atribuyó el fallo a que el coche 'simplemente no arranca bien' y no acelera correctamente al salir de la parrilla.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Verstappen logró la pole en Singapur tras ganar la carrera sprint.",
-      "El piloto advierte que una mala salida el domingo acabaría con sus opciones de victoria.",
-      "Red Bull sufre problemas técnicos de arranque que impiden una aceleración correcta al salir de la parrilla."
-    ],
-    "team": "redbull",
-    "teamColor": "#3671C6",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/verstappen-advierte-red-bull-salidas-singapur/10863864/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-11T07:14:56.000Z"
-  },
-  {
-    "slug": "franco-colapinto-largara-15-en-el-gp-de-singapur-de-formula-1",
-    "title": "Franco Colapinto largará 15º en el GP de Singapur de Fórmula 1",
-    "summary": "El argentino saldrá desde la 15ª posición en Marina Bay este domingo. Su objetivo es remontar tras un sábado complicado y sumar puntos.",
-    "content": "<p>Franco Colapinto disputará el Gran Premio de Singapur este domingo desde la 15ª posición de la parrilla en el circuito de Marina Bay.</p><p>El piloto argentino buscará una remontada para ingresar a la zona de puntos, tras un sábado de clasificación que calificó como complicado.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Franco Colapinto largará 15º",
-      "Carrera: GP de Singapur (Marina Bay)",
-      "Día: Domingo"
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Olé",
-    "originalLink": "https://www.ole.com.ar/autos/hora-corre-franco-colapinto-gp-singapur-ver-hoy-vivo-carrera-formula-1_0_8t5V0t2HUB.html",
-    "date": "2026-10-11T03:00:05.000Z"
   }
 ]
