@@ -1,5 +1,74 @@
 [
   {
+    "slug": "gasly-rechaza-el-reset-de-colapinto-alpine-no-debe-replantearse-todo",
+    "title": "Gasly rechaza el 'reset' de Colapinto: Alpine no debe replantearse todo",
+    "summary": "Pierre Gasly responde a Franco Colapinto tras tres GP sin puntos. El francés defiende que el ritmo a una vuelta es bueno y que las falencias son estructurales, no una mala racha.",
+    "content": "<p>Pierre Gasly ha respondido a las declaraciones de su compañero Franco Colapinto, quien pidió un 'reset' para Alpine tras tres Grandes Premios consecutivos sin sumar puntos (Azerbaiyán, Bahrein y Singapur). Gasly argumenta que el equipo no necesita empezar de cero, sino mejorar aspectos específicos de la carrera, ya que el ritmo a una vuelta ha sido sólido, logrando la Q3 en las tres últimas citas y en cuatro si se incluyen los sprints.</p><p>El piloto francés señala que los errores recientes, como la elección de neumáticos en Bakú y Bahrein, fueron decisiones tácticas equivocadas, mientras que Singapur expuso las limitaciones actuales del A526 en carrera. Gasly admite que hay debilidades estructurales que no se resolverán hasta el próximo año, especialmente en lo relacionado con los neumáticos, y reconoce una diferencia fundamental de rendimiento entre el sábado y el domingo que no depende solo del circuito.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Alpine acumula tres GP sin puntos tras Azerbaiyán, Bahrein y Singapur.",
+      "La brecha con Racing Bulls por la 5ª posición del Mundial es de 32 puntos.",
+      "Gasly destaca el buen ritmo a una vuelta (Q3 en 3 GP y 4 sprints) frente a las dificultades en carrera."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/gasly-declaraciones-jueves-austin-2026/10867061/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-22T17:37:57.000Z"
+  },
+  {
+    "slug": "aston-martin-krack-admite-la-complejidad-de-aislar-fallos-entre-chasis-y-motor-h",
+    "title": "Aston Martin: Krack admite la complejidad de aislar fallos entre chasis y motor Honda",
+    "summary": "Mike Krack reconoce que distinguir problemas de chasis de la unidad de potencia Honda es difícil. En Singapur, Alonso y Stroll sufrieron fallos tras el buen resultado de Sepang.",
+    "content": "<p>Mike Krack, jefe de Aston Martin, explicó en Austin que aislar el origen de los problemas del AMR26 es complejo debido a la solapación entre las limitaciones del chasis y las de la unidad de potencia Honda. El equipo ha mostrado mejoras desde la actualización de Hungría, pero la entrega de potencia sigue condicionando el rendimiento y la interpretación de los datos.</p><p>El caso más reciente ocurrió en Singapur, donde Fernando Alonso y Lance Stroll tuvieron un fin de semana negativo tras el octavo puesto de Alonso en Sepang. Alonso reportó problemas de manejabilidad y retraso en la respuesta del turbo que persistieron tras sustituir componentes del motor. Krack señaló que no existe una frontera clara entre ambos sistemas: un fallo en la entrega de potencia puede simular un problema de puesta a punto, y viceversa, lo que requiere un análisis extenso para no sacar conclusiones erróneas.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Mike Krack admite que es difícil distinguir fallos de chasis de la unidad de potencia Honda.",
+      "En Singapur, Alonso y Stroll sufrieron problemas de turbo y manejabilidad tras el buen resultado en Sepang.",
+      "La solapación entre chasis y motor complica el análisis de datos y la toma de decisiones técnicas."
+    ],
+    "team": "aston-martin",
+    "teamColor": "#229971",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/aston-martin-explica-razon-dificil-encontrar-origen-problemas/10867054/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-22T17:17:25.000Z"
+  },
+  {
+    "slug": "cadillac-inaugura-su-fabrica-de-motores-de-f1-en-charlotte-el-18-de-diciembre",
+    "title": "Cadillac inaugura su fábrica de motores de F1 en Charlotte el 18 de diciembre",
+    "summary": "General Motors abrirá su planta de motores en Carolina del Norte el 18 de diciembre, preparándose para su entrada como proveedor en 2029. La escudería Cadillac aún no ha sumado puntos en 2026 y usa motores Ferrari mientras desarrolla su unidad propia.",
+    "content": "<p>Mark Reuss, presidente de General Motors, confirmó que la nueva fábrica de motores de Fórmula 1 en Charlotte, Carolina del Norte, abrirá sus puertas el 18 de diciembre. Esta instalación es clave para el proyecto de GM, que obtuvo la aprobación de la FIA en 2025 para convertirse en suministrador de unidades de potencia a partir de la temporada 2029.</p><p>Mientras tanto, el equipo Cadillac enfrenta una temporada 2026 complicada: es la única escudería sin puntos y su monoplaza MAC-26 ha sido el más lento en clasificación en las últimas cuatro carreras. Utilizando motores Ferrari como equipo cliente, la escudería depende de la experiencia de Sergio Pérez y Valtteri Bottas para gestionar el desarrollo inicial, aunque Reuss advierte que el crecimiento del equipo será \"logarítmico\" y no lineal.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "La fábrica de motores de GM en Charlotte abrirá el 18 de diciembre.",
+      "GM será proveedor de unidades de potencia a partir de 2029.",
+      "Cadillac no ha sumado puntos en 2026 y usa motores Ferrari.",
+      "El MAC-26 fue el más lento en clasificación en las últimas 4 citas."
+    ],
+    "team": "cadillac",
+    "teamColor": "#1e1e1e",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/cadillac-revela-fecha-abrir-fabrica-motores-formula1/10867021/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-22T15:57:12.000Z"
+  },
+  {
+    "slug": "alpine-anuncia-alianza-con-adobe-y-colapinto-protagoniza-video-con-ia",
+    "title": "Alpine anuncia alianza con Adobe y Colapinto protagoniza video con IA",
+    "summary": "Alpine confirmó una alianza global con Adobe para 2027. Franco Colapinto y Pierre Gasly protagonizaron un video promocional donde el argentino creó una imagen con IA de sí mismo sobre un caballo blanco.",
+    "content": "<p>La escudería Alpine anunció una alianza global con Adobe para desarrollar experiencias personalizadas y nuevas herramientas de creación de contenido a partir de 2027. El anuncio se realizó durante el media day en Austin, previo al Gran Premio de los Estados Unidos, y contó con la participación de los pilotos Pierre Gasly y Franco Colapinto.</p><p>En un video de más de un minuto, el director de equipo Steve Nielsen pidió a ambos pilotos crear una pieza gráfica. Gasly realizó una composición estándar con logos y colores, mientras que Colapinto utilizó la inteligencia artificial para generar una imagen de sí mismo montando un caballo blanco frente a un espejo, sosteniendo un palo de polo y una bebida elegante, tras solicitarle a la IA \"más caballos de fuerza\".</p>",
+    "category": "Off-track",
+    "keyPoints": [
+      "Alpine firmó alianza global con Adobe efectiva desde 2027.",
+      "El anuncio se dio en el media day de Austin antes del GP de EE.UU.",
+      "Colapinto creó una imagen con IA de sí mismo sobre un caballo blanco con palo de polo."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/francocolapinto-alpine-pierregasly-stevenielsen-formula1_0_IoCFSKzy8o.html",
+    "date": "2026-10-22T15:29:42.000Z"
+  },
+  {
     "slug": "freddie-slater-debutara-en-f1-con-audi-en-libres-1-de-mexico-y-brasil",
     "title": "Freddie Slater debutará en F1 con Audi en Libres 1 de México y Brasil",
     "summary": "El piloto júnior de Audi, Freddie Slater, correrá en los Libres 1 de los GPs de México y Brasil. Sustituirá a Nico Hülkenberg y Gabriel Bortoleto para cumplir con la normativa de jóvenes pilotos.",
@@ -1655,73 +1724,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/horner-sincera-salida-red-bull-poder/10865093/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-10-14T14:39:08.000Z"
-  },
-  {
-    "slug": "pierre-wache-valora-con-un-4-o-5-sobre-10-el-primer-motor-de-red-bull-ford",
-    "title": "Pierre Wache valora con un 4 o 5 sobre 10 el primer motor de Red Bull Ford",
-    "summary": "El jefe de chasis de Red Bull califica su primera unidad de potencia como un 4 o 5 sobre 10, destacando el enorme margen de mejora. A pesar de liderar la parrilla con el ADUO, el equipo reconoce que aún no ha explotado todo su potencial.",
-    "content": "<p>Pierre Wache, responsable del chasis RB22, ha valorado con una nota de 4 o 5 sobre 10 el desempeño del primer motor de Fórmula 1 desarrollado por Red Bull. Esta valoración, realizada ante RacingNews365, contrasta con el éxito inicial del equipo, que ha logrado podios y su primera victoria en 2026 gracias a la unidad de potencia Red Bull Ford DM01, considerada la referencia de la parrilla por su sistema ADUO.</p><p>Wache subraya que el potencial es \"enorme\" y que el equipo tiene más libertad para mejorar. Desde 2026, Red Bull opera como fabricante total, colaborando con Ford para el motor (liderado por Ben Hodgkinson) y gestionando internamente el chasis. Aunque la integración entre ambos departamentos ha requerido tiempo, Wache afirma que la capacidad para lograr un mejor rendimiento es mayor que en cualquier época anterior, donde dependían de Cosworth, Ferrari, Renault o Honda.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Pierre Wache puntúa con 4 o 5 sobre 10 al motor Red Bull Ford DM01.",
-      "El equipo ha ganado su primera carrera en 2026 y lidera la parrilla con el sistema ADUO.",
-      "Red Bull es fabricante total desde 2026, colaborando con Ford para la unidad de potencia."
-    ],
-    "team": "redbull",
-    "teamColor": "#3671C6",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/red-bull-sorprende-valorar-primer-motor-avisa-rivales/10865091/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-14T13:30:53.000Z"
-  },
-  {
-    "slug": "russell-noveno-en-singapur-nada-sale-bien-mientras-antonelli-lidera-el-mundial-2",
-    "title": "Russell, noveno en Singapur: 'Nada sale bien' mientras Antonelli lidera el Mundial 2026",
-    "summary": "George Russell terminó noveno en el GP de Singapur tras salir desde el pitlane por cambio de motor. Su compañero, Kimi Antonelli, sumó un podio que amplía su ventaja en el campeonato de pilotos.",
-    "content": "<p>George Russell cerró el Gran Premio de Singapur 2026 en la novena posición, sumando dos puntos tras una carrera marcada por los contratiempos. El británico de Mercedes tuvo que salir desde el pitlane debido a la instalación de un nuevo motor y una sanción, lo que limitó sus opciones en el circuito urbano de Marina Bay.</p><p>Russell reconoció que, aunque tuvo un buen ritmo inicial, un error estratégico durante la aparición del VSC y una batalla prolongada contra Nico Hülkenberg le impidieron avanzar más. Mientras tanto, su compañero Andrea Kimi Antonelli finalizó tercero, consolidando su liderato en el Mundial de Pilotos 2026 y dejando a Russell, favorito previo a la temporada, sin opciones reales de título.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "George Russell terminó 9º en Singapur 2026 tras salir desde el pitlane por cambio de motor.",
-      "Andrea Kimi Antonelli finalizó 3º y amplió su ventaja en el Mundial de Pilotos.",
-      "Russell citó un error estratégico con el VSC y la defensa de Hülkenberg como factores clave de su resultado."
-    ],
-    "team": "mercedes",
-    "teamColor": "#27F4D2",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/como-singapur-resumen-2026-russell/10865149/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-14T12:28:07.000Z"
-  },
-  {
-    "slug": "bortoleto-kimi-y-hadjar-subiran-al-podio-yo-tengo-paciencia-con-el-proyecto-audi",
-    "title": "Bortoleto: 'Kimi y Hadjar subirán al podio; yo tengo paciencia con el proyecto Audi'",
-    "summary": "Gabriel Bortoleto reconoce el éxito de sus rivales de generación, Antonelli y Hadjar, pero defiende su permanencia en Audi. El piloto de 22 años prioriza el crecimiento a largo plazo del equipo sobre la búsqueda inmediata de un asiento en un equipo puntero.",
-    "content": "<p>Gabriel Bortoleto, de 22 años, admitió en una entrevista exclusiva que ve a Andrea Kimi Antonelli e Isack Hadjar, sus rivales de toda la vida en las categorías inferiores, subir al podio de la Fórmula 1. Bortoleto reconoció que, tras casi dos años en la F1, su objetivo actual sigue siendo sumar puntos, una situación que contrasta con el éxito inmediato de sus compañeros de generación.</p><p>El brasileño descartó la idea de usar a Audi como trampolín para un equipo de élite. En su lugar, expresó su compromiso con el proyecto a largo plazo de la marca, asegurando que su motivación radica en formar parte de un equipo que mejora anualmente y que aspira a convertirse en puntero. 'Cada uno tiene su camino. Ya veremos dentro de veinte años cómo acabamos', sentenció Bortoleto.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Bortoleto reconoce el potencial de podio de Antonelli y Hadjar, sus rivales de generación.",
-      "El piloto lleva casi dos años en F1 y su objetivo inmediato sigue siendo sumar puntos.",
-      "Bortoleto rechaza la idea de Audi como etapa intermedia y apuesta por el proyecto a largo plazo del equipo."
-    ],
-    "team": "pilotos",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/entrevista-exclusiva-bortoleto-formula1-audi/10865107/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-14T10:15:04.000Z"
-  },
-  {
-    "slug": "red-bull-supera-a-mercedes-verstappen-lidera-la-remontada-con-109-puntos",
-    "title": "Red Bull supera a Mercedes: Verstappen lidera la remontada con 109 puntos",
-    "summary": "Max Verstappen es el piloto más puntuoso desde el GP de Italia, superando a Antonelli. Red Bull ha tomado el mando técnico mientras McLaren sufre con su última actualización aerodinámica.",
-    "content": "<p>Max Verstappen se ha consolidado como el piloto más destacado desde el Gran Premio de Italia, acumulando 109 puntos, por delante de Andrea Kimi Antonelli (98), Charles Leclerc (60), George Russell (55) y Lewis Hamilton (46). En el equipo McLaren, Lando Norris suma 42 puntos y Oscar Piastri 32. Esta racha incluye un tercer puesto en Monza y dos segundos puestos consecutivos, marcando el inicio de una remontada de Red Bull que ha superado la referencia técnica de Mercedes.</p><p>Mercedes, que dominó la primera parte de la temporada con su unidad de potencia y chasis, concentró sus actualizaciones en Canadá, Bélgica y Azerbaiyán. Sin embargo, el paquete de baja carga aerodinámica llevado a Spa-Francorchamps no convenció a los pilotos y no se repitió en Monza. Por su parte, McLaren ha perdido consistencia tras una mejora que modificó la filosofía aerodinámica del MCL40 con faldones laterales más abombados y un suelo revisado, lo que ha hecho el coche difícil de pilotar para Norris y Piastri.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Max Verstappen lidera la puntuación desde el GP de Italia con 109 puntos.",
-      "Andrea Kimi Antonelli sigue segundo con 98 puntos, habiendo ganado 8 de 17 carreras.",
-      "McLaren reporta problemas de pilotaje en el MCL40 tras su última actualización aerodinámica."
-    ],
-    "team": "pilotos",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/red-bull-mercedes-superado-referencia/10864856/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-14T09:34:47.000Z"
   }
 ]
