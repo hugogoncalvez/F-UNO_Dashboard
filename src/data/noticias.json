@@ -14,7 +14,7 @@
     "teamColor": "#0093CC",
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/francocolapinto-granpremiodemexico-autodromohermanosrodriguez-formula1-alpine-paularon-simulador_0_HyAq4wI8Lw.html",
-    "date": "2026-10-29T11:14:06.208Z"
+    "date": "2026-10-29T15:14:07.555Z"
   },
   {
     "slug": "colapinto-protagoniza-comercial-de-mercado-libre-con-guinos-a-la-cultura-argenti",
@@ -31,7 +31,58 @@
     "teamColor": "#0093CC",
     "source": "Clarín Deportes",
     "originalLink": "https://www.clarin.com/deportes/franco-colapinto-superstar-comercial-lleno-guinos-argentina-equipo-45-millones_0_nOesuhIcfj.html",
-    "date": "2026-10-29T11:14:05.208Z"
+    "date": "2026-10-29T15:14:06.555Z"
+  },
+  {
+    "slug": "sergio-perez-firma-con-cadillac-hasta-2029-pese-al-irregular-debut-del-equipo",
+    "title": "Sergio Pérez firma con Cadillac hasta 2029 pese al irregular debut del equipo",
+    "summary": "El mexicano extiende su contrato por tres temporadas más, hasta 2029, confiando en el proyecto de General Motors. Apoya la destitución de Graeme Lowdon y la llegada de Marcin Budkowski para acelerar el desarrollo.",
+    "content": "<p>Sergio Pérez, ganador de seis grandes premios, ha renovado su contrato con Cadillac hasta finales de 2029. El piloto mexicano, que tendrá 39 años al término del acuerdo, considera que ha encontrado estabilidad tras su etapa en Red Bull y su año sabático de 2025, valorando su rol principal dentro de la escudería respaldada por General Motors.</p><p>La continuidad de Pérez responde también a intereses comerciales, dado que GM vendió cerca de 200.000 vehículos en México en 2025 (12,2% de cuota de mercado). Aunque el debut de Cadillac en 2026 bajo la dirección de Graeme Lowdon fue irregular y el progreso se estancó, Pérez respaldó la decisión del CEO Dan Towriss de destituir a Lowdon durante el parón veraniego. El nuevo jefe de equipo será Marcin Budkowski, exintegrante de Renault y Ferrari, con el objetivo de introducir mayor urgencia y desarrollo técnico.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Contrato extendido hasta 2029 (3 temporadas más).",
+      "GM vendió ~200.000 vehículos en México en 2025 (12,2% cuota).",
+      "Graeme Lowdon fue destituido y reemplazado por Marcin Budkowski."
+    ],
+    "team": "cadillac",
+    "teamColor": "#1e1e1e",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/por-que-perez-apuesta-cadillac-pese-irregular-debut-2026/10869152/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-29T13:27:51.000Z"
+  },
+  {
+    "slug": "toto-wolff-revela-su-metodo-para-detectar-talento-en-f1-y-explica-el-fracaso-de-",
+    "title": "Toto Wolff revela su método para detectar talento en F1 y explica el fracaso de promesas",
+    "summary": "El jefe de Mercedes detalla cómo identifica el talento natural en karting y subraya que la velocidad no basta. Señala que la falta de habilidades sociales y técnicas para gestionar patrocinadores y equipos condena a muchos jóvenes pilotos.",
+    "content": "<p>Toto Wolff, director de Mercedes, explicó en el podcast Cheeky Pint su proceso para identificar talento en Fórmula 1, un método validado por el rendimiento de Andrea Kimi Antonelli, quien está a las puertas de proclamarse campeón del mundo en su segunda temporada. Según Wolff, la primera evaluación visual es sencilla: no requiere telemetría avanzada, sino observar la comodidad del piloto en el kart. Un indicador clave es ver a un joven derrapando con control a 100 km/h bajo la lluvia en su primera vuelta, lo que sugiere los 'ingredientes' necesarios para ser bueno.</p><p>El directivo advirtió que la velocidad es solo la mitad del trabajo. Para sobrevivir en la F1, un piloto debe poseer capacidad técnica para poner a punto el coche, interactuar eficazmente con los ingenieros y desarrollar habilidades sociales para gestionar patrocinadores. Wolff señaló que muchos jóvenes con gran respaldo económico fracasan y desaparecen antes de llegar a la Fórmula 3 debido a su incapacidad para tratar bien a los mecánicos o mantener conversaciones profesionales con inversores.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Toto Wolff identifica talento observando la comodidad y el control al derrapar a 100 km/h en karting bajo lluvia.",
+      "La velocidad no es suficiente; se requiere capacidad técnica para trabajar con ingenieros y habilidades sociales para gestionar patrocinadores.",
+      "Muchos pilotos promesa fracasan antes de llegar a la F3 por falta de habilidades interpersonales y técnicas, no solo por falta de velocidad."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/wolff-explica-como-detectar-talento/10868275/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-29T13:01:31.000Z"
+  },
+  {
+    "slug": "vettel-bmw-no-le-dio-un-plan-claro-pero-red-bull-si-le-dio-la-oportunidad",
+    "title": "Vettel: BMW no le dio un plan claro, pero Red Bull sí le dio la oportunidad",
+    "summary": "En el documental 'Being Sebastian Vettel', el alemán explica que BMW Sauber lo descartó por falta de un camino claro, mientras que Red Bull apostó por él tras su debut puntuable en 2007.",
+    "content": "<p>Sebastian Vettel reveló en el documental de ARD 'Being Sebastian Vettel' que BMW Sauber no le ofreció una trayectoria definida tras su debut. Aunque su contrato inicial prometía un asiento en F1, solo logró puntuar en el GP de EE. UU. de 2007 sustituyendo a Robert Kubica, tras lo cual el equipo cesó su apoyo.</p><p>Vettel atribuyó la salida a la falta de un plan estratégico por parte de BMW, mientras que Red Bull, liderado por Dietrich Mateschitz, decidió ficharlo para Toro Rosso semanas después. Helmut Marko confirmó que la desconfianza de Sauber facilitó el fichaje, destacando la velocidad y competencia técnica del piloto.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Vettel debutó en F1 en el GP de Turquía 2006 y puntuó en el GP de EE. UU. 2007 con BMW Sauber.",
+      "BMW no le ofreció un plan claro de desarrollo, lo que llevó a su salida del equipo.",
+      "Dietrich Mateschitz impulsó su fichaje por Toro Rosso semanas después de su debut puntuable."
+    ],
+    "team": "redbull",
+    "teamColor": "#3671C6",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/por-que-bmw-no-queria-vettel-red-bull-si/10869304/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-29T12:41:18.000Z"
   },
   {
     "slug": "newey-matiza-criticas-de-horner-sobre-2014-y-confirma-su-amistad",
@@ -102,6 +153,24 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/fia-inteligencia-artificial-futuros-reglamentos-formula1/10869140/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-10-28T19:42:35.000Z"
+  },
+  {
+    "slug": "loic-duval-cita-a-alonso-como-ejemplo-de-resiliencia-en-su-regreso-con-peugeot",
+    "title": "Loic Duval cita a Alonso como ejemplo de resiliencia en su regreso con Peugeot",
+    "summary": "El piloto francés, ganador de Le Mans, comparó su situación actual con la de Alonso en F1. Duval busca recuperar el título en WEC apoyándose en su experiencia y la motivación de sus compañeros jóvenes.",
+    "content": "<p>Loic Duval, ganador de las 24 Horas de Le Mans y del Mundial de Resistencia, utilizó a Fernando Alonso como referencia de resiliencia durante una rueda de prensa en el Circuit de Barcelona-Catalunya, sede de las 6 Horas de Barcelona del WEC. Duval, nacido en 1982, es el piloto de mayor edad en las alineaciones de Peugeot, y comparó su búsqueda de victorias con la de Alonso, quien persigue un título desde 2026, una victoria desde 2013 y un podio desde 2023 en Fórmula 1.</p><p>El francés, que compite en el #94 Peugeot 9X8 junto a Malthe Jakobsen y Theo Pourchaire, afirmó que su experiencia previa le permite mantener la motivación para pelear por delante. Destacó la sinergia con sus compañeros más jóvenes y con Paul di Resta en el #93, indicando que la combinación de veteranía y juventud es clave para el equipo. Duval reconoció que, aunque el inicio del programa ha sido difícil, la presión de los pilotos jóvenes para ganar rápido es un factor positivo que impulsa al conjunto a mejorar.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Loic Duval (1982) es el piloto más veterano de las dos alineaciones de Peugeot en el WEC.",
+      "Duval compite en el #94 Peugeot 9X8 junto a Malthe Jakobsen y Theo Pourchaire.",
+      "El piloto francés cita a Fernando Alonso como ejemplo de motivación y resiliencia ante la falta de victorias recientes.",
+      "Duval destaca la importancia de combinar su experiencia con la ambición de los pilotos jóvenes del equipo."
+    ],
+    "team": "aston-martin",
+    "teamColor": "#229971",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/alonso-inspiracion-piloto-momentos-dificiles/10868919/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-10-28T18:59:32.000Z"
   },
   {
     "slug": "tsolov-debutara-en-f1-con-racing-bulls-en-mexico-en-los-libres-1",
@@ -1651,73 +1720,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/antonelli-opciones-titulo-proxima-carrera/10864336/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-10-21T07:48:50.000Z"
-  },
-  {
-    "slug": "gp-japon-1990-senna-y-prost-chocan-en-la-primera-curva-el-brasileno-se-corona-bi",
-    "title": "GP Japón 1990: Senna y Prost chocan en la primera curva; el brasileño se corona bicampeón",
-    "summary": "El choque entre Senna y Prost en la primera vuelta de Suzuka provocó el abandono de ambos. Con nueve puntos de ventaja, Senna se proclamó bicampeón del mundo a falta de una carrera.",
-    "content": "<p>En el Gran Premio de Japón de 1990, Ayrton Senna y Alain Prost protagonizaron un accidente en la primera curva de Suzuka que dejó a ambos fuera de la carrera. Senna, quien partía desde la pole position, intentó recuperar el liderato tras una disputa previa sobre el lado de salida, lo que derivó en el contacto y el abandono inmediato de ambos pilotos.</p><p>Con este resultado, Senna se aseguró el título de bicampeón del mundo de Fórmula 1 a falta de una jornada, al contar con una ventaja de nueve puntos sobre Prost. El incidente revivió la polémica del GP de Japón de 1989, donde Prost ganó el título tras la descalificación de Senna. Tras el choque, Prost calificó a Senna como un 'hombre indigno' y un 'ser repugnante', mientras que el brasileño reprimió su alegría pública, consciente de la gravedad del acto.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "Senna y Prost abandonaron la carrera tras chocar en la primera curva de Suzuka.",
-      "Senna se proclamó bicampeón del mundo con nueve puntos de ventaja sobre Prost.",
-      "El incidente ocurrió un año después del GP de Japón 1989, que definió el título a favor de Prost."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/japon-1990-senna-prost-accidente-venganza/4895223/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-21T06:45:11.000Z"
-  },
-  {
-    "slug": "lando-norris-ofrece-a-franco-colapinto-una-carta-coleccionable-limitada-tras-su-",
-    "title": "Lando Norris ofrece a Franco Colapinto una carta coleccionable limitada tras su reconciliación",
-    "summary": "Durante un stream, el piloto de McLaren sacó una carta de Colapinto y se ofreció a regalársela. El gesto ocurre semanas después del incidente en Bakú y las disculpas cruzadas entre ambos.",
-    "content": "<p>Lando Norris, piloto de McLaren, se dirigió a Franco Colapinto durante una transmisión en vivo de Max Fewtrell para ofrecerle un regalo. El británico estaba abriendo cartas coleccionables de la Fórmula 1 y obtuvo una edición limitada del argentino, describiéndola como \"muy bonita\" y similar a una edición de México.</p><p>El gesto de amistad se produce a menos de un mes del choque entre ambos en Bakú, evento que derivó en declaraciones filosas de Norris sobre la idoneidad de ciertos pilotos en la F1. La tensión se resolvió con disculpas mutuas. Colapinto buscará volver a sumar puntos en el próximo Gran Premio de Estados Unidos, programado para el 23 y 25 de octubre en Austin, Texas.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Norris ofreció a Colapinto una carta coleccionable limitada durante un stream de Max Fewtrell.",
-      "El incidente previo ocurrió en Bakú, seguido de disculpas públicas de ambos pilotos.",
-      "La próxima carrera de la F1 será en Austin, Texas, entre el 23 y 25 de octubre."
-    ],
-    "team": "pilotos",
-    "teamColor": "#e10600",
-    "source": "Olé",
-    "originalLink": "https://www.ole.com.ar/autos/lando-norris-franquito-colapinto-regalo-carta-stream_0_0PdbcpGdJN.html",
-    "date": "2026-10-20T18:14:04.417Z"
-  },
-  {
-    "slug": "mclaren-presenta-actualizaciones-tecnicas-en-austin-para-frenar-a-red-bull",
-    "title": "McLaren presenta actualizaciones técnicas en Austin para frenar a Red Bull",
-    "summary": "McLaren llega a COTA con mejoras en frenada y bajos para revertir su mala racha de 33 puntos en el último triplete. El objetivo es recuperar terreno ante Red Bull, que está a solo siete puntos en el campeonato de constructores.",
-    "content": "<p>La escudería de Woking busca revertir la tendencia negativa que le ha alejado de Ferrari en la lucha por la segunda posición del campeonato de constructores. En el último triplete, McLaren solo sumó 33 puntos, una cifra que rompió la dinámica tras las victorias de Lando Norris en Hungría y Países Bajos. La falta de rendimiento del paquete de actualizaciones presentado en Bakú y el incidente entre Norris y Oscar Piastri en la sprint de Singapur generaron nerviosismo en el equipo.</p><p>Para el Gran Premio de Estados Unidos en el Circuito de las Américas (COTA), McLaren introducirá novedades técnicas en el MCL40. Rob Marshall, director técnico, confirmó que las mejoras buscan aumentar la fiabilidad en la frenada, resolver problemas de rendimiento y probar pequeños cambios en los bajos del coche. El equipo considera que la sucesión de curvas de alta velocidad y los pianos traicioneros de Austin se adaptan mejor a las características actuales del monoplaza, lo que les permitirá comparar datos de pista con sus herramientas de desarrollo.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "McLaren sumó solo 33 puntos en el último triplete de carreras.",
-      "Red Bull está a 7 puntos de McLaren en el campeonato de constructores.",
-      "El MCL40 estrenará mejoras en frenada y bajos en Austin."
-    ],
-    "team": "mclaren",
-    "teamColor": "#FF8000",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/mclaren-cuenta-novedades-austin-adapta-coche/10866544/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-20T17:51:12.000Z"
-  },
-  {
-    "slug": "fia-confirma-seguridad-para-gp-de-qatar-y-abu-dhabi-pese-a-tension-regional",
-    "title": "FIA confirma seguridad para GP de Qatar y Abu Dhabi pese a tensión regional",
-    "summary": "Mohammed Ben Sulayem asegura que las carreras de cierre de temporada en Oriente Medio se celebrarán. La FIA descarta cancelaciones tras evaluar la situación de seguridad en la región.",
-    "content": "<p>El presidente de la FIA, Mohammed Ben Sulayem, confirmó que las carreras de Fórmula 1 en Qatar y Abu Dhabi se disputarán como estaba previsto, descartando su cancelación a pesar de las tensiones geopolíticas en Oriente Medio. Ben Sulayem argumentó que la situación real en el terreno difiere de la cobertura mediática, señalando que mantiene a su familia en los Emiratos Árabes Unidos como garantía de seguridad.</p><p>Esta decisión se toma tras la cancelación de los Grandes Premios de Bahrein y Arabia Saudí a inicios de año debido al conflicto entre EE. UU., Israel e Irán, así como los ataques hutíes en Yemen. Mientras la F1 mantiene su 'Plan A' de celebrar ambas pruebas, MotoGP ha reprogramado su carrera de Qatar para noviembre. El director ejecutivo de F1, Stefano Domenicali, ya había indicado semanas atrás que la celebración de las carreras seguía siendo la prioridad del campeonato.</p>",
-    "category": "Reglamento",
-    "keyPoints": [
-      "Mohammed Ben Sulayem asegura la seguridad de Qatar y Abu Dhabi para la F1.",
-      "Se mantienen las carreras pese a la cancelación previa de Bahrein y Arabia Saudí.",
-      "MotoGP reprograma su GP de Qatar para noviembre."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/fia-seguro-celebrar-carreras-qatar-abu-dhabi/10866556/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-20T17:18:56.000Z"
   }
 ]
