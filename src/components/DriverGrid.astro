@@ -1,6 +1,6 @@
 ---
 import type { DriverProfile } from "../lib/types";
-import { flagEmoji, headshotTransform, nationalityEs } from "../lib/utils";
+import { flagEmoji, headshotTransform } from "../lib/utils";
 
 interface Props {
   drivers: DriverProfile[];
@@ -16,52 +16,78 @@ const { drivers } = Astro.props;
         drivers.map((driver) => (
           <a
             href={`/pilotos/${driver.slug}`}
-            class="bg-panel-surface border border-border-subtle rounded-xl p-5 relative overflow-hidden flex flex-col gap-4 hover:bg-surface-container-low transition-colors duration-150 group min-h-[220px]"
+            class="bg-panel-surface border border-border-subtle rounded-xl relative overflow-hidden flex flex-col hover:bg-surface-container-low transition-colors duration-150 group min-h-[340px]"
           >
-            <div class="absolute left-0 top-0 bottom-0 w-1.5" style={`background:#${driver.teamColour}`} />
-            <span class="absolute right-0 -bottom-6 font-display text-[120px] leading-none font-bold text-surface-variant opacity-30 pointer-events-none group-hover:scale-110 group-hover:opacity-40 transition-all duration-300 select-none">
+            <div class="absolute left-0 top-0 bottom-0 w-1.5 z-20" style={`background:#${driver.teamColour}`} />
+
+            <span class="absolute left-0 top-1/2 -translate-y-1/2 font-display text-[120px] leading-none font-bold text-surface-variant opacity-[0.07] pointer-events-none group-hover:opacity-[0.14] transition-opacity duration-300 select-none z-0">
               {driver.driverNumber}
             </span>
-            <div class="flex justify-between items-start relative z-10">
-              <div class="flex gap-3 items-center">
-                <div class="w-14 h-14 rounded-full border-2 border-border-subtle overflow-hidden shrink-0 bg-carbon-bg">
-                  {
-                    driver.headshotUrl ? (
-                      <img class="w-full h-full object-cover" src={headshotTransform(driver.headshotUrl, "2col")} alt={driver.fullName} loading="lazy" />
-                    ) : (
-                      <div class="w-full h-full flex items-center justify-center font-display font-bold text-text-secondary">{driver.code}</div>
-                    )
-                  }
-                </div>
-                <div class="flex flex-col min-w-0">
-                  <div class="flex items-center gap-2">
-                    <span class="font-label-caps text-label-caps text-text-secondary">{driver.code}</span>
-                    {flagEmoji(driver.nationality) && <span class="text-[10px]">{flagEmoji(driver.nationality)}</span>}
+
+            <div
+              class="absolute right-0 top-0 bottom-[86px] w-[58%] pointer-events-none z-0 opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100"
+              style={`background: radial-gradient(ellipse at 62% 55%, #${driver.teamColour}aa 0%, #${driver.teamColour}33 45%, transparent 72%)`}
+            />
+
+            <div class="absolute right-0 top-0 bottom-[86px] w-[44%] pointer-events-none overflow-hidden z-0">
+              <div
+                class="absolute inset-0 opacity-40 transition-opacity duration-300 group-hover:opacity-90"
+                style={`background: radial-gradient(ellipse at 72% 62%, #${driver.teamColour}40 0%, transparent 68%)`}
+              />
+              {
+                driver.portraitUrl ? (
+                  <img
+                    class="driver-portrait absolute bottom-0 right-1 z-10 h-full w-auto max-w-none object-contain object-bottom"
+                    style={`--team-glow:#${driver.teamColour}cc`}
+                    src={driver.portraitUrl}
+                    alt={driver.fullName}
+                    loading="lazy"
+                  />
+                ) : driver.headshotUrl ? (
+                  <img
+                    class="absolute bottom-4 right-4 h-24 w-24 rounded-full border border-border-subtle object-cover object-top"
+                    src={headshotTransform(driver.headshotUrl, "2col")}
+                    alt={driver.fullName}
+                    loading="lazy"
+                  />
+                ) : (
+                  <div class="absolute bottom-6 right-6 flex h-20 w-20 items-center justify-center rounded-full border border-border-subtle bg-carbon-bg font-display text-2xl font-bold text-text-secondary">
+                    {driver.code}
                   </div>
-                  <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase leading-tight mt-0.5 truncate">{driver.fullName}</h3>
-                </div>
-              </div>
-              <div class="bg-surface-container border border-border-subtle px-2 py-0.5 rounded flex items-center justify-center shrink-0">
-                <span class="font-data-tabular text-data-tabular text-on-surface">
-                  {driver.championship ? `P${driver.championship.position}` : "—"}
-                </span>
-              </div>
+                )
+              }
             </div>
-            <p class="font-body-sm text-body-sm text-text-secondary uppercase tracking-wider text-[11px] font-semibold relative z-10 truncate" style={`color:#${driver.teamColour}`}>
-              {driver.team}
-            </p>
-            <div class="grid grid-cols-3 gap-2 mt-auto pt-3 border-t border-border-subtle relative z-10">
-              <div class="flex flex-col">
-                <span class="font-label-caps text-[10px] text-text-secondary uppercase">Puntos</span>
-                <span class="font-data-tabular text-data-tabular text-on-surface text-lg">{driver.championship?.points ?? 0}</span>
+
+            <div class="relative z-10 flex flex-1 flex-col p-5">
+              <div class={driver.portraitUrl ? "flex flex-col min-w-0 max-w-[64%]" : "flex flex-col min-w-0 max-w-full"}>
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-label-caps text-label-caps text-text-secondary">{driver.code}</span>
+                  {flagEmoji(driver.nationality) && <span class="text-[10px]">{flagEmoji(driver.nationality)}</span>}
+                  <span class="bg-surface-container border border-border-subtle px-2 py-0.5 rounded">
+                    <span class="font-data-tabular text-data-tabular text-on-surface">
+                      {driver.championship ? `P${driver.championship.position}` : "—"}
+                    </span>
+                  </span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase leading-tight mt-1.5 line-clamp-2">{driver.fullName}</h3>
+                <p class="font-body-sm text-body-sm uppercase tracking-wider text-[11px] font-semibold mt-1 truncate" style={`color:#${driver.teamColour}`}>
+                  {driver.team}
+                </p>
               </div>
-              <div class="flex flex-col border-l border-border-subtle pl-3">
-                <span class="font-label-caps text-[10px] text-text-secondary uppercase">Edad</span>
-                <span class="font-data-tabular text-data-tabular text-on-surface">{driver.age ?? "—"}</span>
-              </div>
-              <div class="flex flex-col border-l border-border-subtle pl-3">
-                <span class="font-label-caps text-[10px] text-text-secondary uppercase">Victorias</span>
-                <span class="font-data-tabular text-data-tabular text-on-surface">{driver.championship?.wins ?? 0}</span>
+
+              <div class="grid grid-cols-3 gap-2 mt-auto pt-4 border-t border-border-subtle">
+                <div class="flex flex-col">
+                  <span class="font-label-caps text-[10px] text-text-secondary uppercase">Puntos</span>
+                  <span class="font-data-tabular text-data-tabular text-on-surface text-lg">{driver.championship?.points ?? 0}</span>
+                </div>
+                <div class="flex flex-col border-l border-border-subtle pl-3">
+                  <span class="font-label-caps text-[10px] text-text-secondary uppercase">Edad</span>
+                  <span class="font-data-tabular text-data-tabular text-on-surface">{driver.age ?? "—"}</span>
+                </div>
+                <div class="flex flex-col border-l border-border-subtle pl-3">
+                  <span class="font-label-caps text-[10px] text-text-secondary uppercase">Victorias</span>
+                  <span class="font-data-tabular text-data-tabular text-on-surface">{driver.championship?.wins ?? 0}</span>
+                </div>
               </div>
             </div>
           </a>
@@ -72,3 +98,15 @@ const { drivers } = Astro.props;
     <p class="text-sm text-text-secondary">Pilotos no disponibles.</p>
   )
 }
+
+<style>
+  .driver-portrait {
+    filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.55));
+    transition: filter 300ms ease;
+  }
+
+  .group:hover .driver-portrait {
+    filter: brightness(1.06) drop-shadow(0 18px 28px rgba(0, 0, 0, 0.55))
+      drop-shadow(0 0 10px var(--team-glow)) drop-shadow(0 0 26px var(--team-glow));
+  }
+</style>

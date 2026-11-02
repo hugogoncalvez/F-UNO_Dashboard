@@ -162,7 +162,7 @@ export async function getSeasonCalendar(year: number): Promise<Race[]> {
 }
 
 export async function getSeasonDrivers(): Promise<JSeasonDriver[]> {
-  const data = await get<MrData<object>>("current/drivers.json");
+  const data = await get<MrData<object>>("current/drivers.json?limit=100");
   const drivers = data?.MRData.DriverTable?.Drivers;
   if (!drivers) return [];
   return drivers.map((d) => ({

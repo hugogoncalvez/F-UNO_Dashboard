@@ -47,6 +47,7 @@ export interface DriverProfile {
   team: string;
   teamColour: string;
   headshotUrl: string | null;
+  portraitUrl: string | null;
   nationality: string;
   dateOfBirth: string | null;
   age: number | null;

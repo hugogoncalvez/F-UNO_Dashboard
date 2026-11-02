@@ -10,6 +10,18 @@ const WIKI_FALLBACK: Record<string, { lang: string; title: string }> = {
   bearman: { lang: "es", title: "Oliver Bearman" },
 };
 
+const LOCAL_PORTRAIT_CODES = new Set([
+  "VER", "HAD", "NOR", "PIA", "LEC", "HAM", "RUS", "ANT", "ALO", "STR", "GAS",
+  "COL", "ALB", "SAI", "HUL", "BOR", "OCO", "BEA", "LAW", "LIN", "PER", "BOT",
+]);
+
+function localPortrait(code: string | null | undefined): string | null {
+  const normalized = code?.toUpperCase();
+  return normalized && LOCAL_PORTRAIT_CODES.has(normalized)
+    ? `/drivers/2026/${normalized}.avif`
+    : null;
+}
+
 const placeholderCache = new Map<string, boolean>();
 const wikiImageCache = new Map<string, string | null>();
 
@@ -104,6 +116,7 @@ export async function getDriverProfiles(): Promise<DriverProfile[]> {
         team,
         teamColour: o?.team_colour ?? teamColor(team),
         headshotUrl: headshotByDriverId.get(j.driverId) ?? null,
+        portraitUrl: localPortrait(j.code),
         nationality: j.nationality,
         dateOfBirth: j.dateOfBirth,
         age: computeAge(j.dateOfBirth),

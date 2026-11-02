@@ -21,16 +21,16 @@ export interface StandingRow {
 
 function buildColorMaps(drivers: DriverInfo[]) {
   const colorByTeam = new Map<string, string>();
-  for (const d of drivers) colorByTeam.set(d.team_name, d.team_colour);
+  for (const d of drivers) if (d.team_name) colorByTeam.set(d.team_name, d.team_colour);
 
-  const findColor = (team: string): string => {
-    const lower = team.toLowerCase();
+  const findColor = (team: string | null | undefined): string => {
+    const lower = (team ?? "").toLowerCase();
     for (const [key, color] of colorByTeam) {
       if (lower.includes(key.toLowerCase()) || key.toLowerCase().includes(lower)) {
         return color;
       }
     }
-    return teamColor(team);
+    return teamColor(lower);
   };
   return { findColor };
 }
