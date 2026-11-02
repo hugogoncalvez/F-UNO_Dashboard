@@ -76,6 +76,15 @@ import Layout from "../layouts/Layout.astro";
     </div>
     <!-- ========================================================           RESULTADOS      ========================================================= -->
     <div        id="tab-content-results"        class="bg-panel-surface/80 border border-border-subtle rounded-2xl p-6 backdrop-blur-xl shadow-2xl space-y-4"      >
+      <div
+        id="results-provisional-badge"
+        role="status"
+        aria-live="polite"
+        class="hidden items-start gap-2 rounded-lg border border-amber-400/40 bg-amber-400/10 px-3 py-2 text-xs text-amber-200"
+      >
+        <span class="material-symbols-outlined text-[16px] leading-4">warning</span>
+        <span>Clasificación provisional: Jolpica y OpenF1 no coinciden; puede haber sanciones post-carrera pendientes de aplicar.</span>
+      </div>
       <div class="overflow-x-auto hide-scrollbar">
         <table            class="w-full text-left border-collapse min-w-[750px]"          >
           <thead>
@@ -279,6 +288,7 @@ import Layout from "../layouts/Layout.astro";
 <script>
   const BASE = "https://api.jolpi.ca/ergast/f1";
   const OPENF1 = "https://api.openf1.org/v1";
+  let provisionalCheckId = 0;
 
   // ============================================================
   // COLORES DE EQUIPOS
@@ -360,6 +370,148 @@ import Layout from "../layouts/Layout.astro";
 
       return null;
     }
+  }
+
+  async function fetchJsonFresh(url) {
+
+    const controller =
+      new AbortController();
+
+    const timer =
+      setTimeout(
+        () => controller.abort(),
+        8000
+      );
+
+    try {
+
+      const res =
+        await fetch(
+          url,
+          {
+            cache: "no-store",
+            signal: controller.signal
+          }
+        );
+
+      if (!res.ok) {
+        return null;
+      }
+
+      return await res.json();
+
+    } catch {
+
+      return null;
+
+    } finally {
+
+      clearTimeout(timer);
+
+    }
+  }
+
+  function setProvisionalBadge(visible) {
+
+    const badge =
+      document.getElementById(
+        "results-provisional-badge"
+      );
+
+    if (!badge) {
+      return;
+    }
+
+    badge.classList.toggle(
+      "hidden",
+      !visible
+    );
+
+    badge.classList.toggle(
+      "flex",
+      visible
+    );
+  }
+
+  async function checkProvisional(results, sessionKey) {
+
+    const checkId =
+      ++provisionalCheckId;
+
+    if (
+      !Array.isArray(results) ||
+      results.length < 3 ||
+      !sessionKey
+    ) {
+      setProvisionalBadge(false);
+      return;
+    }
+
+    const sessionResult =
+      await fetchJsonFresh(
+        `${OPENF1}/session_result?session_key=${sessionKey}`
+      );
+
+    if (checkId !== provisionalCheckId) {
+      return;
+    }
+
+    if (
+      !Array.isArray(sessionResult) ||
+      sessionResult.length < 10
+    ) {
+      setProvisionalBadge(false);
+      return;
+    }
+
+    const jolpicaByNumber =
+      new Map();
+
+    for (const r of results) {
+
+      const number =
+        Number(
+          r.Driver?.permanentNumber ??
+          DRIVER_NUMBERS[
+            normalize(
+              r.Driver?.driverId
+            )
+          ]
+        );
+
+      if (number) {
+        jolpicaByNumber.set(
+          number,
+          r
+        );
+      }
+    }
+
+    const differs =
+      sessionResult.some(
+        o => {
+
+          if (o.position == null) {
+            return false;
+          }
+
+          const j =
+            jolpicaByNumber.get(
+              Number(o.driver_number)
+            );
+
+          if (!j) {
+            return false;
+          }
+
+          return (
+            Number(j.position) !== Number(o.position) ||
+            Number(j.points ?? 0) !== Number(o.points ?? 0)
+          );
+        }
+      );
+
+    setProvisionalBadge(differs);
   }
 
   // ============================================================
@@ -1758,6 +1910,10 @@ import Layout from "../layouts/Layout.astro";
 
   function setLoading() {
 
+    provisionalCheckId += 1;
+
+    setProvisionalBadge(false);
+
     resultsTbody.innerHTML = `
 
       <tr>
@@ -2885,6 +3041,11 @@ import Layout from "../layouts/Layout.astro";
         console.log(
           "OpenF1 session:",
           session
+        );
+
+        void checkProvisional(
+          results,
+          session.session_key
         );
 
         const [
