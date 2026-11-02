@@ -1,5 +1,56 @@
 [
   {
+    "slug": "hamilton-critica-la-mentalidad-todo-o-nada-de-leclerc-tras-el-choque-en-mexico",
+    "title": "Hamilton critica la mentalidad 'todo o nada' de Leclerc tras el choque en México",
+    "summary": "Lewis Hamilton acusó a Charles Leclerc de priorizar su victoria sobre el doblete de Ferrari en el GP de México. El incidente costó a la escuderia el triunfo, que fue para Max Verstappen tras la sanción al monegasco.",
+    "content": "<p>Lewis Hamilton criticó la actitud de su compañero Charles Leclerc tras el Gran Premio de México, donde Ferrari perdió una victoria asegurada. Hamilton, que partía desde la pole, fue adelantado por Leclerc en la curva 5 tras un incidente en la curva 4. La maniobra provocó que Hamilton perdiera el liderato frente a Max Verstappen, quien terminó ganando la carrera debido a la sanción de cinco segundos impuesta a Leclerc por el contacto de la primera vuelta.</p><p>El resultado final dejó a Hamilton segundo, Kimi Antonelli tercero y Leclerc cuarto. Hamilton señaló que la mentalidad de Leclerc es de 'todo o nada', comparando la situación con las luchas internas que observó entre Leclerc y Carlos Sainz en Mercedes. El británico enfatizó que, a diferencia de batallas por posiciones intermedias, perder la victoria por rivalidad interna es inaceptable para un equipo que busca el doblete.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Max Verstappen ganó el GP de México tras la sanción de 5 segundos a Leclerc.",
+      "Hamilton terminó 2º, Antonelli 3º y Leclerc 4º.",
+      "Hamilton acusó a Leclerc de tener una mentalidad de 'todo o nada' que impide el doblete de Ferrari."
+    ],
+    "team": "ferrari",
+    "teamColor": "#E8002D",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/hamilton-carga-leclerc-choque-mexico/10871032/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-02T13:53:25.000Z"
+  },
+  {
+    "slug": "briatore-lamenta-penalizaciones-a-colapinto-y-gasly-tras-gp-de-mexico",
+    "title": "Briatore lamenta penalizaciones a Colapinto y Gasly tras GP de México",
+    "summary": "Alpine perdió puntos en México por sanciones post-carrera a Colapinto (15º) y Gasly (17º). Briatore elogió el ritmo de ambos pilotos pese al resultado final.",
+    "content": "<p>Flavio Briatore, asesor ejecutivo de Alpine, expresó su frustración tras las penalizaciones que relegaron a Franco Colapinto al 15º puesto y a Pierre Gasly al 17º en el Gran Premio de México. Aunque el equipo terminó la carrera en octava y décima posición respectivamente, las sanciones posteriores dejaron a Alpine sin puntos, interrumpiendo una racha de solo un punto en las últimas cuatro carreras.</p><p>Briatore destacó que Colapinto tuvo una actuación \"muy buena y consistente\", necesaria tras una mala racha, mientras que Gasly recuperó bien tras problemas de potencia en la salida. El italiano también felicitó a Kimi Antonelli por convertirse en el campeón más joven de la historia de la Fórmula 1, elogiando su gestión de la presión y su representación de Italia.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Colapinto y Gasly fueron penalizados, pasando de 8º/10º a 15º/17º.",
+      "Alpine no sumó puntos en México tras las sanciones.",
+      "Briatore felicitó a Kimi Antonelli por ser el campeón más joven de la F1."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/flaviobriatore-francocolapinto-pierregasly-alpine-granpremiodemexico_0_57wdoXq5a1.html",
+    "date": "2026-11-02T12:58:45.000Z"
+  },
+  {
+    "slug": "colapinto-pierde-puntos-en-mexico-por-sancion-de-10-segundos",
+    "title": "Colapinto pierde puntos en México por sanción de 10 segundos",
+    "summary": "Franco Colapinto cayó del 8º al 15º puesto en el GP de México tras recibir una penalización de 10 segundos por no reducir velocidad bajo bandera amarilla. El argentino se disculpó con Alpine y sumó un punto en su superlicencia.",
+    "content": "<p>Franco Colapinto perdió los puntos obtenidos en el Gran Premio de México tras recibir una penalización de 10 segundos impuesta por la FIA. La sanción, derivada de no reducir suficientemente la velocidad en un sector con bandera amarilla simple, hizo que el piloto argentino cayera de la octava a la 15ª posición final.</p><p>Colapinto se disculpó con el equipo Alpine, reconociendo el error: \"Es mi error arriba del auto... perdimos los puntos que merecíamos\". Además de la penalización en carrera, el piloto acumuló un punto en su superlicencia, alcanzando un total de cinco puntos en el periodo de 12 meses. En sus declaraciones, también felicitó a Kimi Antonelli por su coronación como campeón de la Fórmula 1.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Penalización de 10 segundos por bandera amarilla",
+      "Caida de la 8ª a la 15ª posición",
+      "Acumuló 5 puntos en su superlicencia"
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/francocolapinto-alpine-fia-granpremiodemexico-formula1_0_0Thx9RUast.html",
+    "date": "2026-11-02T11:05:03.000Z"
+  },
+  {
     "slug": "leclerc-defiende-su-maniobra-en-mexico-lo-que-hizo-hamilton-tambien-estuvo-al-li",
     "title": "Leclerc defiende su maniobra en México: 'Lo que hizo Hamilton también estuvo al límite'",
     "summary": "Charles Leclerc justificó su decisión de no devolver la posición a Lewis Hamilton tras salirse de pista en el GP de México. El monegasco recibió una sanción de 5 segundos y atribuyó la confusión a la intervención de Max Verstappen.",
@@ -1672,56 +1723,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/leclerc-decepcionado-clasificacion-ferrari/10868047/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-10-24T23:47:32.000Z"
-  },
-  {
-    "slug": "alpine-se-desmarca-de-burlas-de-clarkson-a-colapinto-y-reafirma-su-apoyo",
-    "title": "Alpine se desmarca de burlas de Clarkson a Colapinto y reafirma su apoyo",
-    "summary": "Alpine emitió un comunicado para distanciarse de las declaraciones de Jeremy Clarkson, quien burló a Franco Colapinto por su nacionalidad. La escudería francesa, que invitó al británico al GP de EE.UU., reiteró que sus valores promueven el respeto y que el piloto cuenta con todo su respaldo.",
-    "content": "<p>La escudería Alpine publicó un comunicado oficial para tomar distancia de las declaraciones de Jeremy Clarkson, quien durante una entrevista con Sky Sports F1 se burló de Franco Colapinto por ser argentino. El incidente ocurrió en el marco del Gran Premio de Estados Unidos, evento al cual Alpine invitó al conductor británico y promocionó su presencia en redes sociales.</p><p>En el mensaje, el equipo aclaró que se trata de una opinión personal que no se alinea con sus valores de amabilidad y respeto. El comunicado concluye con la afirmación: “Franco es nuestro piloto y tiene todo nuestro apoyo”. La polémica se originó cuando Clarkson vinculó la penalización de diez posiciones de Colapinto con su nacionalidad, haciendo referencia a su conflictiva visita a la Patagonia en 2014, donde la patente de su vehículo generó protestas por su supuesta alusión a la guerra de Malvinas.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Alpine invitó a Jeremy Clarkson al GP de Estados Unidos y lo promocionó en redes sociales.",
-      "Clarkson burló a Colapinto por su nacionalidad argentina durante una entrevista con Sky Sports F1.",
-      "Alpine emitió un comunicado desmarcándose de las declaraciones y reafirmando su apoyo total a Colapinto."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Olé",
-    "originalLink": "https://www.ole.com.ar/autos/francocolapinto-jeremyclarkson-alpine-granpremiodeestadosunidos-austin-malvinas_0_gtKhtSLNcK.html",
-    "date": "2026-10-24T23:40:47.000Z"
-  },
-  {
-    "slug": "antonelli-logra-la-pole-en-austin-con-134035-179-milesimas-por-delante-de-versta",
-    "title": "Antonelli logra la pole en Austin con 1:34.035, 179 milésimas por delante de Verstappen",
-    "summary": "El italiano se adjudicó la primera posición en la clasificación de Texas, superando a Max Verstappen. Necesita ganar la carrera y que Russell y Hamilton terminen en posiciones específicas para coronarse campeón.",
-    "content": "<p>Andrea Kimi Antonelli conquistó la pole position en el Gran Premio de Austin con un tiempo de 1:34.035, superando por 179 milésimas a Max Verstappen. El piloto de Mercedes destacó la importancia de mantenerse dentro de los límites de pista, una estrategia que le permitió evitar errores previos y completar una sesión limpia a pesar de las condiciones de viento.</p><p>Para proclamarse campeón del mundo en esta carrera, Antonelli necesita ganar y que George Russell termine noveno o peor, y Lewis Hamilton quinto o peor. Ambos rivales saldrán desde la tercera fila. Antonelli advirtió sobre el fuerte ritmo de Red Bull en las tandas largas del viernes, anticipando una batalla intensa en la carrera dominical.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Tiempo de pole: 1:34.035 (Antonelli).",
-      "Diferencia con Verstappen: 179 milésimas.",
-      "Requisitos para el título: Ganar + Russell 9º o peor + Hamilton 5º o peor."
-    ],
-    "team": "mercedes",
-    "teamColor": "#27F4D2",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/antonelli-declaraciones-clasificacion-sabado-austin-2026/10868033/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-24T23:26:59.000Z"
-  },
-  {
-    "slug": "jeremy-clarkson-burlo-a-colapinto-por-su-nacionalidad-durante-el-gp-de-eeuu",
-    "title": "Jeremy Clarkson burló a Colapinto por su nacionalidad durante el GP de EE.UU.",
-    "summary": "El presentador británico, invitado por Alpine a Austin, afirmó que el argentino merecía una penalización por su nacionalidad. La sanción real de Colapinto se debe al uso de una cuarta unidad de control electrónico.",
-    "content": "<p>Jeremy Clarkson, figura de la televisión automotriz británica, protagonizó un incidente durante su visita al Gran Premio de Estados Unidos en Austin, donde fue recibido por la escudería Alpine. En una entrevista con Sky Sports F1, el conductor de 66 años comentó la penalización de diez puestos en la grilla que recibió Franco Colapinto para la carrera del domingo, atribuyéndola incorrectamente a la nacionalidad del piloto.</p><p>Clarkson declaró: “Franco tiene una penalización en la grilla por ser argentino. Probablemente. Bueno, yo le daría una por eso. Pero, en fin, eso es solo por lo que pasó cuando fuimos allí”. La referencia alude a la visita de Clarkson a la Patagonia en 2014 para grabar un especial de Top Gear, donde condujo un Porsche 928 con la patente H982 FKL, combinación que muchos argentinos interpretaron como una alusión a la guerra de Malvinas. La sanción real a Colapinto no tiene relación con su origen, sino con la instalación de una cuarta unidad de control electrónico en su auto, excediendo el límite reglamentario de tres unidades por temporada.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Jeremy Clarkson fue invitado por Alpine al GP de EE.UU. en Austin.",
-      "Clarkson burló a Colapinto por su nacionalidad argentina en una entrevista.",
-      "La penalización de 10 puestos a Colapinto se debe al uso de una 4ª unidad de control electrónico."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Olé",
-    "originalLink": "https://www.ole.com.ar/autos/jeremyclarkson-francocolapinto-granpremiodeestadosunidos-alpine_0_Co1DkAIbqb.html",
-    "date": "2026-10-24T23:20:25.000Z"
   }
 ]
