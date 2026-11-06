@@ -1,5 +1,57 @@
 [
   {
+    "slug": "alpine-pago-100-euros-por-exceso-de-velocidad-de-colapinto-en-san-pablo",
+    "title": "Alpine pagó 100 euros por exceso de velocidad de Colapinto en San Pablo",
+    "summary": "Franco Colapinto superó el límite de velocidad en boxes por 0,6 km/h durante la FP1 en Interlagos. La FIA multó a Alpine con 100 euros, sin penalización en pista.",
+    "content": "<p>Franco Colapinto fue sancionado por la FIA tras exceder el límite de velocidad en la calle de boxes durante la primera práctica libre del Gran Premio de San Pablo. El incidente ocurrió el viernes a las 13:10 en Interlagos, cuando el Alpine número 43 registró una velocidad de 80,6 km/h, superando el tope permitido de 80 km/h por apenas seis décimas.</p><p>Los comisarios deportivos aplicaron el artículo B1.6.3a del reglamento y multaron al equipo Alpine con 100 euros. La resolución no incluye pérdida de posiciones, recargos de tiempo ni puntos en la superlicencia, por lo que Colapinto mantiene su posición de largada original para la carrera.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Velocidad registrada: 80,6 km/h (límite: 80 km/h).",
+      "Multa impuesta a Alpine: 100 euros.",
+      "Sin penalización en pista ni puntos en superlicencia."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/francocolapinto-granpremiodesanpablo-formula1-interlagos-bwtalpinef1team_0_ril7kPBJA2.html",
+    "date": "2026-11-06T17:37:50.000Z"
+  },
+  {
+    "slug": "russell-pierde-5-posiciones-en-la-parrilla-del-gp-de-brasil-por-cambiar-su-sexto",
+    "title": "Russell pierde 5 posiciones en la parrilla del GP de Brasil por cambiar su sexto motor",
+    "summary": "George Russell recibirá una sanción de cinco puestos en Interlagos al instalar su sexta unidad de potencia de la temporada. El piloto de Mercedes admite sentirse agotado tras una campaña irregular donde ha sido superado por su compañero, el campeón Andrea Kimi Antonelli.",
+    "content": "<p>George Russell partirá cinco posiciones más atrás en la parrilla de salida del Gran Premio de Brasil de Fórmula 1 debido a la instalación de su sexto motor de combustión interna de la temporada. Mercedes decidió asumir la penalización en Interlagos, un circuito donde Lewis Hamilton logró una notable remontada en 2021, tras haber superado ya el límite reglamentario de cuatro unidades en Singapur.</p><p>El británico reconoció sentirse \"agotado\" por la constante necesidad de recuperarse tras fines de semana decepcionantes en esta temporada 2026. Russell, quien defiende que el nuevo reglamento de unidades de potencia perjudica su estilo de pilotaje, ocupa actualmente la cuarta posición en el campeonato, por detrás de Max Verstappen, Lewis Hamilton y su compañero de equipo, Andrea Kimi Antonelli, recientemente proclamado campeón del mundo.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Penalización de 5 posiciones en la parrilla del GP de Brasil.",
+      "Causa: Instalación del sexto motor de combustión interna de la temporada.",
+      "Russell ocupa la 4ª posición en el campeonato, superado por Antonelli (campeón), Verstappen y Hamilton."
+    ],
+    "team": "mercedes",
+    "teamColor": "#27F4D2",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/russell-agotado-penalizacion-brasil-2026/10872173/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-06T17:06:08.000Z"
+  },
+  {
+    "slug": "russell-pierde-5-posiciones-en-san-pablo-por-usar-su-sexto-motor-ice",
+    "title": "Russell pierde 5 posiciones en San Pablo por usar su sexto motor ICE",
+    "summary": "La FIA sancionó a George Russell con cinco lugares de penalización en la parrilla del GP de Brasil tras confirmar el uso de su sexta unidad de combustión interna. Esta modificación afecta directamente la posición de salida del británico y podría beneficiar a otros pilotos, como Franco Colapinto.",
+    "content": "<p>George Russell deberá retroceder cinco posiciones en la parrilla de salida del Gran Premio de San Pablo. La FIA confirmó la sanción durante la primera práctica libre en Interlagos, tras verificar que el piloto de Mercedes (número 63) incorporó su sexto motor de combustión interna (ICE) de la temporada, excediendo el límite reglamentario.</p><p>La decisión fue formalizada en el documento 15 de los comisarios deportivos, publicado el viernes a las 13:16, citando el incumplimiento de los artículos B8.2.2a y B8.2.3, con la penalización establecida en el B8.2.8b. El registro de la infracción se realizó a las 12:31. Esta penalización modifica la grilla y podría permitir que pilotos ubicados en las posiciones 6 a 10, incluido Franco Colapinto, avancen un casillero respecto a su resultado en clasificación.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "George Russell recibe penalización de 5 posiciones en la parrilla de San Pablo.",
+      "Causa: Uso del sexto motor de combustión interna (ICE) de la temporada.",
+      "Sanción basada en artículos B8.2.2a, B8.2.3 y B8.2.8b del reglamento.",
+      "El cambio en la grilla podría beneficiar a pilotos como Franco Colapinto."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/georgerussell-granpremiodesanpablo-fia-interlagos-francocolapinto-motordecombustioninterna_0_mGoBcWzBwT.html",
+    "date": "2026-11-06T16:38:24.000Z"
+  },
+  {
     "slug": "trabajadores-de-viry-chatillon-denuncian-traicion-por-venta-de-la-fabrica-a-duma",
     "title": "Trabajadores de Viry-Châtillon denuncian traición por venta de la fábrica a Dumarey",
     "summary": "La plantilla de Alpine Racing en Viry-Châtillon emitió un comunicado el 6 de noviembre criticando la venta de sus instalaciones al grupo belga Dumarey. Acusan a la dirección de incumplir promesas de Luca de Meo y de abandonar el centro tras el fin de sus programas de F1, WEC y Rallye-Raid.",
@@ -50,6 +102,23 @@
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/francocolapinto-mate-alpine-formula1-pierregasly-lewishamilton_0_S3ZGMTZLFS.html",
     "date": "2026-11-06T13:55:25.000Z"
+  },
+  {
+    "slug": "verstappen-responde-a-wolff-cada-persona-es-diferente-y-eso-es-lo-bueno-para-la-",
+    "title": "Verstappen responde a Wolff: 'Cada persona es diferente y eso es lo bueno para la F1'",
+    "summary": "Max Verstappen reaccionó a las declaraciones de Toto Wolff sobre el fin de la era de los pilotos 'despiadados'. El neerlandés defendió la diversidad de personalidades en el paddock y justificó sus quejas por radio como búsqueda de mejoras técnicas.",
+    "content": "<p>Tras la coronación de Andrea Kimi Antonelli en el GP de México, Toto Wolff afirmó que el modelo de piloto 'egoísta y despiadado' ha muerto, citando al joven campeón como ejemplo de humildad e integridad. Aunque no nombró a nadie, sus comentarios generaron preguntas directas a Max Verstappen y Fernando Alonso durante la rueda de prensa en Interlagos.</p><p>Verstappen respondió con cautela: 'Todo el mundo tiene derecho a su opinión... Cada persona es diferente de todos modos. Creo que eso es lo bueno para la Fórmula 1, porque si todo el mundo tiene la misma personalidad, es muy aburrido'. Respecto a sus frecuentes quejas por radio sobre el coche, el tetracampeón aclaró que no son reclamos, sino una forma de exigir al equipo que afine los detalles para encontrar más tiempo por vuelta, ya que 'nunca estoy satisfecho'.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Toto Wolff declaró que el modelo de piloto 'despiadado' ha muerto tras el título de Antonelli.",
+      "Verstappen defendió la diversidad de personalidades como un valor positivo para la F1.",
+      "El neerlandés justificó sus quejas por radio como una herramienta para mejorar el rendimiento del coche."
+    ],
+    "team": "redbull",
+    "teamColor": "#3671C6",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/verstappen-wolff-pilotos-implacables/10872049/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-06T13:48:33.000Z"
   },
   {
     "slug": "honda-aplica-lecciones-de-mexico-al-motor-2027-y-pruebas-en-banco",
@@ -1652,75 +1721,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/newey-apuesta-inclunacion-aston-martin-equivocada/10869358/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-10-29T16:38:36.000Z"
-  },
-  {
-    "slug": "horarios-de-fp1-y-fp2-del-gp-de-mexico-2026-viernes-30-de-octubre",
-    "title": "Horarios de FP1 y FP2 del GP de México 2026: viernes 30 de octubre",
-    "summary": "Las prácticas libres del GP de México 2026 se disputarán el viernes 30 de octubre en el Autódromo Hermanos Rodríguez. La FP1 inicia a las 12:30 hora local y la FP2 a las 16:00 hora local.",
-    "content": "<p>El Gran Premio de México de la temporada 2026 de Fórmula 1 comenzará el viernes 30 de octubre con las dos primeras sesiones de entrenamientos libres en el Autódromo Hermanos Rodríguez. La FP1 se llevará a cabo de 12:30 a 13:30 hora local (19:30 a 20:30 hora de España), una sesión crítica para ajustar la unidad de potencia y la refrigeración debido a la altitud de la pista.</p><p>La FP2 está programada de 16:00 a 17:00 hora local (23:00 a 00:00 hora de España). Para la transmisión, en México las sesiones estarán disponibles a través de Sky Sports (Sky e Izzi) y F1 TV. En Argentina, la cobertura será por FOX Sports y ESPN vía Disney+, mientras que en el resto de Latinoamérica dependerá de ESPN y Disney+ según el territorio. La FP3 se disputará el sábado a las 11:30 hora local y la clasificación iniciará a las 15:00 hora local.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "Fecha: Viernes 30 de octubre de 2026.",
-      "FP1: 12:30-13:30 hora local (19:30-20:30 España).",
-      "FP2: 16:00-17:00 hora local (23:00-00:00 España).",
-      "Transmisión México: Sky Sports, Izzi, F1 TV.",
-      "Transmisión Latinoamérica: ESPN, Disney+, FOX Sports (Argentina)."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/hora-libres-viernes-mexico-2026/10869342/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-29T16:02:57.000Z"
-  },
-  {
-    "slug": "sergio-perez-firma-con-cadillac-hasta-2029-pese-al-irregular-debut-del-equipo",
-    "title": "Sergio Pérez firma con Cadillac hasta 2029 pese al irregular debut del equipo",
-    "summary": "El mexicano extiende su contrato por tres temporadas más, hasta 2029, confiando en el proyecto de General Motors. Apoya la destitución de Graeme Lowdon y la llegada de Marcin Budkowski para acelerar el desarrollo.",
-    "content": "<p>Sergio Pérez, ganador de seis grandes premios, ha renovado su contrato con Cadillac hasta finales de 2029. El piloto mexicano, que tendrá 39 años al término del acuerdo, considera que ha encontrado estabilidad tras su etapa en Red Bull y su año sabático de 2025, valorando su rol principal dentro de la escudería respaldada por General Motors.</p><p>La continuidad de Pérez responde también a intereses comerciales, dado que GM vendió cerca de 200.000 vehículos en México en 2025 (12,2% de cuota de mercado). Aunque el debut de Cadillac en 2026 bajo la dirección de Graeme Lowdon fue irregular y el progreso se estancó, Pérez respaldó la decisión del CEO Dan Towriss de destituir a Lowdon durante el parón veraniego. El nuevo jefe de equipo será Marcin Budkowski, exintegrante de Renault y Ferrari, con el objetivo de introducir mayor urgencia y desarrollo técnico.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Contrato extendido hasta 2029 (3 temporadas más).",
-      "GM vendió ~200.000 vehículos en México en 2025 (12,2% cuota).",
-      "Graeme Lowdon fue destituido y reemplazado por Marcin Budkowski."
-    ],
-    "team": "cadillac",
-    "teamColor": "#1e1e1e",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/por-que-perez-apuesta-cadillac-pese-irregular-debut-2026/10869152/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-29T13:27:51.000Z"
-  },
-  {
-    "slug": "toto-wolff-revela-su-metodo-para-detectar-talento-en-f1-y-explica-el-fracaso-de-",
-    "title": "Toto Wolff revela su método para detectar talento en F1 y explica el fracaso de promesas",
-    "summary": "El jefe de Mercedes detalla cómo identifica el talento natural en karting y subraya que la velocidad no basta. Señala que la falta de habilidades sociales y técnicas para gestionar patrocinadores y equipos condena a muchos jóvenes pilotos.",
-    "content": "<p>Toto Wolff, director de Mercedes, explicó en el podcast Cheeky Pint su proceso para identificar talento en Fórmula 1, un método validado por el rendimiento de Andrea Kimi Antonelli, quien está a las puertas de proclamarse campeón del mundo en su segunda temporada. Según Wolff, la primera evaluación visual es sencilla: no requiere telemetría avanzada, sino observar la comodidad del piloto en el kart. Un indicador clave es ver a un joven derrapando con control a 100 km/h bajo la lluvia en su primera vuelta, lo que sugiere los 'ingredientes' necesarios para ser bueno.</p><p>El directivo advirtió que la velocidad es solo la mitad del trabajo. Para sobrevivir en la F1, un piloto debe poseer capacidad técnica para poner a punto el coche, interactuar eficazmente con los ingenieros y desarrollar habilidades sociales para gestionar patrocinadores. Wolff señaló que muchos jóvenes con gran respaldo económico fracasan y desaparecen antes de llegar a la Fórmula 3 debido a su incapacidad para tratar bien a los mecánicos o mantener conversaciones profesionales con inversores.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Toto Wolff identifica talento observando la comodidad y el control al derrapar a 100 km/h en karting bajo lluvia.",
-      "La velocidad no es suficiente; se requiere capacidad técnica para trabajar con ingenieros y habilidades sociales para gestionar patrocinadores.",
-      "Muchos pilotos promesa fracasan antes de llegar a la F3 por falta de habilidades interpersonales y técnicas, no solo por falta de velocidad."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/wolff-explica-como-detectar-talento/10868275/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-29T13:01:31.000Z"
-  },
-  {
-    "slug": "vettel-bmw-no-le-dio-un-plan-claro-pero-red-bull-si-le-dio-la-oportunidad",
-    "title": "Vettel: BMW no le dio un plan claro, pero Red Bull sí le dio la oportunidad",
-    "summary": "En el documental 'Being Sebastian Vettel', el alemán explica que BMW Sauber lo descartó por falta de un camino claro, mientras que Red Bull apostó por él tras su debut puntuable en 2007.",
-    "content": "<p>Sebastian Vettel reveló en el documental de ARD 'Being Sebastian Vettel' que BMW Sauber no le ofreció una trayectoria definida tras su debut. Aunque su contrato inicial prometía un asiento en F1, solo logró puntuar en el GP de EE. UU. de 2007 sustituyendo a Robert Kubica, tras lo cual el equipo cesó su apoyo.</p><p>Vettel atribuyó la salida a la falta de un plan estratégico por parte de BMW, mientras que Red Bull, liderado por Dietrich Mateschitz, decidió ficharlo para Toro Rosso semanas después. Helmut Marko confirmó que la desconfianza de Sauber facilitó el fichaje, destacando la velocidad y competencia técnica del piloto.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Vettel debutó en F1 en el GP de Turquía 2006 y puntuó en el GP de EE. UU. 2007 con BMW Sauber.",
-      "BMW no le ofreció un plan claro de desarrollo, lo que llevó a su salida del equipo.",
-      "Dietrich Mateschitz impulsó su fichaje por Toro Rosso semanas después de su debut puntuable."
-    ],
-    "team": "redbull",
-    "teamColor": "#3671C6",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/por-que-bmw-no-queria-vettel-red-bull-si/10869304/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-10-29T12:41:18.000Z"
   }
 ]
