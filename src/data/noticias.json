@@ -16,7 +16,94 @@
     "teamColor": "#0093CC",
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/modificacion-grilla-nueva-gp-brasil-interlagos-sancion-posicion-franco-colapinto-puesto-larga_0_sYSG9lOTe1.html",
-    "date": "2026-11-09T11:14:01.850Z"
+    "date": "2026-11-09T15:14:02.285Z"
+  },
+  {
+    "slug": "briatore-critica-a-alpine-tras-gp-de-san-pablo-tenemos-mucho-que-revisar",
+    "title": "Briatore critica a Alpine tras GP de San Pablo: 'Tenemos mucho que revisar'",
+    "summary": "Alpine no sumó puntos en Interlagos con Colapinto 13° y Gasly 14°. Briatore admite que el A526 fue inferior a su nivel, especialmente bajo la lluvia.",
+    "content": "<p>Flavio Briatore, jefe de Alpine, realizó una autocrítica contundente tras el Gran Premio de San Pablo, donde el equipo terminó sin puntos. Franco Colapinto finalizó 13° y Pierre Gasly 14° en una carrera marcada por las condiciones cambiantes en Interlagos. El italiano reconoció que el rendimiento del A526 estuvo por debajo de su nivel habitual, destacando la falta de funcionamiento esperado durante el fin de semana.</p><p>El principal problema señalado fue el comportamiento del monoplaza sobre asfalto mojado, una debilidad expuesta ya en la clasificación, donde Colapinto quedó 17° en Q1 y Gasly 18°. Durante la carrera, Colapinto llegó a ser 8° antes de su primera parada en la vuelta 18 (de intermedios a blandos). Aunque el equipo tuvo ritmo competitivo con neumáticos blandos, la pérdida de velocidad al regresar la lluvia obligó a una tercera parada para volver a intermedios. Gasly coincidió con el diagnóstico, confirmando la necesidad de investigar las dificultades del auto en lluvia.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Colapinto terminó 13° y Gasly 14°; Alpine no sumó puntos.",
+      "Clasificación: Colapinto 17° (Q1) y Gasly 18°.",
+      "Colapinto hizo 3 paradas: V18 (int->blan), V55 (blan->blan), y una tercera por lluvia (blan->int).",
+      "Briatore identifica la falta de rendimiento en lluvia como el punto débil principal."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/briatore-autocritico-alpine-gp-san-pablo_0_YU32ck9X1C.html",
+    "date": "2026-11-09T15:14:01.285Z"
+  },
+  {
+    "slug": "mclaren-estrena-aleron-2027-en-brasil-para-mejorar-la-previsibilidad-del-mcl40",
+    "title": "McLaren estrena alerón 2027 en Brasil para mejorar la previsibilidad del MCL40",
+    "summary": "Andrea Stella confirma que el nuevo alerón delantero, diseñado para 2027, mejora la manejabilidad del coche. Norris logró la pole en Interlagos, aunque la lluvia limitó la evaluación completa de las piezas.",
+    "content": "<p>El director de McLaren, Andrea Stella, reveló que el alerón delantero estrenado en el Gran Premio de Brasil 2026, parte del paquete de mejoras para la temporada 2027, ha incrementado la previsibilidad y la facilidad de conducción del MCL40. La escudería de Woking introdujo estas piezas en Interlagos tras perder terreno frente a Mercedes, Ferrari y Red Bull, incluyendo también un nuevo alerón trasero, alerón de viga y elementos del suelo.</p><p>Aunque la lluvia impidió una evaluación completa en carrera, donde Lando Norris obtuvo la pole y Oscar Piastri terminó en duodécima posición, las prácticas en seco permitieron validar el rendimiento. Stella anticipa más actualizaciones en Las Vegas, diseñadas para integrarse con el flujo del nuevo alerón, aunque el cambio significativo en el comportamiento del coche se centrará en el desarrollo del monoplaza de la próxima temporada.</p>",
+    "category": "Técnica",
+    "keyPoints": [
+      "El alerón delantero de 2027 se estrenó en el GP de Brasil 2026.",
+      "Lando Norris logró la pole en Interlagos; Oscar Piastri fue 12º.",
+      "McLaren presentará nuevas piezas adaptadas al flujo del alerón en Las Vegas."
+    ],
+    "team": "mclaren",
+    "teamColor": "#FF8000",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/aleron-mclaren-2027-brasil-coche-predecible/10872931/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-09T12:55:43.000Z"
+  },
+  {
+    "slug": "verstappen-remonta-de-la-p21-a-la-p2-en-brasil-superando-las-simulaciones-de-red",
+    "title": "Verstappen remonta de la P21 a la P2 en Brasil, superando las simulaciones de Red Bull",
+    "summary": "Max Verstappen logró el segundo puesto en el GP de Brasil tras salir desde la 21ª posición. El neerlandés atribuyó su lento arranque a un error en el embrague, pero avanzó 19 plazas, un rendimiento que Laurent Mekies calificó de impredecible para los modelos de simulación del equipo.",
+    "content": "<p>Max Verstappen completó su tercera remontada consecutiva en el Gran Premio de Brasil, finalizando en segunda posición tras partir desde la 21ª plaza de la parrilla. El piloto de Red Bull admitió que su salida fue inferior a la esperada debido a un error en la acción del embrague, lo que provocó una reacción más lenta. A pesar de este inicio, el tetracampeón avanzó rápidamente, situándose en la quinta posición al final de la vuelta 16, cuando los líderes entraron a boxes para cambiar de neumáticos intermedios a lisos.</p><p>Laurent Mekies, director de carrera de Red Bull, señaló que ninguna simulación del equipo preveía que Verstappen recuperara 14 posiciones en solo 5 vueltas. \"Max está superando las simulaciones de forma habitual\", afirmó Mekies. Sin embargo, el rendimiento del RB22 se vio afectado en las últimas vueltas por una pérdida de carga aerodinámica trasera y un desequilibrio en el coche, problemas que el equipo aún está investigando y que Verstappen ya había reportado como 'degradación del coche' a principios de temporada.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Verstappen remontó de la P21 a la P2 en el GP de Brasil.",
+      "El piloto atribuyó su lento arranque a un error en el embrague.",
+      "Laurent Mekies confirmó que la remontada superó las predicciones de las simulaciones de Red Bull.",
+      "El RB22 sufrió pérdida de carga aerodinámica trasera y problemas de equilibrio en las últimas vueltas."
+    ],
+    "team": "redbull",
+    "teamColor": "#3671C6",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/verstappen-supero-simulaciones-red-bull-segundo-brasil/10873322/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-09T12:38:44.000Z"
+  },
+  {
+    "slug": "alpine-cae-al-ultimo-lugar-del-resto-en-f1-tras-sumar-solo-1-punto-en-6-fechas",
+    "title": "Alpine cae al último lugar del 'resto' en F1 tras sumar solo 1 punto en 6 fechas",
+    "summary": "Alpine pasó de liderar la lucha media con 41 puntos en las primeras 6 carreras a obtener apenas 1 unidad en las últimas 6. Racing Bulls, Audi y Haas superaron al equipo francés, que ahora es el peor del grupo intermedio.",
+    "content": "<p>Alpine experimentó un descenso drástico en la clasificación de Constructores. Tras las primeras seis fechas, el equipo sumó 41 puntos, superando a Racing Bulls (39) y ocupando el quinto puesto. En las últimas seis carreras, la racha se invirtió: Alpine acumuló solo 1 punto, quedando por debajo de Racing Bulls (35), Audi (11), Haas (10) y Aston Martin (4).</p><p>La brecha con su principal rival se amplió significativamente. Racing Bulls igualó a Alpine en la octava fecha (48 puntos cada uno) y se despegó en la novena (63 contra 51). Tras 20 Grandes Premios, la diferencia total es de 114 puntos para RB frente a 69 de Alpine. El equipo francés, que utilizó el motor Mercedes y el chasis A526, no pudo sostener su ventaja inicial ante el desarrollo constante de sus rivales directos.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Alpine sumó 41 puntos en las primeras 6 fechas y solo 1 en las últimas 6.",
+      "Racing Bulls lidera el grupo intermedio con 114 puntos acumulados tras 20 GP.",
+      "Alpine cayó del 5º al último lugar dentro del grupo de equipos fuera de los 'cuatro grandes'."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/alpine-francocolapinto-formula1-gasly-racingbulls-a526-flaviobriatore_0_0JnMqYvDTL.html",
+    "date": "2026-11-09T11:49:02.000Z"
+  },
+  {
+    "slug": "aston-martin-retraso-la-parada-de-alonso-por-riesgo-de-trompo-en-boxes",
+    "title": "Aston Martin retrasó la parada de Alonso por riesgo de trompo en boxes",
+    "summary": "El equipo optó por una vuelta extra con intermedios para evitar el carril de boxes húmedo y problemas de temperatura en slicks. Alonso terminó 12º tras perder 3 segundos en la parada y ser adelantado por Hamilton.",
+    "content": "<p>Mike Krack, jefe de Aston Martin, confirmó que el retraso en la parada de Fernando Alonso fue una decisión deliberada para evitar riesgos. El equipo observó el trompo de George Russell al salir de boxes con slicks en una zona mojada y temía repetir el incidente. Además, las bajas temperaturas dificultaban calentar los neumáticos de seco, lo que justificó mantener los intermedios una vuelta más.</p><p>La estrategia costó posiciones: Lewis Hamilton, que paró antes, adelantó a Alonso y a Charles Leclerc. La parada de Alonso fue más lenta y, sumado a los doblajes, le hizo perder aproximadamente 3 segundos. A pesar de un adelantamiento por el exterior a Hamilton en la curva 6, Alonso finalizó en la 12ª posición en un Gran Premio que alternó mojado, seco y lluvia final.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Aston Martin evitó el carril de boxes húmedo tras el trompo de George Russell.",
+      "La baja temperatura dificultó el calentamiento de los neumáticos slicks.",
+      "Alonso perdió 3 segundos en la parada y terminó 12º."
+    ],
+    "team": "aston-martin",
+    "teamColor": "#229971",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/aston-martin-equivocada-estrategia-alonso/10873182/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-09T10:58:45.000Z"
   },
   {
     "slug": "oscar-piastri-y-mark-webber-ponen-fin-a-su-acuerdo-de-representacion",
@@ -51,24 +138,6 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/verstappen-declaraciones-carrera-brasil-2026/10873154/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-11-08T21:44:53.000Z"
-  },
-  {
-    "slug": "briatore-critica-a-alpine-tras-gp-de-san-pablo-tenemos-mucho-que-revisar",
-    "title": "Briatore critica a Alpine tras GP de San Pablo: 'Tenemos mucho que revisar'",
-    "summary": "Alpine no sumó puntos en Interlagos con Colapinto 13° y Gasly 14°. Briatore admite que el A526 fue inferior a su nivel, especialmente bajo la lluvia.",
-    "content": "<p>Flavio Briatore, jefe de Alpine, realizó una autocrítica contundente tras el Gran Premio de San Pablo, donde el equipo terminó sin puntos. Franco Colapinto finalizó 13° y Pierre Gasly 14° en una carrera marcada por las condiciones cambiantes en Interlagos. El italiano reconoció que el rendimiento del A526 estuvo por debajo de su nivel habitual, destacando la falta de funcionamiento esperado durante el fin de semana.</p><p>El principal problema señalado fue el comportamiento del monoplaza sobre asfalto mojado, una debilidad expuesta ya en la clasificación, donde Colapinto quedó 17° en Q1 y Gasly 18°. Durante la carrera, Colapinto llegó a ser 8° antes de su primera parada en la vuelta 18 (de intermedios a blandos). Aunque el equipo tuvo ritmo competitivo con neumáticos blandos, la pérdida de velocidad al regresar la lluvia obligó a una tercera parada para volver a intermedios. Gasly coincidió con el diagnóstico, confirmando la necesidad de investigar las dificultades del auto en lluvia.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Colapinto terminó 13° y Gasly 14°; Alpine no sumó puntos.",
-      "Clasificación: Colapinto 17° (Q1) y Gasly 18°.",
-      "Colapinto hizo 3 paradas: V18 (int->blan), V55 (blan->blan), y una tercera por lluvia (blan->int).",
-      "Briatore identifica la falta de rendimiento en lluvia como el punto débil principal."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Olé",
-    "originalLink": "https://www.ole.com.ar/autos/briatore-autocritico-alpine-gp-san-pablo_0_YU32ck9X1C.html",
-    "date": "2026-11-08T20:41:20.000Z"
   },
   {
     "slug": "colapinto-supero-a-gasly-en-brasil-con-un-adelantamiento-no-televisado-antes-de-",
@@ -1656,75 +1725,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/verstappen-salidas-red-bull-corriendo/10870588/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-11-01T12:43:09.000Z"
-  },
-  {
-    "slug": "agenda-deportiva-colapinto-en-f1-ferro-en-ascenso-y-jornada-europea",
-    "title": "Agenda deportiva: Colapinto en F1, Ferro en ascenso y jornada europea",
-    "summary": "Franco Colapinto compite en la tercera práctica del GP de México a las 14.30. Ferro Carril Oeste juega su partido clave por el ascenso a las 15.00, mientras Europa ofrece partidos de Premier y Serie A.",
-    "content": "<p>La jornada deportiva arranca en Europa con la Premier League: Chelsea recibe a Manchester United (9.30) y Manchester City se mide ante Brighton (12.00). En Italia, el clásico de Milán enfrenta a Milan e Inter a las 16.45. En Argentina, la Liga Profesional presenta a Deportivo Riestra vs. Talleres (17.00), Vélez vs. San Lorenzo (19.15) y Estudiantes vs. Instituto (21.30).</p><p>En el ascenso, Ferro Carril Oeste visita a Acassuso a las 15.00 buscando el pase a la final por el ascenso a Primera. En Fórmula 1, Franco Colapinto disputa la tercera práctica del Gran Premio de México a las 14.30. Además, se disputan partidos de vóley (Ferro vs. Monteros, 21.00) y fútbol femenino (River vs. Atlético de Madrid, 16.00).</p>",
-    "category": "Off-track",
-    "keyPoints": [
-      "F1: Tercera práctica GP México a las 14.30 con Franco Colapinto.",
-      "Ascenso: Ferro Carril Oeste vs. Acassuso a las 15.00 por el ascenso.",
-      "Europa: Chelsea vs. Man United (9.30) y Milan vs. Inter (16.45)."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Clarín Deportes",
-    "originalLink": "https://www.clarin.com/deportes/agenda-super-sabado-deportivo-ferro-formula-1-colapinto-europa-gustos-liga-profesional_0_HIBBc0AMm2.html",
-    "date": "2026-11-01T11:14:05.004Z"
-  },
-  {
-    "slug": "colapinto-largara-11-en-el-gp-de-mexico-tras-descalificacion-de-lawson",
-    "title": "Colapinto largará 11° en el GP de México tras descalificación de Lawson",
-    "summary": "Franco Colapinto partirá desde la 11ª posición en el Gran Premio de México, beneficiado por la descalificación de Jack Lawson. El argentino fue eliminado en Q2 con un tiempo de 1m17s640, mientras que su compañero Pierre Gasly largará noveno.",
-    "content": "<p>Franco Colapinto disputará el Gran Premio de México desde la 11ª posición de la grilla. El piloto argentino fue eliminado en la segunda tanda de clasificación (Q2) con un crono de 1m17s640, pero ascendió un puesto debido a la descalificación de Jack Lawson. Su compañero de equipo en Alpine, Pierre Gasly, partirá desde la novena posición.</p><p>El fin de semana del pilarense comenzó con complicaciones: no participó de la primera práctica libre (FP1) porque Alpine cedió su lugar al novato Gabriele Minì, cumpliendo con la normativa de oportunidades para pilotos jóvenes. En la segunda práctica libre (FP2), Colapinto terminó 16°, y en la tercera (FP3) mejoró a la 12ª posición, quedando a 1s052 del mejor registro de Lando Norris.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Colapinto largará 11° en el GP de México.",
-      "Fue eliminado en Q2 con tiempo de 1m17s640.",
-      "Pierre Gasly partirá desde la 9ª posición.",
-      "Alpine cedió el auto a Gabriele Minì en la FP1."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Olé",
-    "originalLink": "https://www.ole.com.ar/autos/franco-colapinto-carrera-gran-premio-mexico-2026-formula1-vivo-alpine_0_6gvxXYyABl.html",
-    "date": "2026-11-01T10:25:42.000Z"
-  },
-  {
-    "slug": "colapinto-arranca-12-en-mexico-ferrari-domina-con-pole-de-hamilton-y-leclerc-3",
-    "title": "Colapinto arranca 12° en México; Ferrari domina con pole de Hamilton y Leclerc 3°",
-    "summary": "Hamilton logró la pole en el GP de México, seguido por Leclerc (3°) tras la penalización de Verstappen. Colapinto partirá 12° tras problemas de frenado y neumáticos en Q2, mientras Pérez disputa su carrera 300.",
-    "content": "<p>La parrilla del Gran Premio de México se definió con la pole position de Lewis Hamilton (Ferrari), quien largará desde el primer lugar. Charles Leclerc completó el podio de clasificación en el tercer puesto, beneficiado por la penalización de Max Verstappen, quien retrocedió una posición y quedó quinto. George Russell y Antonelli ocupan la segunda fila, mientras que Franco Colapinto partirá desde el 12° lugar tras ser eliminado en la Q2.</p><p>Steve Nielsen, jefe de Alpine, atribuyó las dificultades de Colapinto a problemas de frenado y sobrecalentamiento de los neumáticos traseros en el último sector, lo que redujo la adherencia. El equipo espera sumar puntos con ambos autos, considerando estrategias de una o dos paradas (medio-blando o blando-medio-blando) para las 71 vueltas. Por su parte, Sergio Pérez disputará su carrera número 300 en la F1, arrancando desde el fondo de la grilla con Cadillac en el circuito de 2.200 metros de altura.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "Lewis Hamilton logró la pole position en el GP de México.",
-      "Franco Colapinto arrancará desde el 12° lugar tras problemas de frenado y neumáticos en Q2.",
-      "Sergio Pérez disputa su carrera número 300 en la Fórmula 1 con Cadillac."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Clarín Deportes",
-    "originalLink": "https://www.clarin.com/deportes/f1-gp-mexico-franco-colapinto-vivo-horario-carrera-ver-formula-1-hoy_0_AkdHg6ugOP.html",
-    "date": "2026-11-01T09:01:42.000Z"
-  },
-  {
-    "slug": "kimi-antonelli-necesita-ser-9-en-mexico-para-ser-campeon-de-f1-2026",
-    "title": "Kimi Antonelli necesita ser 9º en México para ser campeón de F1 2026",
-    "summary": "Antonelli lidera con 123 puntos de ventaja sobre Russell y 124 sobre Hamilton. Le basta sumar dos puntos (posición 9) en el GP de México para coronarse, dado que quedarían 100 puntos en juego.",
-    "content": "<p>Kimi Antonelli tiene la oportunidad de proclamarse campeón del mundo de F1 2026 este domingo en el Autódromo Hermanos Rodríguez. Tras ganar en Austin, el italiano lidera la clasificación con 123 puntos de ventaja sobre George Russell y 124 sobre Lewis Hamilton. Con 100 puntos aún en disputa tras la carrera mexicana (asumiendo que se celebren Qatar y Abu Dabi), Antonelli solo necesita sumar dos puntos, lo que equivale a finalizar en novena posición, para asegurar el título matemáticamente.</p><p>En caso de empate en puntos con Russell o Hamilton, Antonelli se adjudicaría el campeonato por tener más victorias (9), una cifra inalcanzable para sus rivales (3 para Russell y 1 para Hamilton). Max Verstappen, Charles Leclerc y Lando Norris quedaron fuera de la lucha tras el GP de Estados Unidos, donde terminaron tercero, segundo y quinto respectivamente. Existe un escenario alternativo donde Antonelli ya sería campeón si se cancelan las carreras de Qatar y Abu Dabi, reduciendo los puntos en juego a 75, aunque la F1 defiende que se disputarán.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Antonelli lidera con 123 puntos de ventaja sobre Russell y 124 sobre Hamilton.",
-      "Necesita finalizar en 9º lugar o mejor en México para ser campeón.",
-      "Tiene 9 victorias, lo que le da ventaja en caso de empate de puntos.",
-      "Verstappen, Leclerc y Norris quedaron eliminados de la lucha tras Austin."
-    ],
-    "team": "mercedes",
-    "teamColor": "#27F4D2",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/que-necesita-antonelli-campeon-mexico/10868385/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-01T08:16:30.000Z"
   }
 ]
