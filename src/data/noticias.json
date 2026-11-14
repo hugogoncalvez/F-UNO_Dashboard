@@ -14,7 +14,7 @@
     "teamColor": "#0093CC",
     "source": "Clarín Deportes",
     "originalLink": "https://www.clarin.com/deportes/formula-1-destaco-maniobra-colapinto-vio-transmision-supero-gasly-brasil_0_OSpQjHmFxF.html",
-    "date": "2026-11-13T18:14:05.936Z"
+    "date": "2026-11-14T11:14:03.579Z"
   },
   {
     "slug": "colapinto-adelanta-a-gasly-con-gomas-lisas-en-lluvia-y-viraliza-su-maniobra-en-b",
@@ -31,7 +31,59 @@
     "teamColor": "#0093CC",
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/vuelta-franco-colapinto-enloquecio-formula1-gasly-lluvia_0_vBPpodLn3s.html",
-    "date": "2026-11-13T18:14:04.936Z"
+    "date": "2026-11-14T11:14:02.579Z"
+  },
+  {
+    "slug": "mercedes-asegura-el-titulo-de-constructores-2026-en-brasil-pese-a-problemas-de-n",
+    "title": "Mercedes asegura el título de constructores 2026 en Brasil pese a problemas de neumáticos",
+    "summary": "Mercedes conquistó el campeonato de constructores de la F1 2026 en São Paulo al superar a Ferrari por tres puntos. James Allison atribuyó las dificultades de sus pilotos al cambio de intermedios a lisos con pista mojada.",
+    "content": "<p>Mercedes se adjudicó el título mundial de constructores de la Fórmula 1 2026 en el Gran Premio de Brasil, logrando la puntuación necesaria para superar a Ferrari por tres puntos. Aunque el campeonato parecía asegurado desde meses atrás, la carrera en São Paulo fue una de las más complicadas para el equipo debido a las condiciones mixtas de la pista.</p><p>James Allison, director técnico, explicó que el principal problema fue el cambio de neumáticos intermedios a lisos con agua acumulada en el asfalto. Aunque los neumáticos salían del box a 70 grados, cruzar charcos hacía perder la temperatura superficial ideal, provocando que Kimi Antonelli y George Russell se salieran de pista con los compuestos fríos. En el caso de Antonelli, la situación se agravó por bloqueos de neumáticos tras un trompo en la curva 1 mientras defendía su posición ante Lando Norris. Allison señaló que, una vez estabilizada la temperatura, el rendimiento del coche fue bueno, aunque la gestión de los intermedios en las últimas vueltas de lluvia fue poco prudente.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Mercedes ganó el título de constructores 2026 superando a Ferrari por 3 puntos en Brasil.",
+      "El cambio de intermedios a lisos con pista mojada provocó que los neumáticos perdieran temperatura rápidamente.",
+      "Kimi Antonelli sufrió bloqueos y un trompo en la curva 1 al defenderse de Lando Norris.",
+      "James Allison confirmó que el ritmo del coche fue bueno una vez los neumáticos alcanzaron la temperatura óptima."
+    ],
+    "team": "pilotos",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/mercedes-no-temia-perder-titulo-brasil-ferrari-carrera-desastrosa/10874467/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-14T11:07:44.000Z"
+  },
+  {
+    "slug": "mattarella-recibe-a-antonelli-en-el-quirinal-tras-ganar-el-mundial-de-f1",
+    "title": "Mattarella recibe a Antonelli en el Quirinal tras ganar el Mundial de F1",
+    "summary": "El presidente italiano Sergio Mattarella recibió al nuevo campeón de F1, Andrea Kimi Antonelli, en el Palacio del Quirinal. El piloto italiano rompió una sequía de 73 años sin títulos mundiales para su país.",
+    "content": "<p>Andrea Kimi Antonelli fue recibido con honores el pasado viernes por el presidente de la República Italiana, Sergio Mattarella, en el Palacio del Quirinal. El piloto, acompañado por sus padres Marco y Verónica y su hermana Maggie, celebró el título mundial conquistado en el Gran Premio de la Ciudad de México, logro que puso fin a una ausencia de campeones italianos en la Fórmula 1 desde 1953.</p><p>Antonelli obsequió a Mattarella con uno de sus cascos oficiales, que incluía la dedicatoria: 'Al presidente Mattarella, con gran admiración'. Durante la conversación, el piloto explicó las exigencias físicas de la F1, destacando la pérdida de aproximadamente dos kilos de peso por carrera debido al calor del mono ignífugo y la duración media de una hora y media. Mattarella expresó su interés en asistir a una próxima carrera, posiblemente en Monza, motivado por la nueva competitividad del piloto italiano.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Antonelli rompió una sequía de 73 años sin títulos mundiales italianos (desde 1953).",
+      "El piloto donó un casco con dedicatoria al presidente Mattarella en el Quirinal.",
+      "Antonelli detalló la pérdida de 2 kg de peso por carrera y la exigencia física del mono ignífugo."
+    ],
+    "team": "mercedes",
+    "teamColor": "#27F4D2",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/antonelli-recibido-presidente-italia-campeon-formula1/10874442/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-14T09:09:58.000Z"
+  },
+  {
+    "slug": "pirelli-define-neumaticos-para-las-vegas-qatar-y-abu-dhabi-en-la-recta-final-de-",
+    "title": "Pirelli define neumáticos para Las Vegas, Qatar y Abu Dhabi en la recta final de 2026",
+    "summary": "Pirelli llevará los compuestos más blandos (C3-C5) a Las Vegas y Abu Dhabi, mientras que Qatar recibirá los más duros (C1-C3). Esta última combinación solo se ha usado en Japón y Gran Bretaña esta temporada.",
+    "content": "<p>Para los tres últimos Grandes Premios de la temporada 2026, Pirelli ha confirmado las siguientes asignaciones: Las Vegas y Abu Dhabi recibirán los compuestos C3 (duro), C4 (medio) y C5 (blando). En Las Vegas, la elección busca facilitar el calentamiento de las gomas debido a las bajas temperaturas nocturnas. En Abu Dhabi, la misma combinación pretende ofrecer variedad estratégica y equilibrio entre rendimiento y degradación para cerrar el campeonato.</p><p>En contraste, el Gran Premio de Qatar en Lusail contará con los tres compuestos más duros de la gama: C1 (duro), C2 (medio) y C3 (blando). Esta selección responde a las altas cargas laterales y curvas rápidas del trazado, que exigen mayor resistencia en el eje delantero. Esta combinación extrema se ha utilizado únicamente en otras dos ocasiones durante la temporada 2026: en los Grandes Premios de Japón y Gran Bretaña.</p>",
+    "category": "Técnica",
+    "keyPoints": [
+      "Las Vegas y Abu Dhabi: Compuestos C3, C4 y C5.",
+      "Qatar: Compuestos C1, C2 y C3.",
+      "La combinación dura (C1-C3) solo se usó antes en Japón y Gran Bretaña."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/neumaticos-pirelli-qatar-vegas-abudhabi/10874388/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-13T19:26:11.000Z"
   },
   {
     "slug": "gasly-critica-a-la-f1-2026-fallos-de-software-castigan-a-pilotos-sin-culpa",
@@ -119,6 +171,23 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/video-locura-red-bull-carrera-sobre-hielo-formula1-motogp/10874327/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-11-13T14:08:25.000Z"
+  },
+  {
+    "slug": "toto-wolff-alerta-de-la-paridad-en-f1-ferrari-mclaren-y-red-bull-acortan-distanc",
+    "title": "Toto Wolff alerta de la paridad en F1: Ferrari, McLaren y Red Bull acortan distancia con Mercedes",
+    "summary": "Mercedes teme que la ventaja inicial del W17 se diluya ante la evolución de sus rivales. Wolff advierte que 2027 ya ha comenzado y que cuatro equipos pueden pelear por el título.",
+    "content": "<p>Desde el parón veraniego, Andrea Kimi Antonelli y Max Verstappen han sumado unos 170 puntos, superando en aproximadamente 60 unidades a Lando Norris. Esta paridad en la parte alta de la clasificación refleja un campeonato más igualado, donde Ferrari, McLaren y Red Bull han cerrado la brecha con Mercedes tras un inicio de temporada retrasado por la lucha del ciclo anterior.</p><p>Toto Wolff reconoce que el W17, basado en una unidad de potencia eficiente y gestión energética, no es invencible. El director de Mercedes señala que sus rivales han progresado en carga aerodinámica, un área donde Mercedes necesita dar el siguiente paso. \"2027 ya ha comenzado\", afirmó Wolff, indicando que el equipo debe aprender en las tres últimas carreras de la temporada para no perder terreno ante la convergencia tecnológica.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Antonelli y Verstappen suman ~170 puntos post-verano, 60 más que Norris",
+      "Wolff identifica a Ferrari, McLaren y Red Bull como rivales directos",
+      "Mercedes busca mejorar la carga aerodinámica del W17 para 2027"
+    ],
+    "team": "mercedes",
+    "teamColor": "#27F4D2",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/mercedes-mira-2027-preocupacion-no-esperan-dominar/10874144/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-13T13:29:50.000Z"
   },
   {
     "slug": "horarios-del-gp-de-las-vegas-2026-fp1-a-las-0130h-y-carrera-a-las-0500h-en-espan",
@@ -1657,75 +1726,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/russell-agotado-penalizacion-brasil-2026/10872173/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-11-06T17:06:08.000Z"
-  },
-  {
-    "slug": "russell-pierde-5-posiciones-en-san-pablo-por-usar-su-sexto-motor-ice",
-    "title": "Russell pierde 5 posiciones en San Pablo por usar su sexto motor ICE",
-    "summary": "La FIA sancionó a George Russell con cinco lugares de penalización en la parrilla del GP de Brasil tras confirmar el uso de su sexta unidad de combustión interna. Esta modificación afecta directamente la posición de salida del británico y podría beneficiar a otros pilotos, como Franco Colapinto.",
-    "content": "<p>George Russell deberá retroceder cinco posiciones en la parrilla de salida del Gran Premio de San Pablo. La FIA confirmó la sanción durante la primera práctica libre en Interlagos, tras verificar que el piloto de Mercedes (número 63) incorporó su sexto motor de combustión interna (ICE) de la temporada, excediendo el límite reglamentario.</p><p>La decisión fue formalizada en el documento 15 de los comisarios deportivos, publicado el viernes a las 13:16, citando el incumplimiento de los artículos B8.2.2a y B8.2.3, con la penalización establecida en el B8.2.8b. El registro de la infracción se realizó a las 12:31. Esta penalización modifica la grilla y podría permitir que pilotos ubicados en las posiciones 6 a 10, incluido Franco Colapinto, avancen un casillero respecto a su resultado en clasificación.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "George Russell recibe penalización de 5 posiciones en la parrilla de San Pablo.",
-      "Causa: Uso del sexto motor de combustión interna (ICE) de la temporada.",
-      "Sanción basada en artículos B8.2.2a, B8.2.3 y B8.2.8b del reglamento.",
-      "El cambio en la grilla podría beneficiar a pilotos como Franco Colapinto."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Olé",
-    "originalLink": "https://www.ole.com.ar/autos/georgerussell-granpremiodesanpablo-fia-interlagos-francocolapinto-motordecombustioninterna_0_mGoBcWzBwT.html",
-    "date": "2026-11-06T16:38:24.000Z"
-  },
-  {
-    "slug": "trabajadores-de-viry-chatillon-denuncian-traicion-por-venta-de-la-fabrica-a-duma",
-    "title": "Trabajadores de Viry-Châtillon denuncian traición por venta de la fábrica a Dumarey",
-    "summary": "La plantilla de Alpine Racing en Viry-Châtillon emitió un comunicado el 6 de noviembre criticando la venta de sus instalaciones al grupo belga Dumarey. Acusan a la dirección de incumplir promesas de Luca de Meo y de abandonar el centro tras el fin de sus programas de F1, WEC y Rallye-Raid.",
-    "content": "<p>El personal del Grupo Renault en Viry-Châtillon denunció el 6 de noviembre una \"sensación de traición\" tras el anuncio de la venta de la histórica fábrica al grupo belga Dumarey. Esta decisión se suma al cierre del proyecto de motorización de Fórmula 1 y la suspensión de los programas de WEC y Rallye-Raid a finales de 2026, lo que ha generado un clima de incertidumbre y abandono entre los empleados.</p><p>En su comunicado, los trabajadores recordaron que Luca de Meo prometió convertir Viry-Châtillon en un \"centro de excelencia\" y preservar este \"buque insignia\" de la industria francesa. Sin embargo, señalan que su sucesor, François Provost, ha roto ese compromiso al optar por la venta. La plantilla critica que los centros de I+D ya no ocupen un lugar central en la estrategia del Grupo Renault, que prefiere externalizar estas funciones, dejando en entredicho el futuro de la marca Alpine Racing y su saber hacer internacional.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Venta de la fábrica de Viry-Châtillon al grupo belga Dumarey.",
-      "Comunicado de protesta emitido por la plantilla el 6 de noviembre.",
-      "Acusación de incumplimiento de promesas por parte de Luca de Meo y François Provost.",
-      "Contexto: Fin de programas de F1, WEC y Rallye-Raid a finales de 2026."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/personal-viry-chatillon-denuncia-traicion-renault/10872105/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-06T14:56:04.000Z"
-  },
-  {
-    "slug": "colapinto-lidera-el-furor-argentino-en-interlagos-macri-y-turnes-visitan-el-padd",
-    "title": "Colapinto lidera el furor argentino en Interlagos; Macri y Turnes visitan el paddock",
-    "summary": "Franco Colapinto fue el centro de atención en la FP1 de San Pablo, donde será el único titular de Alpine. La visita de autoridades porteñas al circuito reaviva el sueño de un GP en Buenos Aires.",
-    "content": "<p>El primer día de actividad en el Autódromo José Carlos Pace de Interlagos estuvo marcado por la masiva presencia de fanáticos argentinos. Franco Colapinto, vestido con la indumentaria de Alpine, fue recibido con gritos y pedidos de fotos. Para la primera práctica libre (FP1), el argentino será el único piloto titular de su equipo, ya que Gabriele Minì ocupará el A526 de Pierre Gasly.</p><p>La jornada contó con la visita de Jorge Macri, jefe de Gobierno porteño, y Fabián \"Chino\" Turnes, secretario de Deportes de la Ciudad, quienes se reunieron en el hospitality de la Fórmula 1. Esta reunión, prevista desde hace días, busca impulsar la organización del Gran Premio de Buenos Aires. Además, la sesión de rookies incluyó a Leonardo Fornaroli (McLaren), Dino Beganovic (Ferrari), Luke Browning (Williams), Freddie Slater (Audi) y el debutante Rafael Câmara (Haas).</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Colapinto será el único titular de Alpine en la FP1; Gabriele Minì reemplaza a Pierre Gasly.",
-      "Jorge Macri y Fabián Turnes visitaron el paddock para avanzar en la organización del GP de Buenos Aires.",
-      "Rafael Câmara debutará en la Fórmula 1 con Haas en la sesión de rookies."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Clarín Deportes",
-    "originalLink": "https://www.clarin.com/deportes/colapinto-rockstar-interlagos-furor-argentino-visita-especial-alimenta-sueno-formula-1-buenos-aires_0_qGUxUD47OC.html",
-    "date": "2026-11-06T14:09:45.000Z"
-  },
-  {
-    "slug": "colapinto-ensena-a-preparar-mate-a-gasly-y-hamilton-en-f1",
-    "title": "Colapinto enseña a preparar mate a Gasly y Hamilton en F1",
-    "summary": "Franco Colapinto lleva su termo personalizado a las ruedas de prensa de F1. El piloto de Alpine compartió el ritual del mate con sus compañeros Pierre Gasly y Lewis Hamilton.",
-    "content": "<p>Franco Colapinto mantiene su costumbre de llevar mate a las conferencias de prensa y fan zones de la Fórmula 1. Durante su etapa en el equipo, el argentino enseñó a preparar la infusión a su compañero de equipo en Alpine, Pierre Gasly, y al piloto Lewis Hamilton.</p><p>El termo del piloto, que lo acompaña desde su paso por Williams en septiembre de 2024, está decorado con stickers personalizados. Entre los calcos se incluyen imágenes de Lionel Messi, la Copa del Mundo, un mapa de Argentina, una gorra de Bizarrap, versiones de Colapinto en dibujitos y referencias al club Boca Juniors. Colapinto explicó que añadió estas figuras para reflejar su identidad argentina y el apoyo de sus hinchas.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Colapinto enseñó a preparar mate a Pierre Gasly y Lewis Hamilton",
-      "El piloto lleva su termo personalizado a ruedas de prensa y fan zones",
-      "El termo incluye stickers de Messi, Bizarrap, Boca Juniors y mapas de Argentina"
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Olé",
-    "originalLink": "https://www.ole.com.ar/autos/francocolapinto-mate-alpine-formula1-pierregasly-lewishamilton_0_S3ZGMTZLFS.html",
-    "date": "2026-11-06T13:55:25.000Z"
   }
 ]
