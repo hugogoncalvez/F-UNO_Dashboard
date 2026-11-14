@@ -14,7 +14,7 @@
     "teamColor": "#0093CC",
     "source": "Clarín Deportes",
     "originalLink": "https://www.clarin.com/deportes/formula-1-destaco-maniobra-colapinto-vio-transmision-supero-gasly-brasil_0_OSpQjHmFxF.html",
-    "date": "2026-11-14T11:14:03.579Z"
+    "date": "2026-11-14T15:14:02.522Z"
   },
   {
     "slug": "colapinto-adelanta-a-gasly-con-gomas-lisas-en-lluvia-y-viraliza-su-maniobra-en-b",
@@ -31,7 +31,75 @@
     "teamColor": "#0093CC",
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/vuelta-franco-colapinto-enloquecio-formula1-gasly-lluvia_0_vBPpodLn3s.html",
-    "date": "2026-11-14T11:14:02.579Z"
+    "date": "2026-11-14T15:14:01.522Z"
+  },
+  {
+    "slug": "hulkenberg-suma-puntos-en-brasil-y-audi-reduce-brecha-con-haas-a-3-unidades",
+    "title": "Hulkenberg suma puntos en Brasil y Audi reduce brecha con Haas a 3 unidades",
+    "summary": "Nico Hulkenberg terminó décimo en el GP de Brasil tras recibir una sanción de 10 segundos. Audi aprovechó la lluvia para clasificar sexto y reducir su desventaja en el Mundial de Constructores.",
+    "content": "<p>Nico Hulkenberg finalizó en la décima posición en el Gran Premio de Brasil, un resultado que le permitió sumar puntos para Audi pese a recibir una sanción de diez segundos por salirse de la pista y obtener ventaja frente a Franco Colapinto. Este resultado fue clave para que el equipo alemán redujera su desventaja respecto a Haas F1 en el Mundial de Constructores a solo tres puntos.</p><p>La actuación se construyó desde la clasificación del sábado, donde Hulkenberg logró el sexto puesto bajo la lluvia. Esta posición se convirtió en un cuarto lugar en la parrilla gracias a las sanciones impuestas a pilotos de equipos punteros. La lluvia neutralizó las limitaciones de la unidad de potencia de Audi, permitiendo al alemán destacar por su capacidad para aprovechar la oportunidad en una sesión marcada por errores y una línea de salida de pista extremadamente fina.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Hulkenberg terminó 10º en Brasil tras sanción de 10s por ventaja sobre Colapinto.",
+      "Audi redujo su desventaja con Haas en el Mundial de Constructores a 3 puntos.",
+      "Clasificó 6º bajo la lluvia, subiendo a 4º en parrilla por sanciones rivales."
+    ],
+    "team": "sauber",
+    "teamColor": "#52E252",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/hulkenberg-sigue-sumando-era-jovenes/10874168/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-14T15:01:05.000Z"
+  },
+  {
+    "slug": "fia-fija-el-25-de-noviembre-para-revisar-la-apelacion-de-audi-contra-tsunoda-en-",
+    "title": "FIA fija el 25 de noviembre para revisar la apelación de Audi contra Tsunoda en Monza",
+    "summary": "El Tribunal de Apelación de la FIA examinará en París el recurso de Audi sobre la no sanción a Yuki Tsunoda en Monza. Audi argumenta que el piloto infringió el reglamento al provocar una vuelta de formación extra.",
+    "content": "<p>El Tribunal de Apelación Internacional de la FIA ha programado para el miércoles 25 de noviembre, en París, la revisión del recurso presentado por Audi contra la decisión de los comisarios del Gran Premio de Italia de 2026. La disputa se origina en la segunda salida de la carrera de Monza, el 6 de septiembre, cuando una bandera roja por el accidente de Charles Leclerc llevó a Dirección de Carrera a ordenar una vuelta de formación adicional debido a la posición inicial de Yuki Tsunoda.</p><p>Tsunoda, entonces en Racing Bulls, dudó en su posición en la parrilla antes de colocarse correctamente, lo que generó la investigación por posible infracción del artículo B5.9.4 del Reglamento Deportivo. Los comisarios no sancionaron al piloto, argumentando que su posición final era correcta y que la vuelta extra se debió a la incomodidad del director de carrera, no a una falta. Audi, cuyo piloto Gabriel Bortoleto terminó undécimo justo detrás de Tsunoda, presentó su recurso oficial el 9 de septiembre, dentro del plazo de 96 horas, alegando que el reglamento no deja margen de interpretación sobre las consecuencias de provocar dicha vuelta.</p>",
+    "category": "Reglamento",
+    "keyPoints": [
+      "Fecha de la audiencia: 25 de noviembre en París.",
+      "Artículo en disputa: B5.9.4 del Reglamento Deportivo de F1 2026.",
+      "Consecuencia en juego: Posición de Tsunoda (10º) y Bortoleto (11º) en Monza."
+    ],
+    "team": "pilotos",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/fia-fecha-revisar-apelacion-audi-tsunoda-monza/10874521/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-14T14:02:13.000Z"
+  },
+  {
+    "slug": "mclaren-estrena-en-las-vegas-piezas-clave-para-el-monoplaza-de-2027",
+    "title": "McLaren estrena en Las Vegas piezas clave para el monoplaza de 2027",
+    "summary": "McLaren presentará mejoras en el MCL40 en Las Vegas, descritas como la base del coche de 2027. El equipo busca revertir su mala racha tras la victoria de Lando Norris en Brasil.",
+    "content": "<p>El equipo McLaren introducirá nuevas piezas en su MCL40 durante el Gran Premio de Las Vegas, componentes que el director Andrea Stella define como \"la base del monoplaza del año que viene\". Estas actualizaciones llegan tras la presentación en Brasil de un nuevo concepto de alerón delantero para 2027, diseñado para mejorar la manejabilidad y previsibilidad del coche.</p><p>La estrategia de desarrollo se activa tras la victoria de Lando Norris en Interlagos, que rompió una racha de cinco carreras sin podio. Stella señaló que el equipo perdió competitividad frente a otras escuderías tras el GP de Madrid, donde un coche de seguridad virtual afectó negativamente a Norris. Las Vegas representa un reto histórico para McLaren: en 2023 ambos coches fueron eliminados en Q1 (Norris se accidentó en la vuelta 3), y en 2024 finalizaron sexto y séptimo, a 27 segundos del líder. En la última edición, Norris logró la pole, pero Verstappen se impuso en una carrera donde los McLaren terminaron segundo y cuarto.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Las piezas de Las Vegas son la base del monoplaza de 2027",
+      "Norris ganó en Brasil tras cinco carreras sin podio",
+      "McLaren tuvo resultados pobres en Las Vegas en 2023 y 2024"
+    ],
+    "team": "mclaren",
+    "teamColor": "#FF8000",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/mclaren-mejora-coche-las-vegas-circuito-complicado-2027/10874506/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-14T12:46:47.000Z"
+  },
+  {
+    "slug": "honda-busca-motivacion-tras-averias-de-bateria-en-brasil-ante-su-ceo",
+    "title": "Honda busca motivación tras averías de batería en Brasil ante su CEO",
+    "summary": "Toshihiro Mibe, CEO de Honda, presenció dos fallos de batería en el Aston Martin de Lance Stroll en Interlagos. Shintaro Orihara espera que esta experiencia impulse el desarrollo técnico en Japón.",
+    "content": "<p>El CEO de Honda Motor, Toshihiro Mibe, visitó el circuito de Interlagos durante el Gran Premio de Brasil, donde presenció dos averías consecutivas en la batería del Aston Martin de Lance Stroll, ocurridas el sábado y el domingo. Shintaro Orihara, responsable de Honda en pista, reconoció que la presencia del máximo ejecutivo añade motivación, aunque la causa raíz de los fallos aún está bajo investigación para evitar que se repitan en la próxima temporada.</p><p>Orihara afirmó que Mibe ahora comprende la realidad operativa en pista y espera que esta experiencia impulse el desarrollo técnico en la sede japonesa. Por su parte, Mike Krack, jefe de Aston Martin, confirmó que hubo conversaciones positivas con los directivos de Honda, aunque no detalló nuevas inversiones ni medidas específicas derivadas de la visita.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Toshihiro Mibe (CEO de Honda) visitó Interlagos durante el GP de Brasil.",
+      "Lance Stroll sufrió dos fallos de batería consecutivos (sábado y domingo).",
+      "Shintaro Orihara espera que la visita impulse el desarrollo en Japón."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/honda-fallo-delante-ceo-busca-reaccion-impulsara-nuestro-desarrollo/10874387/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-14T11:40:13.000Z"
   },
   {
     "slug": "mercedes-asegura-el-titulo-de-constructores-2026-en-brasil-pese-a-problemas-de-n",
@@ -50,6 +118,23 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/mercedes-no-temia-perder-titulo-brasil-ferrari-carrera-desastrosa/10874467/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-11-14T11:07:44.000Z"
+  },
+  {
+    "slug": "ricciardo-admite-estar-machacado-mentalmente-tras-su-regreso-a-f1",
+    "title": "Ricciardo admite estar 'machacado' mentalmente tras su regreso a F1",
+    "summary": "Daniel Ricciardo confesó en el podcast Beyond The Grid que su retorno a la Fórmula 1 fue una pesadilla. Reconoce que mentalmente no estaba en condiciones de competir, a pesar de su victoria en Italia.",
+    "content": "<p>Daniel Ricciardo reveló en el podcast Beyond The Grid que su etapa de regreso a la Fórmula 1 fue una experiencia desgastante. Tras perder su asiento en McLaren, el australiano volvió a AlphaTauri (Faenza) con la esperanza de regresar a Red Bull, un objetivo que nunca se materializó.</p><p>El piloto admitió que, salvo por su victoria en el Gran Premio de Italia, no logró subir al podio en sus últimas 70 carreras. Ricciardo explicó que sufría de una fase de negación y que mentalmente ya no estaba en condiciones de competir, describiendo su estado como estar 'machacando' y 'harto de recibir golpes' durante su última carrera, el GP de Singapur 2024. Red Bull finalmente optó por Liam Lawson para el segundo asiento de RB, poniendo fin a las aspiraciones del australiano de volver a ser compañero de Max Verstappen.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Ricciardo no subió al podio en sus últimas 70 carreras, excluyendo la victoria en Italia.",
+      "El piloto admitió estar en una fase de negación y mentalmente agotado durante su última temporada.",
+      "Red Bull eligió a Liam Lawson para el segundo asiento de RB, descartando el regreso de Ricciardo."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/como-ricciardo-acabo-quemado-humillante-regreso-formula1/10874394/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-14T10:06:41.000Z"
   },
   {
     "slug": "mattarella-recibe-a-antonelli-en-el-quirinal-tras-ganar-el-mundial-de-f1",
@@ -1640,91 +1725,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/mejoras-mclaren-brasil-2026-miran-2027/10872223/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-11-07T08:55:13.000Z"
-  },
-  {
-    "slug": "red-bull-explica-por-que-verstappen-abandono-los-libres-de-brasil-antes-de-tiemp",
-    "title": "Red Bull explica por qué Verstappen abandonó los libres de Brasil antes de tiempo",
-    "summary": "Max Verstappen finalizó tercero en ambas sesiones del GP de Sao Paulo, a 2.5s del líder. Red Bull detuvo su tanda larga en FP2 por inconsistencias en los datos.",
-    "content": "<p>Max Verstappen concluyó la jornada de viernes del Gran Premio de Sao Paulo en tercera posición en ambas sesiones de entrenamientos libres. En la FP1, Lando Norris fue el más rápido, mientras que Andrea Kimi Antonelli lideró la FP2; en ambas ocasiones, el neerlandés se quedó a unas dos décimas y media del crono de referencia.</p><p>Verstappen decidió regresar a boxes con más de seis minutos restantes en la FP2. Hannah Schmitz, responsable de estrategia de Red Bull, justificó la decisión indicando que el equipo detectó \"muchas inconsistencias\" en la tanda larga y que continuar rodando no aportaba datos útiles para las modificaciones nocturnas. Además, el piloto sufrió un problema de dirección asistida en la FP1 y protagonizó un intercambio por radio con su ingeniero de carrera, Tom Hart, sobre la adaptación de la unidad de potencia.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Verstappen fue 3º en FP1 y FP2, a 2.5s del líder en cada sesión.",
-      "Red Bull detuvo la tanda larga por inconsistencias en los datos.",
-      "Tom Hart sustituye a Gianpiero Lambiase como ingeniero de carrera."
-    ],
-    "team": "redbull",
-    "teamColor": "#3671C6",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/verstappen-abandono-coche-libres-antes-tiempo-red-bull-explica/10872371/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-07T08:41:13.000Z"
-  },
-  {
-    "slug": "clasificacion-gp-de-brasil-horarios-formato-y-detalles-para-el-sabado-7-de-novie",
-    "title": "Clasificación GP de Brasil: horarios, formato y detalles para el sábado 7 de noviembre",
-    "summary": "La clasificación del GP de Sao Paulo se disputará el sábado 7 de noviembre a las 15:00h locales (19:00h España). Será una sesión estándar de tres rondas (Q1, Q2, Q3) tras el fin de los sprint en 2026.",
-    "content": "<p>El sábado 7 de noviembre se celebra la clasificación del Gran Premio de Brasil en el circuito de Interlagos, última cita antes del parón de F1. La sesión principal comienza a las 15:00h hora local (19:00h en España), con una duración total que incluye las tres fases habituales: Q1 (18 min), Q2 y Q3 (12 min). Los horarios en Latinoamérica varían: 12:00h México, 13:00h Colombia/Perú/Ecuador, 14:00h Bolivia/Paraguay/Venezuela y 15:00h Argentina/Chile.</p><p>La jornada arranca con la FP3 a las 11:30h locales (15:30h España). En la Q1 participan los 22 pilotos; los 16 más rápidos avanzan a la Q2, mientras que los 6 eliminados quedan clasificados del 17º al 22º puesto. La Q3, decisiva para la pole position, reúne a los 10 mejores tiempos de la Q2. La transmisión en España requiere suscripción a DAZN (Plan Motor o Esencial), Movistar+ (Paquete Motor) o Vodafone TV, mientras que en Latinoamérica la señal principal es ESPN vía Disney+.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "Fecha: Sábado 7 de noviembre.",
-      "Hora clasificación: 15:00h locales / 19:00h España.",
-      "Formato: Estándar (Q1, Q2, Q3) sin sprint.",
-      "FP3: 11:30h locales / 15:30h España."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/hora-clasificacion-brasil-sao-paulo-como-verla/10872012/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-07T08:25:08.000Z"
-  },
-  {
-    "slug": "colapinto-critica-el-bloqueo-del-alpine-tras-practicas-en-interlagos",
-    "title": "Colapinto critica el bloqueo del Alpine tras prácticas en Interlagos",
-    "summary": "Franco Colapinto terminó 9° y 11° en las prácticas libres de Brasil, pero se mostró disconforme con la inconsistencia del A526. El argentino señaló problemas de bloqueo y falta de tracción que impidieron mejorar el rendimiento del monoplaza.",
-    "content": "<p>Franco Colapinto completó un viernes mixto en el Gran Premio de Brasil. En la primera práctica libre (FP1), el argentino finalizó noveno, a 0s937 de Lando Norris, quien lideró la sesión. Su compañero de equipo, el joven italiano Gabriele Mini, quien reemplazó a Pierre Gasly por normativa, terminó séptimo. En la segunda práctica (FP2), Colapinto se ubicó undécimo con un tiempo de 1m11s996, a 1s233 del récord de Kimi Antonelli (1m10s763). Gasly, de regreso al volante, cerró en la 14ª posición.</p><p>Pese a los resultados cercanos al top 10, el piloto argentino expresó su insatisfacción con la puesta a punto del Alpine A526. Colapinto explicó que la configuración más dura probada en FP1 resultó inconsistente y provocó movimientos excesivos en los baches, lo que obligó al equipo a revertir los cambios para FP2. \"Estuvo un poco mejor el auto, pero todavía falta mucho, bloqueando en todos lados, falta tracción, falta un poco de consistencia del auto\", detalló el argentino, quien busca revertir una racha de cinco carreras sin puntos.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Colapinto terminó 9° en FP1 y 11° en FP2 en Interlagos.",
-      "Gabriele Mini reemplazó a Pierre Gasly en la FP1 y terminó 7°.",
-      "El piloto argentino reportó bloqueo en todos los sectores y falta de tracción en el A526."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Olé",
-    "originalLink": "https://www.ole.com.ar/autos/franco-colapinto-buen-arranque-gp-brasil-formula-1_0_8s6BVjsgJ6.html",
-    "date": "2026-11-06T20:42:35.000Z"
-  },
-  {
-    "slug": "alpine-pago-100-euros-por-exceso-de-velocidad-de-colapinto-en-san-pablo",
-    "title": "Alpine pagó 100 euros por exceso de velocidad de Colapinto en San Pablo",
-    "summary": "Franco Colapinto superó el límite de velocidad en boxes por 0,6 km/h durante la FP1 en Interlagos. La FIA multó a Alpine con 100 euros, sin penalización en pista.",
-    "content": "<p>Franco Colapinto fue sancionado por la FIA tras exceder el límite de velocidad en la calle de boxes durante la primera práctica libre del Gran Premio de San Pablo. El incidente ocurrió el viernes a las 13:10 en Interlagos, cuando el Alpine número 43 registró una velocidad de 80,6 km/h, superando el tope permitido de 80 km/h por apenas seis décimas.</p><p>Los comisarios deportivos aplicaron el artículo B1.6.3a del reglamento y multaron al equipo Alpine con 100 euros. La resolución no incluye pérdida de posiciones, recargos de tiempo ni puntos en la superlicencia, por lo que Colapinto mantiene su posición de largada original para la carrera.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Velocidad registrada: 80,6 km/h (límite: 80 km/h).",
-      "Multa impuesta a Alpine: 100 euros.",
-      "Sin penalización en pista ni puntos en superlicencia."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Olé",
-    "originalLink": "https://www.ole.com.ar/autos/francocolapinto-granpremiodesanpablo-formula1-interlagos-bwtalpinef1team_0_ril7kPBJA2.html",
-    "date": "2026-11-06T17:37:50.000Z"
-  },
-  {
-    "slug": "russell-pierde-5-posiciones-en-la-parrilla-del-gp-de-brasil-por-cambiar-su-sexto",
-    "title": "Russell pierde 5 posiciones en la parrilla del GP de Brasil por cambiar su sexto motor",
-    "summary": "George Russell recibirá una sanción de cinco puestos en Interlagos al instalar su sexta unidad de potencia de la temporada. El piloto de Mercedes admite sentirse agotado tras una campaña irregular donde ha sido superado por su compañero, el campeón Andrea Kimi Antonelli.",
-    "content": "<p>George Russell partirá cinco posiciones más atrás en la parrilla de salida del Gran Premio de Brasil de Fórmula 1 debido a la instalación de su sexto motor de combustión interna de la temporada. Mercedes decidió asumir la penalización en Interlagos, un circuito donde Lewis Hamilton logró una notable remontada en 2021, tras haber superado ya el límite reglamentario de cuatro unidades en Singapur.</p><p>El británico reconoció sentirse \"agotado\" por la constante necesidad de recuperarse tras fines de semana decepcionantes en esta temporada 2026. Russell, quien defiende que el nuevo reglamento de unidades de potencia perjudica su estilo de pilotaje, ocupa actualmente la cuarta posición en el campeonato, por detrás de Max Verstappen, Lewis Hamilton y su compañero de equipo, Andrea Kimi Antonelli, recientemente proclamado campeón del mundo.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Penalización de 5 posiciones en la parrilla del GP de Brasil.",
-      "Causa: Instalación del sexto motor de combustión interna de la temporada.",
-      "Russell ocupa la 4ª posición en el campeonato, superado por Antonelli (campeón), Verstappen y Hamilton."
-    ],
-    "team": "mercedes",
-    "teamColor": "#27F4D2",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/russell-agotado-penalizacion-brasil-2026/10872173/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-06T17:06:08.000Z"
   }
 ]
