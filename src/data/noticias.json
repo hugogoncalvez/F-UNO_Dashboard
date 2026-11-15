@@ -14,7 +14,7 @@
     "teamColor": "#0093CC",
     "source": "Clarín Deportes",
     "originalLink": "https://www.clarin.com/deportes/formula-1-destaco-maniobra-colapinto-vio-transmision-supero-gasly-brasil_0_OSpQjHmFxF.html",
-    "date": "2026-11-15T15:14:04.136Z"
+    "date": "2026-11-15T18:14:01.625Z"
   },
   {
     "slug": "colapinto-alpine-prioriza-el-coche-de-2027-ante-limitaciones-de-desarrollo-actua",
@@ -32,7 +32,41 @@
     "teamColor": "#0093CC",
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/tiritas-no-bastan-alpine-colapinto-mira-2027/10874393/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-15T15:14:03.136Z"
+    "date": "2026-11-15T18:14:00.625Z"
+  },
+  {
+    "slug": "vowles-el-colapso-de-williams-en-2026-expone-debilidades-y-justifica-cambios-est",
+    "title": "Vowles: El colapso de Williams en 2026 expone debilidades y justifica cambios estructurales",
+    "summary": "Williams cayó de la 5ª a la 9ª posición en el campeonato de constructores entre 2025 y 2026. James Vowles considera este revés positivo para implementar reformas urgentes en la infraestructura del equipo.",
+    "content": "<p>James Vowles, director de Williams, admitió en el podcast 'The Fast and the Curious' que el equipo sufrió su mayor caída histórica al pasar de la quinta posición en 2025 a la novena en 2026, quedando solo por delante de Aston Martin y Cadillac. Vowles argumenta que este descenso fue necesario para revelar las limitaciones reales del equipo, que en 2025 compitió por encima de sus medios disponibles.</p><p>El jefe de equipo señaló que los cambios en el reglamento sacaron a la luz debilidades estructurales que requerían reformas profundas. Vowles, quien asumió el cargo en 2023, advirtió previamente a la junta directiva sobre problemas internos y asegura que la infraestructura de Williams va años por detrás de los equipos punteros, aunque mantiene su convicción de que las acciones actuales son el camino correcto para el futuro.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Williams descendió de la 5ª a la 9ª posición en el campeonato de constructores entre 2025 y 2026.",
+      "Vowles afirma que el bajo rendimiento expuso la necesidad de cambios profundos en la estructura del equipo.",
+      "El director reconoce que la infraestructura de Williams está años por detrás de los equipos líderes."
+    ],
+    "team": "williams",
+    "teamColor": "#64C4FF",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/vowles-williams-reves-2026-positivo/10874685/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-15T17:31:58.000Z"
+  },
+  {
+    "slug": "hamilton-recupera-su-estilo-en-f1-2026-gracias-a-monoplazas-mas-convencionales",
+    "title": "Hamilton recupera su estilo en F1 2026 gracias a monoplazas más convencionales",
+    "summary": "Lewis Hamilton ha recuperado su impulso tras la era del efecto suelo. Los coches de 2026, con menos carga aerodinámica, favorecen su habilidad para acelerar con decisión en la entrada de curva.",
+    "content": "<p>Lewis Hamilton ha recuperado su competitividad en la temporada 2026, un cambio atribuido a la adaptación de los monoplazas al nuevo reglamento. A diferencia de los coches con efecto suelo, que exigían una conducción estable pero poco 'sincera', los actuales vehículos permiten una dinámica más convencional y directa.</p><p>La clave reside en la reducción de la carga aerodinámica y el cambio de neumáticos, que han eliminado la delicadeza en la fase combinada de frenado y giro. Esto favorece el estilo de Hamilton, similar al de Andrea Kimi Antonelli, quien destaca por su capacidad para acelerar con decisión en la entrada de las curvas, una cualidad que los reglamentos anteriores habían ocultado.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Hamilton recupera su impulso tras la era del efecto suelo",
+      "Los monoplazas de 2026 son más 'convencionales' y 'sinceros' según James Allison",
+      "La reducción de carga aerodinámica favorece la aceleración en la entrada de curva"
+    ],
+    "team": "ferrari",
+    "teamColor": "#E8002D",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/segunda-juventud-hamilton-2026/10874564/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-15T15:44:01.000Z"
   },
   {
     "slug": "horner-admite-que-red-bull-sacrifico-a-perez-para-adaptar-el-rb18-a-verstappen",
@@ -50,6 +84,23 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/ultimatum-entorno-verstappen-red-bull-sacrifico-perez/10874630/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-11-15T14:46:16.000Z"
+  },
+  {
+    "slug": "topps-lanza-tarjeta-now-limitada-por-la-carrera-400-de-hamilton-en-f1",
+    "title": "Topps lanza tarjeta NOW limitada por la carrera 400 de Hamilton en F1",
+    "summary": "Topps emitió la tarjeta número 76 de la serie F1 2026 para celebrar la 400.ª salida de Lewis Hamilton en el GP de São Paulo. El piloto de Ferrari se convirtió en el segundo en alcanzar este hito, tras Fernando Alonso.",
+    "content": "<p>Topps lanzó una tarjeta coleccionable Topps NOW para conmemorar la 400.ª participación de Lewis Hamilton en la Fórmula 1, ocurrida en el Gran Premio de São Paulo. El piloto de Ferrari se unió a Fernando Alonso como el segundo conductor en la historia en alcanzar este hito, logro que Alonso consiguió en 2024.</p><p>La tarjeta, identificada como la número 76 de la serie Formula 1 Topps NOW 2026, tiene un precio de $11.99 en el sitio web de la marca. A diferencia de las tiradas fijas, estas tarjetas se fabrican bajo pedido y su cantidad total impresa solo se revela tras el cierre de la venta. Hamilton, quien partió desde el fondo de la parrilla por una penalización de unidad de potencia, terminó la carrera en novena posición a una vuelta del líder.</p>",
+    "category": "Off-track",
+    "keyPoints": [
+      "Hamilton es el segundo piloto en alcanzar 400 salidas en F1, después de Fernando Alonso.",
+      "La tarjeta es la número 76 de la serie Topps NOW 2026 y cuesta $11.99.",
+      "Hamilton terminó noveno en el GP de São Paulo tras salir desde el fondo por penalización."
+    ],
+    "team": "ferrari",
+    "teamColor": "#E8002D",
+    "source": "Motorsport.com LAT",
+    "originalLink": "https://lat.motorsport.com/f1/news/topps-celebra-400-arrancada-hamilton-tarjeta-especial/10874681/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=lat",
+    "date": "2026-11-15T13:42:44.000Z"
   },
   {
     "slug": "button-alonso-vive-para-la-f1-y-busca-progreso-en-aston-martin",
@@ -324,6 +375,24 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/antonelli-recibido-presidente-italia-campeon-formula1/10874442/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-11-14T09:09:58.000Z"
+  },
+  {
+    "slug": "aniversario-del-gp-de-abu-dhabi-2010-vettel-campeon-y-el-error-estrategico-de-fe",
+    "title": "Aniversario del GP de Abu Dhabi 2010: Vettel campeón y el error estratégico de Ferrari",
+    "summary": "Se cumplen 16 años del final de la temporada 2010, donde Sebastian Vettel se coronó campeón tras una jugada estratégica de Red Bull. Fernando Alonso, líder con 246 puntos, perdió el título por una parada en boxes tardía que le dejó sin opciones de remontada.",
+    "content": "<p>En noviembre de 2026 se conmemora el 16º aniversario del Gran Premio de Abu Dhabi 2010, la carrera que coronó a Sebastian Vettel como campeón del mundo. A la cita final llegaron cuatro pilotos con opciones: Fernando Alonso (Ferrari) lideraba con 246 puntos, seguido por Mark Webber (Red Bull) a 8 puntos, Vettel (Red Bull) a 15 y Lewis Hamilton (McLaren) a 24.</p><p>Alonso partía desde la tercera posición tras la pole de Vettel y la segunda de Hamilton. Un accidente entre Michael Schumacher y Vitantonio Liuzzi en la primera vuelta activó el Safety Car, momento en el que varios pilotos, incluido Vettel, gestionaron sus paradas. La clave llegó en la vuelta 12, cuando Red Bull detuvo a Webber para dejarle en pista y forzar la reacción de Ferrari. Alonso, que inicialmente permaneció en pista, realizó su parada en la vuelta 16, cayendo al 12º lugar. Aunque recuperó posiciones hasta el 7º, quedó atrapado detrás de Vitaly Petrov y Nico Rosberg, quienes no necesitaban volver a entrar, haciendo matemáticamente imposible alcanzar el cuarto puesto necesario para el título.</p>",
+    "category": "Carrera",
+    "keyPoints": [
+      "Vettel ganó el título con 15 puntos de desventaja inicial frente a Alonso.",
+      "Red Bull ejecutó una estrategia de 'undercut' deteniendo a Webber en la vuelta 12.",
+      "Ferrari cometió un error táctico al dejar a Alonso en pista hasta la vuelta 16.",
+      "Alonso terminó 7º, insuficiente para el título, mientras Vettel ganó la carrera."
+    ],
+    "team": "pilotos",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/abu-dhabi-2010-vettel-mundial-alonso-petrov/4596814/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-14T08:57:20.000Z"
   },
   {
     "slug": "pirelli-define-neumaticos-para-las-vegas-qatar-y-abu-dhabi-en-la-recta-final-de-",
@@ -1658,75 +1727,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/alonso-esperanzas-lluvia-brasil/10872881/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-11-08T13:05:22.000Z"
-  },
-  {
-    "slug": "verstappen-vio-futbol-en-la-q1-de-brasil-tras-sancion-de-motor",
-    "title": "Verstappen vio fútbol en la Q1 de Brasil tras sanción de motor",
-    "summary": "Max Verstappen salió en 21ª posición en el GP de Brasil por una sanción de motor. Durante el retraso de la clasificación, vio partidos de la Premier League, incluido Nottingham Forest-Manchester City.",
-    "content": "<p>Max Verstappen disputó la clasificación del GP de Brasil desde la 21ª posición de la parrilla debido a una sanción relacionada con el motor. En la Q1, bajo condiciones de lluvia, el neerlandés logró un tiempo 1,4 segundos más rápido que el líder inicial y 0,4 segundos más rápido que Lewis Hamilton, terminando tercero por detrás de Lando Norris y George Russell.</p><p>Debido a una bandera roja que retrasó la sesión casi una hora y media, Verstappen aprovechó el tiempo para ver fútbol. Confirmó haber visto varios partidos de la Premier League, destacando el encuentro entre Nottingham Forest y Manchester City, donde vio el gol del 3-1 justo antes de volver a su coche. El piloto de Red Bull admitió que no disfrutó la sesión porque no competía por nada y lamentó haber perdido 12 horas de su vida.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Verstappen salió en 21ª posición por sanción de motor.",
-      "Terminó tercero en la Q1, 0,4s por detrás de Hamilton.",
-      "Vio el partido Nottingham Forest-Manchester City (3-1) durante el retraso."
-    ],
-    "team": "redbull",
-    "teamColor": "#3671C6",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/verstappen-relleno-sabado-lluvia-brasil/10872873/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-08T11:13:02.000Z"
-  },
-  {
-    "slug": "ralf-schumacher-descarta-a-colton-herta-para-f1-no-tiene-sentido",
-    "title": "Ralf Schumacher descarta a Colton Herta para F1: 'No tiene sentido'",
-    "summary": "Ralf Schumacher critica la campaña de Colton Herta para un asiento en Cadillac, argumentando que su rendimiento en F2 fue deficiente. El ex piloto sugiere dar la oportunidad a jóvenes como Leonardo Fornaroli en lugar de al estadounidense.",
-    "content": "<p>Colton Herta completó 24 vueltas en los primeros libres del GP de São Paulo 2026, sustituyendo a Sergio Pérez, y aseguró el último punto necesario para su superlicencia de la FIA. A pesar de esto, Ralf Schumacher, comentarista de Sky Germany, descartó rotundamente al estadounidense como candidato al segundo asiento de Cadillac para 2027, comparando la posibilidad con que 'Pascua y Navidad caigan el mismo día'.</p><p>Schumacher criticó el desempeño de Herta en Fórmula 2, donde ocupa la 19ª posición con 26 puntos, sin victorias ni podios. El ex piloto de F1 señaló que Herta no se ha ganado el lugar y propuso como alternativa a Leonardo Fornaroli, junior de McLaren y campeón de F2 y F3. Mientras tanto, Pérez tiene contrato con Cadillac hasta 2029, y la continuidad de Valtteri Bottas sigue en el aire.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Herta obtuvo su superlicencia tras sumar puntos en IndyCar y los libres de F1 con Cadillac.",
-      "Ralf Schumacher critica el bajo rendimiento de Herta en F2 (19º con 26 puntos).",
-      "Schumacher sugiere a Leonardo Fornaroli como alternativa más válida para el asiento de Cadillac."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/ataque-ralf-schumacher-colton-herta-formula1/10872482/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-08T10:55:01.000Z"
-  },
-  {
-    "slug": "gp-de-sao-paulo-2026-carrera-a-las-1800h-espana-y-1400h-local-en-interlagos",
-    "title": "GP de Sao Paulo 2026: Carrera a las 18:00h (España) y 14:00h (local) en Interlagos",
-    "summary": "La carrera del GP de Sao Paulo se disputará el domingo 8 de noviembre de 2026 a las 18:00h en España y 14:00h en hora local. El evento consta de 71 vueltas sobre 4,309 km en el circuito de Interlagos.",
-    "content": "<p>El Gran Premio de Sao Paulo se celebrará el domingo 8 de noviembre de 2026 en el circuito de Interlagos. La salida está programada para las 14:00h en hora local de Brasil, lo que equivale a las 18:00h en España peninsular. En Latinoamérica, los horarios son: 11:00h en México, 12:00h en Colombia, 13:00h en Bolivia y 14:00h en Argentina.</p><p>La prueba se disputará a lo largo de 71 vueltas sobre una distancia total de 4,309 kilómetros. El trazado de Interlagos cuenta con 15 curvas (10 a derechas y 5 a izquierdas) y se caracteriza por su perfil ondulado, sin zonas planas. Los derechos de transmisión en España corresponden a DAZN F1, mientras que en Latinoamérica predominan ESPN vía Disney+, con excepciones como FOX Sports en Argentina e Izzi/Sky Sports en México.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "Fecha: Domingo 8 de noviembre de 2026",
-      "Horarios: 18:00h España / 14:00h Brasil / 11:00h México",
-      "Distancia: 71 vueltas / 4,309 km",
-      "Circuito: Interlagos (15 curvas, perfil ondulado)"
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/hora-carrera-formula1-sao-paulo-brasil-como-ver/10872593/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-08T09:05:55.000Z"
-  },
-  {
-    "slug": "komatsu-la-salida-de-ocon-de-haas-en-mexico-sorprendio-a-todos-en-el-equipo",
-    "title": "Komatsu: La salida de Ocon de Haas en México 'sorprendió a todos' en el equipo",
-    "summary": "Ayao Komatsu confirmó que la decisión de apartar a Esteban Ocon tras los Libres 2 en México tomó por sorpresa a la escudería. El francés fue sustituido por Ryo Hirakawa y no volverá a pilotar esta temporada.",
-    "content": "<p>Ayao Komatsu, director de Haas F1, reveló que la comunicación interna sobre la exclusión de Esteban Ocon del GP de México generó sorpresa generalizada en el equipo. La decisión se tomó el sábado por la mañana, tras un desencuentro durante los entrenamientos del viernes en el Autódromo Hermanos Rodríguez, donde Ocon fue reemplazado por el piloto reserva Ryo Hirakawa.</p><p>Si bien se filtró un desacuerdo con la ingeniera de carrera Laura Mueller sobre los planes de tandas en los Libres 2, Komatsu se negó a detallar las causas exactas, citando la necesidad de transparencia limitada. Ocon no volverá al cockpit en el resto de la temporada. Para el GP de Brasil, Haas alineará a Oliver Bearman junto a Rafael Camara, su fichaje para 2027, quien debuta en F1. Bearman asumió el rol de piloto líder sin cambios en su mentalidad, mientras Komatsu calificó la experiencia de trabajar con Ocon durante casi dos años como un proceso de aprendizaje continuo.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Esteban Ocon fue sustituido por Ryo Hirakawa tras los Libres 2 en México.",
-      "Ocon no volverá a pilotar para Haas en el resto de la temporada.",
-      "Rafael Camara debuta en F1 en Brasil junto a Oliver Bearman.",
-      "Komatsu confirmó que la decisión tomó por sorpresa al equipo."
-    ],
-    "team": "haas",
-    "teamColor": "#B6BABD",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/decision-esteban-ocon-haas/10872469/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-08T08:39:54.000Z"
   }
 ]
