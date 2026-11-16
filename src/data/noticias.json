@@ -14,7 +14,7 @@
     "teamColor": "#0093CC",
     "source": "Clarín Deportes",
     "originalLink": "https://www.clarin.com/deportes/formula-1-destaco-maniobra-colapinto-vio-transmision-supero-gasly-brasil_0_OSpQjHmFxF.html",
-    "date": "2026-11-16T11:14:12.845Z"
+    "date": "2026-11-16T15:14:04.018Z"
   },
   {
     "slug": "colapinto-alpine-prioriza-el-coche-de-2027-ante-limitaciones-de-desarrollo-actua",
@@ -32,7 +32,61 @@
     "teamColor": "#0093CC",
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/tiritas-no-bastan-alpine-colapinto-mira-2027/10874393/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-16T11:14:11.845Z"
+    "date": "2026-11-16T15:14:03.018Z"
+  },
+  {
+    "slug": "lawson-noveno-en-f1-con-doble-puntos-de-gasly-red-bull-debe-cambiar-su-gestion-d",
+    "title": "Lawson noveno en F1 con doble puntos de Gasly; Red Bull debe cambiar su gestión de jóvenes",
+    "summary": "Liam Lawson ocupa el noveno puesto en el campeonato de F1, superando en puntos a Pierre Gasly. Su racha de cinco carreras puntuando, con cuatro séptimos puestos, consolida su permanencia en la categoría.",
+    "content": "<p>Liam Lawson se posiciona noveno en la clasificación general de la Fórmula 1, acumulando más del doble de puntos que Pierre Gasly, quien ocupa el décimo lugar. Este rendimiento se sustenta en una racha reciente de cinco carreras consecutivas en los puntos, donde terminó cuatro veces en séptima posición, además de lograr actuaciones destacadas en clasificación y maniobras audaces en pista.</p><p>La temporada 2026 marca la primera campaña completa de Lawson sin ser sustituto de emergencia, permitiendo demostrar su potencial real. Su contribución es clave para que Racing Bulls encamine su mejor resultado histórico desde la adquisición por Red Bull hace dos décadas. El análisis destaca que la organización debe dejar de tratar a sus jóvenes pilotos como 'mercancías con fecha de caducidad', un hábito heredado de la era de Helmut Marko, para evitar repetir los errores cometidos en su ascenso prematuro a Red Bull en 2025.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Lawson es noveno en el campeonato, con más del doble de puntos que Pierre Gasly (10º).",
+      "Logró una racha de 5 carreras puntuando, incluyendo 4 séptimos puestos.",
+      "Es su primera temporada completa en F1 sin ser sustituto de emergencia.",
+      "Red Bull debe abandonar la gestión de pilotos jóvenes como 'mercancías con fecha de caducidad'."
+    ],
+    "team": "pilotos",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/lawson-red-bull-trato-fracaso/10874663/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-16T14:20:25.000Z"
+  },
+  {
+    "slug": "f1-debate-v8-de-2030-cilindrada-turbo-y-potencia-electrica",
+    "title": "F1 debate V8 de 2030: cilindrada, turbo y potencia eléctrica",
+    "summary": "La F1 Commission reunida en Londres el 16 de noviembre define el reglamento 2027 con vista a 2030. Se debate entre V8 de 2.1L o 2.6L con turbo, y la potencia eléctrica (100 vs 200 kW).",
+    "content": "<p>La F1 Commission se reúne hoy, lunes 16 de noviembre, en Londres para aprobar las normas de 2027 y sentar las bases del reglamento de 2030, objetivo impulsado por Mohammed Ben Sulayem para adelantar la entrada en vigor un año. El consenso apunta a un motor endotérmico V8 a 90°, aunque persiste la duda sobre la cilindrada: una opción es de 2,1 litros (evolución de los actuales 1,6L) y la alternativa de 2,6 litros, que incluiría un turbocompresor pequeño con sobrealimentación inferior a 1 bar. La propuesta de biturbo ha sido descartada.</p><p>En el apartado eléctrico, el debate se centra en la potencia del MGU-K: existe división entre mantener 100 kW o elevarlo a 200 kW totales (100 kW continuos + 100 kW para 'push to pass'). El régimen máximo de giro se estima entre 15.000 y 16.000 rpm, superando los 12.500 rpm actuales, buscando un equilibrio acústico para circuitos urbanos. El objetivo técnico incluye una reducción de peso de 80 kg en los monoplazas de 2030.</p>",
+    "category": "Reglamento",
+    "keyPoints": [
+      "Reunión de la F1 Commission el 16 de noviembre en Londres.",
+      "Debate de cilindrada V8: 2,1L vs 2,6L con turbo (sobrealimentación <1 bar).",
+      "Potencia eléctrica MGU-K: 100 kW vs 200 kW (con 100 kW para push to pass).",
+      "Régimen máximo estimado entre 15.000 y 16.000 rpm.",
+      "Objetivo de aligerar los coches en 80 kg para 2030."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/cuestiones-aun-debate-motores-v8-formula1-2030/10874835/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-16T12:22:06.000Z"
+  },
+  {
+    "slug": "hamilton-critica-a-expilotos-por-hablar-basura-de-las-jovenes-estrellas-de-f1",
+    "title": "Hamilton critica a expilotos por 'hablar basura' de las jóvenes estrellas de F1",
+    "summary": "Lewis Hamilton criticó la falta de empatía de veteranos hacia los novatos, destacando el éxito de Kimi Antonelli. El británico cumplió su 400ª largada en Interlagos y elogió la resiliencia de la nueva generación.",
+    "content": "<p>Lewis Hamilton, de 41 años, criticó a los expilotos de Fórmula 1 por \"hablar basura\" sobre las jóvenes estrellas de la categoría. El siete veces campeón afirmó que siempre se esforzó por no convertirse en \"ese tipo de piloto\" y señaló la falta de empatía de los veteranos, quienes, según él, no muestran comprensión hacia los novatos.</p><p>Las declaraciones surgieron en Interlagos, donde Hamilton disputó su 400ª largada en un Gran Premio. El piloto de Ferrari elogió a Kimi Antonelli, quien se convirtió en el campeón mundial más joven de la F1 en su segunda temporada tras fichar por Mercedes. Antonelli ganó nueve Grandes Premios y sumó 16 podios. Hamilton también destacó el rendimiento de Isack Hadjar (Red Bull, 22 años), quien obtuvo tres podios en su segunda temporada, y subrayó la dificultad de mantenerse en la cima del automovilismo.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Hamilton cumplió su 400ª largada en el GP de Sao Paulo.",
+      "Kimi Antonelli es el campeón mundial más joven de la F1 con 9 victorias y 16 podios.",
+      "Isack Hadjar (Red Bull) logró 3 podios en su segunda temporada."
+    ],
+    "team": "ferrari",
+    "teamColor": "#E8002D",
+    "source": "Motorsport.com LAT",
+    "originalLink": "https://lat.motorsport.com/f1/news/lewis-hamilton-critica-pilotos-de-f1-por-hablar-mal-de-las-jovenes-estrellas/10874792/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=lat",
+    "date": "2026-11-16T11:23:51.000Z"
   },
   {
     "slug": "russell-a-17-puntos-de-verstappen-admite-agotamiento-y-pide-autocritica-en-merce",
@@ -1674,58 +1728,5 @@
     "source": "Motorsport.com LAT",
     "originalLink": "https://lat.motorsport.com/f1/news/antonelli-colapinto-ante-comisarios-incidente-pits-brasil/10873083/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=lat",
     "date": "2026-11-08T19:30:06.000Z"
-  },
-  {
-    "slug": "norris-gana-en-brasil-mercedes-campeones-y-colapinto-13",
-    "title": "Norris gana en Brasil; Mercedes campeones y Colapinto 13°",
-    "summary": "Lando Norris venció en Sao Paulo por más de 14 segundos sobre Verstappen. Mercedes se coronó campeón de constructores mientras Antonelli fue investigado tras un trompo.",
-    "content": "<p>Lando Norris conquistó el Gran Premio de Sao Paulo 2026, su tercer triunfo de la temporada, superando por más de 14 segundos a Max Verstappen e Isack Hadjar. La victoria consolidó el título de constructores para Mercedes, mientras que el campeón defensor Andrea Kimi Antonelli terminó bajo investigación tras un trompo en la entrada de la curva de Senna.</p><p>En la clasificación de pilotos, Franco Colapinto finalizó en la 13ª posición y Sergio 'Checo' Pérez en la 18ª. La carrera comenzó con lluvia, donde Antonelli lideró inicialmente antes de sufrir problemas de suspensión. Verstappen remontó desde la 21ª posición hasta el segundo lugar, mientras Hadjar ocupó el tercero tras una orden de equipo de Red Bull que no logró cerrar la brecha con Norris.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "Lando Norris ganó el GP de Sao Paulo 2026 con más de 14 segundos de ventaja.",
-      "Mercedes se coronó campeón de constructores.",
-      "Franco Colapinto terminó 13° y Sergio Pérez 18°.",
-      "Andrea Kimi Antonelli fue investigado tras un trompo en la curva de Senna."
-    ],
-    "team": "pilotos",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com LAT",
-    "originalLink": "https://lat.motorsport.com/f1/news/norris-gana-carrera-brasil-colapinto-13-checo-perez-18-mercedes-campeones/10873036/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=lat",
-    "date": "2026-11-08T18:41:24.000Z"
-  },
-  {
-    "slug": "lindblad-cae-10-puestos-en-brasil-por-cambio-de-motor-colapinto-arranca-14",
-    "title": "Lindblad cae 10 puestos en Brasil por cambio de motor; Colapinto arranca 14.º",
-    "summary": "Arvid Lindblad recibió una sanción de 10 posiciones en el GP de Brasil por reemplazar componentes de la unidad de potencia en parc fermé. Franco Colapinto asciende al puesto 14 de la parrilla como consecuencia directa de esta penalización.",
-    "content": "<p>Arvid Lindblad (Racing Bulls) fue sancionado con un retroceso de 10 posiciones en la parrilla de salida del Gran Premio de Brasil. La penalización se impuso tras el reemplazo del 7.º Motor de Combustión Interna (ICE) y el 6.º Turbocompresor (TC) durante las condiciones de parc fermé, acción aprobada por el Delegado Técnico de la FIA pero que incumplió los Artículos B8.2.2 y B8.2.3 del reglamento.</p><p>El británico, quien había calificado en el puesto 12, arrancará desde el casillero 19. Esta modificación beneficia a Franco Colapinto (Alpine), quien asciende al puesto 14, situándose inmediatamente por delante de su compañero de equipo, Pierre Gasly (15.º). Los comisarios detallaron que la sanción acumula 5 posiciones por cada elemento adicional utilizado, totalizando 10 lugares de penalización.</p>",
-    "category": "Reglamento",
-    "keyPoints": [
-      "Lindblad sancionado con 10 posiciones por cambiar ICE y Turbocompresor en parc fermé",
-      "Colapinto asciende al puesto 14 de la parrilla",
-      "Lindblad arrancará desde el puesto 19, por detrás de Verstappen, Hamilton y Pérez"
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Motorsport.com LAT",
-    "originalLink": "https://lat.motorsport.com/f1/news/arvid-lindblad-sancion-sao-paulo-franco-colapinto/10872970/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=lat",
-    "date": "2026-11-08T15:38:55.000Z"
-  },
-  {
-    "slug": "asignacion-de-neumaticos-de-lluvia-en-el-gp-de-brasil-2026-verstappen-y-hamilton",
-    "title": "Asignación de neumáticos de lluvia en el GP de Brasil 2026: Verstappen y Hamilton con ventaja",
-    "summary": "Pirelli ha detallado la dotación de neumáticos para la carrera en Interlagos. Verstappen y Hamilton cuentan con un juego nuevo de lluvia extrema, mientras que Norris y Piastri solo tienen usados.",
-    "content": "<p>La incertidumbre meteorológica condiciona el Gran Premio de Sao Paulo 2026. Pirelli ha publicado la asignación de neumáticos intermedios y de lluvia extrema, revelando diferencias clave entre los pilotos. Max Verstappen y Lewis Hamilton dispondrán de un juego nuevo y uno usado de lluvia extrema, una ventaja potencial si salen desde atrás y las condiciones empeoran.</p><p>En el extremo opuesto, Lando Norris (pole position) y Oscar Piastri no tienen juegos nuevos de lluvia extrema, conservando únicamente dos juegos usados. George Russell y Andrea Kimi Antonelli cuentan con un juego nuevo y uno usado de lluvia extrema, además de un juego nuevo de intermedios. En cuanto a los intermedios, Verstappen, Hamilton, Lance Stroll, Antonelli y Gabriel Bortoleto destacan por tener cinco juegos nuevos disponibles.</p>",
-    "category": "Técnica",
-    "keyPoints": [
-      "Verstappen y Hamilton: 1 juego nuevo y 1 usado de lluvia extrema.",
-      "Norris y Piastri: 0 juegos nuevos de lluvia extrema (solo 2 usados).",
-      "Russell y Antonelli: 1 nuevo y 1 usado de lluvia extrema; 1 nuevo de intermedios.",
-      "Verstappen, Hamilton, Stroll, Antonelli y Bortoleto: 5 juegos nuevos de intermedios."
-    ],
-    "team": "pilotos",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/cuantos-neumaticos-intermedios-lluvia-cada-piloto-brasil/10872965/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-08T15:26:36.000Z"
   }
 ]
