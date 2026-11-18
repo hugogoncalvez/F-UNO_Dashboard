@@ -15,7 +15,76 @@
     "teamColor": "#0093CC",
     "source": "Clarín Deportes",
     "originalLink": "https://www.clarin.com/deportes/franco-colapinto-gp-vegas-ver-horarios-practicas-clasificacion-carrera_0_OjJ0EXeGBV.html",
-    "date": "2026-11-18T11:14:04.914Z"
+    "date": "2026-11-18T15:14:21.874Z"
+  },
+  {
+    "slug": "la-pena-fc43-organiza-banderazo-para-colapinto-en-el-gp-de-las-vegas",
+    "title": "La Peña FC43 organiza banderazo para Colapinto en el GP de Las Vegas",
+    "summary": "Más de 100 argentinos, liderados por Aníbal Colapinto, realizarán una movilización el miércoles 18 de noviembre. El recorrido va desde el hotel París hasta el ingreso del paddock.",
+    "content": "<p>La Peña FC43, encabezada por el padre del piloto, Aníbal Colapinto, organizará un banderazo para apoyar a Franco Colapinto durante el Gran Premio de Las Vegas. La movilización está programada para el miércoles 18 de noviembre a las 16:00 horas locales (21:00 en Argentina), coincidiendo con el 'media day' para maximizar la visibilidad.</p><p>El punto de encuentro será el hotel París, ubicado en 3655 S Las Vegas Blvd. Desde allí, el grupo se desplazará hasta la intersección de Harmon y Koval Lane, justo frente al acceso al paddock. Según José María Garavano, organizador de la peña, más de 100 integrantes viajarán a Estados Unidos, sumándose otros argentinos que asistirán al evento. Franco Colapinto destacó previamente su predilección por este circuito nocturno, que alcanza los 350 km/h.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Fecha: Miércoles 18 de noviembre a las 16:00 hs (local) / 21:00 hs (Argentina).",
+      "Inicio: Hotel París (3655 S Las Vegas Blvd).",
+      "Destino: Ingreso al paddock (Harmon y Koval Lane).",
+      "Participantes: Más de 100 miembros de la Peña FC43 y Aníbal Colapinto."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/banderazo-argentino-franco-colapinto-vegas-hora_0_EfvjUb90Ud.html",
+    "date": "2026-11-18T15:14:20.874Z"
+  },
+  {
+    "slug": "el-casco-de-ocon-para-las-vegas-2026-no-se-usara-tras-su-salida-de-haas",
+    "title": "El casco de Ocon para Las Vegas 2026 no se usará tras su salida de Haas",
+    "summary": "Esteban Ocon no podrá usar su casco especial diseñado por Richard Orlinski para el GP de Las Vegas 2026 debido a su inesperada salida de Haas. El asiento lo ocupará Rafael Cámara, quien también correrá en Qatar y Abu Dabi.",
+    "content": "<p>Esteban Ocon encargó un casco especial para el Gran Premio de Las Vegas 2026 en colaboración con el artista francés Richard Orlinski, quien ya había creado diseños similares para las ediciones de 2024 y 2025. Sin embargo, tras la salida de Ocon de Haas antes del GP de México, el diseño no llegará a utilizarse en la pista de Nevada. Orlinski presentó el casco en redes sociales con un comentario humorístico, y Ocon reaccionó con un corazón morado.</p><p>En su lugar, el piloto reserva Ryo Hirakawa debutó en México y sumó su primer punto, mientras que Rafael Cámara ocupó el asiento en Sao Paulo. Cámara, que ascenderá a titular en 2027, volverá a correr en Las Vegas. Aún no está confirmado si disputará las últimas dos carreras de la temporada en Qatar y Abu Dabi, dado que lidera la clasificación general de la Fórmula 2 y podría necesitar competir allí para asegurar el título.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "El casco de Ocon para Las Vegas 2026, diseñado por Richard Orlinski, no se usará.",
+      "Rafael Cámara sustituirá a Ocon en Haas para Las Vegas.",
+      "Cámara lidera la F2 y podría faltar en Qatar y Abu Dabi para pelear el título."
+    ],
+    "team": "haas",
+    "teamColor": "#B6BABD",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/casco-ocon-vegas-nunca-vera-luz/10875264/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-18T14:03:17.000Z"
+  },
+  {
+    "slug": "mclaren-admite-tres-meses-de-retraso-y-efectos-del-mundial-2025-en-su-f1-2026",
+    "title": "McLaren admite tres meses de retraso y efectos del Mundial 2025 en su F1 2026",
+    "summary": "Andrea Stella identifica un retraso inicial de tres meses, el desgaste por la lucha de 2025 y el rol de cliente de Mercedes como causas de la irregularidad. El jefe de equipo asegura que el MCL39 nunca retrocedió, pero no compensó el avance rival.",
+    "content": "<p>El jefe de equipo de McLaren, Andrea Stella, ha detallado los tres factores que condicionaron la temporada 2026: un retraso de tres meses en el desarrollo del monoplaza respecto a la competencia, las consecuencias del esfuerzo extraído durante la lucha por el Mundial de 2025 y las desventajas iniciales derivadas de ser equipo cliente de Mercedes.</p><p>Stella aclaró que la curva de desarrollo de 2025 ya mostraba el impacto de la remontada de Red Bull, lo que obligó a mantener recursos en el coche anterior. Aunque el equipo asegura que ninguna actualización fue contraproducente (incluida la de Bakú), la mejora progresiva no fue suficiente para neutralizar la ventaja acumulada por los rivales hasta el regreso a la cima en Brasil.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Retraso inicial de tres meses en el desarrollo del MCL39.",
+      "Impacto negativo de la lucha por el Mundial 2025 en la preparación de 2026.",
+      "Desventaja competitiva por ser cliente de Mercedes al inicio del ciclo."
+    ],
+    "team": "mclaren",
+    "teamColor": "#FF8000",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/mclaren-senala-tres-problemas-2026/10875243/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-18T12:11:03.000Z"
+  },
+  {
+    "slug": "permane-defiende-a-lawson-como-revelacion-y-clave-para-el-desarrollo-de-lindblad",
+    "title": "Permane defiende a Lawson como 'revelación' y clave para el desarrollo de Lindblad",
+    "summary": "Alan Permane justifica la permanencia de Liam Lawson en Racing Bulls por su rendimiento superior a Alpine y su rol como referencia para Arvid Lindblad. El director aclara que la decisión fue interna del equipo, descartando interferencias externas.",
+    "content": "<p>Alan Permane, director de Racing Bulls, calificó la mejora de Liam Lawson en 2026 como una \"revelación\". Permane destacó que Lawson superó a Alpine por sus propios medios y que su presencia es crucial para el desarrollo del joven Arvid Lindblad, quien utiliza los datos y el rendimiento de Lawson como punto de referencia inestimable.</p><p>Frente a los rumores sobre una posible incorporación de Nikola Tsolov y diferencias de visión dentro de Red Bull, Permane aclaró que la decisión de mantener a Lawson fue tomada por Racing Bulls. Afirmó que, aunque consultó a su jefe Oliver Mintzlaff y a los accionistas, la responsabilidad deportiva recae en el equipo, y que Laurent Mekies ha dejado claro que no intervino en la elección.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Permane define a Lawson como una 'revelación' por superar a Alpine.",
+      "Lawson actúa como referencia técnica y de rendimiento para Arvid Lindblad.",
+      "La decisión de mantener a Lawson fue interna de Racing Bulls, no de Red Bull."
+    ],
+    "team": "rb",
+    "teamColor": "#6692FF",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/permane-lawson-revelacion-racing-bulls/10875140/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-18T10:07:38.000Z"
   },
   {
     "slug": "mclaren-estrena-turbo-aduo-en-las-vegas-piastri-pierde-10-posiciones-por-5-motor",
@@ -35,22 +104,40 @@
     "date": "2026-11-18T09:09:23.000Z"
   },
   {
-    "slug": "la-pena-fc43-organiza-banderazo-para-colapinto-en-el-gp-de-las-vegas",
-    "title": "La Peña FC43 organiza banderazo para Colapinto en el GP de Las Vegas",
-    "summary": "Más de 100 argentinos, liderados por Aníbal Colapinto, realizarán una movilización el miércoles 18 de noviembre. El recorrido va desde el hotel París hasta el ingreso del paddock.",
-    "content": "<p>La Peña FC43, encabezada por el padre del piloto, Aníbal Colapinto, organizará un banderazo para apoyar a Franco Colapinto durante el Gran Premio de Las Vegas. La movilización está programada para el miércoles 18 de noviembre a las 16:00 horas locales (21:00 en Argentina), coincidiendo con el 'media day' para maximizar la visibilidad.</p><p>El punto de encuentro será el hotel París, ubicado en 3655 S Las Vegas Blvd. Desde allí, el grupo se desplazará hasta la intersección de Harmon y Koval Lane, justo frente al acceso al paddock. Según José María Garavano, organizador de la peña, más de 100 integrantes viajarán a Estados Unidos, sumándose otros argentinos que asistirán al evento. Franco Colapinto destacó previamente su predilección por este circuito nocturno, que alcanza los 350 km/h.</p>",
-    "category": "Piloto",
+    "slug": "alejandra-martinez-lidera-la-cobertura-femenina-de-f1-en-espn-argentina",
+    "title": "Alejandra Martínez lidera la cobertura femenina de F1 en ESPN Argentina",
+    "summary": "La periodista cordobesa integra el equipo de ESPN en transmisiones, post carrera y streaming. Reconoce que aprendió sobre la categoría sobre la marcha y destaca la cercanía del GP de San Pablo para el público argentino.",
+    "content": "<p>Alejandra Martínez se consolidó como una de las principales voces femeninas de la Fórmula 1 en Argentina a través de ESPN. Su rol abarca la conducción del post carrera, el programa semanal 'El show de la Fórmula 1' y el streaming 'Pitllane'. Además, viaja a cubrir Grandes Premios seleccionados, como el reciente de San Pablo y el de Miami en 2026.</p><p>Martnez admite que no era experta en automovilismo al unirse al equipo, sino que adquirió los conocimientos durante su trayectoria. En su cobertura del GP de Brasil, señaló que la ausencia de puntos para Franco Colapinto dejó un sabor amargo, destacando que es su tercera visita al circuito sin sumar. Para el equipo argentino, San Pablo representa el Gran Premio más cercano geográficamente.</p>",
+    "category": "Off-track",
     "keyPoints": [
-      "Fecha: Miércoles 18 de noviembre a las 16:00 hs (local) / 21:00 hs (Argentina).",
-      "Inicio: Hotel París (3655 S Las Vegas Blvd).",
-      "Destino: Ingreso al paddock (Harmon y Koval Lane).",
-      "Participantes: Más de 100 miembros de la Peña FC43 y Aníbal Colapinto."
+      "Alejandra Martínez conduce el post carrera, 'El show de la F1' y 'Pitllane' en ESPN.",
+      "Cubrió los GPs de San Pablo y Miami en 2026.",
+      "Reconoce que aprendió sobre F1 durante su trabajo en el canal.",
+      "Franco Colapinto no sumó puntos en su tercera visita a San Pablo."
     ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Olé",
-    "originalLink": "https://www.ole.com.ar/autos/banderazo-argentino-franco-colapinto-vegas-hora_0_EfvjUb90Ud.html",
-    "date": "2026-11-17T22:40:12.000Z"
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Clarín Deportes",
+    "originalLink": "https://www.clarin.com/deportes/alejandra-martinez-voz-femenina-formula-1-transmisiones-espn-miedo_0_p2u8RcxQAa.html",
+    "date": "2026-11-18T09:01:55.000Z"
+  },
+  {
+    "slug": "gp-de-las-vegas-frio-extremo-y-baja-adherencia-los-retos-clave-para-los-neumatic",
+    "title": "GP de Las Vegas: Frío extremo y baja adherencia, los retos clave para los neumáticos",
+    "summary": "El circuito de Las Vegas enfrentará temperaturas de 10-15°C y escasa adherencia inicial. Pirelli destaca el calentamiento de gomas como factor crítico en clasificación.",
+    "content": "<p>La antepenúltima prueba del Mundial de F1 2026 se disputará en Las Vegas con temperaturas previstas entre 10 y 15 grados centígrados. Este frío extremo, sumado a las altas velocidades en las tres largas rectas del trazado de 6.201 metros, dificulta mantener los neumáticos en su rango óptimo de temperatura, especialmente durante la clasificación del sábado.</p><p>El circuito urbano presenta además un escaso nivel de adherencia inicial debido a la reapertura al tráfico entre sesiones, lo que obliga a los pilotos a readaptarse constantemente. Las modificaciones respecto al año pasado incluyen la revisión de la entrada de la curva 13 y el lado derecho del tramo hacia la curva 14. La gestión térmica de las gomas será determinante para evitar la pérdida de rendimiento y el desgaste excesivo.</p>",
+    "category": "Técnica",
+    "keyPoints": [
+      "Temperaturas previstas entre 10 y 15°C en Las Vegas.",
+      "Circuito de 6.201 metros con 17 curvas y 3 rectas largas.",
+      "Baja adherencia inicial por reapertura al tráfico entre sesiones.",
+      "Modificaciones en la entrada de la curva 13 y tramo a la curva 14."
+    ],
+    "team": "general",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/gran-reto-neumaticos-las-vegas-formula1/10874849/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-18T08:53:54.000Z"
   },
   {
     "slug": "alpine-estrena-decoracion-rosa-de-bwt-para-las-vegas-qatar-y-abu-dhabi",
@@ -1645,91 +1732,5 @@
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/modificacion-grilla-nueva-gp-brasil-interlagos-sancion-posicion-franco-colapinto-puesto-larga_0_sYSG9lOTe1.html",
     "date": "2026-11-10T11:13:59.276Z"
-  },
-  {
-    "slug": "camara-debuta-en-f1-con-lluvia-extrema-trompo-accidente-y-11-posicion-en-interla",
-    "title": "Cámara debuta en F1 con lluvia extrema: trompo, accidente y 11ª posición en Interlagos",
-    "summary": "Rafael Cámara debutó en la F1 2026 en Interlagos bajo condiciones de lluvia severa. Pese a un trompo en Q1 y un accidente en Q2, clasificó 13º y arrancó 11º en la parrilla.",
-    "content": "<p>Rafael Cámara realizó su debut en la Fórmula 1 con el Haas F1 en el Gran Premio de Brasil en Interlagos. La sesión de clasificación se vio interrumpida por un diluvio que invalidó el aprendizaje previo en seco. Cámara protagonizó un trompo en la Q1, recuperando el control del monoplaza, y sufrió un accidente contra las protecciones en la curva 12 (Junção) durante la Q2, donde también se salieron Carlos Sainz y Oscar Piastri debido a fallos en el freno motor.</p><p>A pesar de los incidentes, el piloto brasileño logró clasificarse en la 13ª posición, que se convirtió en la 11ª de la parrilla de salida. En la carrera, Cámara perdió varias posiciones en la salida y rodó en la parte trasera del pelotón, mostrando un ritmo inicial con neumáticos intermedios inferior al de su compañero Oliver Bearman.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Debut de Rafael Cámara en F1 2026 con Haas en Interlagos",
-      "Accidente en Q2 en la curva 12 tras trompo en Q1",
-      "Clasificación 13º y salida desde la 11ª posición"
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/analisis-datos-debut-rafa-camara-brasil/10873513/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-10T10:49:15.000Z"
-  },
-  {
-    "slug": "norris-y-verstappen-critican-el-rendimiento-de-los-f1-en-lluvia-tras-gp-de-brasi",
-    "title": "Norris y Verstappen critican el rendimiento de los F1 en lluvia tras GP de Brasil",
-    "summary": "Lando Norris, ganador en Interlagos, minimiza las mejoras de los coches en mojado, mientras Max Verstappen denuncia que la ventana de funcionamiento de los neumáticos es demasiado estrecha.",
-    "content": "<p>El Gran Premio de Brasil en Interlagos sirvió como la primera prueba competitiva real de la nueva generación de monoplazas en condiciones de lluvia extrema, tras los problemas de software sufridos en el GP de Bahrein celebrado en Malasia. La carrera se disputó con intermedios y slicks, permitiendo evaluar el agarre de los coches en un escenario que había sido inexistente hasta la fecha.</p><p>Lando Norris, vencedor de la prueba, declaró que no percibe una revolución en el comportamiento de los coches: \"No diría que sean tan diferentes... Cuando los neumáticos se enfrían, la cosa se pone bastante fea\". El británico advirtió sobre los riesgos de aquaplaning antes de que los coches despejen los charcos. Por su parte, Max Verstappen criticó directamente a los neumáticos, señalando que el margen en el que funcionan correctamente sigue siendo \"demasiado estrecho\".</p>",
-    "category": "Técnica",
-    "keyPoints": [
-      "Lando Norris ganó el GP de Brasil y minimizó las mejoras de los coches en mojado.",
-      "Max Verstappen criticó que la ventana de funcionamiento de los neumáticos es demasiado estrecha.",
-      "Brasil fue la primera prueba competitiva real de la nueva generación de F1 en lluvia extrema."
-    ],
-    "team": "pilotos",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/mejores-coches-lluvia-norris-no-ve-tanto-cambio-verstappen-pide-mas/10873512/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-10T09:31:03.000Z"
-  },
-  {
-    "slug": "wolff-vasseur-pago-1m-usd-de-su-bolsillo-para-que-ocon-debutara-en-f1-en-2016",
-    "title": "Wolff: Vasseur pagó 1M USD de su bolsillo para que Ocon debutara en F1 en 2016",
-    "summary": "Toto Wolff reveló que Fred Vasseur aportó un millón de dólares personalmente para cubrir el coste del asiento de Esteban Ocon en Manor. Esta financiación permitió al francés disputar los últimos nueve Grandes Premios de la temporada 2016.",
-    "content": "<p>Toto Wolff, director de Mercedes, confirmó que Fred Vasseur financió con un millón de dólares de su propio bolsillo la incorporación de Esteban Ocon a Manor Racing para la segunda mitad de la temporada 2016. El asiento se abrió tras el agotamiento del presupuesto de Rio Haryanto, y el coste total requerido era de dos millones de dólares.</p><p>Mercedes asumió la mitad del coste, pero Vasseur cubrió el resto para garantizar la oportunidad al piloto. Ocon, quien previamente ganó el título de GP3 en 2015 con ART Grand Prix (14 podios en 18 carreras), debutó en F1 disputando los últimos nueve Grandes Premios de esa campaña. Actualmente, su futuro en la parrilla está incierto tras perder su asiento en Haas, con Aston Martin como posible destino como piloto reserva.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Fred Vasseur aportó 1 millón de USD de su bolsillo para el asiento de Ocon en Manor 2016.",
-      "Mercedes cubrió el otro millón de los 2 millones USD totales requeridos para el asiento.",
-      "Ocon disputó los últimos 9 Grandes Premios de la temporada 2016 tras el agotamiento del presupuesto de Haryanto."
-    ],
-    "team": "haas",
-    "teamColor": "#B6BABD",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/vasseur-pago-millon-euros-ocon-llegue-formula1/10872652/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-10T07:17:36.000Z"
-  },
-  {
-    "slug": "colapinto-y-su-ingeniero-stuart-barlow-se-cruzaron-por-radio-en-el-gp-de-brasil",
-    "title": "Colapinto y su ingeniero Stuart Barlow se cruzaron por radio en el GP de Brasil",
-    "summary": "Franco Colapinto terminó 13° en Interlagos tras un tenso intercambio con su ingeniero sobre la estrategia de boxes. El piloto argentino insistió en entrar a pits en la vuelta 17, pero Alpine optó por esperar, lo que generó fricciones en la comunicación.",
-    "content": "<p>Franco Colapinto no logró sumar puntos en el Gran Premio de Brasil, finalizando en la 13ª posición. La carrera estuvo marcada por un conflicto por radio con su ingeniero de carrera, Stuart Barlow, durante las vueltas 17 y 18, cuando la pista comenzaba a secarse y rivales como Lewis Hamilton y Carlos Sainz cambiaron a neumáticos lisos.</p><p>Colapinto propuso entrar a boxes para mejorar su posición, pero Barlow se opuso argumentando que los autos con lisos eran más lentos. El argentino expresó su disconformidad al ver a su compañero Pierre Gasly cerca, temiendo una doble parada ('double stack'). Tras insistir con frases como '¿Quieren que entre? Entro', finalmente ingresó en la vuelta 18 y reingresó en el puesto 15. Aunque escaló hasta el 11° lugar superando a Sainz, una segunda parada y la lluvia en la vuelta 57 impidieron que cerrara en zona de puntos.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Colapinto terminó 13° en el GP de Brasil.",
-      "Conflicto por radio con el ingeniero Stuart Barlow en las vueltas 17-18.",
-      "Alpine rechazó la entrada a boxes inicial por considerar que los neumáticos lisos eran lentos.",
-      "El piloto ingresó en la vuelta 18 y llegó a estar 11° antes de la lluvia."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Clarín Deportes",
-    "originalLink": "https://www.clarin.com/deportes/tenso-cruce-radio-franco-colapinto-ingeniero-gp-brasil-dije-boxes_0_dyyFA3CQBI.html",
-    "date": "2026-11-09T20:57:02.000Z"
-  },
-  {
-    "slug": "briatore-critica-a-alpine-tras-gp-de-brasil-decepcionante-y-problemas-en-lluvia",
-    "title": "Briatore critica a Alpine tras GP de Brasil: 'decepcionante' y problemas en lluvia",
-    "summary": "Alpine terminó sin puntos en Brasil (Colapinto 13°, Gasly 14°). Briatore admitió que el auto fue competitivo en seco pero perdió rendimiento con la lluvia, señalando datos aerodinámicos anómalos.",
-    "content": "<p>Alpine cerró el Gran Premio de Brasil sin sumar puntos: Franco Colapinto finalizó 13° y Pierre Gasly 14°. Flavio Briatore, asesor ejecutivo del equipo, calificó el resultado de 'decepcionante' y reconoció que el rendimiento general estuvo por debajo de lo esperado.</p><p>El principal problema fue la inconsistencia del A526 en condiciones de lluvia. Aunque Colapinto marcó el séptimo mejor tiempo de la carrera (1m13s710 en la vuelta 57, solo 14 milésimas detrás de Lewis Hamilton), el auto perdió competitividad cuando regresó la lluvia. Gasly confirmó que el equipo detectó 'datos aerodinámicos extraños' en asfalto mojado, lo que obligará a los ingenieros a revisar el comportamiento del coche para futuras carreras.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Colapinto terminó 13° y Gasly 14°; Alpine no sumó puntos.",
-      "Colapinto logró el 7° mejor tiempo de la carrera (1m13s710) en seco.",
-      "Gasly reportó datos aerodinámicos anómalos en condiciones de lluvia."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Clarín Deportes",
-    "originalLink": "https://www.clarin.com/deportes/alpine-puede-salir-pozo-briatore-califico-decepcionante-gp-brasil-admitio-problemas-auto-lluvia_0_ipP92bcwah.html",
-    "date": "2026-11-09T20:40:20.000Z"
   }
 ]
