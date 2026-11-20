@@ -1,5 +1,56 @@
 [
   {
+    "slug": "briatore-fija-meta-para-alpine-2027-estar-a-2-3-decimas-de-mclaren",
+    "title": "Briatore fija meta para Alpine 2027: estar a 2-3 décimas de McLaren",
+    "summary": "Flavio Briatore anunció en Las Vegas que Alpine buscará cerrar la brecha con McLaren en 2027, manteniendo a Colapinto y Gasly. El equipo es sexto con 69 puntos, a 45 de Racing Bulls.",
+    "content": "<p>Flavio Briatore, jefe de Alpine, definió en la conferencia de prensa de la FIA en Las Vegas el objetivo para la temporada 2027: ubicarse a dos o tres décimas de McLaren. Para lograrlo, el equipo mantendrá como pilotos titulares a Franco Colapinto y Pierre Gasly. Briatore citó la recuperación de McLaren entre 2015 y 2018 como modelo de referencia para la reconstrucción actual.</p><p>En la actualidad, Alpine marcha sexto en el Campeonato de Constructores con 69 puntos, tras haber terminado último en 2025. La escudería francesa se encuentra a 45 puntos de Racing Bulls, que ocupa el quinto lugar con 114 unidades. Briatore reconoció que, aunque la sexta posición estaba presupuestada, el equipo ha perdido puntos en la segunda parte del campeonato y se mantiene cerca de la quinta posición.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Objetivo 2027: estar a 2-3 décimas de McLaren",
+      "Pilotos confirmados para 2027: Franco Colapinto y Pierre Gasly",
+      "Alpine es 6º en Constructores con 69 puntos (45 menos que Racing Bulls)"
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/formula-1-gp-vegas-dijo-flavio-briatore-franco-colapinto-alpine_0_XYgnZjZQq1.html",
+    "date": "2026-11-20T17:38:17.000Z"
+  },
+  {
+    "slug": "verstappen-rechaza-mostrar-sus-datos-de-salud-en-f1-no-es-asunto-de-nadie",
+    "title": "Verstappen rechaza mostrar sus datos de salud en F1: \"No es asunto de nadie\"",
+    "summary": "Max Verstappen se niega a participar en el programa de monitoreo de WHOOP en F1, citando la privacidad. Charles Leclerc, en cambio, confirmará que sus datos serán visibles en directo a partir de 2027.",
+    "content": "<p>Antes del Gran Premio de Las Vegas, la Fórmula 1 anunció una colaboración con WHOOP para mostrar datos de salud de los pilotos en directo a partir de 2027. La iniciativa es voluntaria, pero Max Verstappen ha declinado participar explícitamente. El cuatro veces campeón del mundo argumentó que no utiliza dispositivos de monitoreo ni para entrenar ni en su vida privada, y consideró que sus pulsaciones no son asunto de nadie más.</p><p>En contraste, Charles Leclerc confirmó que sus datos serán visibles durante las retransmisiones. El piloto de Ferrari, embajador de WHOOP, destacó que el acuerdo permite llevar el dispositivo de forma oficial y certificada por la FIA mientras pilota, eliminando la necesidad de ocultarlo como ocurría en colaboraciones anteriores.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "La F1 y WHOOP mostrarán datos de salud en directo a partir de 2027 de forma voluntaria.",
+      "Max Verstappen rechaza participar por privacidad y porque no usa dispositivos de monitoreo.",
+      "Charles Leclerc participará y podrá llevar el dispositivo certificado por la FIA mientras pilota."
+    ],
+    "team": "redbull",
+    "teamColor": "#3671C6",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/verstappen-niega-mostrar-pulsaciones-nuevo-acuerdo-formula1/10875790/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-20T15:13:57.000Z"
+  },
+  {
+    "slug": "gp-las-vegas-bearman-arranca-35-por-penalizacion-sainz-y-piastri-caen-10-lugares",
+    "title": "GP Las Vegas: Bearman arranca 35° por penalización; Sainz y Piastri caen 10 lugares",
+    "summary": "Cinco pilotos recibirán sanciones por cambios en sus monoplazas antes de la clasificación en Las Vegas. Oliver Bearman será el más afectado, perdiendo 35 posiciones, mientras que Sainz, Piastri y Stroll caerán 10 lugares cada uno.",
+    "content": "<p>La clasificación del Gran Premio de Las Vegas se verá alterada por las penalizaciones a cinco pilotos que modificaron componentes de sus monoplazas. Oliver Bearman recibirá la sanción más severa: 35 posiciones de retroceso por cambios en su unidad de potencia, lo que lo obligará a largar desde el fondo de la grilla.</p><p>Carlos Sainz y Oscar Piastri perderán 10 lugares cada uno. Sainz debió instalar el quinto turbo del año en su Williams, mientras que Piastri utilizó su quinto motor de combustión interna. Lance Stroll también retrocederá 10 posiciones por modificaciones en su Aston Martin, y Kimi Antonelli caerá 5 lugares por incorporar un sexto motor de combustión interna. Estas sanciones se aplicarán sobre los tiempos de clasificación, lo que podría beneficiar a pilotos como Franco Colapinto si logra una buena posición en pista.</p>",
+    "category": "Reglamento",
+    "keyPoints": [
+      "Oliver Bearman pierde 35 posiciones por cambios en la unidad de potencia.",
+      "Carlos Sainz, Oscar Piastri y Lance Stroll pierden 10 posiciones cada uno.",
+      "Kimi Antonelli retrocede 5 posiciones por usar un sexto motor de combustión interna."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/f1-gran-premio-vegas-vivo-franco-colapinto-alpine-horario-ver-clasificacion_0_0yWdGMSAph.html",
+    "date": "2026-11-20T15:05:16.000Z"
+  },
+  {
     "slug": "fia-retira-anuncio-de-v8-para-2030-falta-acuerdo-en-detalles-tecnicos-clave",
     "title": "FIA retira anuncio de V8 para 2030: falta acuerdo en detalles técnicos clave",
     "summary": "La FIA desmintió su comunicado inicial sobre el regreso de los V8 en 2030 tras no alcanzar consenso en la Comisión de F1. Aunque se fijaron parámetros básicos como 2,1 litros y 16.000 rpm, persisten divisiones entre constructores sobre la arquitectura final.",
@@ -83,6 +134,23 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/frio-lluvia-pirelli-fia-intervinieron-ayudar-pilotos/10875987/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-11-20T10:27:11.000Z"
+  },
+  {
+    "slug": "piastri-prueba-nuevo-motor-mercedes-en-las-vegas-y-arranca-con-penalizacion-de-1",
+    "title": "Piastri prueba nuevo motor Mercedes en Las Vegas y arranca con penalización de 10 puestos",
+    "summary": "Oscar Piastri estrenó mejoras en la unidad de potencia Mercedes durante los Libres 2 de Las Vegas, reportando buenas sensaciones pese a la lluvia. El australiano saldrá penalizado 10 posiciones por el cambio de su quinto motor de combustión.",
+    "content": "<p>Oscar Piastri aprovechó las condiciones de mojado en los Libres 2 del Gran Premio de Las Vegas 2026 para probar las nuevas piezas de su unidad de potencia Mercedes, incluyendo un nuevo turbo. Aunque el clima impidió extraer conclusiones definitivas sobre el rendimiento, el piloto de McLaren calificó las sensaciones como positivas y espera confirmar la mejora en pista seca.</p><p>Para la clasificación del sábado, Piastri enfrentará una penalización de 10 posiciones en la parrilla de salida. Este castigo se debe a que McLaren tuvo que instalarle su quinto motor de combustión de la temporada tras un problema de fiabilidad. El australiano mantiene su estrategia de clasificación sin cambios, buscando maximizar su posición de salida para facilitar la remontada en la carrera del domingo.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Prueba de nuevo motor y turbo Mercedes en Libres 2 de Las Vegas",
+      "Penalización de 10 posiciones por instalación del quinto motor de combustión",
+      "Sensaciones positivas del piloto pese a las condiciones de lluvia"
+    ],
+    "team": "pilotos",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/piastri-estrena-mejora-motor-mercedes-las-vegas/10875982/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-20T09:31:41.000Z"
   },
   {
     "slug": "zak-brown-la-gestion-de-bateria-en-f1-2026-limita-la-fortaleza-de-piastri",
@@ -1662,73 +1730,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/una-hazana-increible-un-expiloto-de-f1-le-saca-diez-minutos-a-apple-maps-con-el-red-bull-de-vettel/10874015/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-11-12T18:28:18.000Z"
-  },
-  {
-    "slug": "bruno-senna-planea-que-kimi-antonelli-pilote-el-lotus-98t-de-ayrton-en-2026",
-    "title": "Bruno Senna planea que Kimi Antonelli pilote el Lotus 98T de Ayrton en 2026",
-    "summary": "Bruno Senna reveló que Kimi Antonelli visitó la finca familiar tras ganar el título en México. El expiloto busca organizar que el joven conduzca el Lotus 98T de 1986 el próximo año.",
-    "content": "<p>Bruno Senna confirmó sus intenciones de permitir que Kimi Antonelli pilote el Lotus 98T, el monoplaza con el que Ayrton Senna compitió en 1986, durante el año 2026. La iniciativa surge tras la visita de Antonelli a la finca familiar en Brasil, pocos días después de que el italiano se coronara campeón del mundo en el Gran Premio de México, convirtiéndose en el piloto más joven en lograr este hito.</p><p>En el podcast 'Beyond The Grid', Bruno Senna detalló que Antonelli mostró gran interés por el vehículo, probando el mando del turbo y la palanca de cambios. Senna señaló que la estatura de Antonelli es ideal para el coche y que el propio piloto aseguró poder manejar el cambio manual. Además, ambos condujeron en la pista de karts diseñada por Ayrton, donde Antonelli demostró rapidez y constancia en una superficie sucia y llena de piedras.</p>",
-    "category": "Off-track",
-    "keyPoints": [
-      "Bruno Senna quiere que Antonelli pilote el Lotus 98T de 1986 en 2026.",
-      "Antonelli visitó la finca tras ganar el título en el GP de México.",
-      "El piloto italiano probó el Lotus 98T y la pista de karts de Ayrton Senna."
-    ],
-    "team": "mercedes",
-    "teamColor": "#27F4D2",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/planes-kimi-antonelli-coche-ayrton-senna/10874007/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-12T18:00:58.000Z"
-  },
-  {
-    "slug": "alonso-con-otro-motor-habriamos-sido-un-segundo-mas-rapidos-que-mercedes",
-    "title": "Alonso: 'Con otro motor, habríamos sido un segundo más rápidos que Mercedes'",
-    "summary": "Fernando Alonso calificó su actuación en el GP de Sao Paulo como la mejor en sensaciones del coche, destacando que el chasis de Aston Martin compitió con Ferrari y Mercedes bajo la lluvia. El asturiano atribuyó su falta de puntos al déficit de potencia del motor Honda y no al rendimiento del AMR26.",
-    "content": "<p>Fernando Alonso afirmó que el Aston Martin AMR26 demostró su competitividad en el GP de Sao Paulo, donde llegó a pelear con los Ferrari y, en las últimas cinco vueltas con neumáticos intermedios, estuvo a una vuelta de los dos Mercedes. El bicampeón señaló que, considerando la pérdida de tiempo en las rectas por el motor Honda, el equipo podría haber sido 'quizá un segundo más rápidos' que los rivales alemanes por vuelta.</p><p>Alonso elogió el chasis del AMR26, describiéndolo como 'fenomenal en las curvas', y reconoció que la lluvia igualó las condiciones, permitiendo reducir parcialmente el déficit técnico. Sin embargo, descartó que la carrera fuera una experiencia de diversión, insistiendo en que pilotar con 'herramientas diferentes' impide disfrutar del proceso y exige trabajar duro para cerrar la brecha competitiva de cara a la próxima temporada.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Alonso llegó a pelear con los dos Mercedes en las últimas 5 vueltas con intermedios.",
-      "El piloto estima que con otro motor habrían sido 1 segundo más rápidos por vuelta.",
-      "Alonso calificó el chasis del AMR26 como 'fenomenal' pero lamenta la falta de diversión por el déficit de motor."
-    ],
-    "team": "pilotos",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/alonso-declaraciones-superioridad-mercedes-brasil/10873768/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-12T17:27:17.000Z"
-  },
-  {
-    "slug": "shovlin-repetir-el-dominio-de-mercedes-2014-2021-es-imposible-por-el-limite-pres",
-    "title": "Shovlin: Repetir el dominio de Mercedes (2014-2021) es 'imposible' por el límite presupuestario",
-    "summary": "Andrew Shovlin, director de ingeniería en pista de Mercedes, afirma que es imposible repetir la racha de ocho títulos consecutivos de Constructores (2014-2021) debido al límite presupuestario y la paridad actual. El equipo celebró su noveno campeonato en Interlagos 2026, pero advierte que Ferrari, McLaren y Red Bull son rivales muy competitivos.",
-    "content": "<p>Mercedes conquistó su noveno Mundial de Constructores en Interlagos, poniendo fin a una sequía desde 2021. Andrew Shovlin, director de ingeniería en pista, declaró que repetir la racha de ocho títulos consecutivos logrados entre 2014 y 2021 es \"realmente imposible\" con la estructura actual del deporte y el límite presupuestario.</p><p>Shovlin señaló que la paridad actual, con Ferrari, McLaren y Red Bull mostrando rendimiento competitivo, impide el dominio absoluto del pasado. Además, como campeón, Mercedes enfrentará el menor tiempo de pruebas aerodinámicas de la parrilla, una desventaja que el equipo debe asumir para mantener la competitividad.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Mercedes ganó su 9º título de Constructores en Interlagos 2026.",
-      "Shovlin considera imposible repetir la racha de 8 títulos (2014-2021) por el límite presupuestario.",
-      "El equipo campeón tendrá el menor tiempo de pruebas aerodinámicas de la parrilla."
-    ],
-    "team": "mercedes",
-    "teamColor": "#27F4D2",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/por-que-mercedes-imposible-repetir-racha-titulos/10873503/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-12T17:00:40.000Z"
-  },
-  {
-    "slug": "red-bull-confirma-a-tsolov-como-piloto-reserva-para-2027-tras-renovar-a-lawson",
-    "title": "Red Bull confirma a Tsolov como piloto reserva para 2027 tras renovar a Lawson",
-    "summary": "Nikola Tsolov será piloto reserva de Red Bull y Racing Bulls en 2027, con un programa de preparación intensivo. La decisión se toma tras confirmar que Liam Lawson y Arvid Lindblad mantendrán sus asientos en la parrilla.",
-    "content": "<p>Red Bull ha oficializado que Nikola Tsolov ocupará el puesto de piloto reserva tanto en el equipo principal como en Racing Bulls para la temporada 2027. Este nombramiento se produce después de que la estructura confirmara la continuidad de Liam Lawson y Arvid Lindblad en la parrilla, descartando así el debut inmediato del joven búlgaro.</p><p>Para preparar su salto a la Fórmula 1, Tsolov seguirá un programa que incluye trabajo en simulador, desarrollo, entrenamientos libres, pruebas con monoplazas de temporadas anteriores (TPC) y ensayos de neumáticos. El piloto de 19 años llega con credenciales sólidas: subcampeón de Fórmula 3 y actualmente en lucha por el título de F2 con Campos Racing, donde ha sumado seis victorias y logró tres triunfos consecutivos, un récord histórico en la categoría. Laurent Mekies, director de Red Bull, destacó la confianza en el potencial de Tsolov y su madurez competitiva.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Nikola Tsolov será piloto reserva de Red Bull y Racing Bulls en 2027.",
-      "Liam Lawson y Arvid Lindblad mantienen sus asientos en Racing Bulls para 2027.",
-      "Tsolov ha ganado 6 carreras en F2 y es el primer piloto en lograr 3 victorias consecutivas en la categoría."
-    ],
-    "team": "pilotos",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/red-bull-confirma-papel-tendra-tsolov-2027-tras-renovar-lawson/10874146/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-12T15:13:34.000Z"
   }
 ]
