@@ -1,5 +1,74 @@
 [
   {
+    "slug": "colapinto-9-en-fp2-de-las-vegas-con-solo-13-vueltas-bajo-lluvia",
+    "title": "Colapinto, 9° en FP2 de Las Vegas con solo 13 vueltas bajo lluvia",
+    "summary": "El piloto de Alpine se ubicó noveno en la segunda práctica libre del GP de Las Vegas tras completar apenas 13 giros con pista húmeda. Su compañero, Pierre Gasly, fue segundo detrás de George Russell.",
+    "content": "<p>Franco Colapinto finalizó en la 9° posición en la segunda práctica libre (FP2) del Gran Premio de Las Vegas. El argentino de Alpine completó solo 13 vueltas debido a la intensa lluvia que dejó la pista húmeda, cumpliendo con la estrategia de rodaje mínimo del equipo.</p><p>En la misma sesión, su compañero de equipo, Pierre Gasly, se clasificó segundo, detrás de George Russell. Colapinto comentó que la pista estaba \"muy resbaladiza\" pero mejorando, y expresó su deseo de tener más rodaje el día siguiente con condiciones más secas. El piloto argentino llega a esta fecha tras ser 13° en Brasil y lleva seis carreras sin sumar puntos desde su 7° puesto en Madrid en septiembre. La actividad continúa con la FP3, la clasificación y la carrera, transmitidas por Fox Sports, F1 TV y Disney+ Premium.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Colapinto fue 9° en FP2 con 13 vueltas.",
+      "Pierre Gasly fue 2° y George Russell 1° en la sesión.",
+      "Colapinto lleva 6 fechas sin sumar puntos desde Madrid."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/franco-colapinto-dijo-fp2-vegas_0_QXKV0KuItE.html",
+    "date": "2026-11-20T10:34:26.000Z"
+  },
+  {
+    "slug": "pirelli-y-fia-elevan-mantas-a-60c-en-las-vegas-para-combatir-frio-y-agua",
+    "title": "Pirelli y FIA elevan mantas a 60°C en Las Vegas para combatir frío y agua",
+    "summary": "Las condiciones de lluvia y frío en el GP de Las Vegas 2026 obligaron a Pirelli y la FIA a subir la temperatura de las mantas de 40 a 60 grados. La medida mejoró la adherencia en FP2, aunque el asfalto a 13°C dificultó el calentamiento de los neumáticos.",
+    "content": "<p>En los entrenamientos libres del Gran Premio de Las Vegas 2026, la lluvia y el frío impidieron a los equipos trabajar en ritmos de carrera o simulaciones de clasificación. Ante la presencia de agua estancada y temperaturas bajas, Pirelli y la FIA acordaron aumentar la temperatura de las mantas térmicas de 40 a 60 grados para asistir a los pilotos, especialmente en la FP2.</p><p>Según Simone Berra, ingeniero de Pirelli, la decisión fue acertada: los pilotos reportaron mayor adherencia desde la primera curva y una facilidad superior para alcanzar la temperatura óptima de los neumáticos. No obstante, el asfalto, con temperaturas rondando los 13°C y baja abrasividad, generó dificultades para calentar los neumáticos delanteros, provocando subviraje en las curvas, mientras que los intermedios traseros funcionaron con menos problemas.</p>",
+    "category": "Técnica",
+    "keyPoints": [
+      "Temperatura de mantas térmicas aumentada de 40 a 60 grados",
+      "Temperatura del asfalto en Las Vegas rondó los 13°C",
+      "Mejora de adherencia en FP2 pero persistencia de subviraje por frío"
+    ],
+    "team": "pilotos",
+    "teamColor": "#e10600",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/frio-lluvia-pirelli-fia-intervinieron-ayudar-pilotos/10875987/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-20T10:27:11.000Z"
+  },
+  {
+    "slug": "zak-brown-la-gestion-de-bateria-en-f1-2026-limita-la-fortaleza-de-piastri",
+    "title": "Zak Brown: La gestión de batería en F1 2026 limita la fortaleza de Piastri",
+    "summary": "El director de McLaren atribuye la caída de Oscar Piastri al nuevo reglamento que exige conservar batería, limitando su estilo en curvas de alta velocidad. El australiano es 7.º, a 94 puntos de Lando Norris, tras una temporada sin victorias.",
+    "content": "<p>Zak Brown, director de McLaren, señaló que las dificultades de Oscar Piastri en la temporada 2026 se deben a que el nuevo reglamento ha neutralizado su principal fortaleza: la velocidad en curvas de alta velocidad. Los monoplazas actuales, con unidades de potencia más eléctricas, requieren gestionar la batería, lo que obliga a reducir el ritmo en sectores rápidos para conservar energía, una técnica distinta a la de pisar a fondo y frenar tarde.</p><p>Como resultado, Piastri ocupa el séptimo puesto en la clasificación, a 94 puntos de su compañero Lando Norris, y acumula una temporada sin victorias con solo dos podios. Esto contrasta con 2025, cuando el australiano logró nueve victorias y terminó tercero en el campeonato, a 13 puntos del título. Brown comparó esta adaptación con el caso de Mercedes, donde Andrea Kimi Antonelli revirtió la ventaja de 169 puntos de George Russell para proclamarse campeón en 2026.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Piastri es 7.º en la clasificación, a 94 puntos de Lando Norris.",
+      "El australiano no ha ganado carreras en 2026 y tiene solo dos podios.",
+      "En 2025, Piastri logró 9 victorias y terminó a 13 puntos del campeonato.",
+      "El nuevo reglamento exige conservar batería, limitando la velocidad en curvas rápidas."
+    ],
+    "team": "mclaren",
+    "teamColor": "#FF8000",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/reglamento-2026-neutraliado-fortaleza-piastri/10875932/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-20T07:59:14.000Z"
+  },
+  {
+    "slug": "colapinto-y-gasly-completaron-una-sola-vuelta-en-la-fp1-de-las-vegas-por-la-lluv",
+    "title": "Colapinto y Gasly completaron una sola vuelta en la FP1 de Las Vegas por la lluvia",
+    "summary": "La lluvia impidió registrar tiempos válidos en la FP1 del GP de Las Vegas. Franco Colapinto y Pierre Gasly salieron al final, dieron una vuelta cada uno y no computaron registros.",
+    "content": "<p>La lluvia condicionó la primera práctica libre (FP1) del Gran Premio de Las Vegas, 21ª fecha de la Fórmula 1. Con 12,4°C de ambiente y 14,6°C en pista, la sesión terminó sin tiempos válidos. Hubo 11 minutos sin autos en pista y, aunque algunos equipos salieron con neumáticos de lluvia extrema, nadie logró un registro computable.</p><p>Franco Colapinto y Pierre Gasly, de Alpine, salieron a pista sobre el final de la sesión. Ambos completaron apenas una vuelta con deslizamientos por falta de adherencia y sus tiempos no se computaron por exceder los límites de pista. Fueron los únicos en practicar largadas tras la bandera a cuadros. Alpine anunció la salida de Paul Aron como reserva de común acuerdo; Frederik Vesti, de Mercedes, será el nuevo reserva para las carreras restantes. La FP2, clave para ajustar los autos, se disputará desde la 1:00 de la madrugada del viernes.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "FP1 de Las Vegas terminó sin tiempos válidos debido a la lluvia y bajas temperaturas (12,4°C ambiente).",
+      "Colapinto y Gasly completaron una sola vuelta cada uno al final de la sesión; sus registros no se computaron.",
+      "Alpine reemplazó a Paul Aron por Frederik Vesti como piloto reserva para el resto de la temporada."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/arranque-franco-colapinto-gp-vegas_0_XmHKUsODGR.html",
+    "date": "2026-11-20T01:44:07.000Z"
+  },
+  {
     "slug": "alonso-el-dakar-2027-sera-mas-duro-que-el-de-2020-por-falta-de-test",
     "title": "Alonso: 'El Dakar 2027 será más duro que el de 2020' por falta de test",
     "summary": "Fernando Alonso correrá el Dakar 2027 con Aston Martin y Prodrive tras solo dos días de test en Marruecos. El asturiano admite que la preparación es insuficiente y usará la primera semana del rally para adaptarse.",
@@ -1661,74 +1730,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/oficial-racing-bulls-renovacion-lawson-lindblad-2027/10874070/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-11-12T11:07:07.000Z"
-  },
-  {
-    "slug": "ricciardo-mi-ego-me-protegio-explica-por-que-aun-no-vuelve-al-paddock-de-la-f1",
-    "title": "Ricciardo: 'Mi ego me protegió'; explica por qué aún no vuelve al paddock de la F1",
-    "summary": "Daniel Ricciardo admite que su negativa inicial a regresar al paddock fue una reacción de su ego tras el dolor de su salida en 2024. Ahora valora las relaciones mantenidas y reconoce que su postura ha evolucionado desde el rechazo total.",
-    "content": "<p>Tras finalizar su carrera en el GP de Singapur 2024, donde fue sustituido por Liam Lawson en RB, Daniel Ricciardo ha explicado en el podcast Beyond The Grid las razones de su alejamiento. El australiano confesó que inicialmente rechazó cualquier vínculo con la F1 debido al dolor emocional, una postura que ahora identifica como una defensa de su ego.</p><p>Ricciardo reconoce haber experimentado una 'muerte del ego' y admite que su actitud anti-paddock era una forma de protección. Actualmente, valora las relaciones con pilotos, ingenieros y mecánicos, con quienes mantiene contacto. Recuerda haberse quedado en Singapur 2024 para despedirse, aunque la situación fue sombría, y ahora se encuentra dividido entre su deseo de volver y la complejidad emocional del proceso.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Ricciardo terminó su carrera en el GP de Singapur 2024 al ser reemplazado por Liam Lawson en RB.",
-      "El piloto atribuye su negativa inicial a regresar al paddock a una reacción de su ego para protegerse del dolor.",
-      "Mantiene contacto activo con pilotos, ingenieros y mecánicos, y valora las relaciones forjadas en la F1."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/por-que-daniel-ricciardo-fuera-paddock-formula1/10871520/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-12T09:23:03.000Z"
-  },
-  {
-    "slug": "mercedes-campeon-de-constructores-2026-tras-el-gp-de-sao-paulo-con-652-puntos",
-    "title": "Mercedes campeón de constructores 2026 tras el GP de São Paulo con 652 puntos",
-    "summary": "Mercedes se proclamó campeón del mundo de constructores de F1 2026 antes de tiempo tras el GP de São Paulo, liderando con 652 puntos. Su ventaja sobre Ferrari (510) y Red Bull (415) se consolidó en la primera mitad de la temporada gracias a una adaptación temprana a la nueva normativa técnica.",
-    "content": "<p>Mercedes ha asegurado el título de constructores de la Fórmula 1 2026 tras el Gran Premio de São Paulo, acumulando 652 puntos tras 20 carreras. Ferrari ocupa la segunda posición con 510 puntos, seguido de Red Bull con 415 y McLaren con 398. Aunque la tabla general muestra una ventaja amplia, el equilibrio de fuerzas reciente es más ajustado, con Red Bull y Ferrari mostrando mayor competitividad en las últimas jornadas.</p><p>La clave del título radica en la primera mitad del curso, donde Mercedes aprovechó la nueva era normativa para generar una ventaja temprana. En las últimas diez carreras, Mercedes sumó 294 puntos, solo 33 más que Red Bull (261), y en las últimas ocho, la diferencia se redujo a un solo punto (227-226). El colchón decisivo se construyó en los GPs de Países Bajos e Italia, donde Mercedes sumó 89 puntos frente a los 24 de Red Bull, ampliando su ventaja en 65 unidades antes de que la competencia igualara el rendimiento.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Mercedes lidera la clasificación de constructores con 652 puntos tras 20 carreras.",
-      "Ferrari es segundo con 510 puntos, Red Bull tercero con 415 y McLaren cuarto con 398.",
-      "En las últimas 8 carreras, la ventaja de Mercedes sobre Red Bull fue de solo 1 punto (227-226).",
-      "Mercedes sumó 89 puntos en Países Bajos e Italia, frente a 24 de Red Bull, creando la ventaja definitiva."
-    ],
-    "team": "mercedes",
-    "teamColor": "#27F4D2",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/cuando-decidio-realmente-mundial-mercedes-2026/10873464/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-12T08:21:49.000Z"
-  },
-  {
-    "slug": "verstappen-remonta-desde-la-21-a-la-2-en-brasil-norris-gana-bajo-lluvia",
-    "title": "Verstappen remonta desde la 21ª a la 2ª en Brasil; Norris gana bajo lluvia",
-    "summary": "Max Verstappen logró su tercera remontada consecutiva en Interlagos, pasando de la 21ª a la segunda posición. Lando Norris se impuso en la carrera disputada sobre mojado, destacando su adaptación a las condiciones.",
-    "content": "<p>La carrera de Fórmula 1 en Brasil se definió por las condiciones de lluvia extrema y la remontada de Max Verstappen, quien avanzó desde la 21ª hasta la segunda posición. Se trata de su tercera remontada consecutiva en el circuito de Interlagos, un desempeño que generó gran atención mediática local.</p><p>Lando Norris, vigente campeón del mundo, ganó la prueba demostrando su capacidad de adaptación al asfalto mojado, una cualidad destacada por su jefe de equipo, Andrea Stella. La clasificación se celebró tras un retraso de una hora y veinte minutos debido a las lluvias torrenciales, gestionadas por el director de carrera Rui Marques, quien logró evitar el escenario caótico vivido en 2024.</p>",
-    "category": "Carrera",
-    "keyPoints": [
-      "Verstappen remontó de la 21ª a la 2ª posición en su tercera remontada consecutiva en Brasil.",
-      "Lando Norris ganó la carrera sobre mojado, confirmando su dominio en condiciones de poco agarre.",
-      "La clasificación sufrió un retraso de 1 hora y 20 minutos por lluvias, gestionada por Rui Marques."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/como-brasil-mostro-todo-bueno-formula1-tambien-cosas-malas/10873938/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-12T07:41:22.000Z"
-  },
-  {
-    "slug": "colapinto-admite-falta-de-constancia-me-cuesta-encontrar-el-equilibrio-cuando-el",
-    "title": "Colapinto admite falta de constancia: 'Me cuesta encontrar el equilibrio cuando el coche no está ahí'",
-    "summary": "Franco Colapinto reconoce que su principal reto es la regularidad, no la velocidad punta. El argentino busca repetir actuaciones como en Miami y Canadá para reducir la brecha de 15 puntos con Pierre Gasly.",
-    "content": "<p>Franco Colapinto ha identificado la constancia como su principal área de mejora en Alpine. El piloto argentino admite que, aunque posee velocidad, le resulta difícil mantener el rendimiento cuando el coche no responde de inmediato. 'Ser rápido de forma constante y sacar el máximo rendimiento del coche en cada situación a veces me cuesta un poco cuando no estoy muy cómodo', explicó Colapinto, destacando la dificultad para encontrar el equilibrio técnico junto a los ingenieros en sesiones complicadas.</p><p>La irregularidad se refleja en la clasificación del equipo: Pierre Gasly acumula 42 puntos, frente a los 27 de Colapinto, una diferencia de 15 unidades que mantiene al francés como referencia. A pesar de esto, el argentino ha mostrado su potencial con un octavo puesto en clasificación y un séptimo en carrera en Miami, así como una sexta posición en Canadá, superando a su compañero en ambas ocasiones. Su objetivo ahora es convertir estos picos de rendimiento en una costumbre antes de las tres últimas citas del campeonato.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Colapinto admite que le cuesta mantener la constancia cuando el coche no está en su 'ventana' óptima.",
-      "Pierre Gasly lidera la interna de Alpine con 42 puntos, superando a Colapinto (27) por 15 puntos.",
-      "Colapinto logró superar a Gasly en clasificación y carrera en Miami (8º/7º) y Canadá (6º)."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/por-que-colapinto-brilla-unos-fines-semana-atasca-otros/10873929/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-11T18:57:22.000Z"
   }
 ]
