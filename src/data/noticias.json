@@ -14,7 +14,41 @@
     "teamColor": "#0093CC",
     "source": "Olé",
     "originalLink": "https://www.ole.com.ar/autos/formula-1-gp-vegas-dijo-flavio-briatore-franco-colapinto-alpine_0_XYgnZjZQq1.html",
-    "date": "2026-11-22T11:14:03.643Z"
+    "date": "2026-11-22T15:14:01.492Z"
+  },
+  {
+    "slug": "alpine-rompe-sequia-de-6-carreras-y-suma-18-puntos-en-las-vegas",
+    "title": "Alpine rompe sequía de 6 carreras y suma 18 puntos en Las Vegas",
+    "summary": "Alpine finalizó su racha negativa de seis Grandes Premios con solo un punto acumulado. En Las Vegas, Pierre Gasly y Franco Colapinto terminaron 5º y 6º, respectivamente, logrando 18 unidades.",
+    "content": "<p>La escudería francesa Alpine cortó una mala racha de seis carreras consecutivas en las que apenas había sumado un punto. En el Gran Premio de Las Vegas, el equipo logró una cosecha de 18 puntos gracias a las posiciones de sus dos pilotos: Pierre Gasly finalizó quinto y Franco Colapinto sexto.</p><p>La sequía comenzó en Bakú con abandonos de ambos pilotos tras un incidente que involucró a Colapinto y Lando Norris. En las siguientes carreras, los resultados fueron: Bahréin (Colapinto 13º, Gasly 16º), Singapur (Gasly 11º, Colapinto abandonó en la vuelta 29), Austin (Gasly 10º con 1 punto, Colapinto abandonó en la vuelta 35), México (Colapinto 15º y Gasly 17º tras sanciones por banderas amarillas) y Brasil (Colapinto 13º). El único punto de esa etapa se obtuvo en Austin con Gasly.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Alpine sumó 18 puntos en Las Vegas tras 6 carreras con solo 1 punto.",
+      "Pierre Gasly terminó 5º y Franco Colapinto 6º en Las Vegas.",
+      "La racha negativa incluyó abandonos en Bakú, Singapur y Austin, y sanciones en México."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/alpine-formula1-granpremiodelasvegas-francocolapinto-pierregasly-racingbulls_0_7VQLNmZAQi.html",
+    "date": "2026-11-22T14:43:21.000Z"
+  },
+  {
+    "slug": "briatore-elogia-a-colapinto-y-gasly-tras-sumar-18-puntos-en-las-vegas",
+    "title": "Briatore elogia a Colapinto y Gasly tras sumar 18 puntos en Las Vegas",
+    "summary": "Flavio Briatore calificó de sobresaliente la actuación de Alpine en el GP de Las Vegas, donde Pierre Gasly terminó 5º y Franco Colapinto 6º. El asesor ejecutivo destacó el optimismo del equipo tras una racha complicada.",
+    "content": "<p>Flavio Briatore, asesor ejecutivo de Alpine, elogió el desempeño de sus pilotos en el Gran Premio de Las Vegas, donde el equipo sumó 18 puntos. Pierre Gasly cruzó la meta en la quinta posición y Franco Colapinto en la sexta, resultados que el italiano describió como un \"trabajo sobresaliente\" en una carrera que exigió alta precisión.</p><p>Briatore señaló que este resultado permite al equipo celebrar en Enstone tras una segunda mitad de temporada con resultados complicados, generando optimismo de cara a las dos últimas carreras del año. Colapinto, quien igualó su mejor posición final desde su llegada a la Fórmula 1, reconoció dificultades de agarre en las primeras cinco vueltas con neumáticos blandos, pero valoró la posibilidad de pelear con equipos de adelante, como Ferrari, y la importancia de volver a sumar puntos.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Pierre Gasly terminó 5º y Franco Colapinto 6º en el GP de Las Vegas.",
+      "Alpine sumó 18 puntos en la carrera.",
+      "Flavio Briatore calificó el fin de semana como muy positivo para el equipo."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/flavio-briatore-feliz-carrera-franco-colapinto-pierre-gasly_0_m6zpykru4S.html",
+    "date": "2026-11-22T12:36:38.000Z"
   },
   {
     "slug": "alpine-admite-error-de-gestion-en-q3-de-las-vegas-con-colapinto-y-gasly",
@@ -51,6 +85,23 @@
     "date": "2026-11-22T09:23:36.000Z"
   },
   {
+    "slug": "norris-mclaren-saco-lo-maximo-en-las-vegas-con-un-doblete-de-podio",
+    "title": "Norris: McLaren sacó lo máximo en Las Vegas con un 'doblete' de podio",
+    "summary": "Lando Norris y Oscar Piastri terminaron segundo y tercero en Las Vegas tras una carrera caótica. Norris admite que el MCL40 no tenía ritmo para liderar, pero la gestión de la batería fue clave.",
+    "content": "<p>Lando Norris logró la segunda posición en el Gran Premio de Las Vegas, escoltando a Max Verstappen, mientras que su compañero Oscar Piastri completó el podio en tercer lugar. Norris, que llegó a caer hasta la undécima posición, destacó la dificultad del MCL40 en velocidad punta y la necesidad de gestionar la batería para compensar esa falta de ritmo en rectas.</p><p>El británico calificó el resultado como el máximo posible para el equipo, afirmando que \"un segundo y un tercero es como un primero y un segundo\". Norris señaló que la clave fue la estrategia en las últimas cinco vueltas, donde calcularon bien los adelantamientos a Kimi Antonelli y a Piastri para asegurar la segunda plaza. De cara a Qatar, el piloto evitó predicciones específicas, citando las diferencias del circuito de Losail, aunque mantuvo un tono optimista para las dos últimas citas del calendario.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Norris 2º y Piastri 3º en Las Vegas; Verstappen ganó.",
+      "Norris cayó a la P11 y gestionó la batería para compensar falta de velocidad punta.",
+      "Norris considera que el podio doble fue el resultado máximo posible para McLaren."
+    ],
+    "team": "mclaren",
+    "teamColor": "#FF8000",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/declaraciones-norris-carrera-las-vegas-2026/10876870/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-22T09:16:17.000Z"
+  },
+  {
     "slug": "hamilton-deja-en-manos-de-ferrari-la-gestion-de-su-rivalidad-con-leclerc-tras-in",
     "title": "Hamilton deja en manos de Ferrari la gestión de su rivalidad con Leclerc tras incidente en Las Vegas",
     "summary": "Tras el toque en Las Vegas que costó a Leclerc 10 segundos, Hamilton se niega a comentar el incidente. El británico afirma que ha dicho todo lo que debía y espera que la escudería resuelva la rivalidad interna.",
@@ -66,6 +117,24 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/hamilton-declaraciones-carrera-las-vegas-2026/10876836/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-11-22T08:49:45.000Z"
+  },
+  {
+    "slug": "antonelli-pierde-podio-en-las-vegas-por-fallo-de-bateria-al-levantar-el-pie",
+    "title": "Antonelli pierde podio en Las Vegas por fallo de batería al levantar el pie",
+    "summary": "El piloto de Mercedes cedió el tercer puesto en la última vuelta tras agotar la energía de su unidad de potencia. El error ocurrió al levantar el acelerador para activar el modo de adelantamiento.",
+    "content": "<p>Andrea Kimi Antonelli perdió la oportunidad de subir al podio en el Gran Premio de Las Vegas 2026 tras un fallo técnico provocado por su propia acción. El italiano, que partió desde la sexta posición por una sanción de cinco puestos por cambio de motor y con neumáticos medios, remontó hasta la cuarta plaza en la vuelta 17. En los compases finales, intercambió el liderato con Max Verstappen, pero en la penúltima vuelta levantó el pie del acelerador antes de la curva 14 para situarse detrás del neerlandés y activar el modo de adelantamiento.</p><p>Esta maniobra activó un sistema en la unidad de potencia que dejó la batería a cero, impidiendo la recarga de energía. Antonelli perdió casi dos segundos en la recta final, lo que permitió a los dos McLaren adelantarle y arrebatarle el tercer puesto. El piloto admitió que su error fue levantar el pie, ya que el sistema no estaba preparado para esa acción y no pudo recuperar velocidad suficiente para mantener la posición.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Antonelli partió 6º por sanción de 5 posiciones por cambio de motor.",
+      "Levantó el pie antes de la curva 14 para activar el modo de adelantamiento.",
+      "La batería de la unidad de potencia quedó a cero, perdiendo 2 segundos en la recta.",
+      "Dos McLaren le superaron en la última vuelta, dejándolo fuera del podio."
+    ],
+    "team": "mercedes",
+    "teamColor": "#27F4D2",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/declaraciones-antonelli-carrera-las-vegas-2026/10876787/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-22T08:29:33.000Z"
   },
   {
     "slug": "checo-perez-sancionado-con-5-puestos-en-parrilla-de-qatar-tras-choque-con-camara",
@@ -1658,74 +1727,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/neumaticos-pirelli-qatar-vegas-abudhabi/10874388/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-11-13T19:26:11.000Z"
-  },
-  {
-    "slug": "grosjean-abandona-los-monoplazas-tras-23-anos-para-centrarse-en-resistencia",
-    "title": "Grosjean abandona los monoplazas tras 23 años para centrarse en resistencia",
-    "summary": "Romain Grosjean pone fin a su etapa en monoplazas tras terminar 19º en la clasificación de IndyCar 2026. El francés priorizará las carreras de resistencia buscando una experiencia más humana y competitiva.",
-    "content": "<p>Romain Grosjean ha anunciado el fin de su carrera en monoplazas tras 23 años de competición, decisión motivada por su peor resultado histórico en la IndyCar: el 19º puesto en la clasificación general de 2026. El francés señaló que la realidad le golpeó en la última cita de la temporada en Laguna Seca, donde se clasificó en la última posición, un circuito que considera uno de sus fuertes. \"Ya no quiero seguir con esto\", declaró, citando la falta de herramientas para luchar y el agotamiento de la vida frenética en monoplazas.</p><p>Grosjean centrará su futuro en las carreras de resistencia, buscando una experiencia \"más gratificante a nivel humano\" y oportunidades reales de victoria. Aunque no cierra su etapa en IndyCar con amargura, reconoce que 2026 fue un año duro: solo logró cuatro top 10 en 18 carreras con el equipo Dale Coyne, destacando un segundo puesto en Markham. En su trayectoria en la categoría, que comenzó en 2021, nunca superó el 13º puesto en la clasificación general, a pesar de haber liderado las 500 Millas de Indianápolis y sumar seis podios entre 2021 y 2023 con Dale Coyne y Andretti.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Grosjean termina su etapa en monoplazas tras 23 años de carrera.",
-      "Terminó 19º en la clasificación general de IndyCar 2026 con Dale Coyne.",
-      "Su mejor resultado en 2026 fue el segundo puesto en Markham.",
-      "Priorizará las carreras de resistencia a partir de ahora."
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/grosjean-fin-etapa-monoplazas/10874351/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-13T18:30:57.000Z"
-  },
-  {
-    "slug": "gasly-critica-a-la-f1-2026-fallos-de-software-castigan-a-pilotos-sin-culpa",
-    "title": "Gasly critica a la F1 2026: fallos de software castigan a pilotos sin culpa",
-    "summary": "Pierre Gasly señala que la nueva normativa ha generado pérdidas injustas de rendimiento. Cita su caída del 8º al 14º puesto en México por un error de software tras una buena salida.",
-    "content": "<p>Pierre Gasly, piloto de Alpine, criticó la Fórmula 1 de 2026 por las múltiples situaciones donde pilotos han perdido posiciones sin culpa propia. El francés destacó que la revolución técnica ha provocado que el resultado de maniobras bien ejecutadas se vea condicionado por fallos sobre los que el conductor no tiene control.</p><p>Como ejemplo concreto, Gasly citó el Gran Premio de México, donde logró la segunda mejor salida de la parrilla y adelantó a Lindblad. Sin embargo, al cambiar a tercera marcha, un fallo de software le hizo perder la mitad de la potencia, lo que le hizo caer del octavo al decimocuarto puesto. A pesar de estas críticas, el piloto afirmó que prefiere esta nueva F1 a las anteriores y espera cambios positivos para la próxima temporada.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Gasly cayó del 8º al 14º puesto en México por un fallo de software.",
-      "El piloto de Alpine realizó la segunda mejor salida de la parrilla en ese GP.",
-      "Gasly afirma que prefiere la F1 2026 a las temporadas anteriores pese a los defectos."
-    ],
-    "team": "alpine",
-    "teamColor": "#0093CC",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/critica-gasly-2026-perjudicado-muchos-pilotos/10874188/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-13T17:56:48.000Z"
-  },
-  {
-    "slug": "williams-sacrifica-mejoras-aerodinamicas-de-2026-para-financiar-el-proyecto-2027",
-    "title": "Williams sacrifica mejoras aerodinámicas de 2026 para financiar el proyecto 2027",
-    "summary": "James Vowles confirma que Williams no introducirá más piezas aerodinámicas en su monoplaza actual para ahorrar presupuesto. La decisión busca garantizar recursos para el desarrollo del coche de 2027 tras un inicio de temporada con solo 12 puntos.",
-    "content": "<p>James Vowles, jefe de Williams, ha admitido que fue \"terriblemente doloroso\" decidir no gastar el presupuesto restante en mejoras aerodinámicas para el coche de 2026. El equipo ha optado por reservar fondos para el proyecto de 2027, dejando en el túnel de viento varias mejoras que no se llevarán a la pista.</p><p>Esta estrategia responde a la saturación de la fábrica de Grove por la construcción del monoplaza actual, que llegó tarde y con sobrepeso. Con apenas 12 puntos acumulados, Williams está llevando los componentes al límite de su vida útil para evitar gastos en piezas de repuesto y utiliza las sesiones de libres del viernes como jornadas de pruebas para recopilar datos útiles para 2027.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Williams no introducirá más mejoras aerodinámicas en el coche de 2026 para ahorrar presupuesto.",
-      "El equipo ha sumado solo 12 puntos hasta la fecha.",
-      "Las sesiones de libres del viernes se usan como pruebas para el desarrollo de 2027."
-    ],
-    "team": "williams",
-    "teamColor": "#64C4FF",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/williams-terriblemente-doloroso-renunciar-coche-2026-centrarse-2027/10874321/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-13T17:31:10.000Z"
-  },
-  {
-    "slug": "imola-circuito-reserva-de-f1-en-2027-la-primera-opcion-si-hay-cancelaciones",
-    "title": "Imola, circuito reserva de F1 en 2027: la primera opción si hay cancelaciones",
-    "summary": "Imola fue el circuito de respaldo para el final de la temporada 2026, pero la FIA confirmó que el campeonato concluirá en Qatar y Abu Dabi. El trazado italiano se perfila como la primera opción para futuras sustituciones en 2027.",
-    "content": "<p>El circuito Enzo e Dino Ferrari de Imola actuó como reserva para el cierre del Mundial de Fórmula 1 de 2026, previsto originalmente para el 6 de diciembre. Sin embargo, la FIA, a través de su presidente Mohammed Ben Sulayem, confirmó que la temporada finalizará según lo planeado en Qatar y Abu Dabi, descartando la necesidad de activar el plan de contingencia en Italia.</p><p>Fórmula 1 comunicó a los equipos que Imola no será necesario para el final de la temporada. Aunque el italiano Andrea Kimi Antonelli expresó su deseo de ver al circuito en el calendario permanente, Imola se mantiene como la primera opción de reserva para 2027 ante posibles cancelaciones, especialmente dado el contexto de seguridad en Arabia Saudí que ha afectado a otros eventos como el Dakar.</p>",
-    "category": "Reglamento",
-    "keyPoints": [
-      "Imola fue el circuito reserva para el GP del 6 de diciembre de 2026",
-      "La FIA confirmó que la temporada 2026 terminará en Qatar y Abu Dabi",
-      "Imola es la primera opción de sustitución para el calendario de 2027"
-    ],
-    "team": "general",
-    "teamColor": "#e10600",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/imola-reserva-formula1-2027/10874329/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-13T16:31:31.000Z"
   }
 ]
