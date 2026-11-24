@@ -1,5 +1,90 @@
 [
   {
+    "slug": "bearman-y-haas-bloqueados-en-2027-por-discrepancia-salarial",
+    "title": "Bearman y Haas bloqueados en 2027 por discrepancia salarial",
+    "summary": "Oliver Bearman es el único piloto de F1 sin contrato para 2027. La negociación con Haas se ha estancado porque el salario ofrecido no cumple las expectativas del británico, descartándose causas relacionadas con Ferrari.",
+    "content": "<p>Oliver Bearman, de 21 años, sigue sin firmar su renovación con Haas F1 para la temporada 2027, convirtiéndose en el último piloto de la parrilla sin acuerdo cerrado. Aunque su continuidad parecía asegurada tras el fichaje de Rafael Câmara antes del GP de Brasil, la negociación se ha prolongado más de lo previsto debido a un desacuerdo económico directo entre el equipo estadounidense y el entorno del piloto.</p><p>Según Motorsport.com, el obstáculo no radica en el futuro de Bearman con Ferrari, quien ya ejerció su opción para mantenerlo en la Driver Academy (donde está desde 2021), sino en la cifra salarial propuesta por Haas. El piloto y su equipo consideran que la oferta no es acorde a sus expectativas, lo que ha endurecido las negociaciones pese a que ambas partes reconocen la necesidad de llegar a un acuerdo.</p>",
+    "category": "Piloto",
+    "keyPoints": [
+      "Bearman es el único piloto de F1 sin contrato para 2027.",
+      "El estancamiento se debe a la discrepancia en el salario ofrecido por Haas.",
+      "Ferrari mantiene a Bearman en su programa y no es el factor bloqueante."
+    ],
+    "team": "haas",
+    "teamColor": "#B6BABD",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/bearman-renovacion-estancada-motivos/10877154/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-24T08:41:03.000Z"
+  },
+  {
+    "slug": "hadjar-presiona-a-red-bull-en-las-vegas-para-cambiar-estrategia-ante-russell",
+    "title": "Hadjar presiona a Red Bull en Las Vegas para cambiar estrategia ante Russell",
+    "summary": "Isack Hadjar intentó implementar una táctica de rotación con Verstappen para abrir ventaja sobre George Russell, pero el equipo se negó. El francés cuestionó la orden de no perder tiempo y la gestión del rebufo en la recta final.",
+    "content": "<p>Isack Hadjar, tras salir cuarto en el Gran Premio de Las Vegas, se colocó segundo detrás de Max Verstappen en la vuelta 4. El ingeniero de carrera, Richard Wood, le ordenó priorizar la ventaja sobre George Russell en lugar de luchar por el liderato, citando la necesidad de no perder tiempo como equipo.</p><p>Hadjar solicitó por radio que Verstappen dejara de defenderse para evitar perder tiempo, pero Wood mantuvo la estrategia de defensa contra Russell para evitar un efecto 'yo-yo'. Aunque Hadjar propuso una táctica de rotación similar al 'circuito belga' del ciclismo para optimizar el rebufo, Red Bull no aceptó la propuesta y no se registró ninguna consulta al respecto en la radio de Verstappen.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Hadjar ocupó la segunda posición detrás de Verstappen en la vuelta 4.",
+      "Richard Wood ordenó a Hadjar no perder tiempo frente a George Russell.",
+      "Hadjar propuso una táctica de rotación ('circuito belga') que Red Bull rechazó."
+    ],
+    "team": "redbull",
+    "teamColor": "#3671C6",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/hadjar-red-bull-vegas-radio/10877297/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-24T07:43:48.000Z"
+  },
+  {
+    "slug": "gp-de-qatar-horarios-fechas-y-donde-ver-la-f1-con-franco-colapinto",
+    "title": "GP de Qatar: horarios, fechas y dónde ver la F1 con Franco Colapinto",
+    "summary": "Franco Colapinto llega al GP de Qatar tras igualar su mejor resultado (6°) en Las Vegas. La actividad en Lusail se disputará del 27 al 29 de noviembre con transmisión por Fox Sports y Disney+.",
+    "content": "<p>Franco Colapinto, piloto de Alpine, se prepara para disputar el Gran Premio de Qatar, penúltima fecha del campeonato de Fórmula 1. El argentino llega a esta cita tras igualar su mejor resultado histórico en la categoría con un sexto puesto en el GP de Las Vegas.</p><p>La actividad en el Circuito Internacional de Lusail comenzará el viernes 27 de noviembre y finalizará el domingo 29. Los horarios están diseñados para ser accesibles para el público argentino. La cobertura televisiva estará a cargo de Fox Sports, mientras que la transmisión por streaming será exclusiva de Disney+ Premium.</p>",
+    "category": "Carrera",
+    "keyPoints": [
+      "Franco Colapinto igualó su mejor resultado en F1 (6° puesto) en Las Vegas.",
+      "El GP de Qatar se disputará del 27 al 29 de noviembre en Lusail.",
+      "La carrera será transmitida por Fox Sports (TV) y Disney+ Premium (streaming)."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/franco-colapinto-gp-qatar-dias-horarios-ver-f1-formula1-tv_0_nqEqd4iILZ.html",
+    "date": "2026-11-23T19:38:06.000Z"
+  },
+  {
+    "slug": "colapinto-6-y-gasly-5-alpine-logra-su-mejor-cosecha-en-las-vegas",
+    "title": "Colapinto 6º y Gasly 5º: Alpine logra su mejor cosecha en Las Vegas",
+    "summary": "Alpine sumó 18 puntos en Las Vegas, su mejor resultado de 2026, con Gasly 5º y Colapinto 6º. El equipo pasó de 69 a 87 puntos y quedó sexto en el Mundial de Constructores.",
+    "content": "<p>Alpine cerró el Gran Premio de Las Vegas con su mejor actuación de la temporada 2026. Pierre Gasly terminó quinto y Franco Colapinto sexto, otorgando al equipo 18 puntos. Esta cifra representa más de una quinta parte de la puntuación total acumulada por la escudería en el año, elevando su saldo de 69 a 87 puntos.</p><p>El rendimiento contrasta con las seis fechas anteriores, donde Alpine solo había sumado un punto (Gasly, 10º en Austin). En Las Vegas, ambos pilotos realizaron 17 sobrepasos en total. Colapinto, que largó noveno, superó a Lando Norris y Oscar Piastri en la vuelta 12. Gasly, que partió octavo, quedó a 353 milésimas del cuarto puesto de Kimi Antonelli. En el Mundial de Constructores, Alpine es sexto, a 27 puntos de Racing Bulls, con dos Grandes Premios restantes.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Gasly 5º y Colapinto 6º: 18 puntos totales para Alpine.",
+      "17 sobrepasos combinados por los dos pilotos.",
+      "Alpine es 6º en Constructores, a 27 puntos de Racing Bulls."
+    ],
+    "team": "alpine",
+    "teamColor": "#0093CC",
+    "source": "Olé",
+    "originalLink": "https://www.ole.com.ar/autos/francocolapinto-alpine-lasvegas-pierregasly_0_mIjH2pjEWy.html",
+    "date": "2026-11-23T19:22:36.000Z"
+  },
+  {
+    "slug": "aston-martin-honda-krack-admite-objetivos-minimos-en-las-vegas-y-alonso-abandona",
+    "title": "Aston Martin-Honda: Krack admite objetivos mínimos en Las Vegas y Alonso abandona con motor roto",
+    "summary": "Mike Krack reveló que el objetivo era solo terminar y superar a Cadillac, meta lograda por Stroll pero no por Alonso, quien abandonó en la penúltima vuelta. Honda niega fallos en sus datos y prepara cambios para Abu Dhabi.",
+    "content": "<p>El director de operaciones en pista de Aston Martin, Mike Krack, admitió que el equipo se marcó dos objetivos mínimos para el GP de Las Vegas: completar la carrera y superar al Cadillac de Valtteri Bottas. Krack reconoció que, dado el bajo rendimiento del motor Honda, \"limitar los daños\" fue la única aspiración realista, descartando cualquier lucha por posiciones medias.</p><p>Lance Stroll cumplió ambos objetivos al terminar por delante de Bottas. En cambio, Fernando Alonso no vio la meta; llevó el coche a boxes en la penúltima vuelta asegurando que el motor estaba roto. Shintaro Orihara, ingeniero jefe de HRC, declaró que sus datos no muestran fallos, aunque se revisará el motor. Alonso confirmará el cambio de unidad de potencia para el GP de Abu Dhabi. Honda indicó que las contramedidas tras Brasil dieron resultados positivos en fiabilidad, pero aún requieren ajustes para 2025.</p>",
+    "category": "Equipo",
+    "keyPoints": [
+      "Objetivos de Krack: terminar la carrera y superar a Cadillac.",
+      "Stroll terminó delante de Bottas; Alonso abandonó en la penúltima vuelta.",
+      "Honda niega fallos en datos pero Alonso cambiará motor para Abu Dhabi."
+    ],
+    "team": "aston-martin",
+    "teamColor": "#229971",
+    "source": "Motorsport.com ES",
+    "originalLink": "https://es.motorsport.com/f1/news/aston-martin-honda-objetivos-las-vegas/10877250/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
+    "date": "2026-11-23T18:18:09.000Z"
+  },
+  {
     "slug": "colapinto-vuela-en-clase-turista-desde-las-vegas-con-su-casco-de-f1-en-el-regazo",
     "title": "Colapinto vuela en clase turista desde Las Vegas con su casco de F1 en el regazo",
     "summary": "Tras terminar sexto en el GP de Las Vegas, Franco Colapinto regresó a Argentina en clase económica. La influencer Caroline Smith lo grabó llevando su casco de competición durante todo el vuelo.",
@@ -1646,90 +1731,5 @@
     "source": "Motorsport.com ES",
     "originalLink": "https://es.motorsport.com/f1/news/vowles-williams-reves-2026-positivo/10874685/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
     "date": "2026-11-15T17:31:58.000Z"
-  },
-  {
-    "slug": "wolff-la-ventaja-de-mercedes-en-2026-depende-del-chasis-no-solo-del-motor",
-    "title": "Wolff: La ventaja de Mercedes en 2026 depende del chasis, no solo del motor",
-    "summary": "Toto Wolff advirtió que la unidad de potencia de Mercedes para 2026 es una ventaja limitada si el chasis no genera la carga aerodinámica necesaria. El director de Mercedes destacó que el nuevo reglamento elimina la superioridad basada en el gasto ilimitado.",
-    "content": "<p>En una entrevista con la prensa neerlandesa, Toto Wolff analizó las perspectivas de Mercedes para la temporada 2026. Aunque reconoció que contar con la unidad de potencia oficial otorga una ventaja al permitir definir la dirección de la configuración del coche, enfatizó que este beneficio es parcial. Wolff señaló que si el chasis no logra generar la carga aerodinámica esperada o acumula demasiada resistencia al aire, el equipo quedará por detrás de la competencia, independientemente del motor.</p><p>El director de Mercedes subrayó que el nuevo reglamento presupuestario ha cambiado la dinámica de la Fórmula 1, eliminando la capacidad de los tres grandes equipos para aplastar a la competencia mediante el gasto. Esta limitación presupuestaria obliga a todos los equipos a competir en igualdad de condiciones técnicas y estratégicas, haciendo que el rendimiento del chasis sea tan crítico como la potencia del motor.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "Wolff considera la unidad de potencia de Mercedes para 2026 una ventaja limitada si el chasis no es competitivo.",
-      "El director de Mercedes advirtió que la falta de carga aerodinámica o exceso de resistencia al aire anularía la ventaja del motor.",
-      "El nuevo reglamento presupuestario impide a los grandes equipos usar el dinero como vía de escape para dominar la categoría."
-    ],
-    "team": "mercedes",
-    "teamColor": "#27F4D2",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/leccion-wolff-vida-exito/10874376/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-15T16:24:02.000Z"
-  },
-  {
-    "slug": "hamilton-recupera-su-estilo-en-f1-2026-gracias-a-monoplazas-mas-convencionales",
-    "title": "Hamilton recupera su estilo en F1 2026 gracias a monoplazas más convencionales",
-    "summary": "Lewis Hamilton ha recuperado su impulso tras la era del efecto suelo. Los coches de 2026, con menos carga aerodinámica, favorecen su habilidad para acelerar con decisión en la entrada de curva.",
-    "content": "<p>Lewis Hamilton ha recuperado su competitividad en la temporada 2026, un cambio atribuido a la adaptación de los monoplazas al nuevo reglamento. A diferencia de los coches con efecto suelo, que exigían una conducción estable pero poco 'sincera', los actuales vehículos permiten una dinámica más convencional y directa.</p><p>La clave reside en la reducción de la carga aerodinámica y el cambio de neumáticos, que han eliminado la delicadeza en la fase combinada de frenado y giro. Esto favorece el estilo de Hamilton, similar al de Andrea Kimi Antonelli, quien destaca por su capacidad para acelerar con decisión en la entrada de las curvas, una cualidad que los reglamentos anteriores habían ocultado.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Hamilton recupera su impulso tras la era del efecto suelo",
-      "Los monoplazas de 2026 son más 'convencionales' y 'sinceros' según James Allison",
-      "La reducción de carga aerodinámica favorece la aceleración en la entrada de curva"
-    ],
-    "team": "ferrari",
-    "teamColor": "#E8002D",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/segunda-juventud-hamilton-2026/10874564/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-15T15:44:01.000Z"
-  },
-  {
-    "slug": "horner-admite-que-red-bull-sacrifico-a-perez-para-adaptar-el-rb18-a-verstappen",
-    "title": "Horner admite que Red Bull sacrificó a Pérez para adaptar el RB18 a Verstappen",
-    "summary": "Christian Horner reveló que el RB18 se desarrolló inicialmente para un estilo clásico, favoreciendo a Sergio Pérez. Tras un ultimátum del entorno de Max Verstappen en Bakú 2022, el equipo cambió la dirección técnica para priorizar al neerlandés.",
-    "content": "<p>Christian Horner, exdirector de Red Bull Racing, confirmó en el podcast High Performance que la filosofía de desarrollo del RB18 se modificó en 2022 para adaptarse a las exigencias de Max Verstappen, perjudicando a Sergio Pérez. El coche original, desarrollado en gran parte por el piloto reserva Alex Albon, tenía un comportamiento predecible y clásico que favorecía a Pérez y a Daniel Ricciardo, mientras que Verstappen sufría con el subviraje.</p><p>La situación cambió tras el Gran Premio de Azerbaiyán de 2022, cuando el entorno de Verstappen reunió a los altos cargos de Red Bull para exigir un cambio de dirección. El equipo decidió priorizar las preferencias del neerlandés, que requería un eje delantero más incisivo, sacrificando la configuración que permitía a Pérez competir de tú a tú con su compañero.</p>",
-    "category": "Equipo",
-    "keyPoints": [
-      "El RB18 fue desarrollado inicialmente por Alex Albon con un estilo de pilotaje clásico.",
-      "Sergio Pérez y Max Verstappen ganaban carreras alternas al inicio de 2022 debido a la configuración del coche.",
-      "El entorno de Verstappen forzó un cambio de desarrollo técnico tras el GP de Azerbaiyán 2022."
-    ],
-    "team": "redbull",
-    "teamColor": "#3671C6",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/ultimatum-entorno-verstappen-red-bull-sacrifico-perez/10874630/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-15T14:46:16.000Z"
-  },
-  {
-    "slug": "topps-lanza-tarjeta-now-limitada-por-la-carrera-400-de-hamilton-en-f1",
-    "title": "Topps lanza tarjeta NOW limitada por la carrera 400 de Hamilton en F1",
-    "summary": "Topps emitió la tarjeta número 76 de la serie F1 2026 para celebrar la 400.ª salida de Lewis Hamilton en el GP de São Paulo. El piloto de Ferrari se convirtió en el segundo en alcanzar este hito, tras Fernando Alonso.",
-    "content": "<p>Topps lanzó una tarjeta coleccionable Topps NOW para conmemorar la 400.ª participación de Lewis Hamilton en la Fórmula 1, ocurrida en el Gran Premio de São Paulo. El piloto de Ferrari se unió a Fernando Alonso como el segundo conductor en la historia en alcanzar este hito, logro que Alonso consiguió en 2024.</p><p>La tarjeta, identificada como la número 76 de la serie Formula 1 Topps NOW 2026, tiene un precio de $11.99 en el sitio web de la marca. A diferencia de las tiradas fijas, estas tarjetas se fabrican bajo pedido y su cantidad total impresa solo se revela tras el cierre de la venta. Hamilton, quien partió desde el fondo de la parrilla por una penalización de unidad de potencia, terminó la carrera en novena posición a una vuelta del líder.</p>",
-    "category": "Off-track",
-    "keyPoints": [
-      "Hamilton es el segundo piloto en alcanzar 400 salidas en F1, después de Fernando Alonso.",
-      "La tarjeta es la número 76 de la serie Topps NOW 2026 y cuesta $11.99.",
-      "Hamilton terminó noveno en el GP de São Paulo tras salir desde el fondo por penalización."
-    ],
-    "team": "ferrari",
-    "teamColor": "#E8002D",
-    "source": "Motorsport.com LAT",
-    "originalLink": "https://lat.motorsport.com/f1/news/topps-celebra-400-arrancada-hamilton-tarjeta-especial/10874681/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=lat",
-    "date": "2026-11-15T13:42:44.000Z"
-  },
-  {
-    "slug": "button-alonso-vive-para-la-f1-y-busca-progreso-en-aston-martin",
-    "title": "Button: Alonso vive para la F1 y busca progreso en Aston Martin",
-    "summary": "Jenson Button destaca la pasión y longevidad de Fernando Alonso a sus 45 años. El británico señala que el asturiano se mantiene motivado viendo el avance del equipo, no solo por victorias inmediatas.",
-    "content": "<p>Jenson Button, expiloto de McLaren (2015-2016), elogió la capacidad de Fernando Alonso para mantenerse competitivo a sus 45 años. Button, quien se retiró tras la temporada 2016 debido al cansancio, admite que le sorprende la dedicación y el talento continuo del asturiano, quien vive para las carreras y el automovilismo.</p><p>Según Button, la motivación de Alonso en Aston Martin no reside en ganar carreras de inmediato, sino en percibir un progreso constante hacia los objetivos del equipo. El británico destaca que Alonso realiza ajustes constantes al volante y que su talento sigue siendo un activo clave para el deporte, a pesar de los cambios técnicos en la Fórmula 1.</p>",
-    "category": "Piloto",
-    "keyPoints": [
-      "Fernando Alonso tiene 45 años y sigue compitiendo en F1.",
-      "Jenson Button se retiró tras la temporada 2016.",
-      "Alonso busca ver progreso en Aston Martin más que victorias inmediatas."
-    ],
-    "team": "aston-martin",
-    "teamColor": "#229971",
-    "source": "Motorsport.com ES",
-    "originalLink": "https://es.motorsport.com/f1/news/button-rinde-alonso-destaca-diferente-resto-pilotos/10874649/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=es",
-    "date": "2026-11-15T13:14:00.000Z"
   }
 ]
